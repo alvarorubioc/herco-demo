@@ -1,0 +1,84 @@
+#sh-footer {
+    background-color: $color-dark-navy-blue;
+    color: white;
+
+    h5, h6 {
+        color: white;
+    }
+
+    a {text-decoration: none;}
+
+    ul {
+        list-style: none;
+        padding: 0;
+        line-height: 2.5;
+    }
+}
+
+.sh-footer__top {
+    padding: 2em 0;
+    background: rgba(0,62,144,1);
+    background: linear-gradient(to right, rgba(0,62,144,1) 0%, rgba(0,62,144,1) 45%, rgba(3,0,27,1) 45%, rgba(3,0,27,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003e90', endColorstr='#03001b', GradientType=1 );
+
+    address {
+        font-style: normal;
+    }
+
+    .sh-footer__address a {
+        color: $color-dark-navy-blue;
+        font-weight: bold;
+        &:hover {
+            color: white;        
+        }
+    }
+
+    .sh-footer__at a {
+        font-weight: bold;
+        &:hover {
+            color: white;        
+        }
+    }
+
+    @include breakpoint(xsmobile) {
+        background: rgba(0,62,144,1);
+        background: linear-gradient(to bottom, rgba(0,62,144,1) 0%, rgba(0,62,144,1) 50%, rgba(3,0,27,1) 50%, rgba(3,0,27,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003e90', endColorstr='#03001b', GradientType=0 );
+
+        .sh-footer__at {
+            padding-top: 4em;
+        }
+    }
+}
+
+.sh-footer__info {
+    padding-top: 4em;
+  
+    a {
+        color: white;
+    }
+    
+    a:hover {
+        color: $color-blue;
+    }
+}
+
+.sh-footer__sub {
+    padding-top: 2em;
+    padding-bottom: 1em;
+
+    small { text-align: center; }
+
+    @include breakpoint(laptop) {
+        .between-xs { justify-content: center; }
+        small { padding: 2em 0; }
+    }
+
+    .sh-footer__social a {
+        padding: 0 .5em;
+        font-size: 1.5em;
+        &:hover { color: white; }
+    }    
+}
+
+

@@ -1,0 +1,93 @@
+/* card settings */
+.sh-card {
+  min-width: 200px;
+  min-height: 320px;
+  padding: .5em;
+  border: 1px;
+  border-style: solid;
+  border-color: $color-grey-50;
+  border-radius: 2px;
+  display: grid;
+  background: rgba(216, 216, 216, 0.1);
+
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+  }
+
+  &:hover .sh-btn {
+    background-color: $color-navy-blue;
+    border-color: $color-navy-blue;
+  }
+
+  &:hover .sh-card__switch__text {
+    opacity: 1;
+    transition: .4s;
+  }
+}
+
+.sh-card__head {
+  position: relative;
+
+  label, .sh-badge, .sh-card__switch__text {
+    position: absolute;
+  }
+
+  label {
+    right: .5em;
+    top: .5em;
+  }
+
+  .sh-badge {
+    font-family: $font-heading;
+    left: .5em;
+    top: .7em;
+  }
+
+  .sh-card__switch__text {
+    top: .4em;
+    right: 3.5em;
+    opacity: 0;
+    line-height: 1.6;
+  }
+}
+
+.sh-card__body {
+  margin: .5em .5em 0 .5em;
+  
+  .sh-card__body__brand {
+    color: $color-blue;
+    text-transform: uppercase;
+  }
+  .sh-card__body__text {
+    color: $color-grey;
+  }
+  .sh-card__body__price {
+    color: $color-dark-navy-blue;
+    font-size: 120%;
+  }
+}
+
+.sh-card__footer {
+  margin: 2em .5em .5em .5em;
+  align-self: end;
+}
+
+.sh-badge.OFF {display: none;}
+
+.sh-products__list .sh-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 2em;
+
+  .sh-card__body {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  
+  .sh-card__footer {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  
+}

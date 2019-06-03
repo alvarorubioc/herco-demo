@@ -1,0 +1,27 @@
+@import 'normalize';
+
+// Core
+@import 'core/mixins';
+@import 'core/variables';
+@import 'core/helpers';
+
+// Styles
+@import 'styles/grid';
+@import 'styles/colors';
+@import 'styles/typography';
+@import 'styles/backgrounds';
+@import 'styles/spacing';
+@import 'styles/icons';
+@import 'styles/buttons';
+
+// Components
+@import 'components/card';
+@import 'components/forms';
+@import 'components/navigation';
+@import 'components/elements';
+@import 'components/footer';
+@import 'components/hero';
+
+//Pages
+@import 'pages/search';
+@import 'pages/subcategory';

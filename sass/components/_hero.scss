@@ -1,0 +1,30 @@
+
+
+#sh-hero-homepage {
+    height: 400px;
+    .row{
+        padding: 3em 0;
+    }
+    h1 {
+        margin-bottom: 1em;
+    }
+}
+
+form.sh-form-search {
+    display: flex;
+    
+    button.sh-btn, button.sh-btn-outline {
+      border-radius: 0;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+      
+      &::before {
+          content: 'Buscar';
+          @include breakpoint (mobile) {
+            content: '\e800';
+            font-family: 'herco';
+          }
+      }
+      
+    }
+}
