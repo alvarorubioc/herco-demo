@@ -35,5 +35,5 @@ $color-yellow: #dcd20c;
 $color-grass: #569e29;
 
 /* set gradients */
-$color-gradient-blue: (linear-gradient(left bottom, #{$color-navy-blue} 0%,#{$color-blue} 100%));
-$color-gradient-blue-red: (linear-gradient(left top, #{$color-blue} 0%,#{$color-red-cherry} 100%));
+$color-gradient-blue: (linear-gradient(to right bottom, #{$color-navy-blue} 0%,#{$color-blue} 100%));
+$color-gradient-blue-red: (linear-gradient(to right top, #{$color-blue} 0%,#{$color-red-cherry} 100%));

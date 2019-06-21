@@ -3,22 +3,27 @@
     
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="5">
+        <meta name="description" content="">
         <meta name="author" content="herco">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Herco WEB DEMO</title>
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/main.css">
+        <script>
+            document.getElementsByTagName("html")[0].className += " js";
+        </script>
     </head>
     
     <body class="@@body-class">
-        <header id="sh-header" class="container">
+        <div class="container-fluid sh-menu">
             <button class="btn btn--primary" id="btn_nav"><i class="icon icon-menu"></i>
 
             </button>
-            <div class="sh-menu__brand"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Herco Logotipo" width="200px"></a>
+            <div class="sh-menu--top">
+                <div class="sh-menu--brand"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Herco Logotipo" width="200px"></a>
 
+                </div>
             </div>
             <div class="sh-menu__secondary">
                 <div> <i class="icon icon-location"></i>
@@ -36,8 +41,8 @@
                 </ul>
             </div>
             <div class="sh-menu__basket"> <a href="">
-          <i class="icon icon-basket"></i><span class="sh-badge sh-badge-red">0</span>
-        </a>
+                <i class="icon icon-basket"></i><span class="sh-badge sh-badge-red">0</span>
+            </a>
 
             </div>
             <nav class="sh-menu">
@@ -149,67 +154,14 @@
                         </li>
                         <li><a href="#">Blog</a>
 
-                            <ul>
-                                <li><a href="#">School</a>
+                        </li>
+                        <li><a href="#">Empty sub</a>
 
-                                    <ul>
-                                        <li><a href="#">Lidership</a>
-
-                                        </li>
-                                        <li><a href="#">History</a>
-
-                                        </li>
-                                        <li><a href="#">Locations</a>
-
-                                        </li>
-                                        <li><a href="#">Careers</a>
-
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Study</a>
-
-                                    <ul>
-                                        <li><a href="#">Undergraduate</a>
-
-                                        </li>
-                                        <li><a href="#">Masters</a>
-
-                                        </li>
-                                        <li><a href="#">International</a>
-
-                                        </li>
-                                        <li><a href="#">Online</a>
-
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Study</a>
-
-                                    <ul>
-                                        <li><a href="#">Undergraduate</a>
-
-                                        </li>
-                                        <li><a href="#">Masters</a>
-
-                                        </li>
-                                        <li><a href="#">International</a>
-
-                                        </li>
-                                        <li><a href="#">Online</a>
-
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Empty sub</a>
-
-                                </li>
-                            </ul>
                         </li>
                     </ul>
                 </div>
             </nav>
-        </header>
+        </div>
         <section id="sh-hero-homepage" style="background: url(img/low/duotone-example-4.jpg) no-repeat center center; background-size: cover;">
             <div class="container">
                 <div class="row middle-xs">
@@ -224,34 +176,34 @@
         </section>
         <!-- end #sh-section -->
         <section class="container">
-            <div class="sh-card">
-                <div class="sh-card__head"> <a href="#">
-        <img src="img/low/tool.png" alt="x">
-      </a>
+            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
 
+                <div
+                class="sh-card__head">
+                    <img src="img/low/tool.png" alt="x">
                     <label class="sh-switch">
                         <input type="checkbox"> <span></span>
 
                     </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
  <span class="sh-badge @@label">@@product-label</span>
 
-                </div>
-                <div class="sh-card__body"> <strong class="sh-card__body__brand">@@product-brand</strong>
+            </div>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand">@@product-brand</strong>
 
-                     <h5 class="sh-card__body__text">@@product-name</h5>
- <strong class="sh-card__body__price">@@product-price</strong>
+                 <h5 class="sh-card__body__text">@@product-name</h5>
+ <strong class="sh-card__body__price">@@product-price&nbsp;€</strong><span>/ud.</span>
 
-                </div>
-                <div class="sh-card__footer">
-                    <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
-                </div>
+            </div>
+            <div class="sh-card__footer">
+                <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
+            </div>
             </div>
             <!-- end sh-card -->
         </section>
         <div class="clearfix"></div>
         <footer id="sh-footer">
             <div class="sh-footer__top">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="sh-footer__address col-xs-12 col-sm-6">
                              <h5>Estamos en:</h5>
@@ -269,12 +221,13 @@
 
                             <p>De lunes a viernes de 8:00 19:00 hrs.
                                 <p>
-                                    <p>+34 976 503 927 | info@suministrosherco.com</p> <a href="#" class="">Contacta con nosotros</a> 
+                                    <p>+34 976 503 927 | info@suministrosherco.com</p> <a href="#" class="">Contacta con nosotros</a>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="sh-footer__info container">
+            <div class="sh-footer__info container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-3">
                          <h6>Productos mas buscados</h6>
@@ -346,17 +299,17 @@
                          <h5>Boletín Herco</h5>
 
                         <p>Ofertas, consejos, novedades, descargas. ¡Recíbelo cada mes!</p>
-                        <div class="sh-form-group sh-form-contain-icon sh-m-bottom__lg"> <i class="icon icon-mail sh-form-icon-right"></i>
+                        <div class="sh-form-group sh-form-contain-icon sh-m-bottom__lg"> <i class="icon icon-mail sh-form-icon-secondary__left"></i>
 
                             <input class="sh-input"
-                            type="text">
+                            type="text" placeholder="Su email">
                         </div>
-                        <button class="sh-btn sh-btn-icon__md sh-btn__full" type="button">Sí, suscribirme</button>
+                        <button class="sh-btn sh-btn__full" type="button">Sí, suscribirme</button>
                     </div>
                 </div>
             </div>
-            <div class="sh-footer__sub container">
-                <div class="row middle-xs around-xs"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Herco Logotipo" width="200px"></a>
+            <div class="sh-footer__sub container-fluid">
+                <div class="row middle-xs between-xs"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Herco Logotipo" width="200px"></a>
  <small>2019 Suministros Industriales Herco S.L.</small>
 
                     <div

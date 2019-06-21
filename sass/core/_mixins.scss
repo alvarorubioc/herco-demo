@@ -18,10 +18,10 @@
 
 @mixin devicesize($device) {
   @if $device == only_desktop {
-    @media (min-width: 1441px) { @content ; }
+    @media (min-width: 1600px) { @content ; }
  }
   @else if $device == only_laptop {
-    @media (min-width: 1280px) and (max-width: 1440px) { @content ; }
+    @media (min-width: 1280px) and (max-width: 1599px) { @content ; }
  }
    @else if $device == only_tablet {
     @media (min-width: 1024px) and (max-width: 1279px) { @content ; }
@@ -44,13 +44,20 @@
 /* set general styles btn */
 @mixin btn {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: $border-radius;
   transition: .2s;
   text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
   font-weight: bolder;
+  height: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   cursor: pointer;
+  border: 1px solid $color-blue;
+  font-size: $text__md;
+  color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -63,7 +70,7 @@
 @mixin input {
   display: inline;
   width: 100%;
-  padding: .75em 1em;
+  padding: 0 1em;
   outline: none;
   border-radius: $border-radius;
   transition: 0.2s;

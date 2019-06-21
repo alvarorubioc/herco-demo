@@ -12,19 +12,16 @@
 
 form.sh-form-search {
     display: flex;
-    
-    button.sh-btn, button.sh-btn-outline {
-      border-radius: 0;
-      border-top-right-radius: 2px;
-      border-bottom-right-radius: 2px;
-      
-      &::before {
-          content: 'Buscar';
-          @include breakpoint (mobile) {
-            content: '\e800';
-            font-family: 'herco';
-          }
-      }
-      
+    max-width: 40rem;
+    @include breakpoint (xsmobile) {
+        max-width: 9rem;
     }
+
+    button::before {
+        content: 'Buscar';
+            @include breakpoint (mobile) {
+                content: '\e800';
+                font-family: 'herco';
+            }
+        }
 }

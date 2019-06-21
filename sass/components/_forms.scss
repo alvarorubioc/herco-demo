@@ -4,12 +4,23 @@ input {
   appearance:         none;
   height: 2.5rem;
   font-size: $text__md;
+  position: relative;
 }
 /* form control */
 fieldset {
   border: none;
   padding: 0;
   margin: 0;
+}
+
+form {
+
+  & button.sh-btn {
+
+    border-radius: 0;
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }
 }
 
 /* group form control */
@@ -70,11 +81,24 @@ fieldset {
 /* set icon for input */
 .sh-form-contain-icon {
   display: flex;
+
+  & .sh-form-icon-secondary__right,
+  .sh-form-icon-secondary__left,
+  .sh-form-icon-secondary__sucess,
+  .sh-form-icon-secondary__warning,
+  .sh-form-icon-secondary__error {
+    position: absolute;
+    top: .75em;
+    z-index: 9;
+  }
 }
 
-.sh-form-icon-left {
+.sh-form-icon-primary_ {
+  &_left {
     display: block;
-    padding: .75em 1em;
+    height: 2.5em;
+    width: 2.5em;
+    padding-top: 10px;
     border: 1px solid $color-blue;
     border-right: none;
     border-radius: $border-radius;
@@ -83,34 +107,54 @@ fieldset {
     background-color: $color-blue;
     color: white;
 
-  + input {
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-}
-
-.sh-form-icon-right {
-  position: absolute;
-  top: .9em;
-  right: 1em;
-  color: $color-blue;
-  text-align: center;
-  z-index: 99;
-
-  &__display {
-    position: absolute;
-    top: .9em;
-    right: 1em;
-    color: $color-grey;
-
-    &:hover {
-      cursor: pointer;
+    + input {
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
     }
   }
 
-  &__sucess {
-    position: absolute;
-    top: .9em;
+  &_right {
+    display: block;
+    height: 2.5em;
+    width: 2.5em;
+    padding-top: 10px;
+    border: 1px solid $color-blue;
+    border-right: none;
+    border-radius: $border-radius;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: $color-blue;
+    color: white;
+    order: 2;
+
+    + input {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      order:1;
+    }
+  }
+}
+
+.sh-form-icon-secondary_ {
+  &_right {
+    right: 1em;
+    color: $color-blue;
+
+    + input {
+      padding-right: 3em;
+    }
+  }
+
+  &_left {
+    left: 1em;
+    color: $color-blue;
+
+    + input {
+      padding-left: 3em;
+    }
+  }
+
+  &_sucess {
     right: 1em;
     color: $color-grass;
 
@@ -123,9 +167,7 @@ fieldset {
     }
   }
 
-  &__warning {
-    position: absolute;
-    top: .9em;
+  &_warning {
     right: 1em;
     color: $color-yellow;
 
@@ -142,9 +184,7 @@ fieldset {
    }
   }
 
-  &__error {
-    position: absolute;
-    top: .9em;
+  &_error {
     right: 1em;
     color: $color-red-cherry;
 
@@ -155,5 +195,85 @@ fieldset {
       bottom: -20px;
       color: $color-red-cherry;
     }
+  }
+}
+
+.sh-form_ {
+  &_sm {
+    font-size: $text__sm;
+    height: 1.5rem;
+
+    input {
+      height: 100%;
+    }
+  }
+
+  &_lg {
+    font-size: $text__h4;
+    height: 4rem;
+
+    input {
+      height: 100%;
+    }
+  }
+
+  &_full {
+    width: 100%;
+  }
+}
+
+
+
+/*set select button*/
+.sh-select-container {
+  position: relative;
+  float: left;
+  min-width: 12em;
+}
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+  display: none;
+}
+
+.sh-select-container:after {
+  content: '\e847';
+  font-family: 'herco';
+  color: $color-blue;
+  display: table-cell;
+  vertical-align: middle;
+  top: 12px;
+  right: 12px;
+  padding: 0 0 2px;
+  position: absolute;
+  pointer-events: none;
+
+  &:active {
+    transform: rotate(180deg);
+  }
+}
+
+.sh-select-container select {
+  appearance: none;
+  width: 100%;
+  max-width: 40em;
+  @include btn;
+  padding: 0 2em 0 1em !important;
+  background-image: none;
+  word-break: normal;
+
+  &:hover {
+    
+    transition: .2s;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  &.sh-select__white {
+    border-color: $color-grey-70;
+    background-color: white;
+    color: $color-blue;
   }
 }

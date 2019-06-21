@@ -4,6 +4,8 @@
   margin-left: auto;
   padding-right: 2rem;
   padding-left: 2rem;
+  display: flow-root;
+  position: relative;
   @include breakpoint (xsmobile) {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -11,8 +13,13 @@
 }
 
 .container-fluid {
-  padding-right: 4rem;
-  padding-left: 4rem;
+  padding-right: 8rem;
+  padding-left: 8rem;
+  position: relative;
+  @include breakpoint (desktop) {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
   @include breakpoint (tablet) {
     padding-right: 2rem;
     padding-left: 2rem;

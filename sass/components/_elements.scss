@@ -224,6 +224,7 @@
 .sh-badge{
   display: inline-block;
   vertical-align: middle;
+  font-family: $font-heading;
   font-size: .7rem;
   font-weight: 500;
   padding: .25rem .5rem;
@@ -231,15 +232,15 @@
   max-height: 1rem;
   color: white;
   border-radius: 999px;
-  background-color: $color-blue;
+  background-color: $color-navy-blue;
 
 }
 
 .sh-badge-green {
   background-color: $color-grass;
 }
-.sh-badge-grey {
-  background-color: $color-grey;
+.sh-badge-blue {
+  background-color: $color-blue;
 }
 
 .sh-badge-red {
@@ -276,4 +277,48 @@
     &:hover {
         opacity: .5;
     }
+}
+
+/* price range slider */
+
+.sh-price-slider {
+	width:100%;
+  float:left;
+  padding:1em 1.5em;
+	.range-value {
+		margin:0;
+		input {
+			width:100%;
+			background:none;			
+			font-weight: initial;
+			box-shadow: none;
+			border: none;
+		}
+	}
+	
+	.range-bar {
+		border: none;
+		background: #000;
+		height: 3px;	
+		width: 96%;
+		margin-left: 8px;
+		
+		.ui-slider-range {
+			background:#06b9c0;
+		}
+		
+		.ui-slider-handle {
+			border:none;
+			border-radius:25px;
+			background:#fff;
+			border:2px solid #06b9c0;
+			height:17px;
+			width:17px;
+			top: -0.52em;
+			cursor:pointer;
+		}
+		.ui-slider-handle + span {
+			background:#06b9c0;
+		}
+	}
 }

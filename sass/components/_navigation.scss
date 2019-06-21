@@ -62,7 +62,6 @@
         .sh-menu__secondary {
             grid-area: 3 / col1-start / 3 / 1;
             grid-gap: 0;
-            justify-self: start;
 
             & > div {
                 flex-direction: column;
