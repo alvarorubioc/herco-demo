@@ -1,3 +1,9 @@
+section::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
 .promo-content {
     display: grid;
     grid-template-columns: 1fr 180px;
@@ -130,10 +136,15 @@
 
 .sh-overlay {
     position: relative;
-    display: flex;
+    display: grid;
     height: 100%;
     h3 {color: white;}
-    img {object-fit: contain; width: 100%;}
+    img {
+        object-fit: contain;
+        width: 100%;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
     border-radius: 2px;
     transition: all .3s ease;
 
@@ -149,7 +160,9 @@
     }
 
     .sh-overlay-content {
-        position: absolute;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        z-index: 3;
         top: 1rem;
         left: 2rem;
         right: 2rem;
@@ -163,67 +176,62 @@
     }
 }
 
+.scroll-head {
+    margin-right: 1em;
+    margin-left: 4em;
+    @include breakpoint (mobile) {
+        margin-left: 2em;
+    }
+
+    @include devicesize (only_desktop) {
+        margin-left: 8em;
+    }
+    
+}
+
 .scroll-wrapper {
     padding: var(--gutter) 0;
     display: grid;
     grid-gap: var(--gutter) 0;
     grid-template-columns: var(--gutter) 1fr var(--gutter);
     align-content: start;
-    @include breakpoint (mobile) {
-        width: calc(100vw - 16px);
-    }
-    @include devicesize (only_mobile) {
-        width: calc(100vw - 24px);
-    }
-
-    @include devicesize (only_tablet) {
-        width: calc(100vw - 33% - 4.5em)
-    }
-
-    & > * {
-        grid-column: 2 / -2;
-      }
-      
-    & > .full {
-        grid-column: 1 / -1;
-      }
   
     &::-webkit-scrollbar {
         display: none;
     }  
   }
 
-  .hsa {
+  .scroll-items {
     display: grid;
     grid-gap: 1em;
     grid-template-columns: 10px;
     grid-template-rows: minmax(150px, 1fr);
+    grid-auto-columns: calc(33% - var(--gutter) * 2);
     grid-auto-flow: column;
-    @include breakpoint (laptop) {
-        //grid-auto-columns: calc(33% - var(--gutter) * 3);
-    }
-    
-    @include devicesize (only_mobile) {
-        margin-left: -1.5em;
-        
+    grid-column: 1 / -1;
+    @include breakpoint (tablet) {
+        grid-auto-columns: calc(50% - var(--gutter) * 2);
     }
 
-    @include breakpoint (mobile) {
-        grid-auto-columns: 1fr;
-        margin-left: -1em;
+    @include breakpoint (xsmobile) {
+        grid-auto-columns: calc(96% - var(--gutter) * 2);
+    }
+
+    @include devicesize (only_desktop) {
+        grid-auto-columns: calc(25% - var(--gutter) * 2);
     }
 
     overflow-x: scroll;
     scroll-snap-type: x proximity;
   }
   
-  .hsa:before,
-  .hsa:after {
+  .scroll-items:before,
+  .scroll-items:after {
     content: '';
     width: 10px;
   }
   
-  .hsa .sh-card{
+  .scroll-items .sh-card{
     @include breakpoint (xsmobile) {
         min-width: 232px;
     }
@@ -237,6 +245,24 @@
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
+.sh-card-blog__mini  {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 180px 1fr;
+    @include breakpoint (xsmobile) {
+        grid-template-columns: .5fr 1fr;
+    }
+
+    h4 {
+        margin-top: 0;
+    }
+}
+
+#sh-community a {
+    text-decoration: none;
+}
+
 
 .stars {
     display: flex;
@@ -292,4 +318,27 @@
     img {
         mix-blend-mode: multiply;
     }
+}
+
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%;
+  border: none;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
