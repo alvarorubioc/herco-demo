@@ -1,5 +1,5 @@
 function openFilters() {
-   var element = document.getElementById("wrap");
+   var element = document.getElementById("sh-products-subcategory");
    element.classList.toggle("is-open");
 }
 
@@ -36,18 +36,17 @@ $(function () {
 	});
 });
 
-//-----JS for Price Range slider-----
 
-$(function() {
-	$( "#slider-range" ).slider({
-	  range: true,
-	  min: 130,
-	  max: 500,
-	  values: [ 130, 250 ],
-	  slide: function( event, ui ) {
-		$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-	  }
-	});
-	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-	  " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+$(document).ready(function() {
+	if ($(window).width() < 768) {
+		$('#sh-navig').remove();
+	}
+});
+
+$(document).ready(function() {
+
+	if ($(window).width() > 769) {
+	
+	$('#menu-mobi').prop('id','nuevaID');
+	}
 });

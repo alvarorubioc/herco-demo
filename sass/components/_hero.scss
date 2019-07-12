@@ -1,27 +1,68 @@
-
-
-#sh-hero-homepage {
-    height: 400px;
+.homepage #sh-hero {
+    height: 75vh;
     .row{
-        padding: 3em 0;
+        padding-top: 10%;
     }
     h1 {
         margin-bottom: 1em;
     }
 }
 
+#sh-hero, #sh-quickorder{
+    min-height: 20rem;
+    position: relative;
+    background-color: $color-gradient-blue;
+    background-blend-mode: color;
+    background-size: cover;
+    .row{
+        padding: 5em 0;
+    }
+  }
+  
+  #sh-hero::before, #sh-quickorder::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: $color-blue;
+    mix-blend-mode: multiply;
+  
+  }
+
 form.sh-form-search {
     display: flex;
-    max-width: 40rem;
     @include breakpoint (xsmobile) {
-        max-width: 9rem;
+        max-width: 100%;
     }
 
-    button::before {
-        content: 'Buscar';
-            @include breakpoint (mobile) {
-                content: '\e800';
-                font-family: 'herco';
-            }
+    button {
+        @include breakpoint (xsmobile) {
+            position: absolute;
+            right: 1rem;
         }
+        
+        &::before {
+            content: 'Buscar';
+                @include breakpoint (xsmobile) {
+                    content: '\e800';
+                    font-family: 'herco';
+                }
+            }
+    }
+}
+
+#header-bar {
+    margin-top: -20px;
+    form.sh-form-search {max-width: 40rem;}
+}
+
+#sh-breadcrumbs {
+    text-transform: uppercase;
+    font-size: $text__md;
+    a {
+        color: gray;
+        &:hover {color: $color-navy-blue;}
+    }
 }

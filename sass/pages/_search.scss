@@ -64,26 +64,7 @@
     }
 }
 
-#header-search {
-  display: grid;
-  grid-template-columns: auto 1fr auto auto;
-  grid-gap: 1em;
-  margin-top: -20px;
 
-  @include breakpoint (mobile) {
-    grid-template-columns: auto 1fr auto;
-    .header-search__orderby, .header-search__listngrid {
-      display: none;
-    }
-  }
-
-  button.active {
-    cursor: not-allowed;
-    background-color: #003e90;
-    border-color: #003e90;
-    color: #fff;
-  }
-}
 
 #btn-filters {
   &.icon::before {

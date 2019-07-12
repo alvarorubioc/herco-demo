@@ -44,7 +44,7 @@ gulp.task('browser-sync', function() {
 		proxy: 'localhost:8888/herco-demo',
 		liveReload: true,
 		watch: true,
-		browser: ["google chrome", "firefox"],
+		browser: ["firefox"],
 		injectChanges: false
 		
 	});

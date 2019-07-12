@@ -1,3 +1,7 @@
+body {
+    background-color: #f6f6f6;
+}
+
 @import 'normalize';
 
 // Core
@@ -21,7 +25,10 @@
 @import 'components/elements';
 @import 'components/footer';
 @import 'components/hero';
+@import 'components/mmenu-light';
 
 //Pages
+@import 'pages/homepage';
 @import 'pages/search';
 @import 'pages/subcategory';
+@import 'pages/category';

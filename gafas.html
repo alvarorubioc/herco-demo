@@ -15,154 +15,258 @@
         </script>
     </head>
     
-    <body class="@@body-class">
-        <div class="container-fluid sh-menu">
-            <button class="btn btn--primary" id="btn_nav"><i class="icon icon-menu"></i>
+    <body class="@@bodyClass">
+        <header class="container-fluid" id="sh-navigation">
+            <div class="sh-top-nav"> <a href="#menu"><i class="icon icon-menu"></i><span></span></a>
 
-            </button>
-            <div class="sh-menu--top">
-                <div class="sh-menu--brand"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Herco Logotipo" width="200px"></a>
+                <div class="sh-nav--brand"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200px"></a>
 
                 </div>
-            </div>
-            <div class="sh-menu__secondary">
-                <div> <i class="icon icon-location"></i>
- <a href="">Localizar pedido</a>
+                <div class="sh-nav--secondary">
+                    <div> <i class="icon icon-location"></i>
+ <a href="" title="Localizar pedido">Localizar pedido</a>
 
-                </div>
-                <div> <i class="icon icon-tag"></i>
- <a href="">Pedido rápido</a>
+                    </div>
+                    <div> <i class="icon icon-tag"></i>
+ <a href="" title="Pedido rápido">Pedido rápido</a>
 
-                </div>
-                <div> <i class="icon icon-user"></i>
- <a href="">Iniciar sesión</a>
+                    </div>
+                    <div> <i class="icon icon-user"></i>
+ <a href="" title="Iniciar sesión">Iniciar sesión</a>
 
-                </div>
-                </ul>
-            </div>
-            <div class="sh-menu__basket"> <a href="">
-                <i class="icon icon-basket"></i><span class="sh-badge sh-badge-red">0</span>
-            </a>
-
-            </div>
-            <nav class="sh-menu">
-                <div class="sh-menu__products">
-                    <ul>
-                        <li><a href="">Productos</a>
-
-                            <ul>
-                                <li><a href="">Categoría</a>
-
-                                    <ul>
-                                        <li><a href="/subcategory.html">SubCategoría</a>
-
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                    </div>
                     </ul>
                 </div>
-                <div class="sh-menu__main">
-                    <ul>
-                        <li><a href="#">Marcas</a>
+                <div class="sh-nav--basket" id="sh-basket"> <a href="" id="open-basket">
+                    <i class="icon icon-basket"></i><span class="sh-badge sh-badge-red">0</span>
+                </a>
 
-                        </li>
-                        <li><a href="#">Catálogos</a>
+                </div>
+            </div>
+            <nav id="sh-nav">
+                <form class="sh-form-search sh-space" action="./search.html">
+                    <input class="sh-input" type="text" placeholder="Buscar..." name="search">
+                    <button class="sh-btn" type="submit"></button>
+                </form>
+                <ul>
+                    <li><span>Productos span</span>
 
-                            <ul>
-                                <li><a href="#">School</a>
+                        <ul>
+                            <li><span>Protección y vestuario</span>
 
-                                    <ul>
-                                        <li><a href="#">Lidership</a>
+                                <ul>
+                                    <li><a href="./gafas.html">Gafas</a>
 
-                                        </li>
-                                        <li><a href="#">History</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia 2</a>
 
-                                        </li>
-                                        <li><a href="#">Locations</a>
+                                    </li>
+                                    <li><a href="/subcategory.html">SubFamilia 3</a>
 
-                                        </li>
-                                        <li><a href="#">Careers</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span>Familia 2</span>
 
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Study</a>
+                                <ul>
+                                    <li><a href="/subcategory.html">SubFamilia 2.1</a>
 
-                                    <ul>
-                                        <li><a href="#">Undergraduate</a>
+                                    </li>
+                                    <li><a href="/subcategory.html">SubFamilia 2.2</a>
 
-                                        </li>
-                                        <li><a href="#">Masters</a>
+                                    </li>
+                                    <li><a href="/subcategory.html">SubFamilia 2.3</a>
 
-                                        </li>
-                                        <li><a href="#">International</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Familia nochild</a>
 
-                                        </li>
-                                        <li><a href="#">Online</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Productos href</a>
 
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Research</a>
+                        <ul>
+                            <li><a href="./category.html">Protección y vestuario</a>
 
-                                    <ul>
-                                        <li><a href="#">Undergraduate research</a>
+                                <ul>
+                                    <li><a href="./gafas.html">Gafas</a>
 
-                                        </li>
-                                        <li><a href="#">Masters research</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                                        </li>
-                                        <li><a href="#">Funding</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Something</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                                    <ul>
-                                        <li><a href="#">Sub something</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Familia 2</a>
 
-                                        </li>
-                                        <li><a href="#">Sub something</a>
+                                <ul>
+                                    <li><a href="#">SubFamilia</a>
 
-                                        </li>
-                                        <li><a href="#">Sub something</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                                        </li>
-                                        <li><a href="#">Sub something</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Información corporativa</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                            <ul>
-                                <li><a href="#">Today</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Familia 3</a>
 
-                                </li>
-                                <li><a href="#">Calendar</a>
+                                <ul>
+                                    <li><a href="#">SubFamilia</a>
 
-                                </li>
-                                <li><a href="#">Sport</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Blog</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                        </li>
-                        <li><a href="#">Empty sub</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                        </li>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Familia 4</a>
+
+                                <ul>
+                                    <li><a href="#">Sub something</a>
+
+                                    </li>
+                                    <li><a href="#">Sub something</a>
+
+                                    </li>
+                                    <li><a href="#">Sub something</a>
+
+                                    </li>
+                                    <li><a href="#">Sub something</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span>Catálogos</span>
+
+                        <ul>
+                            <li><span>Catálogo 1</span>
+
+                                <ul>
+                                    <li><a href="#">Lidership</a>
+
+                                    </li>
+                                    <li><a href="#">History</a>
+
+                                    </li>
+                                    <li><a href="#">Locations</a>
+
+                                    </li>
+                                    <li><a href="#">Careers</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span>Catálogo 2</span>
+
+                                <ul>
+                                    <li><a href="#">Undergraduate</a>
+
+                                    </li>
+                                    <li><a href="#">Masters</a>
+
+                                    </li>
+                                    <li><a href="#">International</a>
+
+                                    </li>
+                                    <li><a href="#">Online</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span>Catálogo 3</span>
+
+                                <ul>
+                                    <li><a href="#">Undergraduate research</a>
+
+                                    </li>
+                                    <li><a href="#">Masters research</a>
+
+                                    </li>
+                                    <li><a href="#">Funding</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span>Catálogo 4</span>
+
+                                <ul>
+                                    <li><a href="#">Sub something</a>
+
+                                    </li>
+                                    <li><a href="#">Sub something</a>
+
+                                    </li>
+                                    <li><a href="#">Sub something</a>
+
+                                    </li>
+                                    <li><a href="#">Sub something</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span>Información corporativa</span>
+
+                        <ul>
+                            <li><a href="#">Today</a>
+
+                            </li>
+                            <li><a href="#">Calendar</a>
+
+                            </li>
+                            <li><a href="#">Sport</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog</a>
+
+                    </li>
+                    <li><a href="#">Contactar</a>
+
+                    </li>
+                </ul>
+                <div class="sh-nav--secondary__mobile">
+                    <div> <i class="icon icon-location"></i>
+ <a href="" title="Localizar pedido">Localizar pedido</a>
+
+                    </div>
+                    <div> <i class="icon icon-tag"></i>
+ <a href="" title="Pedido rápido">Pedido rápido</a>
+
+                    </div>
+                    <div> <i class="icon icon-user"></i>
+ <a href="" title="Iniciar sesión">Iniciar sesión</a>
+
+                    </div>
                     </ul>
                 </div>
             </nav>
-        </div>
-        <section id="sh-hero" style="background-image: linear-gradient(black, black), url(img/low/bg-gafas.jpg);">
+        </header>
+        <section id="sh-hero" style="background-image: linear-gradient(#001442, #001442), url(img/low/bg-gafas.jpg);">
             <div class="container-fluid">
                 <div class="row middle-xs sh-text__white">
                      <h1 class="col-xs-12 col-md-12">Gafas (Subcategory)</h1>
@@ -177,7 +281,7 @@
         <!-- end #sh-section -->
         <section id="sh-products-subcategory" class="container-fluid">
             <div id="wrap">
-                <header id="header-search" class="sh-m-bottom">
+                <header id="header-bar" class="sh-m-bottom">
                     <div>
                         <button class="sh-btn__white sh-btn-icon__md" onclick="openFilters()"> <i id="btn-filters" class="icon"></i>
  <span>FILTROS</span>
@@ -210,225 +314,251 @@
                         </button>
                     </div>
                 </header>
-                <div class="sh-products__wrap sh-m-top__xxl">
-                    <aside id="sh-sidebar__filter" class="sh-sidebar__filter">
-                        <div class="sh_sidebar__search__price sh-m-bottom__xl">
-                             <h6>PRECIO</h6>
-
-                            <p class="range-value">
-                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                            </p>
-                            <div class="sh_sidebar__search__brand sh-m-bottom__xl">
-                                 <h6>MARCAS</h6>
-
-                                <div>
-                                    <label class="sh-check-group">3M <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox" checked="checked"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="sh-check-group">+8000 <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="sh-check-group">Taibo <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="sh-check-group">Aluflex <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="sh-check-group">Acha <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <button class="sh-btn-outline sh-btn__sm sh-m-top">Mostrar más +</button>
-                            </div>
-                            <div class="sh_sidebar__search__category sh-m-bottom__xl">
-                                 <h6>ATRIBUTO LINK</h6>
-
-                                <ul>
-                                    <li><a href="#">Herramientas manuales</a><span class="unds">(1.500)</span>
-                                    </li>
-                                    <li><a href="#">Herramientas eléctricas y neumáticas</a><span class="unds">(1.500)</span>
-                                    </li>
-                                    <li><a href="#">Abrasivos</a><span class="unds">(1.500)</span>
-                                    </li>
-                                    <li><a href="#">Tornillería</a><span class="unds">(1.500)</span>
-                                    </li>
-                                    <li><a href="#">Soldadura</a><span class="unds">(1.500)</span>
-                                    </li>
-                                    <button class="sh-btn-outline sh-btn__sm sh-m-top">Mostrar más +</button>
-                                </ul>
-                            </div>
-                            <div class="sh_sidebar__search__size sh-m-bottom__xl">
-                                 <h6>TALLAS</h6>
-
-                                <div>
-                                    <label class="sh-check-group">Única <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="sh-check-group">S <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="sh-check-group">M <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="sh-check-group">L <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="sh-check-group">XL <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <button class="sh-btn-outline sh-btn__sm sh-m-top">Mostrar más +</button>
-                            </div>
-                            <div class="sh_sidebar__search__colors sh-m-bottom__xl">
-                                 <h6>COLORES</h6>
-
-                                <div class="sh-m-bottom__md">
-                                    <div class="sh-badge sh-badge-green">Verde</div>
-                                    <div class="sh-badge sh-badge-red">Rojo</div>
-                                    <div class="sh-badge">Azul oscuro</div>
-                                    <div class="sh-badge sh-badge-blue">Azul</div>
-                                </div>
-                            </div>
-                    </aside>
-                    <main class="sh-m-bottom__xxl">
-                        <div id="sh-breadcrumbs" class="sh-m-bottom__md between-xs middle-xs dflex">
-                            <div> <strong><a hre="#" title="Proteccion y vestuario">Suministros Herco</a></strong>
- <span><a hre="#" title="Proteccion y vestuario"><i class="icon icon-right-open"></i>Protección y
-                                Vestuario</a></span>
+                <div id="sh-breadcrumbs" class="sh-m-top__xl sh-m-bottom__md between-xs middle-xs dflex">
+                    <div> <strong><a hre="./" title="Proteccion y vestuario">Suministros Herco</a></strong>
+ <span><i class="icon icon-right-open"></i><a hre="#" title="Proteccion y vestuario">Protección y Vestuario</a></span>
  <span><i class="icon icon-right-open"></i>Gafas</span>
 
-                            </div>
-                            <div class="end-sm"> <span>PRODUCTOS: 20/<strong>1500</strong></span>
+                    </div>
+                    <div class="end-sm"> <span>PRODUCTOS: 20/<strong>1500</strong></span>
 
+                    </div>
+                </div>
+                <aside id="sh-sidebar__filter" class="sh-sidebar__filter">
+                    <div class="sh_sidebar__search__price sh-m-bottom__xl">
+                         <h6>PRECIO</h6>
+
+                        <p class="range-value">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        </p>
+                        <div class="sh_sidebar__search__brand sh-m-bottom__xl">
+                             <h6>MARCAS</h6>
+
+                            <div>
+                                <label class="sh-check-group">3M <span class="unds">(1.500)</span>
+
+                                    <input type="checkbox" checked="checked"> <span class="sh-checkmark"></span>
+
+                                </label>
+                            </div>
+                            <div>
+                                <label class="sh-check-group">+8000 <span class="unds">(1.500)</span>
+
+                                    <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                                </label>
+                            </div>
+                            <div>
+                                <label class="sh-check-group">Taibo <span class="unds">(1.500)</span>
+
+                                    <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                                </label>
+                            </div>
+                            <div>
+                                <label class="sh-check-group">Aluflex <span class="unds">(1.500)</span>
+
+                                    <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                                </label>
+                            </div>
+                            <div>
+                                <label class="sh-check-group">Acha <span class="unds">(1.500)</span>
+
+                                    <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                                </label>
+                            </div>
+                            <button class="sh-btn-outline sh-btn__sm sh-m-top">Mostrar más +</button>
+                        </div>
+                        <div class="sh_sidebar__search__category sh-m-bottom__xl">
+                             <h6>ATRIBUTO LINK</h6>
+
+                            <ul>
+                                <li><a href="#">Herramientas manuales</a><span class="unds">(1.500)</span>
+                                </li>
+                                <li><a href="#">Herramientas eléctricas y neumáticas</a><span class="unds">(1.500)</span>
+                                </li>
+                                <li><a href="#">Abrasivos</a><span class="unds">(1.500)</span>
+                                </li>
+                                <li><a href="#">Tornillería</a><span class="unds">(1.500)</span>
+                                </li>
+                                <li><a href="#">Soldadura</a><span class="unds">(1.500)</span>
+                                </li>
+                                <button class="sh-btn-outline sh-btn__sm sh-m-top">Mostrar más +</button>
+                            </ul>
+                        </div>
+                        <div class="sh_sidebar__search__size sh-m-bottom__xl">
+                             <h6>TALLAS</h6>
+
+                            <div>
+                                <label class="sh-check-group">Única <span class="unds">(1.500)</span>
+
+                                    <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                                </label>
+                            </div>
+                            <div>
+                                <label class="sh-check-group">S <span class="unds">(1.500)</span>
+
+                                    <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                                </label>
+                            </div>
+                            <div>
+                                <label class="sh-check-group">M <span class="unds">(1.500)</span>
+
+                                    <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                                </label>
+                            </div>
+                            <div>
+                                <label class="sh-check-group">L <span class="unds">(1.500)</span>
+
+                                    <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                                </label>
+                            </div>
+                            <div>
+                                <label class="sh-check-group">XL <span class="unds">(1.500)</span>
+
+                                    <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                                </label>
+                            </div>
+                            <button class="sh-btn-outline sh-btn__sm sh-m-top">Mostrar más +</button>
+                        </div>
+                        <div class="sh_sidebar__search__colors sh-m-bottom__xl">
+                             <h6>COLORES</h6>
+
+                            <div class="sh-m-bottom__md">
+                                <div class="sh-badge sh-badge-green">Verde</div>
+                                <div class="sh-badge sh-badge-red">Rojo</div>
+                                <div class="sh-badge">Azul oscuro</div>
+                                <div class="sh-badge sh-badge-blue">Azul</div>
                             </div>
                         </div>
-                        <div class="sh-products__grid">
-                            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+                </aside>
+                <main class="sh-m-bottom__xxl">
+                    <div class="sh-products__grid">
+                        <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
 
-                                <div
-                                class="sh-card__head">
-                                    <img src="img/low/tool.png" alt="x">
-                                    <label class="sh-switch">
-                                        <input type="checkbox"> <span></span>
+                            <div
+                            class="sh-card__head">
+                                <img src="img/low/tool.png" alt="x">
+                                <label class="sh-switch">
+                                    <input type="checkbox"> <span></span>
 
-                                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+                                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
  <span class="sh-badge sh-badge-green">Novedad</span>
 
-                            </div>
-                            <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
+                        </div>
+                        <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
 
-                                 <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
+                             <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
  <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
 
-                            </div>
-                            <div class="sh-card__footer">
-                                <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
-                            </div>
                         </div>
-                        <!-- end sh-card -->
-                        <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+                        <div class="sh-card__footer">
+                            <div class="sh-input-quantity">
+                                <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus">+</button>
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="minus">–</button>
+                            </div>
+                            <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
+                        </div>
+                    </div>
+                    <!-- end sh-card -->
+                    <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
 
-                            <div
-                            class="sh-card__head">
-                                <img src="img/low/tool.png" alt="x">
-                                <label class="sh-switch">
-                                    <input type="checkbox"> <span></span>
+                        <div
+                        class="sh-card__head">
+                            <img src="img/low/tool.png" alt="x">
+                            <label class="sh-switch">
+                                <input type="checkbox"> <span></span>
 
-                                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+                            </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
  <span class="sh-badge @@label">TopVentas</span>
 
-                        </div>
-                        <div class="sh-card__body"> <strong class="sh-card__body__brand">Panter</strong>
+                    </div>
+                    <div class="sh-card__body"> <strong class="sh-card__body__brand">Panter</strong>
 
-                             <h5 class="sh-card__body__text">Zapato Panter Apolo Napa S3 247</h5>
+                         <h5 class="sh-card__body__text">Zapato Panter Apolo Napa S3 247</h5>
  <strong class="sh-card__body__price">39,87&nbsp;€</strong><span>/ud.</span>
 
+                    </div>
+                    <div class="sh-card__footer">
+                        <div class="sh-input-quantity">
+                            <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            class="plus">+</button>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            class="minus">–</button>
                         </div>
-                        <div class="sh-card__footer">
-                            <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
-                        </div>
-                        </div>
-                        <!-- end sh-card -->
-                        <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+                        <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
+                    </div>
+                    </div>
+                    <!-- end sh-card -->
+                    <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
 
-                            <div
-                            class="sh-card__head">
-                                <img src="img/low/tool.png" alt="x">
-                                <label class="sh-switch">
-                                    <input type="checkbox"> <span></span>
+                        <div
+                        class="sh-card__head">
+                            <img src="img/low/tool.png" alt="x">
+                            <label class="sh-switch">
+                                <input type="checkbox"> <span></span>
 
-                                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+                            </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
  <span class="sh-badge OFF">@@product-label</span>
 
-                        </div>
-                        <div class="sh-card__body"> <strong class="sh-card__body__brand">ATG</strong>
+                    </div>
+                    <div class="sh-card__body"> <strong class="sh-card__body__brand">ATG</strong>
 
-                             <h5 class="sh-card__body__text">Guante Maxiflex Elite ATG 34-247</h5>
+                         <h5 class="sh-card__body__text">Guante Maxiflex Elite ATG 34-247</h5>
  <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
 
+                    </div>
+                    <div class="sh-card__footer">
+                        <div class="sh-input-quantity">
+                            <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            class="plus">+</button>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            class="minus">–</button>
                         </div>
-                        <div class="sh-card__footer">
-                            <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
-                        </div>
-                </div>
-                <!-- end sh-card -->
-                <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+                        <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
+                    </div>
+            </div>
+            <!-- end sh-card -->
+            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
 
-                    <div
-                    class="sh-card__head">
-                        <img src="img/low/tool.png" alt="x">
-                        <label class="sh-switch">
-                            <input type="checkbox"> <span></span>
+                <div
+                class="sh-card__head">
+                    <img src="img/low/tool.png" alt="x">
+                    <label class="sh-switch">
+                        <input type="checkbox"> <span></span>
 
-                        </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
  <span class="sh-badge @@label">TopVentas</span>
 
-                </div>
-                <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
+            </div>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
 
-                     <h5 class="sh-card__body__text">Barbuquejo</h5>
+                 <h5 class="sh-card__body__text">Barbuquejo</h5>
  <strong class="sh-card__body__price">1,29&nbsp;€</strong><span>/ud.</span>
 
+            </div>
+            <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
                 </div>
-                <div class="sh-card__footer">
-                    <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
-                </div>
+                <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
+            </div>
             </div>
             <!-- end sh-card -->
             <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
@@ -450,6 +580,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -473,6 +610,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -496,6 +640,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -519,6 +670,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -542,6 +700,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -565,6 +730,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -588,6 +760,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -611,6 +790,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -634,6 +820,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -657,6 +850,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -680,6 +880,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -703,6 +910,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -726,6 +940,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -749,6 +970,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -772,6 +1000,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -795,6 +1030,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -805,8 +1047,6 @@
                 </button>
             </div>
             </main>
-            </div>
-            <!-- end .sh-products__wrap -->
             </div>
             <!-- end #wrap -->
         </section>
@@ -848,7 +1088,7 @@
                 </div>
             </div>
         </section>
-        <section id="sh-related-products" class="sh-m-top__xxl sh-m-bottom__xxl">
+        <section id="sh-related-products" class="sh-m-top__xl sh-m-bottom__xl">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-3 sh-m-top__md">
@@ -858,18 +1098,102 @@
                             doloremque laudantium.</p>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
-                        <partial src="card.html" label="sh-badge-green" product-label="Novedad"
-                        product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                        <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+
+                            <div
+                            class="sh-card__head">
+                                <img src="img/low/tool.png" alt="x">
+                                <label class="sh-switch">
+                                    <input type="checkbox"> <span></span>
+
+                                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge sh-badge-green">Novedad</span>
+
+                        </div>
+                        <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
+
+                             <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
+ <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+
+                        </div>
+                        <div class="sh-card__footer">
+                            <div class="sh-input-quantity">
+                                <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus">+</button>
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="minus">–</button>
+                            </div>
+                            <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
-                        <partial src="card.html" label="" product-label="Top Ventas" product-brand="Faru"
-                        product-price="1,29" product-name="Barbuquejo"></partial>
+                    <!-- end sh-card -->
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
+                    <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+
+                        <div
+                        class="sh-card__head">
+                            <img src="img/low/tool.png" alt="x">
+                            <label class="sh-switch">
+                                <input type="checkbox"> <span></span>
+
+                            </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge @@label">Top Ventas</span>
+
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
-                        <partial src="card.html" label="OFF" product-label="" product-brand="Malatesta"
-                        product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                    <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
+
+                         <h5 class="sh-card__body__text">Barbuquejo</h5>
+ <strong class="sh-card__body__price">1,29&nbsp;€</strong><span>/ud.</span>
+
+                    </div>
+                    <div class="sh-card__footer">
+                        <div class="sh-input-quantity">
+                            <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            class="plus">+</button>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            class="minus">–</button>
+                        </div>
+                        <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
                     </div>
                 </div>
+                <!-- end sh-card -->
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
+                <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+
+                    <div
+                    class="sh-card__head">
+                        <img src="img/low/tool.png" alt="x">
+                        <label class="sh-switch">
+                            <input type="checkbox"> <span></span>
+
+                        </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge OFF">@@product-label</span>
+
+                </div>
+                <div class="sh-card__body"> <strong class="sh-card__body__brand">Malatesta</strong>
+
+                     <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
+ <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+
+                </div>
+                <div class="sh-card__footer">
+                    <div class="sh-input-quantity">
+                        <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        class="plus">+</button>
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        class="minus">–</button>
+                    </div>
+                    <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
+                </div>
+            </div>
+            <!-- end sh-card -->
+            </div>
+            </div>
             </div>
         </section>
         <div class="clearfix"></div>
@@ -981,7 +1305,7 @@
                 </div>
             </div>
             <div class="sh-footer__sub container-fluid">
-                <div class="row middle-xs between-xs"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Herco Logotipo" width="200px"></a>
+                <div class="row middle-xs between-sm center-xs"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Herco Logotipo" width="200px"></a>
  <small>2019 Suministros Industriales Herco S.L.</small>
 
                     <div
@@ -1000,6 +1324,26 @@
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/herco.min.js"></script>
+        <script>
+            const menu = mmlight(document.querySelector('#sh-nav'));
+            menu.create('all'); 		// menu.create( '(max-width: 500px)' );
+            menu.init('selected');	// menu.init( 'custom-selected-classname' );
+        
+            //	Open the menu.
+            document.querySelector('a[href="#menu"]')
+                .addEventListener('click', (evnt) => {
+                    menu.open();
+        
+                    //	Don't forget to "preventDefault" and to "stopPropagation".
+                    evnt.preventDefault();
+                    evnt.stopPropagation();
+                });
+        </script>
     </body>
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/herco.min.js"></script>
+</body>
 
 </html>

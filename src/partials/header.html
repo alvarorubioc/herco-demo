@@ -13,100 +13,161 @@
     <script>document.getElementsByTagName("html")[0].className += " js";</script>
 </head>
 
-<body class="@@body-class">
-    <div class="container-fluid sh-menu">
-        <button class="btn btn--primary" id="btn_nav"><i class="icon icon-menu"></i></button>
-        <div class="sh-menu--top">
-            <div class="sh-menu--brand">
-                <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Herco Logotipo" width="200px"></a>
+<body class="@@bodyClass">
+    <header class="container-fluid" id="sh-navigation">
+    
+        <div class="sh-top-nav">
+            <a href="#menu"><i class="icon icon-menu"></i><span></span></a>
+            <div class="sh-nav--brand">
+                <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200px"></a>
+            </div>
+            
+            <div class="sh-nav--secondary">
+                <div>
+                    <i class="icon icon-location"></i>
+                    <a href="" title="Localizar pedido">Localizar pedido</a>
+                </div>
+                <div>
+                    <i class="icon icon-tag"></i>
+                    <a href="" title="Pedido rápido">Pedido rápido</a>
+                </div>
+                <div>
+                    <i class="icon icon-user"></i>
+                    <a href="" title="Iniciar sesión">Iniciar sesión</a>
+                </div>
+                </ul>
             </div>
 
+            <div class="sh-nav--basket" id="sh-basket">
+                <a href="" id="open-basket">
+                    <i class="icon icon-basket"></i><span class="sh-badge sh-badge-red">0</span>
+                </a>
+            </div>
         </div>
 
-        <div class="sh-menu__secondary">
-            <div>
-                <i class="icon icon-location"></i>
-                <a href="">Localizar pedido</a>
-            </div>
-            <div>
-                <i class="icon icon-tag"></i>
-                <a href="">Pedido rápido</a>
-            </div>
-            <div>
-                <i class="icon icon-user"></i>
-                <a href="">Iniciar sesión</a>
-            </div>
+        <nav id="sh-nav">
+            <form class="sh-form-search sh-space" action="./search.html">
+                <input class="sh-input" type="text" placeholder="Buscar..." name="search">
+                <button class="sh-btn" type="submit"></button>
+            </form>
+			<ul>	
+				<li><span>Productos span</span>
+					<ul>
+						<li><span>Protección y vestuario</span>
+							<ul>
+								<li><a href="./gafas.html">Gafas</a></li>
+								<li><a href="#">SubFamilia 2</a></li>
+								<li><a href="/subcategory.html">SubFamilia 3</a></li>
+							</ul>
+                        </li>
+                        <li><span>Familia 2</span>
+							<ul>
+								<li><a href="/subcategory.html">SubFamilia 2.1</a></li>
+								<li><a href="/subcategory.html">SubFamilia 2.2</a></li>
+								<li><a href="/subcategory.html">SubFamilia 2.3</a></li>
+							</ul>
+                        </li>
+                        <li><a href="#">Familia nochild</a></li>
+					</ul>
+				</li>
+				
+				<li><a href="#">Productos href</a>
+					<ul>
+						<li><a href="./category.html">Protección y vestuario</a>
+							<ul>
+								<li><a href="./gafas.html">Gafas</a></li>
+								<li><a href="#">SubFamilia</a></li>
+								<li><a href="#">SubFamilia</a></li>
+								<li><a href="#">SubFamilia</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Familia 2</a>
+							<ul>
+								<li><a href="#">SubFamilia</a></li>
+								<li><a href="#">SubFamilia</a></li>
+								<li><a href="#">SubFamilia</a></li>
+								<li><a href="#">SubFamilia</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Familia 3</a>
+							<ul>
+								<li><a href="#">SubFamilia</a></li>
+								<li><a href="#">SubFamilia</a></li>
+								<li><a href="#">SubFamilia</a></li>
+								<li><a href="#">SubFamilia</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Familia 4</a>
+							<ul>
+								<li><a href="#">Sub something</a></li>
+								<li><a href="#">Sub something</a></li>
+								<li><a href="#">Sub something</a></li>
+								<li><a href="#">Sub something</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				
+				<li><span>Catálogos</span>
+					<ul>
+						<li><span>Catálogo 1</span>
+							<ul>
+								<li><a href="#">Lidership</a></li>
+								<li><a href="#">History</a></li>
+								<li><a href="#">Locations</a></li>
+								<li><a href="#">Careers</a></li>
+							</ul>
+						</li>
+						<li><span>Catálogo 2</span>
+							<ul>
+								<li><a href="#">Undergraduate</a></li>
+								<li><a href="#">Masters</a></li>
+								<li><a href="#">International</a></li>
+								<li><a href="#">Online</a></li>
+							</ul>
+						</li>
+						<li><span>Catálogo 3</span>
+							<ul>
+								<li><a href="#">Undergraduate research</a></li>
+								<li><a href="#">Masters research</a></li>
+								<li><a href="#">Funding</a></li>
+							</ul>
+						</li>
+						<li><span>Catálogo 4</span>
+							<ul>
+								<li><a href="#">Sub something</a></li>
+								<li><a href="#">Sub something</a></li>
+								<li><a href="#">Sub something</a></li>
+								<li><a href="#">Sub something</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><span>Información corporativa</span>
+					<ul>
+						<li><a href="#">Today</a></li>
+						<li><a href="#">Calendar</a></li>
+						<li><a href="#">Sport</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contactar</a></li>
             </ul>
-        </div>
-
-        <div class="sh-menu__basket">
-            <a href="">
-                <i class="icon icon-basket"></i><span class="sh-badge sh-badge-red">0</span>
-            </a>
-        </div>
-
-        <nav class="sh-menu">
-            <div class="sh-menu__products">
-                <ul>
-                    <li><a href="">Productos</a>
-                        <ul>
-                            <li><a href="">Categoría</a>
-                                <ul>
-                                    <li><a href="/subcategory.html">SubCategoría</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+            <div class="sh-nav--secondary__mobile">
+                <div>
+                    <i class="icon icon-location"></i>
+                    <a href="" title="Localizar pedido">Localizar pedido</a>
+                </div>
+                <div>
+                    <i class="icon icon-tag"></i>
+                    <a href="" title="Pedido rápido">Pedido rápido</a>
+                </div>
+                <div>
+                    <i class="icon icon-user"></i>
+                    <a href="" title="Iniciar sesión">Iniciar sesión</a>
+                </div>
                 </ul>
             </div>
-            <div class="sh-menu__main">
-                <ul>
-                    <li><a href="#">Marcas</a></li>
-                    <li><a href="#">Catálogos</a>
-                        <ul>
-                            <li><a href="#">School</a>
-                                <ul>
-                                    <li><a href="#">Lidership</a></li>
-                                    <li><a href="#">History</a></li>
-                                    <li><a href="#">Locations</a></li>
-                                    <li><a href="#">Careers</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Study</a>
-                                <ul>
-                                    <li><a href="#">Undergraduate</a></li>
-                                    <li><a href="#">Masters</a></li>
-                                    <li><a href="#">International</a></li>
-                                    <li><a href="#">Online</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Research</a>
-                                <ul>
-                                    <li><a href="#">Undergraduate research</a></li>
-                                    <li><a href="#">Masters research</a></li>
-                                    <li><a href="#">Funding</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Something</a>
-                                <ul>
-                                    <li><a href="#">Sub something</a></li>
-                                    <li><a href="#">Sub something</a></li>
-                                    <li><a href="#">Sub something</a></li>
-                                    <li><a href="#">Sub something</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Información corporativa</a>
-                        <ul>
-                            <li><a href="#">Today</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">Sport</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Empty sub</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+		</nav>
+    </header>
+

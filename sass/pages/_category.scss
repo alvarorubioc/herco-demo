@@ -1,0 +1,70 @@
+#sh-list-categories {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        white-space: nowrap;
+        
+        &:not(:last-child)::after {
+            content: "|";
+            margin: 0 8px;
+            color: #959597;
+        }
+
+        span {
+            font-size: $text__sm;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        margin-right: .5em;
+        font-weight: bold;
+    }
+}
+
+:root {
+    --gutter: 2rem;
+  }
+
+.hs{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(6, 1fr);
+}  
+
+@include breakpoint (tablet) {
+  
+  .scrolling-wrapper {
+    display: grid;
+    grid-gap: var(--gutter) 0;
+    grid-template-columns: 0 1fr 0;
+    align-content: start;
+  }
+  
+  .scrolling-wrapper > * {
+    grid-column: 2 / -2;
+  }
+  
+  .scrolling-wrapper > .full {
+    grid-column: 1 / -1;
+  }
+  
+  .hs {
+    display: grid;
+    grid-gap: calc(var(--gutter) / 2);
+    grid-template-columns: repeat(6, calc(100% - var(--gutter) * 2));
+    grid-template-rows: minmax(150px, 1fr);
+    
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(.75 * var(--gutter));
+    margin-bottom: calc(-.25 * var(--gutter));
+    -webkit-overflow-scrolling: touch;
+  }
+  
+}

@@ -15,154 +15,258 @@
         </script>
     </head>
     
-    <body class="@@body-class">
-        <div class="container-fluid sh-menu">
-            <button class="btn btn--primary" id="btn_nav"><i class="icon icon-menu"></i>
+    <body class="@@bodyClass">
+        <header class="container-fluid" id="sh-navigation">
+            <div class="sh-top-nav"> <a href="#menu"><i class="icon icon-menu"></i><span></span></a>
 
-            </button>
-            <div class="sh-menu--top">
-                <div class="sh-menu--brand"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Herco Logotipo" width="200px"></a>
+                <div class="sh-nav--brand"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200px"></a>
 
                 </div>
-            </div>
-            <div class="sh-menu__secondary">
-                <div> <i class="icon icon-location"></i>
- <a href="">Localizar pedido</a>
+                <div class="sh-nav--secondary">
+                    <div> <i class="icon icon-location"></i>
+ <a href="" title="Localizar pedido">Localizar pedido</a>
 
-                </div>
-                <div> <i class="icon icon-tag"></i>
- <a href="">Pedido rápido</a>
+                    </div>
+                    <div> <i class="icon icon-tag"></i>
+ <a href="" title="Pedido rápido">Pedido rápido</a>
 
-                </div>
-                <div> <i class="icon icon-user"></i>
- <a href="">Iniciar sesión</a>
+                    </div>
+                    <div> <i class="icon icon-user"></i>
+ <a href="" title="Iniciar sesión">Iniciar sesión</a>
 
-                </div>
-                </ul>
-            </div>
-            <div class="sh-menu__basket"> <a href="">
-                <i class="icon icon-basket"></i><span class="sh-badge sh-badge-red">0</span>
-            </a>
-
-            </div>
-            <nav class="sh-menu">
-                <div class="sh-menu__products">
-                    <ul>
-                        <li><a href="">Productos</a>
-
-                            <ul>
-                                <li><a href="">Categoría</a>
-
-                                    <ul>
-                                        <li><a href="/subcategory.html">SubCategoría</a>
-
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                    </div>
                     </ul>
                 </div>
-                <div class="sh-menu__main">
-                    <ul>
-                        <li><a href="#">Marcas</a>
+                <div class="sh-nav--basket" id="sh-basket"> <a href="" id="open-basket">
+                    <i class="icon icon-basket"></i><span class="sh-badge sh-badge-red">0</span>
+                </a>
 
-                        </li>
-                        <li><a href="#">Catálogos</a>
+                </div>
+            </div>
+            <nav id="sh-nav">
+                <form class="sh-form-search sh-space" action="./search.html">
+                    <input class="sh-input" type="text" placeholder="Buscar..." name="search">
+                    <button class="sh-btn" type="submit"></button>
+                </form>
+                <ul>
+                    <li><span>Productos span</span>
 
-                            <ul>
-                                <li><a href="#">School</a>
+                        <ul>
+                            <li><span>Protección y vestuario</span>
 
-                                    <ul>
-                                        <li><a href="#">Lidership</a>
+                                <ul>
+                                    <li><a href="./gafas.html">Gafas</a>
 
-                                        </li>
-                                        <li><a href="#">History</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia 2</a>
 
-                                        </li>
-                                        <li><a href="#">Locations</a>
+                                    </li>
+                                    <li><a href="/subcategory.html">SubFamilia 3</a>
 
-                                        </li>
-                                        <li><a href="#">Careers</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span>Familia 2</span>
 
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Study</a>
+                                <ul>
+                                    <li><a href="/subcategory.html">SubFamilia 2.1</a>
 
-                                    <ul>
-                                        <li><a href="#">Undergraduate</a>
+                                    </li>
+                                    <li><a href="/subcategory.html">SubFamilia 2.2</a>
 
-                                        </li>
-                                        <li><a href="#">Masters</a>
+                                    </li>
+                                    <li><a href="/subcategory.html">SubFamilia 2.3</a>
 
-                                        </li>
-                                        <li><a href="#">International</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Familia nochild</a>
 
-                                        </li>
-                                        <li><a href="#">Online</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Productos href</a>
 
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Research</a>
+                        <ul>
+                            <li><a href="./category.html">Protección y vestuario</a>
 
-                                    <ul>
-                                        <li><a href="#">Undergraduate research</a>
+                                <ul>
+                                    <li><a href="./gafas.html">Gafas</a>
 
-                                        </li>
-                                        <li><a href="#">Masters research</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                                        </li>
-                                        <li><a href="#">Funding</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Something</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                                    <ul>
-                                        <li><a href="#">Sub something</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Familia 2</a>
 
-                                        </li>
-                                        <li><a href="#">Sub something</a>
+                                <ul>
+                                    <li><a href="#">SubFamilia</a>
 
-                                        </li>
-                                        <li><a href="#">Sub something</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                                        </li>
-                                        <li><a href="#">Sub something</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Información corporativa</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                            <ul>
-                                <li><a href="#">Today</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Familia 3</a>
 
-                                </li>
-                                <li><a href="#">Calendar</a>
+                                <ul>
+                                    <li><a href="#">SubFamilia</a>
 
-                                </li>
-                                <li><a href="#">Sport</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Blog</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                        </li>
-                        <li><a href="#">Empty sub</a>
+                                    </li>
+                                    <li><a href="#">SubFamilia</a>
 
-                        </li>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Familia 4</a>
+
+                                <ul>
+                                    <li><a href="#">Sub something</a>
+
+                                    </li>
+                                    <li><a href="#">Sub something</a>
+
+                                    </li>
+                                    <li><a href="#">Sub something</a>
+
+                                    </li>
+                                    <li><a href="#">Sub something</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span>Catálogos</span>
+
+                        <ul>
+                            <li><span>Catálogo 1</span>
+
+                                <ul>
+                                    <li><a href="#">Lidership</a>
+
+                                    </li>
+                                    <li><a href="#">History</a>
+
+                                    </li>
+                                    <li><a href="#">Locations</a>
+
+                                    </li>
+                                    <li><a href="#">Careers</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span>Catálogo 2</span>
+
+                                <ul>
+                                    <li><a href="#">Undergraduate</a>
+
+                                    </li>
+                                    <li><a href="#">Masters</a>
+
+                                    </li>
+                                    <li><a href="#">International</a>
+
+                                    </li>
+                                    <li><a href="#">Online</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span>Catálogo 3</span>
+
+                                <ul>
+                                    <li><a href="#">Undergraduate research</a>
+
+                                    </li>
+                                    <li><a href="#">Masters research</a>
+
+                                    </li>
+                                    <li><a href="#">Funding</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span>Catálogo 4</span>
+
+                                <ul>
+                                    <li><a href="#">Sub something</a>
+
+                                    </li>
+                                    <li><a href="#">Sub something</a>
+
+                                    </li>
+                                    <li><a href="#">Sub something</a>
+
+                                    </li>
+                                    <li><a href="#">Sub something</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span>Información corporativa</span>
+
+                        <ul>
+                            <li><a href="#">Today</a>
+
+                            </li>
+                            <li><a href="#">Calendar</a>
+
+                            </li>
+                            <li><a href="#">Sport</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog</a>
+
+                    </li>
+                    <li><a href="#">Contactar</a>
+
+                    </li>
+                </ul>
+                <div class="sh-nav--secondary__mobile">
+                    <div> <i class="icon icon-location"></i>
+ <a href="" title="Localizar pedido">Localizar pedido</a>
+
+                    </div>
+                    <div> <i class="icon icon-tag"></i>
+ <a href="" title="Pedido rápido">Pedido rápido</a>
+
+                    </div>
+                    <div> <i class="icon icon-user"></i>
+ <a href="" title="Iniciar sesión">Iniciar sesión</a>
+
+                    </div>
                     </ul>
                 </div>
             </nav>
-        </div>
-        <section id="sh-hero" style="background-image: linear-gradient(black, black), url(img/low/bg-gafas.jpg);">
+        </header>
+        <section id="sh-hero" style="background-image: linear-gradient(#001442, #001442), url(img/low/@@bgimg);">
             <div class="container-fluid">
                 <div class="row middle-xs sh-text__white">
                      <h1 class="col-xs-12 col-md-12">Gafas (Subcategory)</h1>
@@ -355,6 +459,13 @@
 
                             </div>
                             <div class="sh-card__footer">
+                                <div class="sh-input-quantity">
+                                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                    class="plus">+</button>
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                    class="minus">–</button>
+                                </div>
                                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
                             </div>
                         </div>
@@ -378,6 +489,13 @@
 
                         </div>
                         <div class="sh-card__footer">
+                            <div class="sh-input-quantity">
+                                <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus">+</button>
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="minus">–</button>
+                            </div>
                             <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
                         </div>
                         </div>
@@ -401,6 +519,13 @@
 
                         </div>
                         <div class="sh-card__footer">
+                            <div class="sh-input-quantity">
+                                <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus">+</button>
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="minus">–</button>
+                            </div>
                             <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
                         </div>
                 </div>
@@ -424,6 +549,13 @@
 
                 </div>
                 <div class="sh-card__footer">
+                    <div class="sh-input-quantity">
+                        <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        class="plus">+</button>
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        class="minus">–</button>
+                    </div>
                     <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
                 </div>
             </div>
@@ -447,6 +579,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -470,6 +609,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -493,6 +639,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -516,6 +669,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -539,6 +699,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -562,6 +729,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -585,6 +759,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -608,6 +789,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -631,6 +819,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -654,6 +849,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -677,6 +879,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -700,6 +909,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -723,6 +939,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -746,6 +969,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -769,6 +999,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -792,6 +1029,13 @@
 
             </div>
             <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-btn" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
                 <button class="sh-btn sh-btn__full" type="button">Añadir al carro</button>
             </div>
             </div>
@@ -978,7 +1222,7 @@
                 </div>
             </div>
             <div class="sh-footer__sub container-fluid">
-                <div class="row middle-xs between-xs"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Herco Logotipo" width="200px"></a>
+                <div class="row middle-xs between-sm center-xs"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Herco Logotipo" width="200px"></a>
  <small>2019 Suministros Industriales Herco S.L.</small>
 
                     <div
@@ -997,6 +1241,21 @@
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/herco.min.js"></script>
+        <script>
+            const menu = mmlight(document.querySelector('#sh-nav'));
+            menu.create('all'); 		// menu.create( '(max-width: 500px)' );
+            menu.init('selected');	// menu.init( 'custom-selected-classname' );
+        
+            //	Open the menu.
+            document.querySelector('a[href="#menu"]')
+                .addEventListener('click', (evnt) => {
+                    menu.open();
+        
+                    //	Don't forget to "preventDefault" and to "stopPropagation".
+                    evnt.preventDefault();
+                    evnt.stopPropagation();
+                });
+        </script>
     </body>
 
 </html>

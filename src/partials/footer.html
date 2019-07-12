@@ -14,8 +14,8 @@
                 <div class="sh-footer__at col-xs-12 col-sm-6">
                     <h5>Atención personalizada</h5>
                     <p>De lunes a viernes de 8:00 19:00 hrs.<p>
-                    <p>+34 976 503 927 | info@suministrosherco.com</p>
-                    <a href="#" class="">Contacta con nosotros</a>
+                            <p>+34 976 503 927 | info@suministrosherco.com</p>
+                            <a href="#" class="">Contacta con nosotros</a>
                 </div>
             </div>
         </div>
@@ -66,7 +66,7 @@
     </div>
 
     <div class="sh-footer__sub container-fluid">
-        <div class="row middle-xs between-xs">
+        <div class="row middle-xs between-sm center-xs">
             <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Herco Logotipo" width="200px"></a>
             <small>2019 Suministros Industriales Herco S.L.</small>
             <div class="sh-footer__social">
@@ -78,5 +78,27 @@
             </div>
         </div>
     </div>
-
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/herco.min.js"></script>
+<script>
+    const menu = mmlight(document.querySelector('#sh-nav'));
+    menu.create('all'); 		// menu.create( '(max-width: 500px)' );
+    menu.init('selected');	// menu.init( 'custom-selected-classname' );
+
+    //	Open the menu.
+    document.querySelector('a[href="#menu"]')
+        .addEventListener('click', (evnt) => {
+            menu.open();
+
+            //	Don't forget to "preventDefault" and to "stopPropagation".
+            evnt.preventDefault();
+            evnt.stopPropagation();
+        });
+
+</script>
+
+</body>
+
+</html>

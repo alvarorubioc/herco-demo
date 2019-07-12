@@ -1,4 +1,9 @@
 /* set Standard buttons */
+
+a.sh-link{
+  font-weight: bold;
+  text-decoration: none;
+}
 a.sh-btn, .sh-btn {
   @include btn;
   background-color: $color-blue;

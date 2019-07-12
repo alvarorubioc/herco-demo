@@ -12,7 +12,7 @@
      @media (max-width: 768px)  { @content ; }
   }
   @else if $point == xsmobile {
-     @media (max-width: 375px)  { @content ; }
+     @media (max-width: 414px)  { @content ; }
   }
 }
 
@@ -56,7 +56,6 @@
   padding-right: 1.5rem;
   cursor: pointer;
   border: 1px solid $color-blue;
-  font-size: $text__md;
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

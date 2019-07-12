@@ -23,6 +23,46 @@ form {
   }
 }
 
+/* input number quantity CUSTOM */
+.sh-input-quantity input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.sh-input-quantity input[type=number]::-webkit-inner-spin-button,
+.sh-input-quantity input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.sh-input-quantity {
+  position: relative;
+  min-width: 4rem;
+}
+
+.sh-input-quantity button {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid $color-grey-50;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  width: 2rem;
+  height: 1.28rem;
+}
+
+.plus {
+  right: 0;
+  top: 0;
+}
+
+.minus {
+  right: 0;
+  bottom: 0;
+}
+
 /* group form control */
 .sh-form-group {
   position: relative;

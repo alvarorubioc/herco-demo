@@ -107,6 +107,12 @@ ul {
   }
 }
 
+blockquote {
+    margin: 1.5em .25em;
+    font-style: italic;
+    line-height: 1.5;
+}
+
 .sh-caption {
 	text-transform: uppercase;
 	font-weight: bold;
@@ -118,10 +124,10 @@ ul {
 		color: white;
 	}
 }
+
 ​
 .sh-text__center { text-align: center; }
 .sh-text__left { text-align: left; }
 .sh-text__right { text-align: right; }
 
-​
 .uppercase { text-transform: uppercase; }

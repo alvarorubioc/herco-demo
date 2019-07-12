@@ -1,6 +1,6 @@
 /* card settings */
 .sh-card {
-  min-width: 200px;
+  width: 100%;
   position: relative;
   padding: .5em;
   border: 1px;
@@ -58,6 +58,8 @@
     opacity: 0;
     line-height: 1.6;
   }
+
+  img { width: 100%;}
 }
 
 .sh-card__body {
