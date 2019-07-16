@@ -1,37 +1,71 @@
 #sh-list-categories {
     ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-left: 8em; 
+      @include breakpoint (desktop) {
+          margin-left: 4em;
+      }
+      @include breakpoint (tablet) {
+          margin-left: 2em;
+      }
+      @include breakpoint (xsmobile) {
+          margin-left: 1.5rem;
+      } 
     }
 
     li {
-        display: inline-block;
-        
-        width: 200px;
-        height: 120px;
-        background: #333;
+      height: 120px;
+      width: 200px;
+      margin-right: 1em;
+      border-radius: 2px;
+      display: grid;
+      background-size: cover;
+
+      &:last-child{
+        background: #f6f6f6;
+        &::after {
+          content: '';
+          width: 1em;
+        }
+      }
+
+      
     }
 
     h3 {
       line-height: 1;
-      margin-top: 0;
-    }
-    
-    a {
-        text-decoration: none;
-        margin-right: .5em;
-        font-weight: bold;
-        font-size: .75em;
-        line-height: 1;
+      font-size: 1.25em;
     }
 
-    .scroll-items {
-      grid-auto-columns: calc(16.6% - var(--gutter) * 2);
+    a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+          text-decoration: underline;
+        }
     }
+
+    span {
+      color: white;
+    }
+    
 }
 
 .cta-search-form {
   margin-top: -32px;
 }
+
+.scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.scroll-item {
+  flex: 0 0 auto;
+}
+

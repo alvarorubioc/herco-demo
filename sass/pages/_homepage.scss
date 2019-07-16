@@ -42,7 +42,7 @@ section::after {
     }
 }
 
-.sh-box {
+#sh-promos .sh-box {
     &:hover {
         color: white;
         z-index:1;
@@ -121,7 +121,7 @@ section::after {
 }
 
 
-#sh-brands, #sh-community, #sh-text-subcategory {
+#sh-brands, #sh-community, #sh-text-subcategory, #sh-cross-selling {
     background: white;
     padding: 5em 0;
     border-top: 1px solid $color-grey-50;
@@ -129,125 +129,78 @@ section::after {
 }
 
 #sh-features-categories .col-xs-12 {
-    margin-top: 1em;
     margin-bottom: 1em;
-
 }
 
 .sh-overlay {
     position: relative;
     display: grid;
     height: 100%;
+    color: white;
+    background-color: $color-dark-navy-blue;
+    border-radius: 2px;
+    transition: all .3s ease;
+
     h3 {color: white;}
     img {
         object-fit: contain;
         width: 100%;
         grid-column-start: 1;
         grid-row-start: 1;
+        opacity: 0.4;
     }
-    border-radius: 2px;
-    transition: all .3s ease;
 
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background-color: #03001B;
-        opacity: 0.6;
+    p {
+        visibility: hidden;
+        transition: all .3s ease;
+        transform:translateX(-100%);
     }
+
+    &:hover {
+        .sh-btn {
+            background: white;
+            color: $color-blue;
+        }
+        p {
+            visibility: visible;
+            transform:translateX(0px);
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        top:0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: $color-navy-blue;
+        transform-origin:left;
+        transition:width 0.3s ease;
+        border-radius: 2px;
+      }
+      
+      &:hover::after {
+        width: 100%;
+      }
 
     .sh-overlay-content {
         grid-column-start: 1;
         grid-row-start: 1;
         z-index: 3;
-        top: 1rem;
-        left: 2rem;
-        right: 2rem;
+        padding: 0em 1em 1em 1em;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+    }
 
-        a {
-            margin-top: 1rem;
-            align-self: flex-start;
-        }
+    a {
+        align-self: flex-start;
+        color: white;
+        text-decoration: none;
+        &:hover {color: $color-blue;}
     }
 }
-
-.scroll-head {
-    margin-right: 1em;
-    margin-left: 8em; 
-
-    @include breakpoint (desktop) {
-        margin-left: 4em;
-      }
-      @include breakpoint (tablet) {
-        margin-left: 2em;
-      }
-      @include breakpoint (xsmobile) {
-        margin-left: 1.5rem;
-      }
-    
-}
-
-.scroll-wrapper {
-    padding: 2rem 0;
-    display: grid;
-    grid-gap: 2rem 0;
-    grid-template-columns: 2rem 1fr 2rem;
-    align-content: start;
-  
-    &::-webkit-scrollbar {
-        display: none;
-    }  
-  }
-
-  .scroll-items {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: 10px;
-    grid-template-rows: minmax(150px, 1fr);
-    grid-auto-columns: calc(33% - 2rem * 2);
-    grid-auto-flow: column;
-    grid-column: 1 / -1;
-    @include breakpoint (tablet) {
-        grid-auto-columns: calc(50% - 2rem * 2);
-    }
-
-    @include breakpoint (xsmobile) {
-        grid-auto-columns: calc(96% - 2rem * 2);
-    }
-
-    @include devicesize (only_desktop) {
-        grid-auto-columns: calc(25% - 2rem * 2);
-    }
-
-    overflow-x: scroll;
-    scroll-snap-type: x proximity;
-  }
-  
-  .scroll-items:before,
-  .scroll-items:after {
-    content: '';
-    width: 10px;
-  }
-  
-  .scroll-items .sh-card{
-    @include breakpoint (xsmobile) {
-        min-width: 232px;
-    }
-  }
-
-  .no-scrollbar {
-    scrollbar-width: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
 
 .sh-card-blog__mini  {
     display: grid;

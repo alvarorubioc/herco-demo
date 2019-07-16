@@ -19,16 +19,18 @@ body {
 @import 'styles/buttons';
 
 // Components
-@import 'components/card';
-@import 'components/forms';
 @import 'components/navigation';
-@import 'components/elements';
-@import 'components/footer';
-@import 'components/hero';
 @import 'components/mmenu-light';
+@import 'components/hero';
+@import 'components/forms';
+@import 'components/elements';
+@import 'components/card';
+@import 'components/footer';
+@import 'components/scroll-products';
 
 //Pages
 @import 'pages/homepage';
 @import 'pages/search';
 @import 'pages/subcategory';
 @import 'pages/category';
+@import 'pages/product';

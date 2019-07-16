@@ -4,18 +4,18 @@
     <head>
         <meta charset="utf-8">
         <meta name="description" content="">
-        <meta name="author" content="herco">
+        <meta name="author" content="">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Herco WEB DEMO</title>
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/low/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="css/main.css">
         <script>
             document.getElementsByTagName("html")[0].className += " js";
         </script>
     </head>
     
-    <body class="@@bodyClass">
+    <body class="subcategory">
         <header class="container-fluid" id="sh-navigation">
             <div class="sh-top-nav"> <a href="#menu"><i class="icon icon-menu"></i><span></span></a>
 
@@ -266,7 +266,7 @@
                 </div>
             </nav>
         </header>
-        <section id="sh-hero" style="background-image: linear-gradient(#001442, #001442), url(img/low/@@bgimg);">
+        <section id="sh-hero" style="background-image: linear-gradient(#001442, #001442), url(img/low/bg-gafas.jpg);">
             <div class="container-fluid">
                 <div class="row middle-xs sh-text__white">
                      <h1 class="col-xs-12 col-md-12">Gafas (Subcategory)</h1>
@@ -281,9 +281,12 @@
         <!-- end #sh-section -->
         <section id="sh-products-subcategory" class="container-fluid">
             <div id="wrap">
-                <header id="header-search" class="sh-m-bottom">
+                <header id="header-bar" class="sh-m-bottom">
                     <div>
-                        <button class="sh-btn sh-btn-withicon" onclick="openFilters()"> <i id="btn-filters" class="icon"></i> FILTROS</button>
+                        <button class="sh-btn__white sh-btn-icon__md" id="open-filters"> <i id="btn-filters" class="icon"></i>
+ <span>FILTROS</span>
+
+                        </button>
                     </div>
                     <div>
                         <form class="sh-form-search" action="./search.html">
@@ -311,436 +314,212 @@
                         </button>
                     </div>
                 </header>
-                <div class="sh-products__wrap sh-m-top__xxl">
-                    <aside id="sh-sidebar__filter" class="sh-sidebar__filter">
-                        <div class="sh_sidebar__search__price sh-m-bottom__xl">
-                             <h6>PRECIO</h6>
-
-                            <p class="range-value">
-                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                            </p>
-                            <div class="sh_sidebar__search__brand sh-m-bottom__xl">
-                                 <h6>MARCAS</h6>
-
-                                <div>
-                                    <label class="sh-check-group">3M <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox" checked="checked"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="sh-check-group">+8000 <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="sh-check-group">Taibo <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="sh-check-group">Aluflex <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="sh-check-group">Acha <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <button class="sh-btn-outline sh-btn__sm sh-m-top">Mostrar más +</button>
-                            </div>
-                            <div class="sh_sidebar__search__category sh-m-bottom__xl">
-                                 <h6>ATRIBUTO LINK</h6>
-
-                                <ul>
-                                    <li><a href="#">Herramientas manuales</a><span class="unds">(1.500)</span>
-                                    </li>
-                                    <li><a href="#">Herramientas eléctricas y neumáticas</a><span class="unds">(1.500)</span>
-                                    </li>
-                                    <li><a href="#">Abrasivos</a><span class="unds">(1.500)</span>
-                                    </li>
-                                    <li><a href="#">Tornillería</a><span class="unds">(1.500)</span>
-                                    </li>
-                                    <li><a href="#">Soldadura</a><span class="unds">(1.500)</span>
-                                    </li>
-                                    <button class="sh-btn-outline sh-btn__sm sh-m-top">Mostrar más +</button>
-                                </ul>
-                            </div>
-                            <div class="sh_sidebar__search__size sh-m-bottom__xl">
-                                 <h6>TALLAS</h6>
-
-                                <div>
-                                    <label class="sh-check-group">Única <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="sh-check-group">S <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="sh-check-group">M <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="sh-check-group">L <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="sh-check-group">XL <span class="unds">(1.500)</span>
-
-                                        <input type="checkbox"> <span class="sh-checkmark"></span>
-
-                                    </label>
-                                </div>
-                                <button class="sh-btn-outline sh-btn__sm sh-m-top">Mostrar más +</button>
-                            </div>
-                            <div class="sh_sidebar__search__colors sh-m-bottom__xl">
-                                 <h6>COLORES</h6>
-
-                                <div class="sh-m-bottom__md">
-                                    <div class="sh-badge sh-badge-green">Verde</div>
-                                    <div class="sh-badge sh-badge-red">Rojo</div>
-                                    <div class="sh-badge">Azul oscuro</div>
-                                    <div class="sh-badge sh-badge-blue">Azul</div>
-                                </div>
-                            </div>
-                    </aside>
-                    <main class="sh-m-bottom__xxl">
-                        <div id="sh-breadcrumbs" class="sh-m-bottom__md between-xs middle-xs dflex">
-                            <div> <strong><a hre="#" title="Proteccion y vestuario">Suministros Herco</a></strong>
- <span><a hre="#" title="Proteccion y vestuario"><i class="icon icon-right-open"></i>Protección y
-                                Vestuario</a></span>
+                <div id="sh-breadcrumbs" class="sh-m-top__lg sh-m-bottom__md between-xs middle-xs dflex">
+                    <div> <strong><a href="./" title="Proteccion y vestuario">Suministros Herco</a></strong>
+ <span><i class="icon icon-right-open"></i><a href="#" title="Proteccion y vestuario">Protección y Vestuario</a></span>
  <span><i class="icon icon-right-open"></i>Gafas</span>
 
-                            </div>
-                            <div class="end-sm"> <span>PRODUCTOS: 20/<strong>1500</strong></span>
-
-                            </div>
-                        </div>
-                        <div class="sh-products__grid">
-                            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
-
-                                <div
-                                class="sh-card__head">
-                                    <img src="img/low/tool.png" alt="x">
-                                    <label class="sh-switch">
-                                        <input type="checkbox"> <span></span>
-
-                                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge sh-badge-green">Novedad</span>
-
-                            </div>
-                            <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
-
-                                 <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
- <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
-
-                            </div>
-                            <div class="sh-card__footer">
-                                <div class="sh-input-quantity">
-                                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                    class="plus">+</button>
-                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                    class="minus">–</button>
-                                </div>
-                                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
-                            </div>
-                        </div>
-                        <!-- end sh-card -->
-                        <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
-
-                            <div
-                            class="sh-card__head">
-                                <img src="img/low/tool.png" alt="x">
-                                <label class="sh-switch">
-                                    <input type="checkbox"> <span></span>
-
-                                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge @@label">TopVentas</span>
-
-                        </div>
-                        <div class="sh-card__body"> <strong class="sh-card__body__brand">Panter</strong>
-
-                             <h5 class="sh-card__body__text">Zapato Panter Apolo Napa S3 247</h5>
- <strong class="sh-card__body__price">39,87&nbsp;€</strong><span>/ud.</span>
-
-                        </div>
-                        <div class="sh-card__footer">
-                            <div class="sh-input-quantity">
-                                <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                class="plus">+</button>
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                class="minus">–</button>
-                            </div>
-                            <button class="sh-btn sh-btn__full" type="button">Añadir</button>
-                        </div>
-                        </div>
-                        <!-- end sh-card -->
-                        <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
-
-                            <div
-                            class="sh-card__head">
-                                <img src="img/low/tool.png" alt="x">
-                                <label class="sh-switch">
-                                    <input type="checkbox"> <span></span>
-
-                                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge OFF">@@product-label</span>
-
-                        </div>
-                        <div class="sh-card__body"> <strong class="sh-card__body__brand">ATG</strong>
-
-                             <h5 class="sh-card__body__text">Guante Maxiflex Elite ATG 34-247</h5>
- <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
-
-                        </div>
-                        <div class="sh-card__footer">
-                            <div class="sh-input-quantity">
-                                <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                class="plus">+</button>
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                class="minus">–</button>
-                            </div>
-                            <button class="sh-btn sh-btn__full" type="button">Añadir</button>
-                        </div>
-                </div>
-                <!-- end sh-card -->
-                <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
-
-                    <div
-                    class="sh-card__head">
-                        <img src="img/low/tool.png" alt="x">
-                        <label class="sh-switch">
-                            <input type="checkbox"> <span></span>
-
-                        </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge @@label">TopVentas</span>
-
-                </div>
-                <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
-
-                     <h5 class="sh-card__body__text">Barbuquejo</h5>
- <strong class="sh-card__body__price">1,29&nbsp;€</strong><span>/ud.</span>
-
-                </div>
-                <div class="sh-card__footer">
-                    <div class="sh-input-quantity">
-                        <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                        class="plus">+</button>
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                        class="minus">–</button>
                     </div>
-                    <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+                    <div class="end-sm"> <span>PRODUCTOS: 20/<strong>1500</strong></span>
+
+                    </div>
                 </div>
-            </div>
-            <!-- end sh-card -->
-            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+                <button id="close-aside-mobile"><i class="icon icon-cancel"></i>
 
-                <div
-                class="sh-card__head">
-                    <img src="img/low/tool.png" alt="x">
-                    <label class="sh-switch">
-                        <input type="checkbox"> <span></span>
+                </button>
+                <aside id="sh-sidebar__filter" class="">
+                    <div class="sh_sidebar__search__price sh-m-bottom__lg">
+                         <h6>Filtrando por</h6>
 
-                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge OFF">@@product-label</span>
+                        <div class="reset-filter-btn">
+                            <button class="sh-btn-outline sh-btn__sm"><i class="icon icon-cancel-circled"></i> Affinity</button>
+                            <button class="sh-btn-outline sh-btn__sm"><i class="icon icon-cancel-circled"></i> 3M</button>
+                            <button class="sh-btn-outline sh-btn__sm"><i class="icon icon-cancel-circled"></i> Abraflex</button>
+                        </div>
+                    </div>
+                    <div class="sh_sidebar-filter__price sh-m-bottom__lg">
+                         <h6>Precio</h6>
 
-            </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Malatesta</strong>
+                        <p class="range-value">
+                            <input type="range" min="1" max="100" value="50">
+                        </p>
+                    </div>
+                    <div class="sh_sidebar-filter__brand sh-m-bottom__lg">
+                         <h6>Marcas</h6>
 
-                 <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
- <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                        <div>
+                            <label class="sh-check-group">3M <span class="unds">(1.500)</span>
 
-            </div>
-            <div class="sh-card__footer">
-                <div class="sh-input-quantity">
-                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
-                </div>
-                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
-            </div>
-            </div>
-            <!-- end sh-card -->
-            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+                                <input type="checkbox" checked="checked"> <span class="sh-checkmark"></span>
 
-                <div
-                class="sh-card__head">
-                    <img src="img/low/tool.png" alt="x">
-                    <label class="sh-switch">
-                        <input type="checkbox"> <span></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="sh-check-group">+8000 <span class="unds">(1.500)</span>
 
-                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge sh-badge-red">Oferta</span>
+                                <input type="checkbox"> <span class="sh-checkmark"></span>
 
-            </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="sh-check-group">Taibo <span class="unds">(1.500)</span>
 
-                 <h5 class="sh-card__body__text">Gafa de protección Faru C-294 QX2000 INCOLO</h5>
- <strong class="sh-card__body__price">12,4&nbsp;€</strong><span>/ud.</span>
+                                <input type="checkbox"> <span class="sh-checkmark"></span>
 
-            </div>
-            <div class="sh-card__footer">
-                <div class="sh-input-quantity">
-                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
-                </div>
-                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
-            </div>
-            </div>
-            <!-- end sh-card -->
-            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="sh-check-group">Aluflex <span class="unds">(1.500)</span>
 
-                <div
-                class="sh-card__head">
-                    <img src="img/low/tool.png" alt="x">
-                    <label class="sh-switch">
-                        <input type="checkbox"> <span></span>
+                                <input type="checkbox"> <span class="sh-checkmark"></span>
 
-                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="sh-check-group">Acha <span class="unds">(1.500)</span>
+
+                                <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                            </label>
+                        </div>
+                        <button class="sh-btn-outline sh-btn__sm sh-m-top showmore">Mostrar más +</button>
+                    </div>
+                    <div class="sh_sidebar-filter__category sh-m-bottom__lg">
+                         <h6>Atributo link</h6>
+
+                        <ul>
+                            <li><a href="#">Herramientas manuales</a><span class="unds">(1.500)</span>
+
+                            </li>
+                            <li><a href="#">Herramientas eléctricas y neumáticas</a><span class="unds">(1.500)</span>
+
+                            </li>
+                            <li><a href="#">Abrasivos</a><span class="unds">(1.500)</span>
+
+                            </li>
+                            <li><a href="#">Tornillería</a><span class="unds">(1.500)</span>
+
+                            </li>
+                            <li><a href="#">Soldadura</a><span class="unds">(1.500)</span>
+
+                            </li>
+                            <button class="sh-btn-outline sh-btn__sm sh-m-top showmore">Mostrar más +</button>
+                        </ul>
+                    </div>
+                    <div class="sh_sidebar-filter__size sh-m-bottom__lg">
+                         <h6>Tallas</h6>
+
+                        <div>
+                            <label class="sh-check-group">Única <span class="unds">(1.500)</span>
+
+                                <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                            </label>
+                        </div>
+                        <div>
+                            <label class="sh-check-group">S <span class="unds">(1.500)</span>
+
+                                <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                            </label>
+                        </div>
+                        <div>
+                            <label class="sh-check-group">M <span class="unds">(1.500)</span>
+
+                                <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                            </label>
+                        </div>
+                        <div>
+                            <label class="sh-check-group">L <span class="unds">(1.500)</span>
+
+                                <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                            </label>
+                        </div>
+                        <div>
+                            <label class="sh-check-group">XL <span class="unds">(1.500)</span>
+
+                                <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                            </label>
+                        </div>
+                        <button class="sh-btn-outline sh-btn__sm sh-m-top showmore">Mostrar más +</button>
+                    </div>
+                    <div class="sh_sidebar-filter__colors sh-m-bottom__lg">
+                         <h6>Colores</h6>
+
+                        <div class="sh-m-bottom__md">
+                            <div class="sh-badge sh-badge-green">Verde</div>
+                            <div class="sh-badge sh-badge-red">Rojo</div>
+                            <div class="sh-badge">Azul oscuro</div>
+                            <div class="sh-badge sh-badge-blue">Azul</div>
+                        </div>
+                    </div>
+                </aside>
+                <main>
+                    <div class="sh-products__grid">
+                        <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+                            <div
+                            class="sh-card__head">
+                                <img src="img/low/tool.png" alt="x">
+                                <label class="sh-switch">
+                                    <input type="checkbox"> <span></span>
+
+                                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
  <span class="sh-badge sh-badge-green">Novedad</span>
 
-            </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Loctite</strong>
+                        </div>
+                        <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
 
-                 <h5 class="sh-card__body__text">Adhesivo de contacto</h5>
- <strong class="sh-card__body__price">33,55&nbsp;€</strong><span>/ud.</span>
-
-            </div>
-            <div class="sh-card__footer">
-                <div class="sh-input-quantity">
-                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
-                </div>
-                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
-            </div>
-            </div>
-            <!-- end sh-card -->
-            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
-
-                <div
-                class="sh-card__head">
-                    <img src="img/low/tool.png" alt="x">
-                    <label class="sh-switch">
-                        <input type="checkbox"> <span></span>
-
-                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge @@label">TopVentas</span>
-
-            </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
-
-                 <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
+                             <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
  <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
 
-            </div>
-            <div class="sh-card__footer">
-                <div class="sh-input-quantity">
-                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
-                </div>
-                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
-            </div>
-            </div>
-            <!-- end sh-card -->
-            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+                        </div>
+                        <div class="sh-card__footer">
+                            <div class="sh-input-quantity">
+                                <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus">+</button>
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="minus">–</button>
+                            </div>
+                            <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+                        </div>
+                    </div>
+                    <!-- end sh-card -->
+                    <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
-                <div
-                class="sh-card__head">
-                    <img src="img/low/tool.png" alt="x">
-                    <label class="sh-switch">
-                        <input type="checkbox"> <span></span>
+                        <div
+                        class="sh-card__head">
+                            <img src="img/low/tool.png" alt="x">
+                            <label class="sh-switch">
+                                <input type="checkbox"> <span></span>
 
-                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge sh-badge-green">Novedad</span>
-
-            </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
-
-                 <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
- <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
-
-            </div>
-            <div class="sh-card__footer">
-                <div class="sh-input-quantity">
-                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
-                </div>
-                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
-            </div>
-            </div>
-            <!-- end sh-card -->
-            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
-
-                <div
-                class="sh-card__head">
-                    <img src="img/low/tool.png" alt="x">
-                    <label class="sh-switch">
-                        <input type="checkbox"> <span></span>
-
-                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+                            </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
  <span class="sh-badge @@label">TopVentas</span>
 
-            </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Panter</strong>
+                    </div>
+                    <div class="sh-card__body"> <strong class="sh-card__body__brand">Panter</strong>
 
-                 <h5 class="sh-card__body__text">Zapato Panter Apolo Napa S3 247</h5>
+                         <h5 class="sh-card__body__text">Zapato Panter Apolo Napa S3 247</h5>
  <strong class="sh-card__body__price">39,87&nbsp;€</strong><span>/ud.</span>
 
-            </div>
-            <div class="sh-card__footer">
-                <div class="sh-input-quantity">
-                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
-                </div>
-                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
-            </div>
+                    </div>
+                    <div class="sh-card__footer">
+                        <div class="sh-input-quantity">
+                            <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            class="plus">+</button>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            class="minus">–</button>
+                        </div>
+                        <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+                    </div>
             </div>
             <!-- end sh-card -->
-            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                 <div
                 class="sh-card__head">
@@ -770,7 +549,7 @@
             </div>
             </div>
             <!-- end sh-card -->
-            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                 <div
                 class="sh-card__head">
@@ -800,7 +579,7 @@
             </div>
             </div>
             <!-- end sh-card -->
-            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                 <div
                 class="sh-card__head">
@@ -830,7 +609,7 @@
             </div>
             </div>
             <!-- end sh-card -->
-            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                 <div
                 class="sh-card__head">
@@ -860,7 +639,7 @@
             </div>
             </div>
             <!-- end sh-card -->
-            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                 <div
                 class="sh-card__head">
@@ -890,7 +669,7 @@
             </div>
             </div>
             <!-- end sh-card -->
-            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                 <div
                 class="sh-card__head">
@@ -920,7 +699,157 @@
             </div>
             </div>
             <!-- end sh-card -->
-            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+                <div
+                class="sh-card__head">
+                    <img src="img/low/tool.png" alt="x">
+                    <label class="sh-switch">
+                        <input type="checkbox"> <span></span>
+
+                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge sh-badge-green">Novedad</span>
+
+            </div>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
+
+                 <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
+ <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+
+            </div>
+            <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
+                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+            </div>
+            </div>
+            <!-- end sh-card -->
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+                <div
+                class="sh-card__head">
+                    <img src="img/low/tool.png" alt="x">
+                    <label class="sh-switch">
+                        <input type="checkbox"> <span></span>
+
+                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge @@label">TopVentas</span>
+
+            </div>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand">Panter</strong>
+
+                 <h5 class="sh-card__body__text">Zapato Panter Apolo Napa S3 247</h5>
+ <strong class="sh-card__body__price">39,87&nbsp;€</strong><span>/ud.</span>
+
+            </div>
+            <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
+                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+            </div>
+            </div>
+            <!-- end sh-card -->
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+                <div
+                class="sh-card__head">
+                    <img src="img/low/tool.png" alt="x">
+                    <label class="sh-switch">
+                        <input type="checkbox"> <span></span>
+
+                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge OFF">@@product-label</span>
+
+            </div>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand">ATG</strong>
+
+                 <h5 class="sh-card__body__text">Guante Maxiflex Elite ATG 34-247</h5>
+ <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+
+            </div>
+            <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
+                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+            </div>
+            </div>
+            <!-- end sh-card -->
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+                <div
+                class="sh-card__head">
+                    <img src="img/low/tool.png" alt="x">
+                    <label class="sh-switch">
+                        <input type="checkbox"> <span></span>
+
+                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge @@label">TopVentas</span>
+
+            </div>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
+
+                 <h5 class="sh-card__body__text">Barbuquejo</h5>
+ <strong class="sh-card__body__price">1,29&nbsp;€</strong><span>/ud.</span>
+
+            </div>
+            <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
+                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+            </div>
+            </div>
+            <!-- end sh-card -->
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+                <div
+                class="sh-card__head">
+                    <img src="img/low/tool.png" alt="x">
+                    <label class="sh-switch">
+                        <input type="checkbox"> <span></span>
+
+                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge OFF">@@product-label</span>
+
+            </div>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand">Malatesta</strong>
+
+                 <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
+ <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+
+            </div>
+            <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
+                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+            </div>
+            </div>
+            <!-- end sh-card -->
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                 <div
                 class="sh-card__head">
@@ -950,7 +879,7 @@
             </div>
             </div>
             <!-- end sh-card -->
-            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                 <div
                 class="sh-card__head">
@@ -980,7 +909,7 @@
             </div>
             </div>
             <!-- end sh-card -->
-            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                 <div
                 class="sh-card__head">
@@ -1010,7 +939,97 @@
             </div>
             </div>
             <!-- end sh-card -->
-            <div class="sh-card"> <a class="sh-card__link" href="https://google.com" title="" rel=""></a>
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+                <div
+                class="sh-card__head">
+                    <img src="img/low/tool.png" alt="x">
+                    <label class="sh-switch">
+                        <input type="checkbox"> <span></span>
+
+                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge sh-badge-red">Oferta</span>
+
+            </div>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
+
+                 <h5 class="sh-card__body__text">Gafa de protección Faru C-294 QX2000 INCOLO</h5>
+ <strong class="sh-card__body__price">12,4&nbsp;€</strong><span>/ud.</span>
+
+            </div>
+            <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
+                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+            </div>
+            </div>
+            <!-- end sh-card -->
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+                <div
+                class="sh-card__head">
+                    <img src="img/low/tool.png" alt="x">
+                    <label class="sh-switch">
+                        <input type="checkbox"> <span></span>
+
+                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge sh-badge-green">Novedad</span>
+
+            </div>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand">Loctite</strong>
+
+                 <h5 class="sh-card__body__text">Adhesivo de contacto</h5>
+ <strong class="sh-card__body__price">33,55&nbsp;€</strong><span>/ud.</span>
+
+            </div>
+            <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
+                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+            </div>
+            </div>
+            <!-- end sh-card -->
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+                <div
+                class="sh-card__head">
+                    <img src="img/low/tool.png" alt="x">
+                    <label class="sh-switch">
+                        <input type="checkbox"> <span></span>
+
+                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge @@label">TopVentas</span>
+
+            </div>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
+
+                 <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
+ <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+
+            </div>
+            <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+                </div>
+                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+            </div>
+            </div>
+            <!-- end sh-card -->
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                 <div
                 class="sh-card__head">
@@ -1041,17 +1060,15 @@
             </div>
             <!-- end sh-card -->
             </div>
-            <div class="sh-m-top__xxl center-xs">
-                <button class="sh-btn-outline sh-btn__full sh-btn__lg">Mas Productos +</i>
+            <div class="sh-m-top__lg center-xs">
+                <button class="sh-btn-outline sh-btn__full sh-btn__lg">Mas productos +</i>
                 </button>
             </div>
             </main>
             </div>
-            <!-- end .sh-products__wrap -->
-            </div>
             <!-- end #wrap -->
         </section>
-        <section id="sh-text-subcategory" class="sh-bg__grey-50 sh-m-top__xxl sh-m-bottom__xxl ">
+        <section id="sh-text-subcategory" class="sh-bg__grey-50 sh-m-top__xl">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
@@ -1089,28 +1106,112 @@
                 </div>
             </div>
         </section>
-        <section id="sh-related-products" class="sh-m-top__xxl sh-m-bottom__xxl">
+        <section id="sh-related-products" class="sh-m-top__xl sh-m-bottom__xl">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-3 sh-m-top__md">
+                    <div class="col-xs-12 col-md-3">
                          <h2 class="sh-text__h3">Productos vistos recientemente</h2>
 
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                             doloremque laudantium.</p>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
-                        <partial src="card.html" label="sh-badge-green" product-label="Novedad"
-                        product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                        <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+                            <div
+                            class="sh-card__head">
+                                <img src="img/low/tool.png" alt="x">
+                                <label class="sh-switch">
+                                    <input type="checkbox"> <span></span>
+
+                                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge sh-badge-green">Novedad</span>
+
+                        </div>
+                        <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
+
+                             <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
+ <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+
+                        </div>
+                        <div class="sh-card__footer">
+                            <div class="sh-input-quantity">
+                                <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus">+</button>
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="minus">–</button>
+                            </div>
+                            <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
-                        <partial src="card.html" label="" product-label="Top Ventas" product-brand="Faru"
-                        product-price="1,29" product-name="Barbuquejo"></partial>
+                    <!-- end sh-card -->
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
+                    <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+                        <div
+                        class="sh-card__head">
+                            <img src="img/low/tool.png" alt="x">
+                            <label class="sh-switch">
+                                <input type="checkbox"> <span></span>
+
+                            </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge @@label">Top Ventas</span>
+
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
-                        <partial src="card.html" label="OFF" product-label="" product-brand="Malatesta"
-                        product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                    <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
+
+                         <h5 class="sh-card__body__text">Barbuquejo</h5>
+ <strong class="sh-card__body__price">1,29&nbsp;€</strong><span>/ud.</span>
+
+                    </div>
+                    <div class="sh-card__footer">
+                        <div class="sh-input-quantity">
+                            <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            class="plus">+</button>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            class="minus">–</button>
+                        </div>
+                        <button class="sh-btn sh-btn__full" type="button">Añadir</button>
                     </div>
                 </div>
+                <!-- end sh-card -->
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
+                <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+                    <div
+                    class="sh-card__head">
+                        <img src="img/low/tool.png" alt="x">
+                        <label class="sh-switch">
+                            <input type="checkbox"> <span></span>
+
+                        </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge OFF">@@product-label</span>
+
+                </div>
+                <div class="sh-card__body"> <strong class="sh-card__body__brand">Malatesta</strong>
+
+                     <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
+ <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+
+                </div>
+                <div class="sh-card__footer">
+                    <div class="sh-input-quantity">
+                        <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        class="plus">+</button>
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        class="minus">–</button>
+                    </div>
+                    <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+                </div>
+            </div>
+            <!-- end sh-card -->
+            </div>
+            </div>
             </div>
         </section>
         <div class="clearfix"></div>
