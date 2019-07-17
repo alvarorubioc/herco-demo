@@ -1,6 +1,6 @@
 #sh-products-subcategory #header-bar {
   display: grid;
-  grid-template-columns: auto 1fr auto auto;
+  grid-template-columns: auto 1fr auto auto auto;
   grid-gap: 1em;
 
   @include breakpoint (mobile) {
@@ -186,6 +186,11 @@
   grid-column-gap: 1em;
   @include breakpoint (xsmobile) {
     grid-template-columns: 7rem 1fr;
+  }
+
+  a.sh-card__link {
+    width: 66%;
+    height: 100%;
   }
 
   .sh-card__switch__text, label.sh-switch {

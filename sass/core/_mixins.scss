@@ -44,9 +44,6 @@
 /* set general styles btn */
 @mixin btn {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: $border-radius;
   transition: .2s;
   text-decoration: none;

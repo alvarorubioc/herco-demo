@@ -8,7 +8,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Herco WEB DEMO</title>
-        <link rel="icon" href="img/low/favicon.png" type="image/x-icon">
+        <link rel="icon" href="img/low/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/main.css">
         <script>
             document.getElementsByTagName("html")[0].className += " js";
@@ -31,8 +31,9 @@
  <a href="" title="Pedido rápido">Pedido rápido</a>
 
                     </div>
-                    <div> <i class="icon icon-user"></i>
- <a href="" title="Iniciar sesión">Iniciar sesión</a>
+                    <div class="sh-nav--avatar">	<i class="icon icon-user"></i>
+
+                        <img src="img/low/avatar.png"> <a href="./login.html" title="Iniciar sesión">Iniciar sesión</a>
 
                     </div>
                     </ul>
@@ -43,7 +44,7 @@
 
                 </div>
             </div>
-            <nav id="sh-nav">
+            <nav id="sh-nav" role="navigation">
                 <form class="sh-form-search sh-space" action="./search.html">
                     <input class="sh-input" type="text" placeholder="Buscar..." name="search">
                     <button class="sh-btn" type="submit"></button>
@@ -258,8 +259,9 @@
  <a href="" title="Pedido rápido">Pedido rápido</a>
 
                     </div>
-                    <div> <i class="icon icon-user"></i>
- <a href="" title="Iniciar sesión">Iniciar sesión</a>
+                    <div class="sh-nav--avatar">	<i class="icon icon-user"></i>
+
+                        <img src="img/low/avatar.png"> <a href="./login.html" title="Iniciar sesión">Iniciar sesión</a>
 
                     </div>
                     </ul>
@@ -379,10 +381,10 @@
                     <div class="line"></div>
                     <div class="sh-tabs-wrapper">
                         <div class="sh-tab-content" id="c1">
-                            <section class="cd-products-comparison-table">
-                                <div class="cd-products-table">
+                            <section class="sh-products-comparison-table">
+                                <div class="sh-products-table">
                                     <div class="features">
-                                        <ul class="cd-features-list">
+                                        <ul class="sh-features-list">
                                             <li>Marca</li>
                                             <li>Precios</li>
                                             <li>Tallas</li>
@@ -392,10 +394,10 @@
                                         </ul>
                                     </div>
                                     <!-- .features -->
-                                    <div class="cd-products-wrapper">
-                                        <ul class="cd-products-columns">
+                                    <div class="sh-products-wrapper">
+                                        <ul class="sh-products-columns">
                                             <li class="product">
-                                                <ul class="cd-features-list">
+                                                <ul class="sh-features-list">
                                                     <li>APOLO</li>
                                                     <li>0,35 € /und.</li>
                                                     <li>XS</li>
@@ -406,7 +408,7 @@
                                             </li>
                                             <!-- .product -->
                                             <li class="product">
-                                                <ul class="cd-features-list">
+                                                <ul class="sh-features-list">
                                                     <li>&#8205;</li>
                                                     <li>3,5 € /10 und.</li>
                                                     <li>S</li>
@@ -417,7 +419,7 @@
                                             </li>
                                             <!-- .product -->
                                             <li class="product">
-                                                <ul class="cd-features-list">
+                                                <ul class="sh-features-list">
                                                     <li>&#8205;</li>
                                                     <li>35 € /100 und.</li>
                                                     <li>M</li>
@@ -428,7 +430,7 @@
                                             </li>
                                             <!-- .product -->
                                             <li class="product">
-                                                <ul class="cd-features-list">
+                                                <ul class="sh-features-list">
                                                     <li>&#8205;</li>
                                                     <li>350 € /1000 und.</li>
                                                     <li>L</li>
@@ -439,7 +441,7 @@
                                             </li>
                                             <!-- .product -->
                                             <li class="product">
-                                                <ul class="cd-features-list">
+                                                <ul class="sh-features-list">
                                                     <li>&#8205;</li>
                                                     <li>&#8205;</li>
                                                     <li>XL</li>
@@ -450,7 +452,7 @@
                                             </li>
                                             <!-- .product -->
                                             <li class="product">
-                                                <ul class="cd-features-list">
+                                                <ul class="sh-features-list">
                                                     <li>&#8205;</li>
                                                     <li>&#8205;</li>
                                                     <li>XXL</li>
@@ -461,7 +463,7 @@
                                             </li>
                                             <!-- .product -->
                                             <li class="product">
-                                                <ul class="cd-features-list">
+                                                <ul class="sh-features-list">
                                                     <li>&#8205;</li>
                                                     <li>&#8205;</li>
                                                     <li>&#8205;</li>
@@ -472,7 +474,7 @@
                                             </li>
                                             <!-- .product -->
                                             <li class="product">
-                                                <ul class="cd-features-list">
+                                                <ul class="sh-features-list">
                                                     <li>&#8205;</li>
                                                     <li>&#8205;</li>
                                                     <li>&#8205;</li>
@@ -483,13 +485,13 @@
                                             </li>
                                             <!-- .product -->
                                         </ul>
-                                        <!-- .cd-products-columns -->
+                                        <!-- .sh-products-columns -->
                                     </div>
-                                    <!-- .cd-products-wrapper -->
+                                    <!-- .sh-products-wrapper -->
                                 </div>
-                                <!-- .cd-products-table -->
+                                <!-- .sh-products-table -->
                             </section>
-                            <!-- .cd-products-comparison-table -->
+                            <!-- .sh-products-comparison-table -->
                         </div>
                         <div class="sh-tab-content" id="c2">
                              <h3>History</h3>
@@ -1258,7 +1260,8 @@
             </div>
             </div>
         </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+        <script src="js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="js/herco.min.js"></script>
         <script>
             const menu = mmlight(document.querySelector('#sh-nav'));

@@ -14,7 +14,7 @@ body {
     color: $color-grey;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
     color: $color-dark-navy-blue;
 }
 
@@ -77,7 +77,7 @@ h5, .sh-text__h5 {
 }
 
 h6, .sh-text__h6 {
-	font-size: $text__h6;
+    font-size: $text__h6;
 }
 
 small, .sh-text__sm {
@@ -120,9 +120,10 @@ blockquote {
 
 .sh-text__white {
 	color: white;
-	h1,h2,h3,h4,h5,h6{
+	h1,h2,h3,h4,h5,h6,a{
 		color: white;
-	}
+    }
+    a:hover {color: $color-blue;}
 }
 
 ​

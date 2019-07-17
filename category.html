@@ -8,7 +8,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Herco WEB DEMO</title>
-        <link rel="icon" href="img/low/favicon.png" type="image/x-icon">
+        <link rel="icon" href="img/low/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/main.css">
         <script>
             document.getElementsByTagName("html")[0].className += " js";
@@ -31,8 +31,9 @@
  <a href="" title="Pedido rápido">Pedido rápido</a>
 
                     </div>
-                    <div> <i class="icon icon-user"></i>
- <a href="" title="Iniciar sesión">Iniciar sesión</a>
+                    <div class="sh-nav--avatar">	<i class="icon icon-user"></i>
+
+                        <img src="img/low/avatar.png"> <a href="./login.html" title="Iniciar sesión">Iniciar sesión</a>
 
                     </div>
                     </ul>
@@ -43,7 +44,7 @@
 
                 </div>
             </div>
-            <nav id="sh-nav">
+            <nav id="sh-nav" role="navigation">
                 <form class="sh-form-search sh-space" action="./search.html">
                     <input class="sh-input" type="text" placeholder="Buscar..." name="search">
                     <button class="sh-btn" type="submit"></button>
@@ -258,8 +259,9 @@
  <a href="" title="Pedido rápido">Pedido rápido</a>
 
                     </div>
-                    <div> <i class="icon icon-user"></i>
- <a href="" title="Iniciar sesión">Iniciar sesión</a>
+                    <div class="sh-nav--avatar">	<i class="icon icon-user"></i>
+
+                        <img src="img/low/avatar.png"> <a href="./login.html" title="Iniciar sesión">Iniciar sesión</a>
 
                     </div>
                     </ul>
@@ -1362,7 +1364,8 @@
             </div>
             </div>
         </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+        <script src="js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="js/herco.min.js"></script>
         <script>
             const menu = mmlight(document.querySelector('#sh-nav'));

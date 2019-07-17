@@ -3,7 +3,6 @@ input {
   -moz-appearance:    none;
   appearance:         none;
   height: 2.5rem;
-  font-size: $text__md;
   position: relative;
 }
 /* form control */
@@ -405,4 +404,8 @@ select::-ms-expand {
     background-color: white;
     color: $color-blue;
   }
+}
+
+.sh-label {
+  margin-bottom: .5em;
 }

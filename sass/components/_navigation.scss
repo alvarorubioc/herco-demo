@@ -1,4 +1,4 @@
-nav:not(.mm) {
+nav#sh-nav:not(.mm) {
 	display: none;
 }
 
@@ -82,3 +82,38 @@ nav:not(.mm) {
     }
 }
 
+.sh-nav--avatar {
+    img {
+        display: none;
+    }
+}
+
+.homepage-login .sh-nav--avatar {
+    i.icon {
+        display: none;
+    }
+    img {
+        border: 1px solid $color-blue;
+        border-radius: 50%;
+        display: block;
+        max-width: 2.5em;
+        margin: auto;
+    }
+}
+
+.sh-nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        padding: 1em 0;
+        a {
+            text-decoration: none;
+        }
+        i.icon {
+            padding-right: .5em;
+            color: $color-blue;
+        }
+    }
+}

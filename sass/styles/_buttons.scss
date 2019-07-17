@@ -4,6 +4,12 @@ a.sh-link{
   font-weight: bold;
   text-decoration: none;
 }
+a.sh-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 a.sh-btn, .sh-btn {
   @include btn;
   background-color: $color-blue;
@@ -304,6 +310,7 @@ a.sh-btn-outline__allwhite, .sh-btn-outline__allwhite {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     height: 2.5rem;
     width: 2.5rem;
     padding: 0;
@@ -321,6 +328,7 @@ a.sh-btn-outline__allwhite, .sh-btn-outline__allwhite {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     height: 3.5rem;
     width: 3.5rem;
     padding: 0;

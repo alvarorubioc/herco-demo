@@ -1,0 +1,38 @@
+<partial src="header.html" bodyClass="login"></partial>
+<section class="sh-bg__navy-blue sh-text__white">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-md-offset-3 sh-m-top__lg">
+                <h5 class="sh-m-bottom__lg">Bienvenido/a a Suministros Industriales HERCO</h5>
+                <form action="./welcome.html" method="">
+                    
+                    <label class="sh-label" for="fname">Usuario</label>
+                    <div class="sh-form-group sh-form-contain-icon sh-form__lg sh-m-bottom__md sh-m-top__sm">                        
+                        <input class="sh-input" id="fname" type="text" name="firstname" placeholder="Nombre o email" required>
+                        <i class="icon icon-user sh-form-icon-secondary__right"></i>
+                    </div>
+
+                    <label class="sh-label" for="fname">Contraseña</label>
+                    <div class="sh-form-group sh-form-contain-icon sh-form__lg sh-m-bottom__lg sh-m-top__sm">
+                        <i class="icon icon-lock sh-form-icon-secondary__right"></i>
+                        <input class="sh-input" id="password" type="password" name="password" placeholder="Introduce tu contraseña" required>
+                    </div>
+
+                    <div class="sh-m-bottom__lg">
+                        <input class="sh-btn__blue sh-btn__lg sh-btn__full" type="submit" value="Acceder">
+                    </div>
+                    <div class="center-xs">
+                        <p>¿Olvitaste tu contraseña? <a href="#"> Recuperar</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row center-xs sh-m-top__lg sh-m-bottom__xxl">
+            <div class="col-xs-12 col-md-6">
+                <h2>¿No tienes cuenta?</h2>
+                <button class="sh-btn-outline__sucess">Regístrate</button>
+            </div>
+        </div>
+    </div>
+</section>
+<partial src="footer.html"></partial>
