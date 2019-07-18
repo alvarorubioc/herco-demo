@@ -69,7 +69,7 @@ form.sh-form-search {
     text-transform: uppercase;
     font-size: $text__md;
     a {
-        color: gray;
+        color: $color-grey;
         &:hover {color: $color-navy-blue;}
     }
 }

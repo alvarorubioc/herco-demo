@@ -294,7 +294,7 @@
                 </div>
             </header>
         </section>
-        <main class="container-fluid">
+        <main class="container-fluid" aria-label="Main content" role="main">
             <div class="row">
                 <div class="col-xs-12 col-md-6">
                     <div class="product-img"> <span class="sh-badge">Top Ventas</span>
@@ -318,13 +318,13 @@
                 </div>
                 <div class="col-xs-12 col-md-6"> <strong class="product-brand">Apolo/Celo</strong>
 
-                     <h2>Apolo taco nylon Avellanado Clavo NPC</h2>
+                     <h2 itemprop="name">Apolo taco nylon Avellanado Clavo NPC</h2>
 
                     <div class="product-price sh-text__h3"> <del class="offer-price">0,55&nbsp;€</strong><span>/ud.</del>
  <strong class="normal-price">0,35&nbsp;€</strong><span>/ud.</span>
 
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -555,7 +555,7 @@
                                         <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                                         class="minus">–</button>
                                     </div>
-                                    <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+                                    <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                                 </div>
                             </div>
                             <!-- end sh-card -->
@@ -587,7 +587,7 @@
                                     <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                                     class="minus">–</button>
                                 </div>
-                                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+                                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                             </div>
                         </div>
                         <!-- end sh-card -->
@@ -619,7 +619,7 @@
                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                                 class="minus">–</button>
                             </div>
-                            <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+                            <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                         </div>
                     </div>
                     <!-- end sh-card -->
@@ -633,24 +633,9 @@
                         <div class="sh-card-mini__footer"> <strong>0,35&nbsp;€</strong><span>/ud.</span>
 
                             <div class="sh-card-mini__actions">
-                                <button class="sh-btn sh-btn-icon__sm" type="button"><i class="icon icon-basket"></i>
+                                <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-basket"></i>
                                 </button>
-                                <button class="sh-btn sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sh-card-mini">
-                        <div class="sh-card-mini__body"> <strong class="sh-text__sm">Apolo</strong>
-                            <br> <span>Apolo Taco Nylon Avellanado NPC</span>
-
-                        </div>
-                        <div class="sh-card-mini__footer"> <strong>0,35&nbsp;€</strong><span>/ud.</span>
-
-                            <div class="sh-card-mini__actions">
-                                <button class="sh-btn sh-btn-icon__sm" type="button"><i class="icon icon-basket"></i>
-                                </button>
-                                <button class="sh-btn sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i>
+                                <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i>
                                 </button>
                             </div>
                         </div>
@@ -663,9 +648,24 @@
                         <div class="sh-card-mini__footer"> <strong>0,35&nbsp;€</strong><span>/ud.</span>
 
                             <div class="sh-card-mini__actions">
-                                <button class="sh-btn sh-btn-icon__sm" type="button"><i class="icon icon-basket"></i>
+                                <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-basket"></i>
                                 </button>
-                                <button class="sh-btn sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i>
+                                <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sh-card-mini">
+                        <div class="sh-card-mini__body"> <strong class="sh-text__sm">Apolo</strong>
+                            <br> <span>Apolo Taco Nylon Avellanado NPC</span>
+
+                        </div>
+                        <div class="sh-card-mini__footer"> <strong>0,35&nbsp;€</strong><span>/ud.</span>
+
+                            <div class="sh-card-mini__actions">
+                                <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-basket"></i>
+                                </button>
+                                <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i>
                                 </button>
                             </div>
                         </div>
@@ -723,7 +723,7 @@
                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                                 class="minus">–</button>
                             </div>
-                            <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+                            <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                         </div>
                     </div>
                     <!-- end sh-card -->
@@ -753,7 +753,7 @@
                             <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                             class="minus">–</button>
                         </div>
-                        <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+                        <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                     </div>
                 </div>
                 <!-- end sh-card -->
@@ -783,7 +783,7 @@
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                         class="minus">–</button>
                     </div>
-                    <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+                    <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                 </div>
         </div>
         <!-- end sh-card -->
@@ -813,7 +813,7 @@
                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                 class="minus">–</button>
             </div>
-            <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+            <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
         </div>
         </div>
         <!-- end sh-card -->
@@ -843,7 +843,7 @@
                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                 class="minus">–</button>
             </div>
-            <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+            <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
         </div>
         </div>
         <!-- end sh-card -->
@@ -873,7 +873,7 @@
                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                 class="minus">–</button>
             </div>
-            <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+            <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
         </div>
         </div>
         <!-- end sh-card -->
@@ -903,7 +903,7 @@
                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                 class="minus">–</button>
             </div>
-            <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+            <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
         </div>
         </div>
         <!-- end sh-card -->
@@ -933,7 +933,7 @@
                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                 class="minus">–</button>
             </div>
-            <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+            <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
         </div>
         </div>
         <!-- end sh-card -->
@@ -976,7 +976,7 @@
                             <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                             class="minus">–</button>
                         </div>
-                        <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+                        <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                     </div>
                 </div>
                 <!-- end sh-card -->
@@ -1006,7 +1006,7 @@
                         <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                         class="minus">–</button>
                     </div>
-                    <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+                    <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                 </div>
             </div>
             <!-- end sh-card -->
@@ -1036,7 +1036,7 @@
                     <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                     class="minus">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -1066,7 +1066,7 @@
                     <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                     class="minus">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -1096,7 +1096,7 @@
                     <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                     class="minus">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -1126,7 +1126,7 @@
                     <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                     class="minus">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full" type="button">Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -1135,7 +1135,7 @@
         </section>
         </div>
         <div class="clearfix"></div>
-        <footer id="sh-footer">
+        <footer id="sh-footer" class="sh-text__white">
             <div class="sh-footer__top">
                 <div class="container-fluid">
                     <div class="row">
@@ -1146,7 +1146,7 @@
                         50410 Cuarte de Huerva ZARAGOZA
                     </address>
 
-                            <p><a href="#" class="">Cómo llegar</a>
+                            <p><a href="#">Cómo llegar <i class="icon icon-right-open"></i></a>
 
                             </p>
                         </div>
@@ -1155,7 +1155,7 @@
 
                             <p>De lunes a viernes de 8:00 19:00 hrs.
                                 <p>
-                                    <p>+34 976 503 927 | info@suministrosherco.com</p> <a href="#" class="">Contacta con nosotros</a>
+                                    <p>+34 976 503 927 | info@suministrosherco.com</p> <a href="#" class="sh-link">Contacta con nosotros <i class="icon icon-right-open"></i></a>
 
                         </div>
                     </div>

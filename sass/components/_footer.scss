@@ -1,10 +1,5 @@
 #sh-footer {
     background-color: $color-dark-navy-blue;
-    color: white;
-
-    h5, h6 {
-        color: white;
-    }
 
     a {text-decoration: none;}
 
@@ -26,17 +21,16 @@
     }
 
     .sh-footer__address a {
-        color: $color-dark-navy-blue;
         font-weight: bold;
         &:hover {
-            color: white;        
+            color: $color-dark-navy-blue;        
         }
     }
 
     .sh-footer__at a {
         font-weight: bold;
         &:hover {
-            color: white;        
+            color: $color-blue;        
         }
     }
 
@@ -53,10 +47,6 @@
 
 .sh-footer__info {
     padding-top: 4em;
-  
-    a {
-        color: white;
-    }
     
     a:hover {
         color: $color-blue;

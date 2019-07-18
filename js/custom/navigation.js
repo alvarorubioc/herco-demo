@@ -13,6 +13,14 @@ $('#close-aside-mobile').click(function (e) {
   }
 });
 
+$('.add-to-cart-btn').click(function (){
+  $('.add-to-cart-btn .icon').addClass('icon-check').removeClass('icon-basket');
+  setTimeout(function() {
+    $('.add-to-cart-btn .icon').removeClass('icon-check').addClass('icon-basket');
+  }, 2000);
+
+});
+
 
 function openFiltersSearch() {
   var element = document.getElementById("wrap-search");
