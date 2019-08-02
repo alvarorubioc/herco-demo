@@ -133,10 +133,10 @@ position: relative;
             color: $color-blue;
         }
 
-    @for $i from 1 through 4 {
+    @for $i from 1 through 3 {
         &#tab#{$i}:checked {
         ~ .line {
-            left: #{($i - 1) * 25%};
+            left: #{($i - 1) * 33.3%};
         }
         ~ .sh-tabs-wrapper #c#{$i} {
             display: block;
@@ -157,7 +157,7 @@ position: relative;
         font-weight: bold;
         height: 36px;
         line-height: 36px;
-        width: 25%;
+        width: 33.3%;
         text-align: center;
         position: relative;
         transition: all .2s ease;
@@ -190,7 +190,7 @@ position: relative;
         position: absolute;
         height: 2px;
         background: $color-blue;
-        width: 25%;
+        width: 33.3%;
         top: 34px;
         left: 0;
         transition: 0.25s ease;

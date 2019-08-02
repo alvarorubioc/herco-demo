@@ -12,15 +12,15 @@
 
     <div class="sh-card__body">
       <strong class="sh-card__body__brand">@@product-brand</strong>
-      <h5 class="sh-card__body__text">@@product-name</h5>
+      <p class="sh-text__h5 sh-card__body__text">@@product-name</p>
       <strong class="sh-card__body__price">@@product-price&nbsp;€</strong><span>/ud.</span>
     </div>
     
     <div class="sh-card__footer">
         <div class="sh-input-quantity">
           <input class="sh-input" min="1" name="quantity" value="1" type="number">
-          <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
-          <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">–</button>
+          <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+          <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
         </div>
         <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
     </div>

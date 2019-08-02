@@ -149,6 +149,13 @@ section::after {
 
 #sh-features-categories .col-xs-12 {
     margin-bottom: 1em;
+    .sh-overlay {
+        min-height: 240px;
+        .sh-overlay-content {
+            padding: 1em 2em 2em 2em;
+            justify-content: start;
+        }  
+    }
 }
 
 .sh-overlay {
@@ -173,10 +180,9 @@ section::after {
 
     p {
         visibility: hidden;
-        transition: all .3s ease;
-        transform:translateX(-100%);
+        
+        
     }
-
     &:hover {
         .sh-btn {
             background: white;
@@ -184,7 +190,7 @@ section::after {
         }
         p {
             visibility: visible;
-            transform:translateX(0px);
+            transition: all .3s ease; 
         }
     }
 
@@ -231,7 +237,7 @@ section::after {
         grid-template-columns: .5fr 1fr;
     }
 
-    h4 {
+    p.sh-text__h4 {
         margin-top: 0;
     }
 }

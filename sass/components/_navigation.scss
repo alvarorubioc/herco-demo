@@ -2,6 +2,10 @@ nav#sh-nav:not(.mm) {
 	display: none;
 }
 
+#sh-navigation {
+    background: white;
+}
+
 .sh-top-nav {
     display: grid;
     grid-template-columns: 60px 1fr 1fr 60px;
@@ -114,6 +118,7 @@ nav#sh-nav:not(.mm) {
         i.icon {
             padding-right: .5em;
             color: $color-blue;
+            opacity: 0.85;
         }
     }
 }

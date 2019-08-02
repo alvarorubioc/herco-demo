@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="author" content="">
+        <meta name="robots" content="all">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Herco WEB DEMO</title>
@@ -24,16 +25,17 @@
                 </div>
                 <div class="sh-nav--secondary">
                     <div> <i class="icon icon-location"></i>
- <a href="" title="Localizar pedido">Localizar pedido</a>
+ <a href="#" title="Localizar pedido"
+                        rel="nofollow">Localizar pedido</a>
 
                     </div>
                     <div> <i class="icon icon-tag"></i>
- <a href="" title="Pedido rápido">Pedido rápido</a>
+ <a href="#" title="Pedido rápido" rel="nofollow">Pedido rápido</a>
 
                     </div>
                     <div class="sh-nav--avatar">	<i class="icon icon-user"></i>
 
-                        <img src="img/low/avatar.png"> <a href="./login.html" title="Iniciar sesión">Iniciar sesión</a>
+                        <img src="img/low/avatar.png"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
 
                     </div>
                     </ul>
@@ -50,7 +52,7 @@
                     <button class="sh-btn" type="submit"></button>
                 </form>
                 <ul>
-                    <li><span>Productos span</span>
+                    <li><span>Productos</span>
 
                         <ul>
                             <li><span>Protección y vestuario</span>
@@ -86,78 +88,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">Productos href</a>
+                    <li><a href="./brands.html">Marcas</a>
 
-                        <ul>
-                            <li><a href="./category.html">Protección y vestuario</a>
-
-                                <ul>
-                                    <li><a href="./gafas.html">Gafas</a>
-
-                                    </li>
-                                    <li><a href="#">SubFamilia</a>
-
-                                    </li>
-                                    <li><a href="#">SubFamilia</a>
-
-                                    </li>
-                                    <li><a href="#">SubFamilia</a>
-
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Familia 2</a>
-
-                                <ul>
-                                    <li><a href="#">SubFamilia</a>
-
-                                    </li>
-                                    <li><a href="#">SubFamilia</a>
-
-                                    </li>
-                                    <li><a href="#">SubFamilia</a>
-
-                                    </li>
-                                    <li><a href="#">SubFamilia</a>
-
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Familia 3</a>
-
-                                <ul>
-                                    <li><a href="#">SubFamilia</a>
-
-                                    </li>
-                                    <li><a href="#">SubFamilia</a>
-
-                                    </li>
-                                    <li><a href="#">SubFamilia</a>
-
-                                    </li>
-                                    <li><a href="#">SubFamilia</a>
-
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Familia 4</a>
-
-                                <ul>
-                                    <li><a href="#">Sub something</a>
-
-                                    </li>
-                                    <li><a href="#">Sub something</a>
-
-                                    </li>
-                                    <li><a href="#">Sub something</a>
-
-                                    </li>
-                                    <li><a href="#">Sub something</a>
-
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
                     </li>
                     <li><span>Catálogos</span>
 
@@ -252,16 +184,17 @@
                 </ul>
                 <div class="sh-nav--secondary__mobile">
                     <div> <i class="icon icon-location"></i>
- <a href="" title="Localizar pedido">Localizar pedido</a>
+ <a href="" title="Localizar pedido"
+                        rel="nofollow">Localizar pedido</a>
 
                     </div>
                     <div> <i class="icon icon-tag"></i>
- <a href="" title="Pedido rápido">Pedido rápido</a>
+ <a href="" title="Pedido rápido" rel="nofollow">Pedido rápido</a>
 
                     </div>
                     <div class="sh-nav--avatar">	<i class="icon icon-user"></i>
 
-                        <img src="img/low/avatar.png"> <a href="./login.html" title="Iniciar sesión">Iniciar sesión</a>
+                        <img src="img/low/avatar.png"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
 
                     </div>
                     </ul>
@@ -525,17 +458,14 @@
                         </div>
                         <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
 
-                             <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
- <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                            <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
 
                         </div>
                         <div class="sh-card__footer">
                             <div class="sh-input-quantity">
                                 <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                class="plus">+</button>
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                class="minus">–</button>
+                                <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                                <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                             </div>
                             <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                         </div>
@@ -555,17 +485,14 @@
                     </div>
                     <div class="sh-card__body"> <strong class="sh-card__body__brand">Panter</strong>
 
-                         <h5 class="sh-card__body__text">Zapato Panter Apolo Napa S3 247</h5>
- <strong class="sh-card__body__price">39,87&nbsp;€</strong><span>/ud.</span>
+                        <p class="sh-text__h5 sh-card__body__text">Zapato Panter Apolo Napa S3 247</p> <strong class="sh-card__body__price">39,87&nbsp;€</strong><span>/ud.</span>
 
                     </div>
                     <div class="sh-card__footer">
                         <div class="sh-input-quantity">
                             <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                            class="plus">+</button>
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                            class="minus">–</button>
+                            <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                            <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                         </div>
                         <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                     </div>
@@ -585,17 +512,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">ATG</strong>
 
-                 <h5 class="sh-card__body__text">Guante Maxiflex Elite ATG 34-247</h5>
- <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Guante Maxiflex Elite ATG 34-247</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -615,17 +539,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
 
-                 <h5 class="sh-card__body__text">Barbuquejo</h5>
- <strong class="sh-card__body__price">1,29&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Barbuquejo</p> <strong class="sh-card__body__price">1,29&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -645,17 +566,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">Malatesta</strong>
 
-                 <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
- <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -675,17 +593,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
 
-                 <h5 class="sh-card__body__text">Gafa de protección Faru C-294 QX2000 INCOLO</h5>
- <strong class="sh-card__body__price">12,4&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Gafa de protección Faru C-294 QX2000 INCOLO</p> <strong class="sh-card__body__price">12,4&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -705,17 +620,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">Loctite</strong>
 
-                 <h5 class="sh-card__body__text">Adhesivo de contacto</h5>
- <strong class="sh-card__body__price">33,55&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Adhesivo de contacto</p> <strong class="sh-card__body__price">33,55&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -735,17 +647,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
 
-                 <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
- <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -765,17 +674,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
 
-                 <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
- <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -795,17 +701,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">Panter</strong>
 
-                 <h5 class="sh-card__body__text">Zapato Panter Apolo Napa S3 247</h5>
- <strong class="sh-card__body__price">39,87&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Zapato Panter Apolo Napa S3 247</p> <strong class="sh-card__body__price">39,87&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -825,17 +728,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">ATG</strong>
 
-                 <h5 class="sh-card__body__text">Guante Maxiflex Elite ATG 34-247</h5>
- <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Guante Maxiflex Elite ATG 34-247</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -855,17 +755,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
 
-                 <h5 class="sh-card__body__text">Barbuquejo</h5>
- <strong class="sh-card__body__price">1,29&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Barbuquejo</p> <strong class="sh-card__body__price">1,29&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -885,17 +782,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">Malatesta</strong>
 
-                 <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
- <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -915,17 +809,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
 
-                 <h5 class="sh-card__body__text">Gafa de protección Faru C-294 QX2000 INCOLO</h5>
- <strong class="sh-card__body__price">12,4&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Gafa de protección Faru C-294 QX2000 INCOLO</p> <strong class="sh-card__body__price">12,4&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -945,17 +836,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">Loctite</strong>
 
-                 <h5 class="sh-card__body__text">Adhesivo de contacto</h5>
- <strong class="sh-card__body__price">33,55&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Adhesivo de contacto</p> <strong class="sh-card__body__price">33,55&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -975,17 +863,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
 
-                 <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
- <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -1005,17 +890,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
 
-                 <h5 class="sh-card__body__text">Gafa de protección Faru C-294 QX2000 INCOLO</h5>
- <strong class="sh-card__body__price">12,4&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Gafa de protección Faru C-294 QX2000 INCOLO</p> <strong class="sh-card__body__price">12,4&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -1035,17 +917,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">Loctite</strong>
 
-                 <h5 class="sh-card__body__text">Adhesivo de contacto</h5>
- <strong class="sh-card__body__price">33,55&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Adhesivo de contacto</p> <strong class="sh-card__body__price">33,55&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -1065,17 +944,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
 
-                 <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
- <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -1095,17 +971,14 @@
             </div>
             <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
 
-                 <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
- <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
                     <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    class="plus">+</button>
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    class="minus">–</button>
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
                 <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
             </div>
@@ -1182,17 +1055,14 @@
                         </div>
                         <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
 
-                             <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
- <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                            <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
 
                         </div>
                         <div class="sh-card__footer">
                             <div class="sh-input-quantity">
                                 <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                class="plus">+</button>
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                class="minus">–</button>
+                                <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                                <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                             </div>
                             <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                         </div>
@@ -1214,17 +1084,14 @@
                     </div>
                     <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
 
-                         <h5 class="sh-card__body__text">Barbuquejo</h5>
- <strong class="sh-card__body__price">1,29&nbsp;€</strong><span>/ud.</span>
+                        <p class="sh-text__h5 sh-card__body__text">Barbuquejo</p> <strong class="sh-card__body__price">1,29&nbsp;€</strong><span>/ud.</span>
 
                     </div>
                     <div class="sh-card__footer">
                         <div class="sh-input-quantity">
                             <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                            class="plus">+</button>
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                            class="minus">–</button>
+                            <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                            <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                         </div>
                         <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                     </div>
@@ -1246,17 +1113,14 @@
                 </div>
                 <div class="sh-card__body"> <strong class="sh-card__body__brand">Malatesta</strong>
 
-                     <h5 class="sh-card__body__text">Apolo Taco Nylon Avellanado NPC</h5>
- <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                    <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
 
                 </div>
                 <div class="sh-card__footer">
                     <div class="sh-input-quantity">
                         <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                        class="plus">+</button>
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                        class="minus">–</button>
+                        <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                        <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                     </div>
                     <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                 </div>
@@ -1272,8 +1136,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="sh-footer__address col-xs-12 col-sm-6">
-                             <h5>Estamos en:</h5>
- <address>
+                            <p class="sh-text__h5">Estamos en:</p> <address>
                         Ctra. Valencia Km 7.700<br>
                         50410 Cuarte de Huerva ZARAGOZA
                     </address>
@@ -1283,8 +1146,7 @@
                             </p>
                         </div>
                         <div class="sh-footer__at col-xs-12 col-sm-6">
-                             <h5>Atención personalizada</h5>
-
+                            <p class="sh-text__h5">Atención personalizada</p>
                             <p>De lunes a viernes de 8:00 19:00 hrs.
                                 <p>
                                     <p>+34 976 503 927 | info@suministrosherco.com</p> <a href="#" class="sh-link">Contacta con nosotros <i class="icon icon-right-open"></i></a>
@@ -1296,74 +1158,70 @@
             <div class="sh-footer__info container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-3">
-                         <h6>Productos mas buscados</h6>
-
+                        <p class="sh-text__h6">Productos mas buscados</p>
                         <ul>
-                            <li><a href="">Tornillos de banco y sargentos</a>
+                            <li><a href="" title="">Tornillos de banco y sargentos</a>
 
                             </li>
-                            <li><a href="">Tases y sufrideras</a>
+                            <li><a href="" title="">Tases y sufrideras</a>
 
                             </li>
-                            <li><a href="">Martillos y mazas</a>
+                            <li><a href="" title="">Martillos y mazas</a>
 
                             </li>
-                            <li><a href="">Cortafrios</a>
+                            <li><a href="" title="">Cortafrios</a>
 
                             </li>
-                            <li><a href="">Punta de trazar</a>
+                            <li><a href="" title="">Punta de trazar</a>
 
                             </li>
-                            <li><a href="">Herramientas manuales</a>
+                            <li><a href="" title="">Herramientas manuales</a>
 
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3">
-                         <h6>Información de compra</h6>
-
+                        <p class="sh-text__h6">Información de compra</p>
                         <ul>
-                            <li><a href="">Financiación HERCO</a>
+                            <li><a href="" title="Financiación HERCO" rel="nofollow">Financiación HERCO</a>
 
                             </li>
-                            <li><a href="">Aviso legal</a>
+                            <li><a href="" title="Aviso legal" rel="nofollow">Aviso legal</a>
 
                             </li>
-                            <li><a href="">Envíos</a>
+                            <li><a href="" title="Envíos" rel="nofollow">Envíos</a>
 
                             </li>
-                            <li><a href="">Condiciones de uso</a>
+                            <li><a href="" title="Condiciones de uso" rel="nofollow">Condiciones de uso</a>
 
                             </li>
-                            <li><a href="">Política de privacidad</a>
+                            <li><a href="" title="Política de privacidad" rel="nofollow">Política de privacidad</a>
 
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3">
-                         <h6>Suministros Herco</h6>
-
+                        <p class="sh-text__h6">Suministros Herco</p>
                         <ul>
-                            <li><a href="">¿Quiénes somos?</a>
+                            <li><a href="" title="¿Quiénes somos?">¿Quiénes somos?</a>
 
                             </li>
-                            <li><a href="">Trabaja en HERCO</a>
+                            <li><a href="" title="Trabaja en HERCO">Trabaja en HERCO</a>
 
                             </li>
-                            <li><a href="">HERCO TV</a>
+                            <li><a href="" title="HERCO TV">HERCO TV</a>
 
                             </li>
-                            <li><a href="">Nuestro Blog</a>
+                            <li><a href="" title="Blog">Nuestro Blog</a>
 
                             </li>
-                            <li><a href="">APP Premium</a>
+                            <li><a href="" title="App Premium">APP Premium</a>
 
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3">
-                         <h5>Boletín Herco</h5>
-
+                        <p class="sh-text__h5">Boletín Herco</p>
                         <p>Ofertas, consejos, novedades, descargas. ¡Recíbelo cada mes!</p>
                         <div class="sh-form-group sh-form-contain-icon sh-m-bottom__lg"> <i class="icon icon-mail sh-form-icon-secondary__left"></i>
 
@@ -1379,14 +1237,17 @@
  <small>2019 Suministros Industriales Herco S.L.</small>
 
                     <div
-                    class="sh-footer__social"> <a href=""><i class="icon icon-facebook"></i></a>
- <a href=""><i class="icon icon-twitter"></i></a>
+                    class="sh-footer__social"> <a href="https://www.facebook.com/suministrosherco/" rel="nofollow"><i class="icon icon-facebook"></i></a>
 
                         <a
-                        href=""><i class="icon icon-youtube-play"></i>
+                        href="https://twitter.com/hercosuministro/" rel="nofollow"><i class="icon icon-twitter"></i>
 
-                            </a> <a href=""><i class="icon icon-linkedin"></i></a>
- <a href=""><i class="icon icon-instagram"></i></a>
+                            </a> <a href="https://www.youtube.com/user/SUMINISTROSHERCO" rel="nofollow"><i class="icon icon-youtube-play"></i></a>
+
+                            <a
+                            href="https://www.linkedin.com/company/hercosuministrosindustriales" rel="nofollow"><i class="icon icon-linkedin"></i>
+
+                                </a> <a href="https://www.instagram.com/suministrosherco/" rel="nofollow"><i class="icon icon-instagram"></i></a>
 
                 </div>
             </div>

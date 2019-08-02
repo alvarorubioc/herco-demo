@@ -22,7 +22,7 @@ h2, h3, h4, h5, h6 {
     margin: 1rem 0;
 }
 
-h1, h2 {
+h1, .sh-text__h1, h2, .sh-text__h2 {
 	font-family: $font-heading;
 	font-weight: bold;
 	line-height: $heading-line-height;
@@ -71,6 +71,7 @@ h4, .sh-text__h4 {
 
 h5, .sh-text__h5 {
     font-size: $text__h5;
+    font-weight: bold;
      @include breakpoint(tablet) {
         font-size: $text__h6;
     }
@@ -78,6 +79,7 @@ h5, .sh-text__h5 {
 
 h6, .sh-text__h6 {
     font-size: $text__h6;
+    font-weight: bold;
 }
 
 small, .sh-text__sm {

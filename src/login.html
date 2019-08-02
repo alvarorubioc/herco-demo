@@ -1,5 +1,5 @@
-<partial src="header.html" bodyClass="login"></partial>
-<section class="sh-bg__navy-blue sh-text__white">
+<partial src="header.html" bodyClass="login" robots="noindex"></partial>
+<section class="sh-text__white">
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-md-6 col-md-offset-3 sh-m-top__lg">
@@ -29,10 +29,32 @@
         </div>
         <div class="row center-xs sh-m-top__lg sh-m-bottom__xxl">
             <div class="col-xs-12 col-md-6">
-                <h2>¿No tienes cuenta?</h2>
-                <button class="sh-btn-outline__sucess">Regístrate</button>
+                <h2>¿Necesitas ayuda?</h2>
+                <button class="sh-btn-outline__sucess">Contactar</button>
             </div>
         </div>
     </div>
 </section>
-<partial src="footer.html"></partial>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/herco.min.js"></script>
+<script>
+    const menu = mmlight(document.querySelector('#sh-nav'));
+    menu.create('all'); 		// menu.create( '(max-width: 500px)' );
+    menu.init('selected');	// menu.init( 'custom-selected-classname' );
+
+    //	Open the menu.
+    document.querySelector('a[href="#menu"]')
+        .addEventListener('click', (evnt) => {
+            menu.open();
+
+            //	Don't forget to "preventDefault" and to "stopPropagation".
+            evnt.preventDefault();
+            evnt.stopPropagation();
+        });
+
+</script>
+
+</body>
+
+</html>
