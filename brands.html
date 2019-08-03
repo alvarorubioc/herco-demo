@@ -17,15 +17,15 @@
     </head>
     
     <body class="brands">
-        <header class="container-fluid" id="sh-navigation">
-            <div class="sh-top-nav"> <a href="#menu"><i class="icon icon-menu"></i><span></span></a>
+        <header id="sh-navigation">
+            <div class="sh-top-nav container-fluid"> <a href="#menu"><i class="icon icon-menu"></i><span></span></a>
 
                 <div class="sh-nav--brand"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200px"></a>
 
                 </div>
                 <div class="sh-nav--secondary">
                     <div> <i class="icon icon-location"></i>
- <a href="#" title="Localizar pedido"
+ <a href="./find-order.html" title="Localizar pedido"
                         rel="nofollow">Localizar pedido</a>
 
                     </div>
@@ -46,6 +46,88 @@
 
                 </div>
             </div>
+            <div class="sh-bottom-nav container-fluid">
+                <nav id="sh-nav-desktop" role="navigation" class="row between-xs">
+                    <ul class="sh-nav-rigth">
+                        <li class="drop-down"><span>Productos</span>
+
+                            <ul class="drop-down-ul animated fadeIn">
+                                <li class="flyout-right"><a href="./category.html">Protección y vestuario</a>
+
+                                    <ul class="animated fadeIn">
+                                        <li><a href="./subcategory.html">SubFamilia 2</a>
+
+                                        </li>
+                                        <li><a href="/subcategory.html">SubFamilia 3</a>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="flyout-right"><a href="./category.html">Categoría 2</a>
+
+                                    <ul class="animated fadeIn">
+                                        <li><a href="./subcategory.html">SubFamilia 2.1</a>
+
+                                        </li>
+                                        <li><a href="/subcategory.html">SubFamilia 3.1</a>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Familia nochild</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="sh-nav-rigth end-xs">
+                        <li><a href="./brands.html">Marcas</a>
+
+                        </li>
+                        <li><span>Catálogos</span>
+
+                            <ul>
+                                <li><a href="#">Lidership</a>
+
+                                </li>
+                                <li><a href="#">Lidership</a>
+
+                                </li>
+                                <li><a href="#">History</a>
+
+                                </li>
+                                <li><a href="#">Locations</a>
+
+                                </li>
+                                <li><a href="#">Careers</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span>Información corporativa</span>
+
+                            <ul>
+                                <li><a href="#">Today</a>
+
+                                </li>
+                                <li><a href="#">Calendar</a>
+
+                                </li>
+                                <li><a href="#">Sport</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog</a>
+
+                        </li>
+                        <li><a href="#">Contactar</a>
+
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Mobile NAVIGATION -->
             <nav id="sh-nav" role="navigation">
                 <form class="sh-form-search sh-space" action="./search.html">
                     <input class="sh-input" type="text" placeholder="Buscar..." name="search">
@@ -200,7 +282,9 @@
                     </ul>
                 </div>
             </nav>
+            <!-- END Mobile NAVIGATION -->
         </header>
+        <div class="clearfix"></div>
         <section id="sh-hero" style="background-image: linear-gradient(#001442, #001442), url(img/low/bg-proteccion-vestuario.jpg);">
             <div class="container-fluid">
                 <div class="row middle-xs sh-text__white">

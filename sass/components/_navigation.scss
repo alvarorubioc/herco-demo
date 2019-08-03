@@ -4,6 +4,7 @@ nav#sh-nav:not(.mm) {
 
 #sh-navigation {
     background: white;
+    border-bottom: 1px solid $color-grey-50;
 }
 
 .sh-top-nav {
@@ -11,6 +12,7 @@ nav#sh-nav:not(.mm) {
     grid-template-columns: 60px 1fr 1fr 60px;
     align-items: center;
     height: 5rem;
+    border-bottom: 1px solid $color-grey-50;
     @include breakpoint(mobile) {
         grid-template-columns: 60px 1fr 60px;
         .sh-nav--brand {
@@ -105,6 +107,7 @@ nav#sh-nav:not(.mm) {
     }
 }
 
+
 .sh-nav-list {
     margin: 0;
     padding: 0;
@@ -119,6 +122,90 @@ nav#sh-nav:not(.mm) {
             padding-right: .5em;
             color: $color-blue;
             opacity: 0.85;
+        }
+    }
+}
+
+#sh-nav-desktop {
+    position: relative;
+    z-index: 999;
+    background: white;
+}
+.sh-nav-rigth {
+    margin: 0;
+    padding-left: 0;
+    a, span{
+        text-decoration: none;
+        font-weight: bold;
+        color: $color-navy-blue;
+        font-size: 18px;
+        &:hover {
+            color: $color-blue;
+        }
+    }
+    ul {
+        background: white;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;   
+    }
+    
+    li {
+        display: block;
+        transition-duration: 0.5s;
+	    float: left;
+	    padding: 1rem;
+	    position: relative;
+        text-decoration: none;
+        color: $color-navy-blue;
+        &:hover {
+            color: $color-blue;
+        }
+
+        span:after{
+            content: '\e892';
+            font-family: 'herco';
+            padding-left: .5rem;
+        }
+    }
+
+    li:hover {
+        cursor: pointer;
+    }
+
+    li ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s ease;
+        margin-top: 1rem;
+        left: 0;
+        display: none;
+        min-width: 272px;
+        box-shadow: 0 2px 4px 0 rgba(48,49,51,.1);
+        border-radius: 2px;
+        order: 1px solid rgba(196,196,196,.7);
+    }
+
+    li:hover > ul,
+    li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+    li ul li {
+        clear: both;
+        width: 100%;
+        background: #f6f6f6;
+        text-align: left;
+        border-bottom: 1px solid $color-grey-50;
+        &:last-child {
+            border-radius: 2px;
+        }
+
+        a {
+            font-size: 1em;
         }
     }
 }
