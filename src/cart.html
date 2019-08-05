@@ -1,0 +1,267 @@
+<partial src="header.html" bodyClass="cart" robots="all"></partial>
+<partial src="hero-cart.html"></partial>
+
+<section class="container-fluid">
+    <header id="header-bar">
+        <div class="quickorder-form sh-m-bottom__md">
+            <input class="sh-input" type="text" placeholder="Referencia" name="ref">
+            <div class="sh-input-quantity">
+                <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+            </div>
+            <button type="submit" class="sh-btn sh-btn__full">Añadir</button>
+        </div>
+
+        <div class="sh-btn-group-icon">
+            <button class="sh-btn__white sh-btn-icon__md">
+                <i class="icon icon-heart"></i>
+            </button>
+            <button class="sh-btn__white sh-btn-icon__md">
+                <i class="icon icon-print"></i>
+            </button>
+        </div>
+    </header>
+
+    <main aria-label="Main content" role="main" class="row">
+        <div class="col-xs-12 col-md-8 sh-m-top__lg shopping-cart-container">
+            <table class="shopping-cart">
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Talla</th>
+                    <th>Color</th>
+                    <th>Precio ud.</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+                <tr class="products-cart-list sh-m-bottom__md">
+                    <td class='product-image'>
+                        <img src="img/low/tool.png" alt="x">
+                        <div>
+                            <span>Apolo Taco Nylon Avellanado NPC</span>
+                        </div>
+                    </td>
+                    <td class="product-quantity">
+                        <div class="sh-input-quantity">
+                            <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">–</button>
+                        </div>
+                    </td>
+                    <td class='product-sizes'>
+                        <div class="sh-select-container">
+                            <select class="sh-select__white">
+                                <option>XL</option>
+                                <option>XXL</option>
+                                <option>L</option>
+                                <option>M</option>
+                                <option>S</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td class='product-colors'>
+                        <div class="sh-select-container">
+                            <select class="sh-select__white">
+                                <option>Azul</option>
+                                <option>Rojo</option>
+                                <option>Verde</option>
+                                <option>Blanco</option>
+                                <option>Negro</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        25,98&nbsp;€/ud.
+                    </td>
+                    <td>
+                        25,98&nbsp;€
+                    </td>
+                    <td>
+                        <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i></button>
+                    </td>
+                </tr>
+                <tr class="products-cart-list sh-m-bottom__md">
+                    <td class='product-image'>
+                        <img src="img/low/tool.png" alt="x">
+                        <div>
+                            <span>Apolo Taco Nylon Avellanado NPC</span>
+                        </div>
+                    </td>
+                    <td class="product-quantity">
+                        <div class="sh-input-quantity">
+                            <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">–</button>
+                        </div>
+                    </td>
+                    <td class='product-sizes'>
+                        
+                    </td>
+                    <td class='product-colors'>
+                       
+                    </td>
+                    <td>
+                        25,98&nbsp;€/ud.
+                    </td>
+                    <td>
+                        25,98&nbsp;€
+                    </td>
+                    <td>
+                        <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i></button>
+                    </td>
+                </tr>
+                <tr class="products-cart-list sh-m-bottom__md">
+                    <td class='product-image'>
+                        <img src="img/low/tool.png" alt="x">
+                        <div>
+                            <span>Apolo Taco Nylon Avellanado NPC</span>
+                        </div>
+                    </td>
+                    <td class="product-quantity">
+                        <div class="sh-input-quantity">
+                            <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">–</button>
+                        </div>
+                    </td>
+                    <td class='product-sizes'>
+                        <div class="sh-select-container">
+                            <select class="sh-select__white">
+                                <option>XL</option>
+                                <option>XXL</option>
+                                <option>L</option>
+                                <option>M</option>
+                                <option>S</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td class='product-colors'>
+                        <div class="sh-select-container">
+                            <select class="sh-select__white">
+                                <option>Azul</option>
+                                <option>Rojo</option>
+                                <option>Verde</option>
+                                <option>Blanco</option>
+                                <option>Negro</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        25,98 &nbsp;€/ud.
+                    </td>
+                    <td>
+                        25,98 &nbsp;€
+                    </td>
+                    <td>
+                        <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i></button>
+                    </td>
+                </tr>
+                <tr class="products-cart-list sh-m-bottom__md">
+                    <td class='product-image'>
+                        <img src="img/low/tool.png" alt="x">
+                        <div>
+                            <span>Apolo Taco Nylon Avellanado NPC</span>
+                        </div>
+                    </td>
+                    <td class="product-quantity">
+                        <div class="sh-input-quantity">
+                            <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">–</button>
+                        </div>
+                    </td>
+                    <td class='product-sizes'>
+                        <div class="sh-select-container">
+                            <select class="sh-select__white">
+                                <option>XL</option>
+                                <option>XXL</option>
+                                <option>L</option>
+                                <option>M</option>
+                                <option>S</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td class='product-colors'>
+                        <div class="sh-select-container">
+                            <select class="sh-select__white">
+                                <option>Azul</option>
+                                <option>Rojo</option>
+                                <option>Verde</option>
+                                <option>Blanco</option>
+                                <option>Negro</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        25,98&nbsp;€/ud.
+                    </td>
+                    <td>
+                        25,98&nbsp;€
+                    </td>
+                    <td>
+                        <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col-xs-12 col-md-4 sh-m-top__lg">
+            <div class="sh-m-bottom"><span class="sh-text__h6 uppercase">Resumen del pedido</span></div>
+            <div class="sh-box">
+                <table class="order-resume">
+                    <tr>
+                        <td>Total productos (4)</td>
+                        <td>930,80&nbsp;€</td>
+                    </tr>
+                    <tr>
+                        <td>Entrega</td>
+                        <td>5,00&nbsp;€</td>
+                    </tr>
+                    <tr>
+                        <td>IVA</td>
+                        <td>195,46&nbsp;€</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <th>1.131,26&nbsp;€</th>
+                    </tr>
+                </table>
+                <div class="sh-alert sh-alert__sucess">
+                    <i class="icon icon-check"></i>
+                    <span class="sh-closebtn" onclick="this.parentElement.style.display='none';">×</span>
+                    <div>Añade 34&nbsp;€ a tu cesta para disfrutar de gastos de envío <strong>gratis.</strong></div>
+                </div>
+                <div class="sh-m-top__md dflex around-xs middle-xs">
+                    <a class="sh-link" type="button">Seguir comprando</a>
+                    <button class="sh-btn" type="button">Finalizar compra</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</section>
+
+
+<section id="sh-related-products" class="sh-bg__white sh-m-top__xl">
+    <div class="container">
+        <div class="row sh-m-top__xl sh-m-bottom__xl">
+            <div class="col-xs-12 col-md-3">
+                <h2 class="sh-text__h3">Productos vistos recientemente</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
+                <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
+                <partial src="card.html" label="" product-label="Top Ventas" product-brand="Faru" product-price="1,29" product-name="Barbuquejo"></partial>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
+                <partial src="card.html" label="OFF" product-label="" product-brand="Malatesta" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+            </div>
+        </div>
+    </div>
+</section>
+
+<partial src="footer.html" title="Some title"></partial>

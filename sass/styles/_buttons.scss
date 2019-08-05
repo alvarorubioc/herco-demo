@@ -3,6 +3,9 @@
 a.sh-link{
   font-weight: bold;
   text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
 }
 a.sh-btn {
   display: flex;

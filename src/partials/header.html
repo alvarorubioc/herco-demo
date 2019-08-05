@@ -18,7 +18,7 @@
     <header id="sh-navigation">
 
         <div class="sh-top-nav container-fluid">
-            <a href="#menu"><i class="icon icon-menu"></i><span></span></a>
+            <a href="#menu" id="sh-nav-trigger"><i class="icon icon-menu"></i><span></span></a>
             <div class="sh-nav--brand">
                 <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200px"></a>
             </div>
@@ -41,7 +41,7 @@
             </div>
 
             <div class="sh-nav--basket" id="sh-basket">
-                <a href="" id="open-basket">
+                <a href="./cart.html" title="Carro de la compra" id="open-basket">
                     <i class="icon icon-basket"></i><span class="sh-badge sh-badge-red">0</span>
                 </a>
             </div>
@@ -68,7 +68,7 @@
 						</ul>
 					</li>
 				</ul>
-				<ul class="sh-nav-rigth end-xs">	
+				<ul class="sh-nav-rigth end-xs bottom-xs">	
 					<li><a href="./brands.html">Marcas</a></li>
 					
 					<li><span>Catálogos</span>
@@ -82,13 +82,19 @@
 					</li>
 					<li><span>Información corporativa</span>
 						<ul>
-							<li><a href="#">Today</a></li>
-							<li><a href="#">Calendar</a></li>
-							<li><a href="#">Sport</a></li>
+							<li><a href="#" title="">Today</a></li>
+							<li><a href="#" title="">Calendar</a></li>
+							<li><a href="#" title="" >Sport</a></li>
 						</ul>
 					</li>
 					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contactar</a></li>
+					<li>
+						<div class="sh-nav--contact">
+							<a href="#" title=""><small>Contactar <i class="icon icon-right-open"></i></small></a>
+							<a href="tel:+34976503927" title="">+34 976 503 927</a>
+						</div>
+						</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

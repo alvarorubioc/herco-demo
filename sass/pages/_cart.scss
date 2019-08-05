@@ -1,0 +1,173 @@
+.cart {
+    
+    #header-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+
+    @include breakpoint (xsmobile) {
+        grid-template-columns: 1fr;
+    }
+
+        .quickorder-form {
+            @include breakpoint (xsmobile) {
+                display: none;
+            }
+        }
+
+        .sh-btn-group-icon {
+            justify-self: end;
+
+            & button:first-child {
+                margin-right: 1em;
+            }
+        }
+    }
+}    
+
+.shopping-cart-container {
+    overflow-x: auto;
+}
+
+table.shopping-cart {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+
+    .sh-select-container {
+        min-width: 2rem;
+        max-width: 6rem;
+    }
+
+    th {
+        text-align: left;
+        text-transform: uppercase;
+        padding-bottom: 1em;
+        
+    }
+
+    td {
+        padding: .5em;
+        min-width: 6em;
+
+        &:last-child {
+            padding: 0 .5em;
+            min-width: 3em;
+        }
+        &:first-child {
+            padding-left: .5em;
+        }
+    }
+    
+    img {
+        width: 5rem;
+        padding-right: 1em;
+        float: left;
+    }
+
+    .product-image {
+        min-width: 14rem;
+    }
+
+    .products-cart-list {
+        border-radius: 2px;
+        background-color: #fff;
+        border: 1px solid rgba(196,196,196,.7);
+        margin-bottom: 1em;
+    }
+}
+
+.progress {
+    width: 100%;
+    position: relative;
+}
+.progressbar {
+    background-color: $color-blue;
+    position: absolute;
+    height: .5rem;
+    width: 0%;
+    -webkit-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+    &.empty {
+        opacity: 1;
+        width: 100%;
+        background-color: white;
+    }
+}    
+
+.step-wizard {
+    position: relative; 
+
+    ul {
+    position: absolute;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    left: 0;
+    top: -28px;
+    display: flex;
+    justify-content: space-between;
+    
+    li {
+        display: inline-block;
+        width: calc(33% - 1em);
+        position: relative;
+        font-weight: bold;
+
+        &:first-child{
+            text-align: left;
+        }
+
+        &:last-child{
+            text-align: right;
+        }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                p {
+                    color: $color-blue;
+                }
+
+                span {
+                    color: white;
+                    background: $color-blue;
+                }
+            } 
+        }
+
+       
+        .step {
+            display: inline-block;
+            line-height: 30px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #ffffff;
+            transition: background-color 0.6s ease, border-color 0.6s ease;
+            text-align: center; 
+        }
+        .title {
+            color: white;
+            transition: color 0.6s ease;
+            text-decoration: none;
+        }
+        .active {
+            .step {
+                border-color: #0aa89e;
+            }
+            .title {
+                color: black;
+            }
+        }   
+        .done .step {
+            color: white;
+            background-color: #0aa89e;
+            border-color: #0aa89e;
+        }  
+    }
+    }
+}

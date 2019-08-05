@@ -56,11 +56,14 @@
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <p class="sh-text__h5">Boletín Herco</p>
                 <p>Ofertas, consejos, novedades, descargas. ¡Recíbelo cada mes!</p>
-                <div class="sh-form-group sh-form-contain-icon sh-m-bottom__lg">
+                <div class="sh-form-group sh-form-contain-icon sh-m-bottom">
                     <i class="icon icon-mail sh-form-icon-secondary__left"></i>
                     <input class="sh-input" type="text" placeholder="Su email">
                 </div>
-                <button class="sh-btn sh-btn__full" type="button">Sí, suscribirme</button>
+                <button class="sh-btn sh-btn__full sh-m-bottom" type="button">Sí, suscribirme</button>
+                <label class="sh-check-group"><small>He leído y acepto la <a href="" title="Política de privacidad" rel="nofollow">política de privacidad.</a></small>
+                    <input type="checkbox"> <span class="sh-checkmark"></span>
+                </label>
             </div>
         </div>
     </div>
@@ -85,7 +88,7 @@
 <script type="text/javascript" src="js/herco.min.js"></script>
 <script>
     const menu = mmlight(document.querySelector('#sh-nav'));
-    menu.create('all'); 		// menu.create( '(max-width: 500px)' );
+    menu.create('(max-width: 1024px)'); 		// menu.create( 'all' );
     menu.init('selected');	// menu.init( 'custom-selected-classname' );
 
     //	Open the menu.

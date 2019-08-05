@@ -48,24 +48,15 @@ gridButton.on('click', function () {
 });
 
 
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $(".sh-menu");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-  });
-});
 
 
+// hide sh-nav on desktop & sh-nav-desktop on mobile and tablet
 $(document).ready(function () {
-  if ($(window).width() < 768) {
-    $('#sh-navig').remove();
+  if ($(window).width() < 1025) {
+    $('#sh-nav-desktop').remove();
+  }
+  if ($(window).width() > 1025) {
+    $('#sh-nav').remove();
   }
 });
 
-$(document).ready(function () {
-
-  if ($(window).width() > 769) {
-
-    $('#menu-mobi').prop('id', 'nuevaID');
-  }
-});
