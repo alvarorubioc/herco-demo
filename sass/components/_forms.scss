@@ -125,7 +125,7 @@ input[type=range]:focus::-ms-fill-upper {
   max-width: 5rem;
   min-width: 3rem;
   @include breakpoint (tablet) {
-    max-width: 6rem;
+    max-width: 7rem;
     input { text-align: center; }
   }
 }
@@ -174,18 +174,18 @@ input[type=range]:focus::-ms-fill-upper {
   border: 1px solid $color-grey-70;
   background: white;
 
-  &:hover:not(.sh-input__sucess):not(.sh-input__warning):not(.sh-input__error):not(.sh-input__disabled):not(:focus) {
+  &:hover:not(.sh-input__success):not(.sh-input__warning):not(.sh-input__error):not(.sh-input__disabled):not(:focus) {
     border-color: $color-grey;
   }
 
-  &:focus:not(.sh-input__sucess):not(.sh-input__warning):not(.sh-input__error) {
+  &:focus:not(.sh-input__success):not(.sh-input__warning):not(.sh-input__error) {
     border-color: $color-blue;
     box-shadow: 0 4px 6px rgba(0,108,188,.2);
   }
 }
 
 .sh-input_ {
-  &_sucess {
+  &_success {
     border-color: $color-grass;
 
     &:focus {
@@ -224,7 +224,7 @@ input[type=range]:focus::-ms-fill-upper {
 
   & .sh-form-icon-secondary__right,
   .sh-form-icon-secondary__left,
-  .sh-form-icon-secondary__sucess,
+  .sh-form-icon-secondary__success,
   .sh-form-icon-secondary__warning,
   .sh-form-icon-secondary__error {
     position: absolute;
@@ -308,7 +308,7 @@ input[type=range]:focus::-ms-fill-upper {
     }
   }
 
-  &_sucess {
+  &_success {
     right: 1em;
     color: $color-grass;
 

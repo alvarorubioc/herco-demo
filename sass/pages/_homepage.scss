@@ -142,6 +142,11 @@ section::after {
     }
 }
 
+.order-resume-btn {
+    display: flex;
+    
+} 
+
 
 #sh-brands, #sh-community, #sh-text-subcategory, #sh-cross-selling {
     background: white;
@@ -230,19 +235,6 @@ section::after {
         color: white;
         text-decoration: none;
         &:hover {color: $color-blue;}
-    }
-}
-
-.sh-card-blog__mini  {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: 180px 1fr;
-    @include breakpoint (xsmobile) {
-        grid-template-columns: .5fr 1fr;
-    }
-
-    p.sh-text__h4 {
-        margin-top: 0;
     }
 }
 

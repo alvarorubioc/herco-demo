@@ -26,185 +26,107 @@
 
     <main aria-label="Main content" role="main" class="row">
         <div class="col-xs-12 col-md-8 sh-m-top__lg shopping-cart-container">
-            <table class="shopping-cart">
-                <tr>
-                    <th>Producto</th>
-                    <th>Cantidad</th>
-                    <th>Talla</th>
-                    <th>Color</th>
-                    <th>Precio ud.</th>
-                    <th>Total</th>
-                    <th></th>
-                </tr>
-                <tr class="products-cart-list sh-m-bottom__md">
-                    <td class='product-image'>
+            <div class="shopping-cart-list">
+                <div class="sh-m-bottom"><span class="sh-text__h6 uppercase">Productos</span></div>   
+                <div class="sh-card shopping-cart-item">
+                    <div class="product-image">
                         <img src="img/low/tool.png" alt="x">
                         <div>
-                            <span>Apolo Taco Nylon Avellanado NPC</span>
+                            <p>Apolo Taco Nylon Avellanado NPC</p>
+                            <span class="sh-badge">Talla: XL</span>
+                            <span class="sh-badge sh-badge-green">Color: verde</span>
                         </div>
-                    </td>
-                    <td class="product-quantity">
+                    </div>
+
+                    <div class="product-quantity">
+                        <div class="sh-input-quantity">
+                            <input class="sh-input" min="1" name="quantity" value="2" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">–</button>
+                        </div>
+                    </div>
+
+                    <div class="product-price-ud"><span>Precio ud.: </span><b>10&nbsp;€/ud.</b></div>
+                    <div class="product-price-tot"><span>Total: </span><b>20&nbsp;€</b></div>
+
+                    <div class="product-delete">
+                        <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i></button>
+                    </div>
+                </div>
+                <div class="sh-card shopping-cart-item">
+                    <div class="product-image">
+                        <img src="img/low/tool.png" alt="x">
+                        <div>
+                            <p>Apolo Taco Nylon Avellanado NPC</p>
+                            <span class="sh-badge">Potencia: 200Hz</span>
+                        </div>
+                    </div>
+
+                    <div class="product-quantity">
+                        <div class="sh-input-quantity">
+                            <input class="sh-input" min="1" name="quantity" value="2" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">–</button>
+                        </div>
+                    </div>
+
+                    <div class="product-price-ud"><span>Precio ud.: </span><b>10&nbsp;€/ud.</b></div>
+                    <div class="product-price-tot"><span>Total: </span><b>20&nbsp;€</b></div>
+
+                    <div class="product-delete">
+                        <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i></button>
+                    </div>
+                </div>
+                <div class="sh-card shopping-cart-item">
+                    <div class="product-image">
+                        <img src="img/low/tool.png" alt="x">
+                        <div>
+                            <p>Apolo Taco Nylon Avellanado NPC</p>
+                            <span class="sh-badge">Capacidad: 2 L</span>
+                            <span class="sh-badge sh-badge-red">Color: rojo</span>
+                        </div>
+                    </div>
+
+                    <div class="product-quantity">
                         <div class="sh-input-quantity">
                             <input class="sh-input" min="1" name="quantity" value="1" type="number">
                             <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
                             <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">–</button>
                         </div>
-                    </td>
-                    <td class='product-sizes'>
-                        <div class="sh-select-container">
-                            <select class="sh-select__white">
-                                <option>XL</option>
-                                <option>XXL</option>
-                                <option>L</option>
-                                <option>M</option>
-                                <option>S</option>
-                            </select>
-                        </div>
-                    </td>
-                    <td class='product-colors'>
-                        <div class="sh-select-container">
-                            <select class="sh-select__white">
-                                <option>Azul</option>
-                                <option>Rojo</option>
-                                <option>Verde</option>
-                                <option>Blanco</option>
-                                <option>Negro</option>
-                            </select>
-                        </div>
-                    </td>
-                    <td>
-                        25,98&nbsp;€/ud.
-                    </td>
-                    <td>
-                        25,98&nbsp;€
-                    </td>
-                    <td>
+                    </div>
+
+                    <div class="product-price-ud"><span>Precio ud.: </span><b>10&nbsp;€/ud.</b></div>
+                    <div class="product-price-tot"><span>Total: </span><b>10&nbsp;€</b></div>
+
+                    <div class="product-delete">
                         <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i></button>
-                    </td>
-                </tr>
-                <tr class="products-cart-list sh-m-bottom__md">
-                    <td class='product-image'>
+                    </div>
+                </div>
+                <div class="sh-card shopping-cart-item">
+                    <div class="product-image">
                         <img src="img/low/tool.png" alt="x">
                         <div>
-                            <span>Apolo Taco Nylon Avellanado NPC</span>
+                            <p>Apolo Taco Nylon Avellanado NPC</p>
                         </div>
-                    </td>
-                    <td class="product-quantity">
+                    </div>
+
+                    <div class="product-quantity">
                         <div class="sh-input-quantity">
-                            <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                            <input class="sh-input" min="1" name="quantity" value="2" type="number">
                             <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
                             <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">–</button>
                         </div>
-                    </td>
-                    <td class='product-sizes'>
-                        
-                    </td>
-                    <td class='product-colors'>
-                       
-                    </td>
-                    <td>
-                        25,98&nbsp;€/ud.
-                    </td>
-                    <td>
-                        25,98&nbsp;€
-                    </td>
-                    <td>
+                    </div>
+
+                    <div class="product-price-ud"><span>Precio ud.: </span><b>10&nbsp;€/ud.</b></div>
+                    <div class="product-price-tot"><span>Total: </span><b>20&nbsp;€</b></div>
+
+                    <div class="product-delete">
                         <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i></button>
-                    </td>
-                </tr>
-                <tr class="products-cart-list sh-m-bottom__md">
-                    <td class='product-image'>
-                        <img src="img/low/tool.png" alt="x">
-                        <div>
-                            <span>Apolo Taco Nylon Avellanado NPC</span>
-                        </div>
-                    </td>
-                    <td class="product-quantity">
-                        <div class="sh-input-quantity">
-                            <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">–</button>
-                        </div>
-                    </td>
-                    <td class='product-sizes'>
-                        <div class="sh-select-container">
-                            <select class="sh-select__white">
-                                <option>XL</option>
-                                <option>XXL</option>
-                                <option>L</option>
-                                <option>M</option>
-                                <option>S</option>
-                            </select>
-                        </div>
-                    </td>
-                    <td class='product-colors'>
-                        <div class="sh-select-container">
-                            <select class="sh-select__white">
-                                <option>Azul</option>
-                                <option>Rojo</option>
-                                <option>Verde</option>
-                                <option>Blanco</option>
-                                <option>Negro</option>
-                            </select>
-                        </div>
-                    </td>
-                    <td>
-                        25,98&nbsp;€/ud.
-                    </td>
-                    <td>
-                        25,98&nbsp;€
-                    </td>
-                    <td>
-                        <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i></button>
-                    </td>
-                </tr>
-                <tr class="products-cart-list sh-m-bottom__md">
-                    <td class='product-image'>
-                        <img src="img/low/tool.png" alt="x">
-                        <div>
-                            <span>Apolo Taco Nylon Avellanado NPC</span>
-                        </div>
-                    </td>
-                    <td class="product-quantity">
-                        <div class="sh-input-quantity">
-                            <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">–</button>
-                        </div>
-                    </td>
-                    <td class='product-sizes'>
-                        <div class="sh-select-container">
-                            <select class="sh-select__white">
-                                <option>XL</option>
-                                <option>XXL</option>
-                                <option>L</option>
-                                <option>M</option>
-                                <option>S</option>
-                            </select>
-                        </div>
-                    </td>
-                    <td class='product-colors'>
-                        <div class="sh-select-container">
-                            <select class="sh-select__white">
-                                <option>Azul</option>
-                                <option>Rojo</option>
-                                <option>Verde</option>
-                                <option>Blanco</option>
-                                <option>Negro</option>
-                            </select>
-                        </div>
-                    </td>
-                    <td>
-                        25,98&nbsp;€/ud.
-                    </td>
-                    <td>
-                        25,98&nbsp;€
-                    </td>
-                    <td>
-                        <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i></button>
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                </div>
+
+            </div> 
         </div>
 
         <div class="col-xs-12 col-md-4 sh-m-top__lg">
@@ -233,9 +155,11 @@
                     <span class="sh-closebtn" onclick="this.parentElement.style.display='none';">×</span>
                     <div>Añade 34&nbsp;€ a tu cesta para disfrutar de gastos de envío <strong>gratis.</strong></div>
                 </div>
-                <div class="sh-m-top__md dflex around-xs middle-xs">
-                    <a href="#" class="sh-link" type="button">Seguir comprando</a>
-                    <button id="next" class="sh-btn" type="button">Finalizar compra</button>
+                <div class="order-resume-btn sh-m-top__md dflex around-xs middle-xs">
+                    <button class="sh-btn-outline__allwhite" onclick="history.back(-1)">Seguir comprando</button>
+                    <form action="./checkout.html">
+                        <button class="sh-btn" type="submit">Finalizar compra</button>
+                     </form>
                 </div>
             </div>
         </div>

@@ -55,7 +55,10 @@ gulp.task("sass", function(){
 		.pipe(plumber({errorHandler:onError}))
 		.pipe (sourceMaps.init())
 		.pipe (gulpsass())
-		.pipe (autoprefixer("last 2 versions"))
+		.pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            grid: true
+        }))
 		.pipe (gulp.dest("./css"))
 		.pipe (cleanCss({keepSpecialComments: 1}))
 		.pipe (sourceMaps.write("."))

@@ -43,9 +43,11 @@
 }
 
 .product-add-cart {
-    display: grid;
-    grid-template-columns: 5rem 1fr;
-    grid-gap: .5em;
+    display: flex;
+    
+    & div:first-child {
+      margin-right: 1em; 
+    }
 }
 
 

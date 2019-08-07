@@ -16,7 +16,7 @@
         </script>
     </head>
     
-    <body class="cart">
+    <body class="thanks">
         <header id="sh-navigation">
             <div class="sh-top-nav container-fluid"> <a href="#menu" id="sh-nav-trigger"><i class="icon icon-menu"></i><span></span></a>
 
@@ -309,279 +309,22 @@
             </div>
         </section>
         <!-- end #sh-section -->
-        <section class="container-fluid">
-            <header id="header-bar">
-                <div class="quickorder-form sh-m-bottom__md">
-                    <input class="sh-input" type="text" placeholder="Referencia" name="ref">
-                    <div class="sh-input-quantity">
-                        <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                        class="plus">+</button>
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                        class="minus">–</button>
+        <main aria-label="Main content" role="main" class="container-fluid">
+            <div class="row center-xs sh-m-top__xl sh-m-bottom__xl">
+                <div class="col-xs-12 col-md-8">
+                    <div class="thanks-icon"><i class="icon icon-thumbs-up"></i>
                     </div>
-                    <button type="submit" class="sh-btn sh-btn__full">Añadir</button>
+                     <h1 class="sh-m-bottom__md">Gracias por su compra</h1>
+
+                    <p>Su compra ha sido realizada con éxito, puede ver y/o descargar su factura
+                        <a
+                        href="#" rel="">aquí.</a>
+                    </p>
+                    <p>Neque porro quisquam <a href="#" rel="">seguimiento de pedidos.</a> dolorem
+                        ipsum quia dolor sit amet.</p>
                 </div>
-                <div class="sh-btn-group-icon">
-                    <button class="sh-btn__white sh-btn-icon__md"> <i class="icon icon-heart"></i>
-
-                    </button>
-                    <button class="sh-btn__white sh-btn-icon__md"> <i class="icon icon-print"></i>
-
-                    </button>
-                </div>
-            </header>
-            <main aria-label="Main content" role="main" class="row">
-                <div class="col-xs-12 col-md-8 sh-m-top__lg shopping-cart-container">
-                    <div class="shopping-cart-list">
-                        <div class="sh-m-bottom"><span class="sh-text__h6 uppercase">Productos</span>
-                        </div>
-                        <div class="sh-card shopping-cart-item">
-                            <div class="product-image">
-                                <img src="img/low/tool.png" alt="x">
-                                <div>
-                                    <p>Apolo Taco Nylon Avellanado NPC</p> <span class="sh-badge">Talla: XL</span>
-
-                                    <span
-                                    class="sh-badge sh-badge-green">Color: verde</span>
-                                </div>
-                            </div>
-                            <div class="product-quantity">
-                                <div class="sh-input-quantity">
-                                    <input class="sh-input" min="1" name="quantity" value="2" type="number">
-                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                    class="plus">+</button>
-                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                    class="minus">–</button>
-                                </div>
-                            </div>
-                            <div class="product-price-ud"><span>Precio ud.: </span><b>10&nbsp;€/ud.</b>
-                            </div>
-                            <div class="product-price-tot"><span>Total: </span><b>20&nbsp;€</b>
-                            </div>
-                            <div class="product-delete">
-                                <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="sh-card shopping-cart-item">
-                            <div class="product-image">
-                                <img src="img/low/tool.png" alt="x">
-                                <div>
-                                    <p>Apolo Taco Nylon Avellanado NPC</p> <span class="sh-badge">Potencia: 200Hz</span>
-
-                                </div>
-                            </div>
-                            <div class="product-quantity">
-                                <div class="sh-input-quantity">
-                                    <input class="sh-input" min="1" name="quantity" value="2" type="number">
-                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                    class="plus">+</button>
-                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                    class="minus">–</button>
-                                </div>
-                            </div>
-                            <div class="product-price-ud"><span>Precio ud.: </span><b>10&nbsp;€/ud.</b>
-                            </div>
-                            <div class="product-price-tot"><span>Total: </span><b>20&nbsp;€</b>
-                            </div>
-                            <div class="product-delete">
-                                <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="sh-card shopping-cart-item">
-                            <div class="product-image">
-                                <img src="img/low/tool.png" alt="x">
-                                <div>
-                                    <p>Apolo Taco Nylon Avellanado NPC</p> <span class="sh-badge">Capacidad: 2 L</span>
-
-                                    <span
-                                    class="sh-badge sh-badge-red">Color: rojo</span>
-                                </div>
-                            </div>
-                            <div class="product-quantity">
-                                <div class="sh-input-quantity">
-                                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                    class="plus">+</button>
-                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                    class="minus">–</button>
-                                </div>
-                            </div>
-                            <div class="product-price-ud"><span>Precio ud.: </span><b>10&nbsp;€/ud.</b>
-                            </div>
-                            <div class="product-price-tot"><span>Total: </span><b>10&nbsp;€</b>
-                            </div>
-                            <div class="product-delete">
-                                <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="sh-card shopping-cart-item">
-                            <div class="product-image">
-                                <img src="img/low/tool.png" alt="x">
-                                <div>
-                                    <p>Apolo Taco Nylon Avellanado NPC</p>
-                                </div>
-                            </div>
-                            <div class="product-quantity">
-                                <div class="sh-input-quantity">
-                                    <input class="sh-input" min="1" name="quantity" value="2" type="number">
-                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                    class="plus">+</button>
-                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                    class="minus">–</button>
-                                </div>
-                            </div>
-                            <div class="product-price-ud"><span>Precio ud.: </span><b>10&nbsp;€/ud.</b>
-                            </div>
-                            <div class="product-price-tot"><span>Total: </span><b>20&nbsp;€</b>
-                            </div>
-                            <div class="product-delete">
-                                <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4 sh-m-top__lg">
-                    <div class="sh-m-bottom"><span class="sh-text__h6 uppercase">Resumen del pedido</span>
-                    </div>
-                    <div class="sh-box">
-                        <table class="order-resume">
-                            <tr>
-                                <td>Total productos (4)</td>
-                                <td>930,80&nbsp;€</td>
-                            </tr>
-                            <tr>
-                                <td>Entrega</td>
-                                <td>5,00&nbsp;€</td>
-                            </tr>
-                            <tr>
-                                <td>IVA</td>
-                                <td>195,46&nbsp;€</td>
-                            </tr>
-                            <tr>
-                                <th>Total</th>
-                                <th>1.131,26&nbsp;€</th>
-                            </tr>
-                        </table>
-                        <div class="sh-alert sh-alert__sucess"> <i class="icon icon-check"></i>
- <span class="sh-closebtn" onclick="this.parentElement.style.display='none';">×</span>
-
-                            <div>Añade 34&nbsp;€ a tu cesta para disfrutar de gastos de envío <strong>gratis.</strong>
-                            </div>
-                        </div>
-                        <div class="order-resume-btn sh-m-top__md dflex around-xs middle-xs">
-                            <button class="sh-btn-outline__allwhite" onclick="history.back(-1)">Seguir comprando</button>
-                            <form action="./checkout.html">
-                                <button class="sh-btn" type="submit">Finalizar compra</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </section>
-        <section id="sh-related-products" class="sh-bg__white sh-m-top__xl">
-            <div class="container">
-                <div class="row sh-m-top__xl sh-m-bottom__xl">
-                    <div class="col-xs-12 col-md-3">
-                         <h2 class="sh-text__h3">Productos vistos recientemente</h2>
-
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                            doloremque laudantium.</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
-                        <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
-
-                            <div
-                            class="sh-card__head">
-                                <img src="img/low/tool.png" alt="x">
-                                <label class="sh-switch">
-                                    <input type="checkbox"> <span></span>
-
-                                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge sh-badge-green">Novedad</span>
-
-                        </div>
-                        <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
-
-                            <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
-
-                        </div>
-                        <div class="sh-card__footer">
-                            <div class="sh-input-quantity">
-                                <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                                <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
-                                <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
-                            </div>
-                            <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
-                        </div>
-                    </div>
-                    <!-- end sh-card -->
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
-                    <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
-
-                        <div
-                        class="sh-card__head">
-                            <img src="img/low/tool.png" alt="x">
-                            <label class="sh-switch">
-                                <input type="checkbox"> <span></span>
-
-                            </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge @@label">Top Ventas</span>
-
-                    </div>
-                    <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
-
-                        <p class="sh-text__h5 sh-card__body__text">Barbuquejo</p> <strong class="sh-card__body__price">1,29&nbsp;€</strong><span>/ud.</span>
-
-                    </div>
-                    <div class="sh-card__footer">
-                        <div class="sh-input-quantity">
-                            <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                            <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
-                            <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
-                        </div>
-                        <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
-                    </div>
-                </div>
-                <!-- end sh-card -->
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
-                <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
-
-                    <div
-                    class="sh-card__head">
-                        <img src="img/low/tool.png" alt="x">
-                        <label class="sh-switch">
-                            <input type="checkbox"> <span></span>
-
-                        </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge OFF">@@product-label</span>
-
-                </div>
-                <div class="sh-card__body"> <strong class="sh-card__body__brand">Malatesta</strong>
-
-                    <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
-
-                </div>
-                <div class="sh-card__footer">
-                    <div class="sh-input-quantity">
-                        <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                        <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
-                        <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
-                    </div>
-                    <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
-                </div>
-            </div>
-            <!-- end sh-card -->
-            </div>
-            </div>
-            </div>
-        </section>
+        </main>
+        </main>
         <div class="clearfix"></div>
         <footer id="sh-footer" class="sh-text__white">
             <div class="sh-footer__top">

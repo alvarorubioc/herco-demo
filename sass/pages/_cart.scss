@@ -24,57 +24,66 @@
     }
 }    
 
-.shopping-cart-container {
-    overflow-x: auto;
-}
 
-table.shopping-cart {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-
-    .sh-select-container {
-        min-width: 2rem;
-        max-width: 6rem;
-    }
-
-    th {
-        text-align: left;
-        text-transform: uppercase;
-        padding-bottom: 1em;
-        
-    }
-
-    td {
-        padding: .5em;
-        min-width: 6em;
-
-        &:last-child {
-            padding: 0 .5em;
-            min-width: 3em;
+.shopping-cart-item {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .5em;
+        @include breakpoint (mobile) {
+            grid-auto-flow: row;
         }
-        &:first-child {
-            padding-left: .5em;
-        }
-    }
-    
-    img {
-        width: 5rem;
-        padding-right: 1em;
-    }
 
     .product-image {
         min-width: 14rem;
         display: flex;
         align-items: center;
+
+        p {
+            margin: 0 0 .25em 0;
+            font-weight: bold;
+        }
+    }    
+    
+    img {
+        width: 5rem;
+        padding-right: 1em;
+        @include breakpoint (mobile) {
+            width: 8rem;
+        }
     }
 
-    .products-cart-list {
-        border-radius: 2px;
-        background-color: #fff;
-        border: 1px solid rgba(196,196,196,.7);
-        margin-bottom: 1em;
+    .product-quantity {
+        @include breakpoint (mobile) {
+            align-self: start;
+            flex-basis: 50%;
+            order: 1;
+        }    
+    }
+
+    .product-price-ud {
+        padding: 0 1em;
+        @include breakpoint (mobile) {
+            padding: 1em 0;
+        }
+    }
+
+    .product-price-tot {
+        padding: 0 1em;
+        @include breakpoint (mobile) {
+            padding: 0 0 1em 0;
+        }
+    }   
+
+    .product-delete {
+        padding-right: .5em;
+
+        @include breakpoint (mobile) {
+            position: absolute;
+            bottom: 1em;
+            right: .5em;
+            transform: scale(1.5);
+        }
     }
 }
 
@@ -87,15 +96,13 @@ table.shopping-cart {
     position: absolute;
     height: .5rem;
     width: 0%;
-    -webkit-transition: width 0.6s ease;
-    -o-transition: width 0.6s ease;
     transition: width 0.6s ease;
     &.empty {
         opacity: 1;
         width: 100%;
         background-color: white;
     }
-}    
+}
 
 .step-wizard {
     position: relative; 
@@ -119,10 +126,22 @@ table.shopping-cart {
 
         &:first-child{
             text-align: left;
+            p {
+                margin-left: -1.25rem;
+                @include breakpoint (tablet) {
+                    margin-left: .75em;
+                }
+            }
         }
 
         &:last-child{
             text-align: right;
+            p {
+                margin-right: -2.25rem;
+                @include breakpoint (tablet) {
+                    margin-right: .5em;
+                }
+            }
         }
 
         a {
@@ -133,7 +152,7 @@ table.shopping-cart {
                     color: $color-blue;
                 }
 
-                span {
+                span.step {
                     color: white;
                     background: $color-blue;
                 }
@@ -150,13 +169,20 @@ table.shopping-cart {
             transition: background-color 0.6s ease, border-color 0.6s ease;
             text-align: center; 
         }
+
         .title {
             color: white;
             transition: color 0.6s ease;
             text-decoration: none;
             line-height: 1;
-            //word-break: break-word;
+
+            span {
+                @include devicesize (only_xsmobile) {
+                    display: none;
+                }
+            }
         }
+
         &.active {
             .step {
                 background: $color-blue;
@@ -172,19 +198,16 @@ table.shopping-cart {
 }
 
 
-.checkout-name, .checkout-business, .checkout-address, .checkout-city {
-    grid-template-columns: repeat( auto-fit, minmax(10rem, 1fr) );
-    display: grid;
-    grid-gap: 1em;
-}
-
 .credit-card-box {
     border-radius: 2px;
     border: 1px solid $color-grey-70;
     display: flex;
-    padding-top: 1em;
-    padding-left: 1em;
+    padding: .5rem;
     margin-bottom: .5em;
+
+    label {
+        padding-bottom: 0;
+    }
 
     &.active {
         border: 1px solid $color-blue;
@@ -194,4 +217,9 @@ table.shopping-cart {
         top: 6px;
     }
 
+}
+
+.thanks-icon{
+    font-size: $text__hero;
+    color: $color-grass;
 }

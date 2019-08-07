@@ -27,7 +27,7 @@ function openFiltersSearch() {
   element.classList.toggle("is-open");
 }
 
-
+// List & Grid view list products
 listButton = $('button.list-view');
 gridButton = $('button.grid-view');
 wrapper = $('div.sh-products__grid');
