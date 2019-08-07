@@ -124,6 +124,10 @@ input[type=range]:focus::-ms-fill-upper {
   position: relative;
   max-width: 5rem;
   min-width: 3rem;
+  @include breakpoint (tablet) {
+    max-width: 6rem;
+    input { text-align: center; }
+  }
 }
 
 .sh-input-quantity button {
@@ -137,17 +141,27 @@ input[type=range]:focus::-ms-fill-upper {
   position: absolute;
   width: 2rem;
   height: 1.28rem;
+    @include breakpoint (tablet) {
+      height: 2.5rem;
+    }
+
+    &.plus {
+      right: 0;
+      top: 0;
+      font-weight: bold;
+    }
+    
+    &.minus {
+      right: 0;
+      bottom: 0;
+      font-weight: bold;
+      @include breakpoint (tablet) {
+        left: 0;
+      }
+    }  
 }
 
-.plus {
-  right: 0;
-  top: 0;
-}
 
-.minus {
-  right: 0;
-  bottom: 0;
-}
 
 /* group form control */
 .sh-form-group {
@@ -269,6 +283,13 @@ input[type=range]:focus::-ms-fill-upper {
     + input {
       padding-right: 3em;
     }
+
+    + span {
+      position: absolute;
+      font-size: .75em;
+      margin: 0;
+      bottom: -20px;
+    }
   }
 
   &_left {
@@ -277,6 +298,13 @@ input[type=range]:focus::-ms-fill-upper {
 
     + input {
       padding-left: 3em;
+    }
+
+    + span {
+      position: absolute;
+      font-size: .75em;
+      margin: 0;
+      bottom: -20px;
     }
   }
 

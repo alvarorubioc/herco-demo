@@ -109,7 +109,7 @@ section::after {
 .quickorder-form {
     display: grid;
     grid-gap: 1em;
-    grid-template-columns: 2fr .5fr 1fr;
+    grid-template-columns: 1.5fr .5fr 1fr;
     @include breakpoint (tablet) {
         grid-template-columns: 2fr 1fr 1fr;
     }
@@ -134,11 +134,11 @@ section::after {
         display: flex;
         justify-content: space-between;
         padding-bottom: 1em;
-        font-size: 1.125em;
     }
     tr:last-child{
         padding-top: 1em;
         border-top: 1px solid $color-grey-50;
+        font-size: 1.125em;
     }
 }
 

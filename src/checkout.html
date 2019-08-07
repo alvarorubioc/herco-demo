@@ -1,0 +1,176 @@
+<partial src="header.html" bodyClass="cart" robots="all"></partial>
+<partial src="hero-cart.html"></partial>
+
+<section class="container-fluid">
+    <main aria-label="Main content" role="main" class="row">
+        
+        <div class="col-xs-12 col-md-8 sh-m-top__lg shopping-cart-container">
+            
+            <div class="sh-m-bottom">
+                <span class="sh-text__h6 uppercase">Dirección de entrega</span>
+            </div>
+            
+            <div class="sh-box sh-m-bottom__lg">
+                <form action="" method="">
+                    <div class="checkout-name">
+                        <div>
+                            <label class="sh-label" for="fname">Nombre</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
+                                <input class="sh-input" id="fname" type="text" name="firstname" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="sh-label" for="surname">Apellidos</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
+                                <input class="sh-input" id="surname" type="text" name="surname" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="sh-label" for="phone">Teléfono</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom__lg sh-m-top__sm">
+                                <input class="sh-input sh-input__error" id="phone" type="tel" name="phone" required>
+                                <i class="icon icon-attention sh-form-icon-secondary__error"></i>
+                                <span>Número incorrecto</span>
+                            </div>
+                        </div>
+
+                    </div><!-- end .checkout-name -->
+
+                    <div class="checkout-business">
+                        <div>
+                            <label class="sh-label" for="bname">Nombre empresa</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
+                                <input class="sh-input" id="bname" type="text" name="bname">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="sh-label" for="cif">CIF/DNI</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom__lg sh-m-top__sm">
+                                <input class="sh-input" id="cif" type="text" name="cif" required>
+                            </div>
+                        </div>
+                    </div> <!-- end .checkout-business -->
+
+                    <div class="checkout-address">
+                        <div>
+                            <label class="sh-label" for="address">Dirección</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
+                                <input class="sh-input" id="address" type="text" name="address" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="sh-label" for="postalcode">Código postal</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom__lg sh-m-top__sm">
+                                <input class="sh-input" id="postalcode" type="text" name="postalcode" required>
+                            </div>
+                        </div>
+                    </div><!-- end .checkout-address -->
+
+                    <div class="checkout-city">
+                        <div>
+                            <label class="sh-label" for="city">Población</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
+                                <input class="sh-input" id="city" type="text" name="city" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="sh-label" for="region">Provincia</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
+                                <input class="sh-input" id="region" type="text" name="region" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="sh-label" for="country">País</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
+                                <input class="sh-input" id="country" type="text" name="country">
+                            </div>
+                        </div>
+                    </div> <!-- end .checkout-city -->
+                </form>
+            </div>
+
+            <div class="sh-m-bottom">
+                <span class="sh-text__h6 uppercase">Método de pago</span>
+            </div>
+
+            <div class="sh-box sh-m-bottom__xl">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div class="credit-card-box active">
+                            <label class="sh-check-group">
+                                <img src="img/low/visa-card.svg" alt="Visa">
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="sh-radiomark"></span>
+                            </label> 
+                        </div>
+
+                        <div class="credit-card-box">
+                            <label class="sh-check-group">
+                                <img src="img/low/mastercard-card.svg" alt="Master Card">
+                                <input type="radio" checked="" name="radio">
+                                <span class="sh-radiomark"></span>
+                            </label> 
+                        </div>
+                        <div class="credit-card-box">
+                            <label class="sh-check-group">
+                                <img src="img/low/paypal-card.svg" alt="Pay Pal">
+                                <input type="radio" checked="" name="radio">
+                                <span class="sh-radiomark"></span>
+                            </label>
+                        </div>
+                        <div class="credit-card-box">
+                            <label class="sh-check-group">
+                                <img src="img/low/applepay-card.svg" alt="Apple Pay">
+                                <input type="radio" checked="" name="radio">
+                                <span class="sh-radiomark"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-8">
+                        <form action="" method="">
+                            <div class="checkout-card">
+                                
+                            </div>
+                        </form>
+                    </div>
+
+                </div><!-- end .row -->
+            </div>
+        </div>
+    
+        <div class="col-xs-12 col-md-4 sh-m-top__lg">
+            <div class="sh-m-bottom"><span class="sh-text__h6 uppercase">Resumen del pedido</span></div>
+            <div class="sh-box">
+                <table class="order-resume">
+                    <tr>
+                        <td>Total productos (4)</td>
+                        <td>930,80&nbsp;€</td>
+                    </tr>
+                    <tr>
+                        <td>Entrega</td>
+                        <td>5,00&nbsp;€</td>
+                    </tr>
+                    <tr>
+                        <td>IVA</td>
+                        <td>195,46&nbsp;€</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <th>1.131,26&nbsp;€</th>
+                    </tr>
+                </table>
+                <div class="sh-m-top__md dflex around-xs middle-xs">
+                    <a id="prev" class="sh-link" type="button">Atrás</a>
+                    <button id="next" class="sh-btn" type="button">Confirmar</button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+</section>
+
+<partial src="footer.html" title="Some title"></partial>

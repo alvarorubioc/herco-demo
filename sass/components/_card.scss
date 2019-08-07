@@ -60,6 +60,10 @@
     right: 3.5em;
     opacity: 0;
     line-height: 1.6;
+
+    @include breakpoint (tablet) {
+      display: none;
+    }
   }
 
   img { width: 100%;}

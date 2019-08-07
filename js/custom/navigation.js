@@ -47,9 +47,6 @@ gridButton.on('click', function () {
 
 });
 
-
-
-
 // hide sh-nav on desktop & sh-nav-desktop on mobile and tablet
 $(document).ready(function () {
   if ($(window).width() < 1025) {
@@ -59,4 +56,5 @@ $(document).ready(function () {
     $('#sh-nav').remove();
   }
 });
+
 
