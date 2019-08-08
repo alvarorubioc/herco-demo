@@ -122,8 +122,7 @@
         display: inline-block;
         width: calc(33% - 1em);
         position: relative;
-        font-weight: bold;
-
+        
         &:first-child{
             text-align: left;
             p {
@@ -144,19 +143,8 @@
             }
         }
 
-        a {
-            text-decoration: none;
-
-            &:hover {
-                p {
-                    color: $color-blue;
-                }
-
-                span.step {
-                    color: white;
-                    background: $color-blue;
-                }
-            } 
+        span.step {
+            color: $color-blue; 
         }
 
         .step {
@@ -188,12 +176,7 @@
                 background: $color-blue;
                 color: white;
             }
-        }   
-        &.done .step {
-            color: white;
-            background-color: #0aa89e;
-            border-color: #0aa89e;
-        }  
+        }    
     }
 }
 
