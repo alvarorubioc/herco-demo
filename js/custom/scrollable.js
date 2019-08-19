@@ -78,7 +78,7 @@ function fnScrollableLoad(  ) {
 					oScrollable.insertAdjacentHTML( 'beforebegin', '<!-- Arrows added by scrollable.js //-->' );
 					// Code comment
 
-					oScrollableLeft.style.opacity = "0";
+					oScrollableLeft.style.display = "none";
 
 					// 3. Add click event to the arrows. Move cards.
 
@@ -90,7 +90,7 @@ function fnScrollableLoad(  ) {
 
 						oScroll.scrollLeft = oScroll.scrollLeft + iOffset;
 
-						oScrollableLeft.style.opacity = "1";
+						oScrollableLeft.style.display = "flex";
 
 						fnScrollableArrows( oScroll, oScrollableRight, oScrollableLeft, iGridWidth, iCardsWidth, iOffset );
 
@@ -102,7 +102,7 @@ function fnScrollableLoad(  ) {
 						var iOffset = - iCardWidth - iGutter;
 						oScroll.scrollLeft = oScroll.scrollLeft + iOffset;
 
-						oScrollableRight.style.opacity = "1";
+						oScrollableRight.style.display = "flex";
 
 						fnScrollableArrows( oScroll, oScrollableRight, oScrollableLeft, iGridWidth, iCardsWidth, iOffset );
 					});
@@ -126,11 +126,11 @@ function fnScrollableArrows( oScroll, oScrollableRight, oScrollableLeft, iGridWi
 		/* 130 is 100 (margin overflow) + 30 (gutter). */
 
 		if( oScroll.scrollLeft + iGridWidth + 115  > iCardsWidth + oScroll.offsetLeft ) {  
-			oScrollableRight.style.opacity = "0";  
+			oScrollableRight.style.display = "none";  
 		}
 
 		if( ( oScroll.scrollLeft + iOffset ) < 0 ) {  
-			oScrollableLeft.style.opacity = "0";  
+			oScrollableLeft.style.display = "none";  
 		}
 
 	}, 300 );
@@ -142,15 +142,15 @@ function fnScrollableArrowsScroll( oScroll, oScrollableRight, oScrollableLeft, i
 		/* 130 is 100 (margin overflow) + 30 (gutter). */
 
 		if( oScroll.scrollLeft + iGridWidth + 130  > iCardsWidth + oScroll.offsetLeft ) {  
-			oScrollableRight.style.opacity = "0";  
+			oScrollableRight.style.display = "none";  
 		} else {
-			oScrollableRight.style.opacity = "1";  
+			oScrollableRight.style.display = "flex";  
 		}
 
 		if( oScroll.scrollLeft === 0 ) {
-			oScrollableLeft.style.opacity = "0";
+			oScrollableLeft.style.display = "none";
 		} else {
-			oScrollableLeft.style.opacity = "1";
+			oScrollableLeft.style.display = "flex";
 		}
 
 }

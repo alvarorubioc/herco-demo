@@ -304,19 +304,19 @@
 
                     <p class="sh-text__h5">¿Qué necesitas hoy?</p>
                     <div class="sh-divider__header"></div>
-                    <nav role="navigation" class="sh-m-top__md">
+                    <nav class="sh-m-top__md">
                         <ul class="sh-nav-list">
-                            <li><i class="icon icon-user"></i><a href="#" title="Ver perfil"> Ver mi perfil</a>
+                            <li><i class="icon icon-user"></i><a href="#" title="Ver perfil">Ver mi perfil</a>
 
                             </li>
-                            <li><i class="icon icon-doc-text"></i><a href="#" title="Historial pedidos">Historial de
+                            <li><i class="icon icon-doc-text"></i><a href="#" title="Historial pedidos"> Historial de
                                 pedidos</a>
 
                             </li>
                             <li><i class="icon icon-heart"></i><a href="#" title="Cestas guardas">Cestas guardadas</a>
 
                             </li>
-                            <li><i class="icon icon-logout"></i><a href="#" title="Cerrar sesion"> Cerrar sesión</a>
+                            <li><i class="icon icon-logout"></i><a href="#" title="Cerrar sesion">Cerrar sesión</a>
 
                             </li>
                         </ul>
@@ -656,17 +656,46 @@
                 </div>
             </div>
         </section>
-        <section id="sh-scroll-products" class="sh-m-top__xl">
-            <div class="scroll-head">
-                 <h2 class="sh-divider__header">Últimas novedades</h2>
+        <section class="sh-m-top__xl sh-m-bottom__xl container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-lg-3">
+                     <h2 class="sh-divider__header">Últimas novedades</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.</p>
-                <div class="col-xs-12 sh-m-top__lg"><a class="sh-link" href="#">Ver todas las novedades <i class="icon icon-right-open"></i></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="sh-m-top__lg sh-m-bottom__lg"> <a class="sh-link" href="#">Ver todas las novedades <i class="icon icon-right-open"></i></a>
+
+                    </div>
                 </div>
-            </div>
-            <div class="scroll-wrapper">
-                <div class="scroll-items full no-scrollbar">
+                <div class="col-xs-12 col-lg-9 ">
+                    <div class="sh-grid sh-grid--scroll sh-scroll no-scrollbar">
+                        <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+                            <div
+                            class="sh-card__head">
+                                <img src="img/low/tool.png" alt="x">
+                                <label class="sh-switch">
+                                    <input type="checkbox"> <span></span>
+
+                                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge sh-badge-green">Novedad</span>
+
+                        </div>
+                        <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
+
+                            <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+
+                        </div>
+                        <div class="sh-card__footer">
+                            <div class="sh-input-quantity">
+                                <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                                <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                                <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
+                            </div>
+                            <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                        </div>
+                    </div>
+                    <!-- end sh-card -->
                     <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                         <div
@@ -679,9 +708,9 @@
  <span class="sh-badge sh-badge-green">Novedad</span>
 
                     </div>
-                    <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
+                    <div class="sh-card__body"> <strong class="sh-card__body__brand">Panter</strong>
 
-                        <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                        <p class="sh-text__h5 sh-card__body__text">Zapato Panter Apolo Napa S3 247</p> <strong class="sh-card__body__price">39,87&nbsp;€</strong><span>/ud.</span>
 
                     </div>
                     <div class="sh-card__footer">
@@ -706,9 +735,9 @@
  <span class="sh-badge sh-badge-green">Novedad</span>
 
                 </div>
-                <div class="sh-card__body"> <strong class="sh-card__body__brand">Panter</strong>
+                <div class="sh-card__body"> <strong class="sh-card__body__brand">ATG</strong>
 
-                    <p class="sh-text__h5 sh-card__body__text">Zapato Panter Apolo Napa S3 247</p> <strong class="sh-card__body__price">39,87&nbsp;€</strong><span>/ud.</span>
+                    <p class="sh-text__h5 sh-card__body__text">Guante Maxiflex Elite ATG 34-247</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
 
                 </div>
                 <div class="sh-card__footer">
@@ -719,33 +748,6 @@
                     </div>
                     <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                 </div>
-            </div>
-            <!-- end sh-card -->
-            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
-
-                <div
-                class="sh-card__head">
-                    <img src="img/low/tool.png" alt="x">
-                    <label class="sh-switch">
-                        <input type="checkbox"> <span></span>
-
-                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge sh-badge-green">Novedad</span>
-
-            </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">ATG</strong>
-
-                <p class="sh-text__h5 sh-card__body__text">Guante Maxiflex Elite ATG 34-247</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
-
-            </div>
-            <div class="sh-card__footer">
-                <div class="sh-input-quantity">
-                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
-                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
-                </div>
-                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
-            </div>
             </div>
             <!-- end sh-card -->
             <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
@@ -868,9 +870,9 @@
  <span class="sh-badge sh-badge-green">Novedad</span>
 
             </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">3M</strong>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
 
-                <p class="sh-text__h5 sh-card__body__text">Lorem</p> <strong class="sh-card__body__price">2,29&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
 
             </div>
             <div class="sh-card__footer">
@@ -883,6 +885,7 @@
             </div>
             </div>
             <!-- end sh-card -->
+            </div>
             </div>
             </div>
         </section>
