@@ -60,14 +60,14 @@
   }
 }
 
-#sh-products-subcategory.is-open main, #sh-products-subcategory.is-open #sh-breadcrumbs {
+#sh-products-subcategory.is-open .sh-products__wrap, #sh-products-subcategory.is-open #sh-breadcrumbs {
   padding-left: 0px;
   @include breakpoint (mobile) {
     transition: all .3s ease;
   }
 }
 
-#sh-products-subcategory main, #sh-products-subcategory #sh-breadcrumbs {
+#sh-products-subcategory .sh-products__wrap, #sh-products-subcategory #sh-breadcrumbs {
   transition: all .3s ease;
   padding-left: 290px;
   @include breakpoint (mobile) {

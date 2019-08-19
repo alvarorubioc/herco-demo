@@ -7,7 +7,8 @@ var gulp = require("gulp"),
 	sourceMaps = require("gulp-sourcemaps"),
 	concat = require("gulp-concat"),
 	jshint = require("gulp-jshint"),
-	uglify = require("gulp-uglify"),
+	//uglify = require("gulp-uglify-es"),
+	terser = require("gulp-terser"),
 	imagemin = require("gulp-imagemin"),
 	htmlPartial = require('gulp-html-partial'),
 	browserSync = require('browser-sync').create(),
@@ -45,7 +46,7 @@ gulp.task('browser-sync', function() {
 		liveReload: true,
 		watch: true,
 		browser: ["firefox, chrome"],
-		injectChanges: false
+		open: false
 		
 	});
 });
@@ -76,7 +77,8 @@ gulp.task("javascript", ["lint"],  function(){
 	return gulp.src("./js/custom/**/*.js")
 		.pipe(plumber({errorHandler:onError}))
 		.pipe (concat("herco.min.js"))
-		.pipe (uglify())
+		.pipe (terser())
+		//.on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
 		.pipe (gulp.dest("./js"))
 		.pipe(notify({message: "JavaScript task done"}));
 });

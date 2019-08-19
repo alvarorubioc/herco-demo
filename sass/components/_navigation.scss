@@ -73,7 +73,7 @@ nav#sh-nav:not(.mm) {
 
 .sh-nav--secondary__mobile {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
     padding: 1em;
     justify-content: center;

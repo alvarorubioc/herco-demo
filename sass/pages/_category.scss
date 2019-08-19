@@ -1,4 +1,4 @@
-#sh-list-categories {
+.sh-list-categories {
     ul {
       list-style: none;
       margin: 0;
@@ -20,8 +20,8 @@
       width: 200px;
       margin-right: 1em;
       border-radius: 2px;
-      display: grid;
       background-size: cover;
+      padding-bottom: 0;
 
       &:last-child{
         background: #f6f6f6;
@@ -45,6 +45,7 @@
         color: white;
         &:hover {
           text-decoration: underline;
+          color: white;
         }
     }
 

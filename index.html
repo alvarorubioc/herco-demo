@@ -3,17 +3,14 @@
     
     <head>
         <meta charset="utf-8">
+        <title>Herco WEB DEMO</title>
         <meta name="description" content="">
         <meta name="author" content="">
         <meta name="robots" content="all">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Herco WEB DEMO</title>
         <link rel="icon" href="img/low/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/main.css">
-        <script>
-            document.getElementsByTagName("html")[0].className += " js";
-        </script>
     </head>
     
     <body class="homepage">
@@ -21,7 +18,7 @@
             <div class="sh-top-nav container-fluid"> <a href="#menu" id="sh-nav-trigger"><i class="icon icon-menu"></i><span></span></a>
 
                 <div
-                class="sh-nav--brand"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200px"></a>
+                class="sh-nav--brand"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200"></a>
 
             </div>
             <div class="sh-nav--secondary">
@@ -31,15 +28,15 @@
 
                 </div>
                 <div> <i class="icon icon-tag"></i>
- <a href="#" title="Pedido rápido" rel="nofollow">Pedido rápido</a>
+ <a href="./quick-order.html" title="Pedido rápido"
+                    rel="nofollow">Pedido rápido</a>
 
                 </div>
                 <div class="sh-nav--avatar">	<i class="icon icon-user"></i>
 
-                    <img src="img/low/avatar.png"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
+                    <img src="img/low/avatar.png" alt="Nombre apellido"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
 
                 </div>
-                </ul>
             </div>
             <div class="sh-nav--basket" id="sh-basket"> <a href="./cart.html" title="Carro de la compra" id="open-basket">
                     <i class="icon icon-basket"></i><span class="sh-badge sh-badge-red">0</span>
@@ -71,6 +68,7 @@
                                     </li>
                                 </ul>
                             </li>
+                        </ul>
                     </div>
                     <ul class="sh-nav-rigth end-xs bottom-xs">
                         <li><a href="./brands.html">Marcas</a>
@@ -263,20 +261,20 @@
                 </ul>
                 <div class="sh-nav--secondary__mobile">
                     <div> <i class="icon icon-location"></i>
- <a href="" title="Localizar pedido"
+ <a href="./find-order.html" title="Localizar pedido"
                         rel="nofollow">Localizar pedido</a>
 
                     </div>
                     <div> <i class="icon icon-tag"></i>
- <a href="" title="Pedido rápido" rel="nofollow">Pedido rápido</a>
+ <a href="./quick-order.html" title="Pedido rápido"
+                        rel="nofollow">Pedido rápido</a>
 
                     </div>
                     <div class="sh-nav--avatar">	<i class="icon icon-user"></i>
 
-                        <img src="img/low/avatar.png"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
+                        <img src="img/low/avatar.png" alt="Nombre Apellido"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
 
                     </div>
-                    </ul>
                 </div>
             </nav>
             <!-- END Mobile NAVIGATION -->
@@ -300,23 +298,62 @@
             </div>
         </section>
         <!-- end #sh-section -->
-        <section id="sh-promos" class="container-fluid sh-m-top__xl sh-m-bottom__xl">
-            <div class="row center-xs sh-m-bottom__lg">
-                 <h2 class="sh-divider__header">Promociones HERCO</h2>
+        <main role="main">
+            <section id="sh-promos" class="container-fluid sh-m-top__xl sh-m-bottom__xl">
+                <div class="row center-xs sh-m-bottom__lg">
+                     <h2 class="sh-divider__header">Promociones HERCO</h2>
 
-            </div>
-            <div class="row">
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="sh-box"> <span class="sh-closebtn" onclick="this.parentElement.style.display='none';"><i
+                  class="icon icon-cancel"></i></span>
+
+                            <div class="promo-content">
+                                <div>
+                                     <h3>Nuevo catálogo 2019</h3>
+ <a class="sh-link" href="#" title="">Saber más <i class="icon icon-right-open"></i></a>
+
+                                </div>
+                                <img class="promo" src="img/low/promo-catalogo.png" alt="x">
+                                <div class="promo-hover-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end sh-box promo-->
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="sh-box"> <span class="sh-closebtn" onclick="this.parentElement.style.display='none';"><i class="icon icon-cancel"></i></span>
+
+                            <div
+                            class="promo-content">
+                                <div>
+                                     <h3>25% dto. en gafas de protección</h3>
+ <a class="sh-link" href="#" title="">Saber más <i class="icon icon-right-open"></i></a>
+
+                                </div>
+                                <img class="promo" src="img/low/promo-gafas.png" alt="x">
+                                <div class="promo-hover-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                        </div>
+                    </div>
+                    <!--end sh-box promo-->
+                </div>
                 <div class="col-xs-12 col-md-4">
                     <div class="sh-box"> <span class="sh-closebtn" onclick="this.parentElement.style.display='none';"><i
                   class="icon icon-cancel"></i></span>
 
                         <div class="promo-content">
                             <div>
-                                 <h3>Nuevo catálogo 2019</h3>
+                                 <h3>Lorem ipsum dolor sit aemet</h3>
  <a class="sh-link" href="#" title="">Saber más <i class="icon icon-right-open"></i></a>
 
                             </div>
-                            <img class="promo" src="img/low/promo-catalogo.png" alt="x">
+                            <img class="promo" src="img/low/promo.png" alt="x">
                             <div class="promo-hover-content">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -325,224 +362,181 @@
                     </div>
                     <!--end sh-box promo-->
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="sh-box"> <span class="sh-closebtn" onclick="this.parentElement.style.display='none';"><i class="icon icon-cancel"></i></span>
+                </div>
+                <!--end .row-->
+            </section>
+            <section id="sh-quickorder" style="background-image: linear-gradient(#001442, #001442), url(img/low/bg-quickorder.jpeg);">
+                <div class="container-fluid">
+                    <div class="row middle-xs sh-text__white">
+                        <div class="col-xs-12 col-sm-6">
+                             <h2>Pedido rápido</h2>
 
-                        <div
-                        class="promo-content">
-                            <div>
-                                 <h3>25% dto. en gafas de protección</h3>
- <a class="sh-link" href="#" title="">Saber más <i class="icon icon-right-open"></i></a>
-
+                            <p class="sh-m-bottom__lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.</p>
+                            <div class="quickorder-form sh-m-bottom__md">
+                                <input class="sh-input" type="text" placeholder="Referencia" name="ref">
+                                <div class="sh-input-quantity">
+                                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                    class="plus">+</button>
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                    class="minus">–</button>
+                                </div>
+                                <button type="submit" class="sh-btn__white">Añadir</button>
                             </div>
-                            <img class="promo" src="img/low/promo-gafas.png" alt="x">
-                            <div class="promo-hover-content">
+                        </div>
+                        <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 quickorder-items">
+                            <div class="sh-m-bottom__md"> <i class="icon icon-database"></i>
+
+                                <div>
+                                     <h3>Stock permanente</h3>
+
+                                    <p>Para que no te falte de nada</p>
+                                </div>
+                            </div>
+                            <div class="sh-m-bottom__md"> <i class="icon icon-location"></i>
+
+                                <div>
+                                     <h3>Envíos gratis</h3>
+
+                                    <p>Para compras superiores a 50&nbsp;€</p>
+                                </div>
+                            </div>
+                            <div class="sh-m-bottom__md"> <i class="icon icon-bookmarks"></i>
+
+                                <div>
+                                     <h3>Empresa certificada</h3>
+
+                                    <p>ISO 9001:2015</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="sh-features-categories" class="container-fluid sh-m-top__xl sh-m-bottom__xl">
+                <div class="row center-xs sh-m-bottom__lg">
+                     <h2 class="sh-divider__header">Categorías destacadas</h2>
+
+                    <div class="col-xs-12">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="sh-overlay">
+                            <img src="img/low/proteccion-vestuario-category-bg.jpg" alt="Protección y vestuario">
+                            <div class="sh-overlay-content">
+                                 <h3><a href="./category.html" title="Protección y vestuario">Protección y&nbsp;vestuario</a></h3>
+
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+                                    amet.</p>
                             </div>
-                    </div>
-                </div>
-                <!--end sh-box promo-->
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <div class="sh-box"> <span class="sh-closebtn" onclick="this.parentElement.style.display='none';"><i
-                  class="icon icon-cancel"></i></span>
-
-                    <div class="promo-content">
-                        <div>
-                             <h3>Lorem ipsum dolor sit aemet</h3>
- <a class="sh-link" href="#" title="">Saber más <i class="icon icon-right-open"></i></a>
-
-                        </div>
-                        <img class="promo" src="img/low/promo.png" alt="x">
-                        <div class="promo-hover-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
-                </div>
-                <!--end sh-box promo-->
-            </div>
-            </div>
-            <!--end .row-->
-        </section>
-        <section id="sh-quickorder" style="background-image: linear-gradient(#001442, #001442), url(img/low/bg-quickorder.jpeg);">
-            <div class="container-fluid">
-                <div class="row middle-xs sh-text__white">
-                    <div class="col-xs-12 col-sm-6">
-                         <h2>Pedido rápido</h2>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="sh-overlay">
+                            <img src="img/low/proteccion-vestuario-category-bg.jpg" alt="Herramientas manuales">
+                            <div class="sh-overlay-content">
+                                 <h3><a href="./category.html" title="Herramientas manuales">Herramientas manuales</a></h3>
 
-                        <p class="sh-m-bottom__lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.</p>
-                        <div class="quickorder-form sh-m-bottom__md">
-                            <input class="sh-input" type="text" placeholder="Referencia" name="ref">
-                            <div class="sh-input-quantity">
-                                <input class="sh-input" min="1" name="quantity" value="1" type="number">
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                class="plus">+</button>
-                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                class="minus">–</button>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+                                    amet.</p>
                             </div>
-                            <button type="submit" class="sh-btn__white">Añadir</button>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 quickorder-items">
-                        <div class="sh-m-bottom__md"> <i class="icon icon-database"></i>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="sh-overlay">
+                            <img src="img/low/proteccion-vestuario-category-bg.jpg" alt="Protección y vestuario">
+                            <div class="sh-overlay-content">
+                                 <h3><a href="./category.html" title="Herramientas eléctricas y neumáticas">Herramientas eléctricas y&nbsp;neumáticas</a></h3>
 
-                            <div>
-                                 <h3>Stock permanente</h3>
-
-                                <p>Para que no te falte de nada</p>
-                            </div>
-                        </div>
-                        <div class="sh-m-bottom__md"> <i class="icon icon-location"></i>
-
-                            <div>
-                                 <h3>Envíos gratis</h3>
-
-                                <p>Para compras superiores a 50&nbsp;€</p>
-                            </div>
-                        </div>
-                        <div class="sh-m-bottom__md"> <i class="icon icon-bookmarks"></i>
-
-                            <div>
-                                 <h3>Empresa certificada</h3>
-
-                                <p>ISO 9001:2015</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+                                    amet.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="sh-features-categories" class="container-fluid sh-m-top__xl sh-m-bottom__xl">
-            <div class="row center-xs sh-m-bottom__lg">
-                 <h2 class="sh-divider__header">Categorías destacadas</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="sh-overlay">
+                            <img src="img/low/proteccion-vestuario-category-bg.jpg" alt="Protección y vestuario">
+                            <div class="sh-overlay-content">
+                                 <h3><a href="./category.html" title="Mobiliario y almacenaje">Mobiliario y&nbsp;almacenaje</a></h3>
 
-                <div class="col-xs-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <div class="sh-overlay">
-                        <img src="img/low/proteccion-vestuario-category-bg.jpg" alt="Protección y vestuario">
-                        <div class="sh-overlay-content">
-                             <h3><a href="./category.html" title="Protección y vestuario">Protección y&nbsp;vestuario</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+                                    amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="sh-overlay">
+                            <img src="img/low/proteccion-vestuario-category-bg.jpg" alt="Protección y vestuario">
+                            <div class="sh-overlay-content">
+                                 <h3><a href="./category.html" title="Ferretería y cerrajería">Ferretería y&nbsp;cerrajería</a></h3>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
-                                amet.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+                                    amet.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="sh-overlay">
-                        <img src="img/low/proteccion-vestuario-category-bg.jpg" alt="Herramientas manuales">
-                        <div class="sh-overlay-content">
-                             <h3><a href="./category.html" title="Herramientas manuales">Herramientas manuales</a></h3>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="sh-overlay">
+                            <img src="img/low/proteccion-vestuario-category-bg.jpg" alt="Protección y vestuario">
+                            <div class="sh-overlay-content">
+                                 <h3><a href="./category.html" title="Soldadura">Soldadura</a></h3>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
-                                amet.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+                                    amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="sh-overlay">
+                            <img src="img/low/proteccion-vestuario-category-bg.jpg" alt="Protección y vestuario">
+                            <div class="sh-overlay-content">
+                                 <h3><a href="./category.html" title="Rodamientos y cojinetes">Rodamientos y&nbsp;cojinetes</a></h3>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+                                    amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="sh-overlay">
+                            <img src="img/low/proteccion-vestuario-category-bg.jpg" alt="Protección y vestuario">
+                            <div class="sh-overlay-content">
+                                 <h3><a href="./category.html" title="Elevación y transportes">Elevación y&nbsp;transportes</a></h3>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+                                    amet.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="sh-overlay">
-                        <img src="img/low/proteccion-vestuario-category-bg.jpg" alt="Protección y vestuario">
-                        <div class="sh-overlay-content">
-                             <h3><a href="./category.html" title="Herramientas eléctricas y neumáticas">Herramientas eléctricas y&nbsp;neumáticas</a></h3>
+            </section>
+            <section id="sh-brands">
+                <div class="container-fluid">
+                    <div class="row center-xs">
+                         <h2 class="sh-divider__header">Disponemos de más de 300 marcas</h2>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
-                                amet.</p>
+                        <div class="col-xs-12 sh-m-top__lg"><a class="sh-link" href="./brands.html" title="">Ver todas las marcas con las que trabajamos <i class="icon icon-right-open"></i></a>
+
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <div class="sh-overlay">
-                        <img src="img/low/proteccion-vestuario-category-bg.jpg" alt="Protección y vestuario">
-                        <div class="sh-overlay-content">
-                             <h3><a href="./category.html" title="Mobiliario y almacenaje">Mobiliario y&nbsp;almacenaje</a></h3>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
-                                amet.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <div class="sh-overlay">
-                        <img src="img/low/proteccion-vestuario-category-bg.jpg" alt="Protección y vestuario">
-                        <div class="sh-overlay-content">
-                             <h3><a href="./category.html" title="Ferretería y cerrajería">Ferretería y&nbsp;cerrajería</a></h3>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
-                                amet.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <div class="sh-overlay">
-                        <img src="img/low/proteccion-vestuario-category-bg.jpg" alt="Protección y vestuario">
-                        <div class="sh-overlay-content">
-                             <h3><a href="./category.html" title="Soldadura">Soldadura</a></h3>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
-                                amet.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="sh-overlay">
-                        <img src="img/low/proteccion-vestuario-category-bg.jpg" alt="Protección y vestuario">
-                        <div class="sh-overlay-content">
-                             <h3><a href="./category.html" title="Rodamientos y cojinetes">Rodamientos y&nbsp;cojinetes</a></h3>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
-                                amet.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="sh-overlay">
-                        <img src="img/low/proteccion-vestuario-category-bg.jpg" alt="Protección y vestuario">
-                        <div class="sh-overlay-content">
-                             <h3><a href="./category.html" title="Elevación y transportes">Elevación y&nbsp;transportes</a></h3>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
-                                amet.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="sh-brands">
-            <div class="container-fluid">
-                <div class="row center-xs">
-                     <h2 class="sh-divider__header">Disponemos de más de 300 marcas</h2>
-
-                    <div class="col-xs-12 sh-m-top__lg"><a class="sh-link" href="./brands.html" title="">Ver todas las marcas con las que trabajamos <i class="icon icon-right-open"></i></a>
-
-                    </div>
-                    <div class="row-brands sh-m-top__lg"> <a href="./subcategory.html"><img src="img/low/promo.png" alt=""></a>
-
-                        <a
-                        href="./subcategory.html">
-                            <img src="img/low/promo.png" alt="">
-                            </a> <a href="./subcategory.html"><img src="img/low/promo.png" alt=""></a>
+                        <div class="row-brands sh-m-top__lg"> <a href="./subcategory.html"><img src="img/low/promo.png" alt=""></a>
 
                             <a
                             href="./subcategory.html">
@@ -557,23 +551,27 @@
                                     <a
                                     href="./subcategory.html">
                                         <img src="img/low/promo.png" alt="">
-                                        </a>
+                                        </a> <a href="./subcategory.html"><img src="img/low/promo.png" alt=""></a>
+
+                                        <a
+                                        href="./subcategory.html">
+                                            <img src="img/low/promo.png" alt="">
+                                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="" class="sh-m-top__xl sh-m-bottom__xl container-fluid">
-            <div class="row">
-                <div class="col-xs-12 col-lg-3">
-                     <h2 class="sh-divider__header">Últimas novedades</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="sh-m-top__lg sh-m-bottom__lg"> <a class="sh-link" href="#">Ver todas las novedades <i class="icon icon-right-open"></i></a>
+            </section>
+            <section class="sh-m-top__xl sh-m-bottom__xl container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-3">
+                         <h2 class="sh-divider__header">Últimas novedades</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="sh-m-top__lg sh-m-bottom__lg"> <a class="sh-link" href="#">Ver todas las novedades <i class="icon icon-right-open"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-lg-9">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4 col-lg-3 sh-m-bottom">
+                    <div class="col-xs-12 col-lg-9 ">
+                        <div class="o-grid o-grid--scroll o-scroll o-scroll--desktop no-scrollbar">
                             <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                                 <div
@@ -601,8 +599,6 @@
                             </div>
                         </div>
                         <!-- end sh-card -->
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-lg-3 sh-m-bottom">
                         <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                             <div
@@ -630,8 +626,6 @@
                         </div>
                     </div>
                     <!-- end sh-card -->
-                </div>
-                <div class="col-xs-12 col-sm-4 col-lg-3 sh-m-bottom">
                     <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                         <div
@@ -659,8 +653,6 @@
                     </div>
                 </div>
                 <!-- end sh-card -->
-            </div>
-            <div class="col-xs-12 col-sm-4 col-lg-3 sh-m-bottom">
                 <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                     <div
@@ -686,10 +678,8 @@
                     </div>
                     <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                 </div>
-            </div>
-            <!-- end sh-card -->
-            </div>
-            <div class="col-xs-12 col-sm-4 col-lg-3 sh-m-bottom">
+                </div>
+                <!-- end sh-card -->
                 <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                     <div
@@ -715,10 +705,8 @@
                     </div>
                     <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                 </div>
-            </div>
-            <!-- end sh-card -->
-            </div>
-            <div class="col-xs-12 col-sm-4 col-lg-3 sh-m-bottom">
+                </div>
+                <!-- end sh-card -->
                 <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                     <div
@@ -744,10 +732,8 @@
                     </div>
                     <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                 </div>
-            </div>
-            <!-- end sh-card -->
-            </div>
-            <div class="col-xs-12 col-sm-4 col-lg-3 sh-m-bottom">
+                </div>
+                <!-- end sh-card -->
                 <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                     <div
@@ -773,10 +759,8 @@
                     </div>
                     <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                 </div>
-            </div>
-            <!-- end sh-card -->
-            </div>
-            <div class="col-xs-12 col-sm-4 col-lg-3 sh-m-bottom">
+                </div>
+                <!-- end sh-card -->
                 <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                     <div
@@ -802,271 +786,271 @@
                     </div>
                     <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
                 </div>
-            </div>
-            <!-- end sh-card -->
-            </div>
-            </div>
-            </div>
-            </div>
-        </section>
-        <section id="sh-community">
-            <div class="container-fluid">
+                </div>
+                <!-- end sh-card -->
+                </div>
+                </div>
+                </div>
+            </section>
+            <section id="sh-community">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                             <h2>HERCO TV</h2>
+
+                            <div class="sh-divider__header"></div>
+                            <div class="sh-m-top__lg embed-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/86_vnQc1oBE"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            </div>
+                            <div>
+                                <p class="sh-text__h4"><a href="" title="¿Qué vestuario laboral necesito para verano?">¿Qué vestuario laboral necesito para verano?</a>
+
+                                </p>
+                                <p class="byauthor"> <small><time datetime="2018-07-07">2 enero, 2019</time> / </small>
+ <small>Por HercoTV / </small>
+ <small>0 comentarios</small>
+
+                                </p>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                    veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
+                             <h2>Blog HERCO</h2>
+
+                            <div class="sh-divider__header"></div>
+                            <article class="sh-m-top__lg sh-card-blog__mini">
+                                <div>
+                                    <img class="" src="img/low/promo.png" alt="x">
+                                </div>
+                                <div>
+                                    <p class="sh-text__h4"><a href="" title="¿Qué vestuario laboral necesito para verano?">¿Qué vestuario laboral necesito para verano?</a>
+
+                                    </p>
+                                    <p class="byauthor"> <small><time datetime="2018-07-07">2 enero, 2019</time> / </small>
+ <small>Por HercoTV / </small>
+ <small>0 comentarios</small>
+
+                                    </p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque laudantium.</p>
+                                </div>
+                            </article>
+                            <article class="sh-m-top__lg sh-card-blog__mini">
+                                <div>
+                                    <img class="" src="img/low/promo.png" alt="x">
+                                </div>
+                                <div>
+                                    <p class="sh-text__h4"><a href="" title="¿Qué vestuario laboral necesito para verano?">¿Qué vestuario laboral necesito para verano?</a>
+
+                                    </p>
+                                    <p class="byauthor"> <small><time datetime="2018-07-07">2 enero, 2019</time> / </small>
+ <small>Por HercoTV / </small>
+ <small>0 comentarios</small>
+
+                                    </p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque laudantium.</p>
+                                </div>
+                            </article>
+                            <article class="sh-m-top__lg sh-card-blog__mini">
+                                <div>
+                                    <img class="" src="img/low/promo.png" alt="x">
+                                </div>
+                                <div>
+                                    <p class="sh-text__h4"><a href="" title="¿Qué vestuario laboral necesito para verano?">¿Qué vestuario laboral necesito para verano?</a>
+
+                                    </p>
+                                    <p class="byauthor"> <small><time datetime="2018-07-07">2 enero, 2019</time> / </small>
+ <small>Por HercoTV / </small>
+ <small>0 comentarios</small>
+
+                                    </p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque laudantium.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="sh-testimonials" class="container-fluid sh-m-bottom__xl sh-m-top__xl">
+                <div class="row center-xs">
+                     <h2 class="sh-divider__header">Tu proveedor online de productos industriales</h2>
+
+                </div>
+                <div class="row sh-m-bottom__lg sh-m-top__lg">
+                    <div class="col-xs-12 col-md-6">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                            veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                            porro quisquam est,.</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                            veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                            porro quisquam est.</p>
+                    </div>
+                </div>
+                <!-- end .row texts-->
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                         <h2>HERCO TV</h2>
-
-                        <div class="sh-divider__header"></div>
-                        <div class="sh-m-top__lg embed-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/86_vnQc1oBE"
-                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        </div>
-                        <div>
-                            <p class="sh-text__h4"><a href="" title="¿Qué vestuario laboral necesito para verano?">¿Qué vestuario laboral necesito para verano?</a>
-
-                            </p>
-                            <p class="byauthor"> <small><time datetime="2018-07-07">2 enero, 2019</time> / </small>
- <small>Por HercoTV / </small>
- <small>0 comentarios</small>
-
-                            </p>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
-                         <h2>Blog HERCO</h2>
-
-                        <div class="sh-divider__header"></div>
-                        <article class="sh-m-top__lg sh-card-blog__mini">
-                            <div>
-                                <img class="" src="img/low/promo.png" alt="x">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="sh-box">
+                            <div class="stars" data-stars="1">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
                             </div>
-                            <div>
-                                <p class="sh-text__h4"><a href="" title="¿Qué vestuario laboral necesito para verano?">¿Qué vestuario laboral necesito para verano?</a>
+                            <blockquote>“Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                [...]”</blockquote>
+                            <div class="testimonial-author">
+                                <img src="img/low/user.png" alt="Kay Totleben">
+                                <div> <strong>Kay Totleben</strong>
 
-                                </p>
-                                <p class="byauthor"> <small><time datetime="2018-07-07">2 enero, 2019</time> / </small>
- <small>Por HercoTV / </small>
- <small>0 comentarios</small>
+                                    <br> <span>Director comercial Fagor</span>
 
-                                </p>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudantium.</p>
-                            </div>
-                        </article>
-                        <article class="sh-m-top__lg sh-card-blog__mini">
-                            <div>
-                                <img class="" src="img/low/promo.png" alt="x">
-                            </div>
-                            <div>
-                                <p class="sh-text__h4"><a href="" title="¿Qué vestuario laboral necesito para verano?">¿Qué vestuario laboral necesito para verano?</a>
-
-                                </p>
-                                <p class="byauthor"> <small><time datetime="2018-07-07">2 enero, 2019</time> / </small>
- <small>Por HercoTV / </small>
- <small>0 comentarios</small>
-
-                                </p>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudantium.</p>
-                            </div>
-                        </article>
-                        <article class="sh-m-top__lg sh-card-blog__mini">
-                            <div>
-                                <img class="" src="img/low/promo.png" alt="x">
-                            </div>
-                            <div>
-                                <p class="sh-text__h4"><a href="" title="¿Qué vestuario laboral necesito para verano?">¿Qué vestuario laboral necesito para verano?</a>
-
-                                </p>
-                                <p class="byauthor"> <small><time datetime="2018-07-07">2 enero, 2019</time> / </small>
- <small>Por HercoTV / </small>
- <small>0 comentarios</small>
-
-                                </p>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudantium.</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="sh-testimonials" class="container-fluid sh-m-bottom__xl sh-m-top__xl">
-            <div class="row center-xs">
-                 <h2 class="sh-divider__header">Tu proveedor online de productos industriales</h2>
-
-            </div>
-            <div class="row sh-m-bottom__lg sh-m-top__lg">
-                <div class="col-xs-12 col-md-6">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                        veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-                        ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
-                        porro quisquam est,.</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                        veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-                        ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
-                        porro quisquam est.</p>
-                </div>
-            </div>
-            <!-- end .row texts-->
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="sh-box">
-                        <div class="stars" data-stars="1">
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                        </div>
-                        <blockquote>“Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                            fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
-                            [...]”</blockquote>
-                        <div class="testimonial-author">
-                            <img src="img/low/user.png" alt="Kay Totleben">
-                            <div> <strong>Kay Totleben</strong>
-
-                                <br> <span>Director comercial Fagor</span>
-
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- end testimonial card-->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="sh-box">
-                        <div class="stars" data-stars="2">
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                        </div>
-                        <blockquote>“Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                            fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
-                            [...]”</blockquote>
-                        <div class="testimonial-author">
-                            <img src="img/low/user.png" alt="Kay Totleben">
-                            <div> <strong>Kay Totleben</strong>
+                    <!-- end testimonial card-->
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="sh-box">
+                            <div class="stars" data-stars="2">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                            <blockquote>“Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                [...]”</blockquote>
+                            <div class="testimonial-author">
+                                <img src="img/low/user.png" alt="Kay Totleben">
+                                <div> <strong>Kay Totleben</strong>
 
-                                <br> <span>Director comercial Fagor</span>
+                                    <br> <span>Director comercial Fagor</span>
 
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- end testimonial card-->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="sh-box">
-                        <div class="stars" data-stars="4">
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                        </div>
-                        <blockquote>“Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                            fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
-                            [...]”</blockquote>
-                        <div class="testimonial-author">
-                            <img src="img/low/user.png" alt="Kay Totleben">
-                            <div> <strong>Kay Totleben</strong>
+                    <!-- end testimonial card-->
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="sh-box">
+                            <div class="stars" data-stars="4">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                            <blockquote>“Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                [...]”</blockquote>
+                            <div class="testimonial-author">
+                                <img src="img/low/user.png" alt="Kay Totleben">
+                                <div> <strong>Kay Totleben</strong>
 
-                                <br> <span>Director comercial Fagor</span>
+                                    <br> <span>Director comercial Fagor</span>
 
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- end testimonial card-->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="sh-box">
-                        <div class="stars" data-stars="5">
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                        </div>
-                        <blockquote>“Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                            fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
-                            [...]”</blockquote>
-                        <div class="testimonial-author">
-                            <img src="img/low/user.png" alt="Kay Totleben">
-                            <div> <strong>Kay Totleben</strong>
+                    <!-- end testimonial card-->
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="sh-box">
+                            <div class="stars" data-stars="5">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                            <blockquote>“Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                [...]”</blockquote>
+                            <div class="testimonial-author">
+                                <img src="img/low/user.png" alt="Kay Totleben">
+                                <div> <strong>Kay Totleben</strong>
 
-                                <br> <span>Director comercial Fagor</span>
+                                    <br> <span>Director comercial Fagor</span>
 
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- end testimonial card-->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="sh-box">
-                        <div class="stars" data-stars="3">
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                        </div>
-                        <blockquote>“Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                            fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
-                            [...]”</blockquote>
-                        <div class="testimonial-author">
-                            <img src="img/low/user.png" alt="Kay Totleben">
-                            <div> <strong>Kay Totleben</strong>
+                    <!-- end testimonial card-->
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="sh-box">
+                            <div class="stars" data-stars="3">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                            <blockquote>“Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                [...]”</blockquote>
+                            <div class="testimonial-author">
+                                <img src="img/low/user.png" alt="Kay Totleben">
+                                <div> <strong>Kay Totleben</strong>
 
-                                <br> <span>Director comercial Fagor</span>
+                                    <br> <span>Director comercial Fagor</span>
 
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- end testimonial card-->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="sh-box">
-                        <div class="stars" data-stars="5">
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                        </div>
-                        <blockquote>“Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                            fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
-                            [...]”</blockquote>
-                        <div class="testimonial-author">
-                            <img src="img/low/user.png" alt="Kay Totleben">
-                            <div> <strong>Kay Totleben</strong>
+                    <!-- end testimonial card-->
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="sh-box">
+                            <div class="stars" data-stars="5">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                            <blockquote>“Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                [...]”</blockquote>
+                            <div class="testimonial-author">
+                                <img src="img/low/user.png" alt="Kay Totleben">
+                                <div> <strong>Kay Totleben</strong>
 
-                                <br> <span>Director comercial Fagor</span>
+                                    <br> <span>Director comercial Fagor</span>
 
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- end testimonial card-->
                 </div>
-                <!-- end testimonial card-->
-            </div>
-            <!-- end .row -->
-            <div class="row center-xs">
-                <div class="awards">
-                    <img src="img/low/herco-pilot.png" alt="Kay Totleben">
-                    <img src="img/low/herco-iso-9001.png" alt="Kay Totleben">
-                    <img src="img/low/herco-rsa-sello.png" alt="Kay Totleben">
+                <!-- end .row -->
+                <div class="row center-xs">
+                    <div class="awards">
+                        <img src="img/low/herco-pilot.png" alt="Kay Totleben">
+                        <img src="img/low/herco-iso-9001.png" alt="Kay Totleben">
+                        <img src="img/low/herco-rsa-sello.png" alt="Kay Totleben">
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
         <div class="clearfix"></div>
         <footer id="sh-footer" class="sh-text__white">
             <div class="sh-footer__top">
@@ -1176,7 +1160,7 @@
                 </div>
             </div>
             <div class="sh-footer__sub container-fluid">
-                <div class="row middle-xs between-sm center-xs"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Herco Logotipo" width="200px"></a>
+                <div class="row middle-xs between-sm center-xs"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200"></a>
  <small>2019 Suministros Industriales Herco S.L.</small>
 
                     <div
@@ -1198,7 +1182,7 @@
         </footer>
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
         <script src="js/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="js/herco.min.js"></script>
+        <script src="js/herco.min.js"></script>
         <script>
             const menu = mmlight(document.querySelector('#sh-nav'));
             menu.create('(max-width: 1024px)'); 		// menu.create( 'all' );

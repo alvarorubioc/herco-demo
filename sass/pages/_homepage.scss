@@ -292,8 +292,11 @@ section::after {
     grid-gap: 2em;
     margin-top: 4rem;
     @include breakpoint (xsmobile) {
-        display: inline-grid;
-        justify-items: center;
+        grid-auto-flow: row;
+        & > * {
+            justify-self: center;
+        }
+        
     }
     img {
         mix-blend-mode: multiply;

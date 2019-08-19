@@ -3,17 +3,14 @@
     
     <head>
         <meta charset="utf-8">
+        <title>Herco WEB DEMO</title>
         <meta name="description" content="">
         <meta name="author" content="">
         <meta name="robots" content="all">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Herco WEB DEMO</title>
         <link rel="icon" href="img/low/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/main.css">
-        <script>
-            document.getElementsByTagName("html")[0].className += " js";
-        </script>
     </head>
     
     <body class="homepage-login">
@@ -21,7 +18,7 @@
             <div class="sh-top-nav container-fluid"> <a href="#menu" id="sh-nav-trigger"><i class="icon icon-menu"></i><span></span></a>
 
                 <div
-                class="sh-nav--brand"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200px"></a>
+                class="sh-nav--brand"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200"></a>
 
             </div>
             <div class="sh-nav--secondary">
@@ -31,15 +28,15 @@
 
                 </div>
                 <div> <i class="icon icon-tag"></i>
- <a href="#" title="Pedido rápido" rel="nofollow">Pedido rápido</a>
+ <a href="./quick-order.html" title="Pedido rápido"
+                    rel="nofollow">Pedido rápido</a>
 
                 </div>
                 <div class="sh-nav--avatar">	<i class="icon icon-user"></i>
 
-                    <img src="img/low/avatar.png"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
+                    <img src="img/low/avatar.png" alt="Nombre apellido"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
 
                 </div>
-                </ul>
             </div>
             <div class="sh-nav--basket" id="sh-basket"> <a href="./cart.html" title="Carro de la compra" id="open-basket">
                     <i class="icon icon-basket"></i><span class="sh-badge sh-badge-red">0</span>
@@ -71,6 +68,7 @@
                                     </li>
                                 </ul>
                             </li>
+                        </ul>
                     </div>
                     <ul class="sh-nav-rigth end-xs bottom-xs">
                         <li><a href="./brands.html">Marcas</a>
@@ -263,20 +261,20 @@
                 </ul>
                 <div class="sh-nav--secondary__mobile">
                     <div> <i class="icon icon-location"></i>
- <a href="" title="Localizar pedido"
+ <a href="./find-order.html" title="Localizar pedido"
                         rel="nofollow">Localizar pedido</a>
 
                     </div>
                     <div> <i class="icon icon-tag"></i>
- <a href="" title="Pedido rápido" rel="nofollow">Pedido rápido</a>
+ <a href="./quick-order.html" title="Pedido rápido"
+                        rel="nofollow">Pedido rápido</a>
 
                     </div>
                     <div class="sh-nav--avatar">	<i class="icon icon-user"></i>
 
-                        <img src="img/low/avatar.png"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
+                        <img src="img/low/avatar.png" alt="Nombre Apellido"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
 
                     </div>
-                    </ul>
                 </div>
             </nav>
             <!-- END Mobile NAVIGATION -->
@@ -899,7 +897,7 @@
                         <div class="sh-divider__header"></div>
                         <div class="sh-m-top__lg embed-container">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/86_vnQc1oBE"
-                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                         </div>
                         <div>
@@ -1257,7 +1255,7 @@
                 </div>
             </div>
             <div class="sh-footer__sub container-fluid">
-                <div class="row middle-xs between-sm center-xs"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Herco Logotipo" width="200px"></a>
+                <div class="row middle-xs between-sm center-xs"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200"></a>
  <small>2019 Suministros Industriales Herco S.L.</small>
 
                     <div
@@ -1279,7 +1277,7 @@
         </footer>
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
         <script src="js/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="js/herco.min.js"></script>
+        <script src="js/herco.min.js"></script>
         <script>
             const menu = mmlight(document.querySelector('#sh-nav'));
             menu.create('(max-width: 1024px)'); 		// menu.create( 'all' );

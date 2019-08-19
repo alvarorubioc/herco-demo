@@ -1,20 +1,20 @@
-<partial src="header.html" bodyClass="findorder" robots="noindex"></partial>
+<partial src="header.html" bodyClass="quickorder" robots="noindex"></partial>
 <section class="sh-text__white">
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-md-6 col-md-offset-3 sh-m-top__lg">
-                <h5 class="sh-m-bottom__lg">Localiza tu pedido</h5>
-                <form action="" method="">
-                    <label class="sh-label" for="fname">Pedido</label>
-                    <div class="sh-form-group sh-form-contain-icon sh-form__lg sh-m-bottom__md sh-m-top__sm">                        
-                        <input class="sh-input" id="reference" type="text" name="reference" placeholder="Nº de referencia" required>
-                        <i class="icon icon-location sh-form-icon-secondary__right"></i>
+                <h5 class="sh-m-bottom__md">Pedido rápido</h5>
+                <div class="quickorder-form sh-m-bottom__md">
+                    <input class="sh-input" type="text" placeholder="Referencia" name="ref">
+                    <div class="sh-input-quantity">
+                        <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            class="plus">+</button>
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            class="minus">–</button>
                     </div>
-
-                    <div class="sh-m-bottom__lg">
-                        <button class="sh-btn__blue sh-btn__lg sh-btn__full" type="submit">Añadir</button>
-                    </div>
-                </form>
+                    <button type="submit" class="sh-btn__white">Añadir</button>
+                </div>
             </div>
         </div>
         <div class="row center-xs sh-m-top__lg sh-m-bottom__xxl">

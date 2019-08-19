@@ -3,17 +3,14 @@
     
     <head>
         <meta charset="utf-8">
+        <title>Herco WEB DEMO</title>
         <meta name="description" content="">
         <meta name="author" content="">
         <meta name="robots" content="@@robots">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Herco WEB DEMO</title>
         <link rel="icon" href="img/low/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/main.css">
-        <script>
-            document.getElementsByTagName("html")[0].className += " js";
-        </script>
     </head>
     
     <body class="product">
@@ -21,7 +18,7 @@
             <div class="sh-top-nav container-fluid"> <a href="#menu" id="sh-nav-trigger"><i class="icon icon-menu"></i><span></span></a>
 
                 <div
-                class="sh-nav--brand"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200px"></a>
+                class="sh-nav--brand"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200"></a>
 
             </div>
             <div class="sh-nav--secondary">
@@ -31,15 +28,15 @@
 
                 </div>
                 <div> <i class="icon icon-tag"></i>
- <a href="#" title="Pedido rápido" rel="nofollow">Pedido rápido</a>
+ <a href="./quick-order.html" title="Pedido rápido"
+                    rel="nofollow">Pedido rápido</a>
 
                 </div>
                 <div class="sh-nav--avatar">	<i class="icon icon-user"></i>
 
-                    <img src="img/low/avatar.png"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
+                    <img src="img/low/avatar.png" alt="Nombre apellido"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
 
                 </div>
-                </ul>
             </div>
             <div class="sh-nav--basket" id="sh-basket"> <a href="./cart.html" title="Carro de la compra" id="open-basket">
                     <i class="icon icon-basket"></i><span class="sh-badge sh-badge-red">0</span>
@@ -71,6 +68,7 @@
                                     </li>
                                 </ul>
                             </li>
+                        </ul>
                     </div>
                     <ul class="sh-nav-rigth end-xs bottom-xs">
                         <li><a href="./brands.html">Marcas</a>
@@ -263,20 +261,20 @@
                 </ul>
                 <div class="sh-nav--secondary__mobile">
                     <div> <i class="icon icon-location"></i>
- <a href="" title="Localizar pedido"
+ <a href="./find-order.html" title="Localizar pedido"
                         rel="nofollow">Localizar pedido</a>
 
                     </div>
                     <div> <i class="icon icon-tag"></i>
- <a href="" title="Pedido rápido" rel="nofollow">Pedido rápido</a>
+ <a href="./quick-order.html" title="Pedido rápido"
+                        rel="nofollow">Pedido rápido</a>
 
                     </div>
                     <div class="sh-nav--avatar">	<i class="icon icon-user"></i>
 
-                        <img src="img/low/avatar.png"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
+                        <img src="img/low/avatar.png" alt="Nombre Apellido"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
 
                     </div>
-                    </ul>
                 </div>
             </nav>
             <!-- END Mobile NAVIGATION -->
@@ -290,8 +288,8 @@
                 </div>
             </div>
         </section>
-        <!-- end #sh-section -->
-        <section class="container-fluid">
+        <!-- end #sh-section-hero -->
+        <div class="container-fluid">
             <header id="header-bar" class="sh-m-bottom">
                 <div>
                     <form class="sh-form-search" action="./search.html">
@@ -307,8 +305,8 @@
                     </div>
                 </div>
             </header>
-        </section>
-        <main class="container-fluid" aria-label="Main content" role="main">
+        </div>
+        <main class="container-fluid" aria-label="Main content">
             <div class="row">
                 <div class="col-xs-12 col-md-6">
                     <div class="product-img"> <span class="sh-badge">Top Ventas</span>
@@ -332,13 +330,15 @@
                 </div>
                 <div class="col-xs-12 col-md-6"> <strong class="product-brand">Apolo/Celo</strong>
 
-                     <h2 itemprop="name">Apolo taco nylon Avellanado Clavo NPC</h2>
+                     <h2>Apolo taco nylon Avellanado Clavo NPC</h2>
 
-                    <div class="product-price sh-text__h3"> <del class="offer-price">0,55&nbsp;€</strong><span>/ud.</del>
- <strong class="normal-price">0,35&nbsp;€</strong><span>/ud.</span>
+                    <div class="product-price sh-text__h3"> <del class="offer-price">0,55&nbsp;€</strong><span>/ud.</span></del>
+
+                        <strong
+                        class="normal-price">0,35&nbsp;€</strong><span>/ud.</span>
 
                     </div>
-                    <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -379,7 +379,7 @@
                 </div>
             </div>
             <div class="clearfix"></div>
-            <section id="sh-product-tabs" class="sh-m-top__xxl row">
+            <div id="sh-product-tabs" class="sh-m-top__xxl row">
                 <div class="sh-tabs">
                     <input type="radio" id="tab1" name="tab" checked>
                     <label for="tab1"><i class="icon icon-info"></i> Ficha técnica</label>
@@ -392,10 +392,10 @@
                     <div class="line"></div>
                     <div class="sh-tabs-wrapper">
                         <div class="sh-tab-content" id="c1">
-                            <section class="sh-products-comparison-table">
+                            <div class="sh-comparison-table__wrap">
                                 <div class="sh-products-table">
                                     <div class="features">
-                                        <ul class="sh-features-list">
+                                        <ul class="features-list">
                                             <li>Marca</li>
                                             <li>Precios</li>
                                             <li>Tallas</li>
@@ -408,7 +408,7 @@
                                     <div class="sh-products-wrapper">
                                         <ul class="sh-products-columns">
                                             <li class="product">
-                                                <ul class="sh-features-list">
+                                                <ul class="features-list">
                                                     <li>APOLO</li>
                                                     <li>0,35 € /und.</li>
                                                     <li>XS</li>
@@ -419,7 +419,7 @@
                                             </li>
                                             <!-- .product -->
                                             <li class="product">
-                                                <ul class="sh-features-list">
+                                                <ul class="features-list">
                                                     <li>&#8205;</li>
                                                     <li>3,5 € /10 und.</li>
                                                     <li>S</li>
@@ -430,7 +430,7 @@
                                             </li>
                                             <!-- .product -->
                                             <li class="product">
-                                                <ul class="sh-features-list">
+                                                <ul class="features-list">
                                                     <li>&#8205;</li>
                                                     <li>35 € /100 und.</li>
                                                     <li>M</li>
@@ -441,7 +441,7 @@
                                             </li>
                                             <!-- .product -->
                                             <li class="product">
-                                                <ul class="sh-features-list">
+                                                <ul class="features-list">
                                                     <li>&#8205;</li>
                                                     <li>350 € /1000 und.</li>
                                                     <li>L</li>
@@ -452,7 +452,7 @@
                                             </li>
                                             <!-- .product -->
                                             <li class="product">
-                                                <ul class="sh-features-list">
+                                                <ul class="features-list">
                                                     <li>&#8205;</li>
                                                     <li>&#8205;</li>
                                                     <li>XL</li>
@@ -463,7 +463,7 @@
                                             </li>
                                             <!-- .product -->
                                             <li class="product">
-                                                <ul class="sh-features-list">
+                                                <ul class="features-list">
                                                     <li>&#8205;</li>
                                                     <li>&#8205;</li>
                                                     <li>XXL</li>
@@ -474,7 +474,7 @@
                                             </li>
                                             <!-- .product -->
                                             <li class="product">
-                                                <ul class="sh-features-list">
+                                                <ul class="features-list">
                                                     <li>&#8205;</li>
                                                     <li>&#8205;</li>
                                                     <li>&#8205;</li>
@@ -485,7 +485,7 @@
                                             </li>
                                             <!-- .product -->
                                             <li class="product">
-                                                <ul class="sh-features-list">
+                                                <ul class="features-list">
                                                     <li>&#8205;</li>
                                                     <li>&#8205;</li>
                                                     <li>&#8205;</li>
@@ -501,7 +501,7 @@
                                     <!-- .sh-products-wrapper -->
                                 </div>
                                 <!-- .sh-products-table -->
-                            </section>
+                            </div>
                             <!-- .sh-products-comparison-table -->
                         </div>
                         <div class="sh-tab-content" id="c2">
@@ -519,7 +519,7 @@
                     <!-- end .sh-tabs-wrapper-->
                 </div>
                 <!-- end .sh-tabs-->
-            </section>
+            </div>
         </main>
         <div class="clearfix"></div>
         <section id="sh-cross-selling">
@@ -652,7 +652,7 @@
             </div>
         </section>
         <div class="sh-m-bottom__xxl sh-m-top__xl">
-            <section id="sh-scroll-products">
+            <section class="sh-scroll-products">
                 <div class="scroll-head">
                      <h2>Los clientes también compraron</h2>
 
@@ -881,7 +881,7 @@
         </div>
         </div>
         </section>
-        <section id="sh-scroll-products" class="sh-m-top__lg">
+        <section class="sh-scroll-products" class="sh-m-top__lg">
             <div class="scroll-head">
                  <h2>Productos vistos recientemente</h2>
 
@@ -1166,7 +1166,7 @@
                 </div>
             </div>
             <div class="sh-footer__sub container-fluid">
-                <div class="row middle-xs between-sm center-xs"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Herco Logotipo" width="200px"></a>
+                <div class="row middle-xs between-sm center-xs"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200"></a>
  <small>2019 Suministros Industriales Herco S.L.</small>
 
                     <div
@@ -1188,7 +1188,7 @@
         </footer>
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
         <script src="js/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="js/herco.min.js"></script>
+        <script src="js/herco.min.js"></script>
         <script>
             const menu = mmlight(document.querySelector('#sh-nav'));
             menu.create('(max-width: 1024px)'); 		// menu.create( 'all' );

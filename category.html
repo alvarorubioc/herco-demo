@@ -3,17 +3,14 @@
     
     <head>
         <meta charset="utf-8">
+        <title>Herco WEB DEMO</title>
         <meta name="description" content="">
         <meta name="author" content="">
         <meta name="robots" content="all">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Herco WEB DEMO</title>
         <link rel="icon" href="img/low/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/main.css">
-        <script>
-            document.getElementsByTagName("html")[0].className += " js";
-        </script>
     </head>
     
     <body class="category">
@@ -21,7 +18,7 @@
             <div class="sh-top-nav container-fluid"> <a href="#menu" id="sh-nav-trigger"><i class="icon icon-menu"></i><span></span></a>
 
                 <div
-                class="sh-nav--brand"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200px"></a>
+                class="sh-nav--brand"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200"></a>
 
             </div>
             <div class="sh-nav--secondary">
@@ -31,15 +28,15 @@
 
                 </div>
                 <div> <i class="icon icon-tag"></i>
- <a href="#" title="Pedido rápido" rel="nofollow">Pedido rápido</a>
+ <a href="./quick-order.html" title="Pedido rápido"
+                    rel="nofollow">Pedido rápido</a>
 
                 </div>
                 <div class="sh-nav--avatar">	<i class="icon icon-user"></i>
 
-                    <img src="img/low/avatar.png"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
+                    <img src="img/low/avatar.png" alt="Nombre apellido"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
 
                 </div>
-                </ul>
             </div>
             <div class="sh-nav--basket" id="sh-basket"> <a href="./cart.html" title="Carro de la compra" id="open-basket">
                     <i class="icon icon-basket"></i><span class="sh-badge sh-badge-red">0</span>
@@ -71,6 +68,7 @@
                                     </li>
                                 </ul>
                             </li>
+                        </ul>
                     </div>
                     <ul class="sh-nav-rigth end-xs bottom-xs">
                         <li><a href="./brands.html">Marcas</a>
@@ -263,20 +261,20 @@
                 </ul>
                 <div class="sh-nav--secondary__mobile">
                     <div> <i class="icon icon-location"></i>
- <a href="" title="Localizar pedido"
+ <a href="./find-order.html" title="Localizar pedido"
                         rel="nofollow">Localizar pedido</a>
 
                     </div>
                     <div> <i class="icon icon-tag"></i>
- <a href="" title="Pedido rápido" rel="nofollow">Pedido rápido</a>
+ <a href="./quick-order.html" title="Pedido rápido"
+                        rel="nofollow">Pedido rápido</a>
 
                     </div>
                     <div class="sh-nav--avatar">	<i class="icon icon-user"></i>
 
-                        <img src="img/low/avatar.png"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
+                        <img src="img/low/avatar.png" alt="Nombre Apellido"> <a href="./login.html" title="Iniciar sesión" rel="nofollow">Iniciar sesión</a>
 
                     </div>
-                    </ul>
                 </div>
             </nav>
             <!-- END Mobile NAVIGATION -->
@@ -294,7 +292,7 @@
                 </div>
             </div>
         </section>
-        <!-- end #sh-section -->
+        <!-- end #sh-section-hero -->
         <section class="container-fluid">
             <header id="header-bar" class="sh-m-bottom">
                 <div>
@@ -311,7 +309,7 @@
                 </div>
             </header>
         </section>
-        <div id="sh-list-categories">
+        <div class="sh-list-categories">
             <ul class="scroll no-scrollbar">
                 <li class="scroll-item">
                     <div class="sh-overlay">
@@ -397,9 +395,9 @@
                 <li class="scroll-item-end"></li>
             </ul>
         </div>
-        <main class="sh-m-bottom__xl sh-m-top__xl" aria-label="Main content" role="main">
-            <section id="sh-scroll-products">
-                <div class="scroll-head">
+        <main class="sh-m-bottom__xl sh-m-top__xl" aria-label="Main content">
+            <section class="sh-scroll">
+                <div class="sh-scroll--head">
                      <h2>Novedades en gafas de protección</h2>
 
                     <div class="sh-divider__header"></div>
@@ -408,8 +406,8 @@
                     <div class="col-xs-12 sh-m-top__lg"><a class="sh-link" href="#" title="Gafas de protección">Ver gafas de protección <i class="icon icon-right-open"></i></a>
                     </div>
                 </div>
-                <div class="scroll-wrapper">
-                    <div class="scroll-items full no-scrollbar">
+                <div class="sh-scroll--wrapper">
+                    <div class="sh-scroll--items no-scrollbar">
                         <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                             <div
@@ -629,8 +627,8 @@
                 </div>
                 </div>
             </section>
-            <section id="sh-scroll-products">
-                <div class="scroll-head">
+            <section class="sh-scroll">
+                <div class="sh-scroll--head">
                      <h2>Promociones en arnés de seguridad</h2>
 
                     <div class="sh-divider__header"></div>
@@ -639,8 +637,8 @@
                     <div class="col-xs-12 sh-m-top__lg"><a class="sh-link" href="#" title="Arnés de seguridad">Ver arnés de seguridad <i class="icon icon-right-open"></i></a>
                     </div>
                 </div>
-                <div class="scroll-wrapper">
-                    <div class="scroll-items full no-scrollbar">
+                <div class="sh-scroll--wrapper">
+                    <div class="sh-scroll--items no-scrollbar">
                         <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                             <div
@@ -860,8 +858,8 @@
                 </div>
                 </div>
             </section>
-            <section id="sh-scroll-products">
-                <div class="scroll-head">
+            <section class="sh-scroll">
+                <div class="sh-scroll--head">
                      <h2>Top ventas trajes de protección</h2>
 
                     <div class="sh-divider__header"></div>
@@ -870,8 +868,8 @@
                     <div class="col-xs-12 sh-m-top__lg"><a class="sh-link" href="#" title="Trajes de protección">Ver trajes de protección <i class="icon icon-right-open"></i></a>
                     </div>
                 </div>
-                <div class="scroll-wrapper">
-                    <div class="scroll-items full no-scrollbar">
+                <div class="sh-scroll--wrapper">
+                    <div class="sh-scroll--items no-scrollbar">
                         <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                             <div
@@ -1298,7 +1296,7 @@
                 </div>
             </div>
             <div class="sh-footer__sub container-fluid">
-                <div class="row middle-xs between-sm center-xs"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Herco Logotipo" width="200px"></a>
+                <div class="row middle-xs between-sm center-xs"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200"></a>
  <small>2019 Suministros Industriales Herco S.L.</small>
 
                     <div
@@ -1320,7 +1318,7 @@
         </footer>
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
         <script src="js/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="js/herco.min.js"></script>
+        <script src="js/herco.min.js"></script>
         <script>
             const menu = mmlight(document.querySelector('#sh-nav'));
             menu.create('(max-width: 1024px)'); 		// menu.create( 'all' );

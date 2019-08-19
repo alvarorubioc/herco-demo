@@ -1,7 +1,7 @@
 <partial src="header.html" bodyClass="cart" robots="all"></partial>
 <partial src="hero-cart.html"></partial>
 
-<section class="container-fluid">
+<div class="container-fluid">
     <header id="header-bar">
         <div class="quickorder-form sh-m-bottom__md">
             <input class="sh-input" type="text" placeholder="Referencia" name="ref">
@@ -16,15 +16,19 @@
 
         <div class="sh-btn-group-icon">
             <button class="sh-btn__white sh-btn-icon__md">
-                <i class="icon icon-heart"></i>
+                <i class="icon icon-heart-empty"></i>
+                <span>Guardar</span>
             </button>
             <button class="sh-btn__white sh-btn-icon__md">
                 <i class="icon icon-print"></i>
+                <span>Imprimir</span>
             </button>
         </div>
     </header>
+</div>
 
-    <main aria-label="Main content" role="main" class="row">
+<div class="container-fluid">
+    <main aria-label="Main content" class="row">
         <div class="col-xs-12 col-md-8 sh-m-top__lg shopping-cart-container">
             <div class="shopping-cart-list">
                 <div class="sh-m-bottom"><span class="sh-text__h6 uppercase">Productos</span></div>   
@@ -130,8 +134,9 @@
         </div>
 
         <div class="col-xs-12 col-md-4 sh-m-top__lg">
-            <div class="sh-m-bottom"><span class="sh-text__h6 uppercase">Resumen del pedido</span></div>
-            <div class="sh-box">
+            <div class="sticky-box">
+                <div class="sh-m-bottom"><span class="sh-text__h6 uppercase">Resumen del pedido</span></div>
+                <div class="sh-box">
                 <table class="order-resume">
                     <tr>
                         <td>Total productos (4)</td>
@@ -161,12 +166,11 @@
                         <button class="sh-btn" type="submit">Finalizar compra</button>
                      </form>
                 </div>
+                </div>
             </div>
         </div>
     </main>
-
-</section>
-
+</div>
 
 <section id="sh-related-products" class="sh-bg__white sh-m-top__xl">
     <div class="container">

@@ -22,11 +22,17 @@
             }
         }
     }
-}    
+}
+
+.sticky-box {
+    position: sticky;
+    top: 2em;
+}
 
 
 .shopping-cart-item {
     grid-auto-flow: column;
+    grid-template-columns: auto;
     align-items: center;
     justify-content: space-between;
     margin-bottom: .5em;

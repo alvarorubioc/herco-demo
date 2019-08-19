@@ -22,16 +22,10 @@ $('.add-to-cart-btn').click(function (){
 });
 
 
-function openFiltersSearch() {
-  var element = document.getElementById("wrap-search");
-  element.classList.toggle("is-open");
-}
-
 // List & Grid view list products
 listButton = $('button.list-view');
 gridButton = $('button.grid-view');
 wrapper = $('div.sh-products__grid');
-
 
 listButton.on('click', function () {
   gridButton.removeClass('active');

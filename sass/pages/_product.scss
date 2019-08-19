@@ -219,44 +219,31 @@ position: relative;
 }
 
 
-
 /* -------------------------------- 
 Product TABLE
 -------------------------------- */
-.sh-products-comparison-table {
-    margin-bottom: 4em;
+.sh-comparison-table__wrap {
+  margin-bottom: 4em;
+  border: 0;
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 0;
+    margin: 0;
     border: 0;
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-    li {
-        padding: 0;
-        margin: 0;
-        border: 0;
-    }
+  }
 
-  }
-  .sh-products-comparison-table::after {
-    /* never visible - this is used in jQuery to check the current MQ */
-    display: none;
-    content: 'mobile';
-  }
-  
-  @media only screen and (min-width: 1170px) {
-    .sh-products-comparison-table::after {
-      /* never visible - this is used in jQuery to check the current MQ */
-      content: 'desktop';
-    }
-  }
-  
   .sh-products-table {
     position: relative;
     overflow: hidden;
     border: 2px solid $color-grey-50;
     border-radius: $border-radius;
   }
-  
+
   .sh-products-table .features {
     /* fixed left column - product properties list */
     position: absolute;
@@ -268,103 +255,92 @@ Product TABLE
     opacity: .90;
     border-right: 2px solid $color-grey-50;
   }
-  .sh-products-table .features::after {
-    /* color gradient on the right of .features -  visible while scrolling inside the .sh-products-table */
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 4px;
-    height: 100%;
-    background-color: transparent;
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.06), transparent);
-    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.06), transparent);
-    opacity: 0;
-  }
   
-  .sh-products-table.scrolling .features::after {
-    opacity: 1;
-  }
-  
+
   .sh-products-wrapper {
     overflow-x: auto;
     /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
     -webkit-overflow-scrolling: touch;
   }
-  
+
   .sh-products-columns {
     /* products list wrapper */
-    width: 1200px;
     margin-left: 20%;
     margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
   }
+
   .sh-products-columns::after {
     clear: both;
     content: "";
     display: table;
   }
-  @media only screen and (min-width: 1170px) {
-    .sh-products-columns {
-      width: 1680px;
-      margin-left: 20%;
-    }
-  }
-  
+
   .sh-products-columns .product {
     position: relative;
     float: left;
-    width: 150px;
+    width: 33%;
+    min-width: 210px;
+      @include breakpoint (mobile) {
+        min-width: 180px;
+      }
     text-align: center;
-    -webkit-transition: opacity 0.3s, visibility 0.3s, -webkit-transform 0.3s;
-    -moz-transition: opacity 0.3s, visibility 0.3s, -moz-transform 0.3s;
-    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
   }
-  .filtering .sh-products-columns .product:not(.selected) {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-  }
-  .no-product-transition .sh-products-columns .product.selected {
-    -webkit-transition: opacity 0.3s, visibility 0.3s;
-    -moz-transition: opacity 0.3s, visibility 0.3s;
-    transition: opacity 0.3s, visibility 0.3s;
-  }
-  .filtered .sh-products-columns .product:not(.selected) {
-    position: absolute;
-  }
-  @media only screen and (min-width: 1170px) {
-    .sh-products-columns .product {
-      width: 210px;
+
+  .features-list {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .features-list__firts {
+      padding: 1em;
+      height: 210px;
+
+      img {
+        @include breakpoint (mobile) {
+          max-width: 100%;
+        }
+        max-width: 177px;
+      }
+    }
+
+    .features-list__end {
+      height: 89px;
     }
   }
-  
-  .sh-features-list li {
+
+  .features-list li {
     padding: 1.5em .5em;
     border-color: $color-grey-50;
     border-style: solid;
     border-top-width: 1px;
     border-right-width: 1px;
     background-color: white;
+    min-height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .sh-btn .icon {
+      padding-right: .5em;
+    }
   }
 
-  .features .sh-features-list li,
-  .sh-products-table .features .top-info {
+  .features .features-list li,
+  .sh-products-table .features {
     /* fixed left column - items */
     font-weight: bold;
+    justify-content: start;
   }
- 
-  
-  .features .sh-features-list li {
+
+
+  .features .features-list li {
     /* truncate text with dots */
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
   }
-  
+
   .sh-products-table .top-info {
     position: relative;
     width: 100%;
@@ -374,134 +350,13 @@ Product TABLE
     cursor: pointer;
     background: #ffffff;
   }
+}
 
-  .sh-features-list {
-      margin-top: 0;
-      margin-bottom: 0;
+.compare .sh-compare-btns {
+  display: flex;
+  justify-content: end;
+  form {
+    padding-left: 1em;
   }
- 
+}
 
-  .sh-products-table .top-info img {
-    display: block;
-    backface-visibility: hidden;
-    width: 10em;
-    margin: auto auto;
-  }
-  .sh-products-table .top-info h3, .sh-products-table .top-info img {
-    transition: transform 0.3s;
-    font-size: 1rem;
-  }
-  .sh-products-table .top-info .check {
-    position: relative;
-    display: inline-block;
-    height: 16px;
-    width: 16px;
-    margin: 0 auto 1em;
-  }
-  .sh-products-table .top-info .check::after, .sh-products-table .top-info .check::before {
-    /* used to create the check icon and green circle dot - visible when product is selected */
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: '';
-    height: 100%;
-    width: 100%;
-  }
-  
-  
-  @-webkit-keyframes sh-bounce {
-    0% {
-      -webkit-transform: scale(1);
-    }
-    60% {
-      -webkit-transform: scale(1.6);
-    }
-    100% {
-      -webkit-transform: scale(1.5);
-    }
-  }
-  @-moz-keyframes sh-bounce {
-    0% {
-      -moz-transform: scale(1);
-    }
-    60% {
-      -moz-transform: scale(1.6);
-    }
-    100% {
-      -moz-transform: scale(1.5);
-    }
-  }
-  @keyframes sh-bounce {
-    0% {
-      -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-      -ms-transform: scale(1);
-      -o-transform: scale(1);
-      transform: scale(1);
-    }
-    60% {
-      -webkit-transform: scale(1.6);
-      -moz-transform: scale(1.6);
-      -ms-transform: scale(1.6);
-      -o-transform: scale(1.6);
-      transform: scale(1.6);
-    }
-    100% {
-      -webkit-transform: scale(1.5);
-      -moz-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-      -o-transform: scale(1.5);
-      transform: scale(1.5);
-    }
-  }
-  .sh-products-table .selected .top-info .check::after {
-    /* check icon */
-    opacity: 1;
-  }
-  
-  @media only screen and (min-width: 1170px) {
-    .sh-products-table.top-fixed .sh-products-columns > li,
-    .sh-products-table.top-scrolling .sh-products-columns > li,
-    .sh-products-table.top-fixed .features,
-    .sh-products-table.top-scrolling .features {
-      padding-top: 160px;
-    }
-  
-    .sh-products-table.top-fixed .top-info,
-    .sh-products-table.top-scrolling .top-info {
-      height: 160px;
-      position: fixed;
-      top: 0;
-    }
-    .no-cssgradients .sh-products-table.top-fixed .top-info, .no-cssgradients
-    .sh-products-table.top-scrolling .top-info {
-      border-bottom: 1px solid #e6e6e6;
-    }
-    .sh-products-table.top-fixed .top-info::after,
-    .sh-products-table.top-scrolling .top-info::after {
-      opacity: 1;
-    }
-    .sh-products-table.top-fixed .top-info h3,
-    .sh-products-table.top-scrolling .top-info h3 {
-      -webkit-transform: translateY(-116px);
-      -moz-transform: translateY(-116px);
-      -ms-transform: translateY(-116px);
-      -o-transform: translateY(-116px);
-      transform: translateY(-116px);
-    }
-    .sh-products-table.top-fixed .top-info img,
-    .sh-products-table.top-scrolling .top-info img {
-      -webkit-transform: translateY(-62px) scale(0.4);
-      -moz-transform: translateY(-62px) scale(0.4);
-      -ms-transform: translateY(-62px) scale(0.4);
-      -o-transform: translateY(-62px) scale(0.4);
-      transform: translateY(-62px) scale(0.4);
-    }
-  
-    .sh-products-table.top-scrolling .top-info {
-      position: absolute;
-    }
-  }
- 
-  
-  

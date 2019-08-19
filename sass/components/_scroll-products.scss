@@ -1,4 +1,4 @@
-#sh-scroll-products {
+.sh-scroll {
     display: grid;
     grid-template-columns: 30% 1fr;
     @include breakpoint (mobile) {
@@ -6,7 +6,7 @@
     }
 }
 
-.scroll-head {
+.sh-scroll--head {
     margin-right: 1em;
     margin-left: 8em; 
 
@@ -21,7 +21,7 @@
     }  
 }
 
-.scroll-wrapper {
+.sh-scroll--wrapper {
     padding: 2rem 0;
     display: grid;
     grid-gap: 2rem 0;
@@ -33,7 +33,7 @@
     }  
   }
 
-  .scroll-items {
+.sh-scroll--items {
     display: grid;
     grid-gap: 1em;
     grid-template-columns: 10px;
@@ -41,6 +41,10 @@
     grid-auto-columns: calc(33% - 2rem * 2);
     grid-auto-flow: column;
     grid-column: 1 / -1;
+    
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+
     @include breakpoint (tablet) {
         grid-auto-columns: calc(50% - 2rem * 2);
     }
@@ -52,28 +56,105 @@
     @include devicesize (only_desktop) {
         grid-auto-columns: calc(25% - 2rem * 2);
     }
-
-    overflow-x: scroll;
-    scroll-snap-type: x proximity;
-  }
   
-  .scroll-items:before,
-  .scroll-items:after {
+  
+  &:before, &:after {
     content: '';
     width: 10px;
   }
   
-  .scroll-items .sh-card{
+  & .sh-card{
     @include breakpoint (xsmobile) {
         min-width: 232px;
     }
   }
 
-  .no-scrollbar {
+}
+
+.sh-scroll-arrows {
+    display : block;
+    @include breakpoint (tablet) { display: none; }
+    position : relative;
+    height : 100%;
+    width : 100%;
+
+    &__left, &__right {
+        position : absolute;
+        display : block;
+        width : 102px;
+        height : 100%;
+        z-index : 30;
+        display : flex;
+        align-items : center;
+        justify-content : center;
+        &::after { color: white; }
+    }
+
+    @include breakpoint (tablet) {
+        /* 
+            Small desktop screens problem, not possible to attach to the border.
+            Gradient background removed.
+        */
+        background : none !important;
+    }
+    
+
+    &__left {
+        left : 0;
+        background : linear-gradient( 
+            to left, 
+            rgba(247,247,247,0), 
+            rgba(247,247,247,1));
+
+        &::after {
+            content: '\e848';
+            font-family: 'herco';
+            font-size: 3rem;
+            background: $color-blue;
+            padding: .5rem 1rem;
+            border-radius: 2px;
+        }
+
+        @include breakpoint (tablet) { left : -101px; }
+    }
+
+    &__right {
+        right: 0;
+        background: linear-gradient( 
+            to right, 
+            rgba(247,247,247,0), 
+            rgba(247,247,247,1));
+
+        &::after {
+            content: '\e849';
+            font-family: 'herco';
+            font-size: 3rem;
+            background: $color-blue;
+            padding: .5rem 1rem;
+            border-radius: 2px;
+            
+        }
+
+        @include breakpoint (tablet) { right: -101px; }
+        
+    }
+
+    &:hover {
+        .o-scroll-arrows__left::after,
+        .o-scroll-arrows__right::after {
+            opacity : 1;
+            transition : opacity .4s ease;
+            cursor: pointer;
+        }
+    }
+} 
+
+.no-scrollbar {
     scrollbar-width: none;
     margin-bottom: 0;
     padding-bottom: 0;
-  }
-  .no-scrollbar::-webkit-scrollbar {
+}
+
+.no-scrollbar::-webkit-scrollbar {
     display: none;
-  }
+}

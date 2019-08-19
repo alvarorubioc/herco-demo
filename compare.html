@@ -6,14 +6,14 @@
         <title>Herco WEB DEMO</title>
         <meta name="description" content="">
         <meta name="author" content="">
-        <meta name="robots" content="all">
+        <meta name="robots" content="no-index">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="img/low/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/main.css">
     </head>
     
-    <body class="checkout">
+    <body class="compare">
         <header id="sh-navigation">
             <div class="sh-top-nav container-fluid"> <a href="#menu" id="sh-nav-trigger"><i class="icon icon-menu"></i><span></span></a>
 
@@ -280,291 +280,246 @@
             <!-- END Mobile NAVIGATION -->
         </header>
         <div class="clearfix"></div>
-        <div id="sh-hero--page" class="sh-bg__navy-blue container-fluid">
-            <div class="row center-xs">
-                <div class="step-wizard col-xs-12 col-md-8 sh-m-top__md">
-                    <div class="progress">
-                        <div class="progressbar empty"></div>
-                        <div id="prog" class="progressbar"></div>
-                    </div>
-                    <ul>
-                        <li class="active">
-                            <div id="step1"> <span class="step"><i class="icon icon-basket"></i></span>
+        <section id="sh-hero--page" class="sh-bg__navy-blue">
+            <div class="container-fluid">
+                <div class="row middle-xs sh-text__white">
+                     <h1 class="col-xs-12 col-md-12">Comparando</h1>
 
-                                <p class="title">1 <span>Carrito</span>
-
-                                </p>
-                            </div>
-                        </li>
-                        <li class="">
-                            <div id="step2"> <span class="step"><i class="icon icon-credit-card"></i></span>
-
-                                <p class="title">2 <span>Dirección y pago</span>
-
-                                </p>
-                            </div>
-                        </li>
-                        <li class="">
-                            <div id="step3"> <span class="step"><i class="icon icon-thumbs-up"></i></span>
-
-                                <p class="title">3 <span>Confirmación</span>
-
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
-        </div>
-        <!-- end #sh-section-hero -->
-        <section class="container-fluid">
-            <main aria-label="Main content" role="main" class="row">
-                <div class="col-xs-12 col-md-8 sh-m-top__lg shopping-cart-container">
-                    <div class="sh-m-bottom"> <span class="sh-text__h6 uppercase">Dirección de entrega</span>
-
-                    </div>
-                    <div class="sh-box sh-m-bottom__lg">
-                        <form action="" method="">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4">
-                                    <label class="sh-label" for="fname">Nombre</label>
-                                    <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
-                                        <input class="sh-input" id="fname" type="text" name="firstname" required>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-4">
-                                    <label class="sh-label" for="surname">Apellidos</label>
-                                    <div class="sh-form-group sh-form-contain-icon sh-m-bottom__lg sh-m-top__sm">
-                                        <input class="sh-input sh-input__success" id="surname" type="text" name="surname"
-                                        required> <i class="icon icon-check sh-form-icon-secondary__success"></i>
- <span>Ejemplo correcto</span>
-
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-4">
-                                    <label class="sh-label" for="phone">Teléfono</label>
-                                    <div class="sh-form-group sh-form-contain-icon sh-m-bottom__lg sh-m-top__sm">
-                                        <input class="sh-input sh-input__error" id="phone" type="tel" name="phone"
-                                        required> <i class="icon icon-attention sh-form-icon-secondary__error"></i>
- <span>Ejemplo incorrecto</span>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end .checkout-name -->
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6">
-                                    <label class="sh-label" for="bname">Nombre empresa</label>
-                                    <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
-                                        <input class="sh-input" id="bname" type="text" name="bname">
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6">
-                                    <label class="sh-label" for="cif">CIF/DNI</label>
-                                    <div class="sh-form-group sh-form-contain-icon sh-m-bottom__lg sh-m-top__sm">
-                                        <input class="sh-input" id="cif" type="text" name="cif" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end .checkout-business -->
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6">
-                                    <label class="sh-label" for="address">Dirección</label>
-                                    <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
-                                        <input class="sh-input" id="address" type="text" name="address" required>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6">
-                                    <label class="sh-label" for="postalcode">Código postal</label>
-                                    <div class="sh-form-group sh-form-contain-icon sh-m-bottom__lg sh-m-top__sm">
-                                        <input class="sh-input" id="postalcode" type="text" name="postalcode"
-                                        required>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end .checkout-address -->
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4">
-                                    <label class="sh-label" for="city">Población</label>
-                                    <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
-                                        <input class="sh-input" id="city" type="text" name="city" required>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-4">
-                                    <label class="sh-label" for="region">Provincia</label>
-                                    <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
-                                        <input class="sh-input" id="region" type="text" name="region" required>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-4">
-                                    <label class="sh-label" for="country">País</label>
-                                    <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
-                                        <input class="sh-input" id="country" type="text" name="country">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end .checkout-city -->
-                        </form>
-                    </div>
-                    <div class="sh-m-bottom"> <span class="sh-text__h6 uppercase">Método de pago</span>
-
-                    </div>
-                    <div class="sh-box sh-m-bottom__md">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-2 credit-card-boxes">
-                                <div class="credit-card-box active">
-                                    <label class="sh-check-group">
-                                        <img src="img/low/visa-card.svg" alt="Visa">
-                                        <input type="radio" checked="checked" name="radio"> <span class="sh-radiomark"></span>
-
-                                    </label>
-                                </div>
-                                <div class="credit-card-box">
-                                    <label class="sh-check-group">
-                                        <img src="img/low/mastercard-card.svg" alt="Master Card">
-                                        <input type="radio" checked="" name="radio"> <span class="sh-radiomark"></span>
-
-                                    </label>
-                                </div>
-                                <div class="credit-card-box">
-                                    <label class="sh-check-group">
-                                        <img src="img/low/paypal-card.svg" alt="Pay Pal">
-                                        <input type="radio" checked="" name="radio"> <span class="sh-radiomark"></span>
-
-                                    </label>
-                                </div>
-                                <div class="credit-card-box">
-                                    <label class="sh-check-group">
-                                        <img src="img/low/applepay-card.svg" alt="Apple Pay">
-                                        <input type="radio" name="radio"> <span class="sh-radiomark"></span>
-
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-9 col-sm-offset-1">
-                                <form action="" method="">
-                                    <div class="row sh-m-top__md">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <label class="sh-label" for="country">Titular tarjeta</label>
-                                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom__lg sh-m-top__sm">
-                                                <input class="sh-input sh-input__error" id="country" type="text" name="country"> <i class="icon icon-attention sh-form-icon-secondary__error"></i>
- <span>Número incorrecto</span>
-
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <label class="sh-label" for="country">Número</label>
-                                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
-                                                <input class="sh-input" id="country" type="text" name="country" placeholder="&#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679;">
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <label class="sh-label" for="country">Fecha de expiración</label>
-                                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
-                                                <input class="sh-input" id="country" type="text" name="country" placeholder="MM/AA">
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-4">
-                                            <label class="sh-label" for="country">CVV</label>
-                                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
-                                                <input class="sh-input" id="country" type="text" name="country" placeholder="&#9679;&#9679;&#9679;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- end .row -->
-                    </div>
-                </div>
-                <aside class="col-xs-12 col-md-4 sh-m-top__lg sh-m-bottom__xl shopping-cart-aside">
-                    <div class="sticky-box">
-                        <div class="sh-m-bottom"><span class="sh-text__h6 uppercase">Resumen del pedido</span>
-                        </div>
-                        <div class="sh-box">
-                            <div class="row between-xs sh-m-bottom__lg">
-                                <div class="col-xs-3">
-                                    <img src="img/low/user.png" style="border-radius: 50%;">
-                                </div>
-                                <div class="col-xs-5"> <strong>Lorena McEnroe Lovelace</strong>
- <address>
-                                <small>C/ Hoyos del Espino, 24.</small><br>
-                                <small>08004 Sabadell</small><br>
-                                <small>Barcelona, España.</small><br>
-                            </address>
-
-                                </div>
-                                <div class="col-xs-4"> <strong>Nombre empresa</strong>
-                                    <br> <small>CIF B666555</small>
-
-                                </div>
-                            </div>
-                            <div class="row sh-m-bottom__lg">
-                                <div class="col-xs-3">
-                                    <div class="credit-card-box">
-                                        <img src="img/low/visa-card.svg" alt="Visa">
-                                    </div>
-                                </div>
-                                <div class="col-xs-8"> <strong>Visa ···· ···· ···· 8888</strong>
-                                    <br> <small>Lorena McEnroe Lovelace</small>
-
-                                </div>
-                            </div>
-                            <table class="order-resume">
-                                <tr>
-                                    <td>Apolo Taco Nylon Avellanado NPC
-                                        <br><small>200 ud.</small>
-                                    </td>
-                                    <td>2.080&nbsp;€</td>
-                                </tr>
-                                <tr>
-                                    <td>Apolo Taco Nylon Avellanado NPC
-                                        <br><small>20 ud.</small>
-                                    </td>
-                                    <td>24,30&nbsp;€</td>
-                                </tr>
-                                <tr>
-                                    <td>Apolo Taco Nylon Avellanado NPC
-                                        <br><small>10 ud.</small>
-                                    </td>
-                                    <td>20&nbsp;€</td>
-                                </tr>
-                                <tr>
-                                    <td>Apolo Taco Nylon Avellanado NPC
-                                        <br><small>1 ud.</small>
-                                    </td>
-                                    <td>0,30&nbsp;€</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Total productos (4)</strong>
-                                    </td>
-                                    <td><strong>930,80&nbsp;€</strong>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Entrega</td>
-                                    <td>5,00&nbsp;€</td>
-                                </tr>
-                                <tr>
-                                    <td>IVA</td>
-                                    <td>195,46&nbsp;€</td>
-                                </tr>
-                                <tr>
-                                    <th>Total</th>
-                                    <th>1.131,26&nbsp;€</th>
-                                </tr>
-                            </table>
-                            <div class="order-resume-btn sh-m-top__md dflex around-xs middle-xs">
-                                <button class="sh-btn-outline__allwhite" onclick="history.back(-1)">Atrás</button>
-                                <form action="./thanks.html">
-                                    <button class="sh-btn" type="submit">Confirmar</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-            </main>
         </section>
+        <!-- end #sh-section-hero -->
+        <main aria-label="Main content" role="main" class="container-fluid">
+            <div class="row sh-m-top__xl sh-m-bottom__md">
+                <div class="col-xs-12">
+                    <div class="sh-comparison-table__wrap">
+                        <div class="sh-products-table">
+                            <div class="features">
+                                <ul class="features-list">
+                                    <li class="features-list__firts">&#8205;</li>
+                                    <li>Producto</li>
+                                    <li>Marca</li>
+                                    <li>Precios</li>
+                                    <li>Opiniones</li>
+                                    <li>Atributo</li>
+                                    <li>Atributo</li>
+                                    <li class="features-list__end">&#8205;</li>
+                                </ul>
+                            </div>
+                            <!-- .features -->
+                            <div class="sh-products-wrapper">
+                                <ul class="sh-products-columns">
+                                    <li class="product">
+                                        <ul class="features-list">
+                                            <li class="features-list__firts">
+                                                <img src="img/low/tool.png" alt="x">
+                                            </li>
+                                            <li>Apolo Taco Nylon Avellanado NPC</li>
+                                            <li>Apolo</li>
+                                            <li>0,35 € /und.</li>
+                                            <li>
+                                                <div class="stars" data-stars="1">
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                            </li>
+                                            <li>Azul</li>
+                                            <li>100Hz</li>
+                                            <li>
+                                                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i> Añadir</button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- .product -->
+                                    <li class="product">
+                                        <ul class="features-list">
+                                            <li class="features-list__firts">
+                                                <img src="img/low/tool.png" alt="x">
+                                            </li>
+                                            <li>Apolo Taco Nylon Avellanado NPC</li>
+                                            <li>Bosch</li>
+                                            <li>3,5 € /und.</li>
+                                            <li>
+                                                <div class="stars" data-stars="2">
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                            </li>
+                                            <li>Amarillo</li>
+                                            <li>200Hz</li>
+                                            <li>
+                                                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i> Añadir</button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- .product -->
+                                    <li class="product">
+                                        <ul class="features-list">
+                                            <li class="features-list__firts">
+                                                <img src="img/low/tool.png" alt="x">
+                                            </li>
+                                            <li>Apolo Taco Nylon Avellanado NPC</li>
+                                            <li>3M</li>
+                                            <li>0,25 € /und.</li>
+                                            <li>
+                                                <div class="stars" data-stars="3">
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                            </li>
+                                            <li>Rojo</li>
+                                            <li>300Hz</li>
+                                            <li>
+                                                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i> Añadir</button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- .product -->
+                                    <li class="product">
+                                        <ul class="features-list">
+                                            <li class="features-list__firts">
+                                                <img src="img/low/tool.png" alt="x">
+                                            </li>
+                                            <li>Apolo Taco Nylon Avellanado NPC</li>
+                                            <li>3M</li>
+                                            <li>350 € /und.</li>
+                                            <li>
+                                                <div class="stars" data-stars="4">
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                            </li>
+                                            <li>Azul</li>
+                                            <li>400Hz</li>
+                                            <li>
+                                                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i> Añadir</button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- .product -->
+                                    <li class="product">
+                                        <ul class="features-list">
+                                            <li class="features-list__firts">
+                                                <img src="img/low/tool.png" alt="x">
+                                            </li>
+                                            <li>Apolo Taco Nylon Avellanado NPC</li>
+                                            <li>Affinity</li>
+                                            <li>89 € /und.</li>
+                                            <li>
+                                                <div class="stars" data-stars="0">
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                            </li>
+                                            <li>500Hz</li>
+                                            <li>2015</li>
+                                            <li>
+                                                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i> Añadir</button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- .product -->
+                                    <li class="product">
+                                        <ul class="features-list">
+                                            <li class="features-list__firts">
+                                                <img src="img/low/tool.png" alt="x">
+                                            </li>
+                                            <li>Apolo Taco Nylon Avellanado NPC</li>
+                                            <li>Apache</li>
+                                            <li>65,99 € /und.</li>
+                                            <li>
+                                                <div class="stars" data-stars="5">
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                            </li>
+                                            <li>Verde</li>
+                                            <li>600Hz</li>
+                                            <li>
+                                                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i> Añadir</button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- .product -->
+                                    <li class="product">
+                                        <ul class="features-list">
+                                            <li class="features-list__firts">
+                                                <img src="img/low/tool.png" alt="x">
+                                            </li>
+                                            <li>Apolo Taco Nylon Avellanado NPC</li>
+                                            <li>Apolo</li>
+                                            <li>3,5 € /und.</li>
+                                            <li>
+                                                <div class="stars" data-stars="5">
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                            </li>
+                                            <li>Amarillo</li>
+                                            <li>200Hz</li>
+                                            <li>
+                                                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i> Añadir</button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- .product -->
+                                    <li class="product">
+                                        <ul class="features-list">
+                                            <li class="features-list__firts">
+                                                <img src="img/low/tool.png" alt="x">
+                                            </li>
+                                            <li>Taco Nylon Avellanado</li>
+                                            <li>Lorem</li>
+                                            <li>&#8205;</li>
+                                            <li>&#8205;</li>
+                                            <li>800Hz</li>
+                                            <li>&#8205;</li>
+                                            <li>
+                                                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i> Añadir</button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- .product -->
+                                </ul>
+                                <!-- .sh-products-columns -->
+                            </div>
+                            <!-- .sh-products-wrapper -->
+                        </div>
+                        <!-- .sh-products-table -->
+                    </div>
+                    <!-- .sh-products-comparison-table -->
+                </div>
+            </div>
+            <div class="row end-xs sh-m-bottom__xl">
+                <div class="col-xs-12 sh-compare-btns">
+                    <button class="sh-btn-outline" onclick="history.back(-1)">Seguir comprando</button>
+                    <form action="">
+                        <button class="sh-btn" type="submit">Mostrar diferencias</button>
+                    </form>
+                </div>
+            </div>
+        </main>
         <div class="clearfix"></div>
         <footer id="sh-footer" class="sh-text__white">
             <div class="sh-footer__top">

@@ -318,12 +318,13 @@ a.sh-btn-outline__allwhite, .sh-btn-outline__allwhite {
     width: 2.5rem;
     padding: 0;
     & i {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     & span {
       font-size: 8px;
       margin-top: -4px;
+      text-transform: uppercase;
     }
   }
 
@@ -341,6 +342,7 @@ a.sh-btn-outline__allwhite, .sh-btn-outline__allwhite {
 
     & span {
       font-size: 10px;
+      text-transform: uppercase;
     }
   }
 }
@@ -348,6 +350,7 @@ a.sh-btn-outline__allwhite, .sh-btn-outline__allwhite {
 .sh-btn-text-icon {
   display: grid;
   grid-auto-flow: column;
+  grid-template-columns: auto;
   grid-gap: 1em;
   align-items: center;
 }
@@ -362,7 +365,6 @@ a.sh-btn-outline__allwhite, .sh-btn-outline__allwhite {
   }
 
   button, a {
-    border-right-color: $color-navy-blue;
     border-radius: 0;
     width: 100%;
 
@@ -388,11 +390,10 @@ a.sh-btn-outline__allwhite, .sh-btn-outline__allwhite {
 
     &:last-child {
       border-bottom-right-radius: $border-radius;
-      border-right-color: $color-blue;
+      border-top-right-radius: $border-radius;
 
       @include breakpoint(xsmobile) {
         border-bottom-left-radius: $border-radius;
-        border-bottom-color: $color-blue;
       }
     }
 
