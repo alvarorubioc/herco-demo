@@ -1,36 +1,10 @@
 .sh-list-categories {
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      margin-left: 8em; 
-      @include breakpoint (desktop) {
-          margin-left: 4em;
-      }
-      @include breakpoint (tablet) {
-          margin-left: 2em;
-      }
-      @include breakpoint (xsmobile) {
-          margin-left: 1.5rem;
-      } 
-    }
-
-    li {
+    .scroll-item {
       height: 120px;
       width: 200px;
-      margin-right: 1em;
       border-radius: 2px;
       background-size: cover;
       padding-bottom: 0;
-
-      &:last-child{
-        background: #f6f6f6;
-        &::after {
-          content: '';
-          width: 1em;
-        }
-      }
-
       
     }
 
@@ -59,15 +33,4 @@
   margin-top: -32px;
 }
 
-.scroll {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-
-.scroll-item {
-  flex: 0 0 auto;
-}
 

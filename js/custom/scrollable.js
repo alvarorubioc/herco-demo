@@ -24,7 +24,7 @@ function fnScrollableLoad(  ) {
 	var iGutter = 16;
 	// Gutter in pixels
 
-	if( document.body.offsetWidth > 1024 ) {
+	if( document.body.offsetWidth > 1023 ) {
 	// Only desktop
 
 	//console.log( document.body.offsetWidth );
@@ -34,7 +34,7 @@ function fnScrollableLoad(  ) {
 		// It can be a full width list of cards (.o-scroll--desktop)
 		// and a photos gallery (.o-scroll--half)
 
-		var aScrollables = document.querySelectorAll( '.sh-scroll--wrapper, .o-grid--scroll, .o-scroll--desktop, .scroll' );
+		var aScrollables = document.querySelectorAll( '.sh-scroll--wrapper, .sh-grid--scroll, .scroll' );
 
 		Array.prototype.forEach.call( aScrollables, function( oScroll ) {
 
@@ -125,7 +125,7 @@ function fnScrollableArrows( oScroll, oScrollableRight, oScrollableLeft, iGridWi
 
 		/* 130 is 100 (margin overflow) + 30 (gutter). */
 
-		if( oScroll.scrollLeft + iGridWidth + 130  > iCardsWidth + oScroll.offsetLeft ) {  
+		if( oScroll.scrollLeft + iGridWidth + 115  > iCardsWidth + oScroll.offsetLeft ) {  
 			oScrollableRight.style.opacity = "0";  
 		}
 
