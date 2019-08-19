@@ -11,7 +11,7 @@
 		/* Needed space for scrolling */
 		content : "";
 		display : block;
-		width : 20px;
+		width : 1px;
 	}
 }
 
@@ -53,7 +53,7 @@
     &__left, &__right {
         position : absolute;
         display : block;
-        width : 102px;
+        width : 5rem;
         height : 100%;
         z-index : 30;
         display : flex;
@@ -91,7 +91,7 @@
     }
 
     &__right {
-        right: 0;
+        right: -2rem;
         background: linear-gradient( 
             to right, 
             rgba(247,247,247,0), 
@@ -120,6 +120,10 @@
         }
     }
 } 
+
+.sh-list-categories .sh-scroll-arrows__left {
+    left: -2.5rem;
+}
 
 .no-scrollbar {
     scrollbar-width: none;
