@@ -20,12 +20,16 @@
   
 #sh-products-subcategory.is-open aside {
   transform:translateX(-400px);
+  padding-right: 0;
+  width: 0;
   @include breakpoint (mobile) {
     transform:translateX(0px);
     height: 100vh;
     overflow-x: scroll;
     left: 0;
+    width: 100%;
     padding-left: 1em;
+    padding-right: 1em;
     -webkit-overflow-scrolling: touch;
     box-shadow: 300px 0 0 100vw rgba(3,0,27,.9),0 0 20px rgba(3,0,27,.9);
     
@@ -62,31 +66,40 @@
 
 #sh-products-subcategory.is-open .sh-products__wrap, #sh-products-subcategory.is-open #sh-breadcrumbs {
   padding-left: 0px;
+  width: 100%;
   @include breakpoint (mobile) {
     transition: all .3s ease;
   }
 }
 
-#sh-products-subcategory .sh-products__wrap, #sh-products-subcategory #sh-breadcrumbs {
+#sh-products-subcategory .sh-products__wrap {
   transition: all .3s ease;
-  padding-left: 290px;
+  width: 75%;
   @include breakpoint (mobile) {
-    padding-left: 0;
+    width: 100%;
   } 
+
+}
+
+#wrap {
+  position: relative;
+}
+
+.wrapper { 
+  display: flex;
 }
 
 #sh-sidebar__filter {
   transition: all .3s ease;
-  position: absolute;
-  top: 4em;
   z-index: 3;
-  max-width: 17rem;
+  width: 25%;
   background-color: #f6f6f6;
   padding-right: 1.5em;
   @include breakpoint (mobile) {
     transform:translateX(-380px);
     position: fixed;
     top: 0;
+    max-width: 17rem;
   }
 
   h6 {
@@ -134,6 +147,7 @@
   a:hover {cursor: pointer;}
   i {padding: 0 .5em;}
 }
+
 
 .sh-products__grid {
   transition: .3s ease;

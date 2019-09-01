@@ -41,6 +41,45 @@ gridButton.on('click', function () {
 
 });
 
+// sh-nav on desktop -> products mega menu
+$(".sh-nav-products--categories > li").hover(function() {
+  $('.hover').removeClass('hover');
+  $(this).addClass("hover");
+});
+
+$(".sh-nav-products").hover(
+  function(){ $(this).addClass('megamenu-active'); },
+  function(){ $(this).removeClass('megamenu-active'); }
+);
+
+$(document).ready(function () {
+  
+  'use strict';
+  
+   var c, currentScrollTop = 0,
+       navbar = $('.sh-top-nav');
+
+   $(window).scroll(function () {
+      var a = $(window).scrollTop();
+      var b = navbar.height();
+     
+      currentScrollTop = a;
+     
+      if (c < currentScrollTop && a > b + b) {
+        navbar.addClass("scrollUp");
+      } else if (c > currentScrollTop && !(a <= b)) {
+        navbar.removeClass("scrollUp");
+        navbar.addClass("scrollDown");
+      }
+        else if (c > currentScrollTop && !(a = 0 )) {
+        navbar.removeClass("scrollDown");
+      }
+      c = currentScrollTop;
+  });
+  
+});
+
+
 // hide sh-nav on desktop & sh-nav-desktop on mobile and tablet
 $(document).ready(function () {
   if ($(window).width() < 1025) {

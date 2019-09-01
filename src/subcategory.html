@@ -25,11 +25,13 @@
                     <option>Novedades</option>
                 </select>
             </div>
-            <div class="sh-btn-group-icon header-search__listngrid ">
+            <div class="header-search__listngrid">
                 <button class="sh-btn__white sh-btn-icon__md grid-view active">
                     <i class="icon icon-layout"></i>
                     <span>GRID</span>
                 </button>
+            </div>
+            <div class="header-search__listngrid">
                 <button class="sh-btn__white sh-btn-icon__md list-view">
                     <i class="icon icon-list"></i>
                     <span>LISTA</span>
@@ -47,35 +49,36 @@
                 <span>PRODUCTOS: 20/<strong>1500</strong></span>
             </div>
         </div>
-     
-        <partial src="/sidebar-filters.html"></partial>
-        
-        <div class="sh-products__wrap">
-            <div class="sh-products__grid">
-                <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
-                <partial src="card.html" label="" product-label="TopVentas" product-brand="Panter" product-price="39,87" product-name="Zapato Panter Apolo Napa S3 247"></partial>
-                <partial src="card.html" label="OFF" product-label="" product-brand="ATG" product-price="0,35" product-name="Guante Maxiflex Elite ATG 34-247"></partial>
-                <partial src="card.html" label="" product-label="TopVentas" product-brand="Faru" product-price="1,29" product-name="Barbuquejo"></partial>
-                <partial src="card.html" label="OFF" product-label="" product-brand="Malatesta" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
-                <partial src="card.html" label="sh-badge-red" product-label="Oferta" product-brand="Faru" product-price="12,4" product-name="Gafa de protección Faru C-294 QX2000 INCOLO"></partial>
-                <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Loctite" product-price="33,55" product-name="Adhesivo de contacto"></partial>
-                <partial src="card.html" label="" product-label="TopVentas" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
-                <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
-                <partial src="card.html" label="" product-label="TopVentas" product-brand="Panter" product-price="39,87" product-name="Zapato Panter Apolo Napa S3 247"></partial>
-                <partial src="card.html" label="OFF" product-label="" product-brand="ATG" product-price="0,35" product-name="Guante Maxiflex Elite ATG 34-247"></partial>
-                <partial src="card.html" label="" product-label="TopVentas" product-brand="Faru" product-price="1,29" product-name="Barbuquejo"></partial>
-                <partial src="card.html" label="OFF" product-label="" product-brand="Malatesta" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
-                <partial src="card.html" label="sh-badge-red" product-label="Oferta" product-brand="Faru" product-price="12,4" product-name="Gafa de protección Faru C-294 QX2000 INCOLO"></partial>
-                <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Loctite" product-price="33,55" product-name="Adhesivo de contacto"></partial>
-                <partial src="card.html" label="" product-label="TopVentas" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
-                <partial src="card.html" label="sh-badge-red" product-label="Oferta" product-brand="Faru" product-price="12,4" product-name="Gafa de protección Faru C-294 QX2000 INCOLO"></partial>
-                <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Loctite" product-price="33,55" product-name="Adhesivo de contacto"></partial>
-                <partial src="card.html" label="" product-label="TopVentas" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
-                <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+
+        <div class="wrapper">
+            <partial src="/sidebar-filters.html"></partial>
+            
+            <div class="sh-products__wrap">
+                <div class="sh-products__grid">
+                    <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                    <partial src="card.html" label="" product-label="TopVentas" product-brand="Panter" product-price="39,87" product-name="Zapato Panter Apolo Napa S3 247"></partial>
+                    <partial src="card.html" label="OFF" product-label="" product-brand="ATG" product-price="0,35" product-name="Guante Maxiflex Elite ATG 34-247"></partial>
+                    <partial src="card.html" label="" product-label="TopVentas" product-brand="Faru" product-price="1,29" product-name="Barbuquejo"></partial>
+                    <partial src="card.html" label="OFF" product-label="" product-brand="Malatesta" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                    <partial src="card.html" label="sh-badge-red" product-label="Oferta" product-brand="Faru" product-price="12,4" product-name="Gafa de protección Faru C-294 QX2000 INCOLO"></partial>
+                    <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Loctite" product-price="33,55" product-name="Adhesivo de contacto"></partial>
+                    <partial src="card.html" label="" product-label="TopVentas" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                    <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                    <partial src="card.html" label="" product-label="TopVentas" product-brand="Panter" product-price="39,87" product-name="Zapato Panter Apolo Napa S3 247"></partial>
+                    <partial src="card.html" label="OFF" product-label="" product-brand="ATG" product-price="0,35" product-name="Guante Maxiflex Elite ATG 34-247"></partial>
+                    <partial src="card.html" label="" product-label="TopVentas" product-brand="Faru" product-price="1,29" product-name="Barbuquejo"></partial>
+                    <partial src="card.html" label="OFF" product-label="" product-brand="Malatesta" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                    <partial src="card.html" label="sh-badge-red" product-label="Oferta" product-brand="Faru" product-price="12,4" product-name="Gafa de protección Faru C-294 QX2000 INCOLO"></partial>
+                    <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Loctite" product-price="33,55" product-name="Adhesivo de contacto"></partial>
+                    <partial src="card.html" label="" product-label="TopVentas" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                    <partial src="card.html" label="sh-badge-red" product-label="Oferta" product-brand="Faru" product-price="12,4" product-name="Gafa de protección Faru C-294 QX2000 INCOLO"></partial>
+                    <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Loctite" product-price="33,55" product-name="Adhesivo de contacto"></partial>
+                    <partial src="card.html" label="" product-label="TopVentas" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                    <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                </div>
+                <div class="sh-m-top__lg center-xs"><button class="sh-btn-outline sh-btn__full sh-btn__lg">Mas productos +</button></div>
             </div>
-            <div class="sh-m-top__lg center-xs"><button class="sh-btn-outline sh-btn__full sh-btn__lg">Mas productos +</button></div>
         </div>
-        
     </div> <!-- end #wrap -->
 </main>
 
