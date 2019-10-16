@@ -127,10 +127,16 @@ blockquote {
     }
     a:hover {color: $color-blue;}
 }
-
 ​
 .sh-text__center { text-align: center; }
 .sh-text__left { text-align: left; }
 .sh-text__right { text-align: right; }
 
 .uppercase { text-transform: uppercase; }
+
+.font-heading {
+    font-family: $font-heading;
+    color: $color-dark-navy-blue;
+    font-weight: bold;
+    line-height: $heading-line-height;
+}

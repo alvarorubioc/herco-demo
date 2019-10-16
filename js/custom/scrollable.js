@@ -48,7 +48,7 @@ function fnScrollableLoad(  ) {
 
 				var iCardsWidth = ( iNumberCards * ( iCardWidth + iGutter ) ) - iGutter;
 
-				console.log( iNumberCards, iCardWidth, iGridWidth, iCardsWidth );
+				//console.log( iNumberCards, iCardWidth, iGridWidth, iCardsWidth );
 
 				// Only applies if scrolled content is wider than his container
 

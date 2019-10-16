@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="sh-nav--basket" id="sh-basket">	<a href="./cart.html" title="Carro de la compra" id="open-basket">
-					<i class="icon icon-basket"></i><span class="sh-badge sh-badge-red">0</span>
+					<i class="icon icon-basket"></i><span class="sh-badge sh-badge-red">3</span>
 				</a>
 
             </div>
@@ -310,25 +310,8 @@
                             <li><a href="./brands.html">Marcas</a>
 
                             </li>
-                            <li><span>Catálogos</span>
+                            <li><a href="./catalogs.html">Catálogos</a>
 
-                                <ul>
-                                    <li><a href="#">Lidership</a>
-
-                                    </li>
-                                    <li><a href="#">Lidership</a>
-
-                                    </li>
-                                    <li><a href="#">History</a>
-
-                                    </li>
-                                    <li><a href="#">Locations</a>
-
-                                    </li>
-                                    <li><a href="#">Careers</a>
-
-                                    </li>
-                                </ul>
                             </li>
                             <li><span>Información corporativa</span>
 
@@ -684,9 +667,9 @@
                                     class="minus">–</button>
                                 </div>
                             </div>
-                            <div class="product-price-ud"><span>Precio ud.: </span><b>10&nbsp;€/ud.</b>
+                            <div class="product-price-ud"><span>Precio ud. </span><b>10&nbsp;€/ud.</b>
                             </div>
-                            <div class="product-price-tot"><span>Total: </span><b>20&nbsp;€</b>
+                            <div class="product-price-tot"><span>Total </span><b>20&nbsp;€</b>
                             </div>
                             <div class="product-delete">
                                 <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i>
@@ -735,16 +718,47 @@
                 </div>
             </main>
         </div>
-        <section id="sh-related-products" class="sh-bg__white sh-m-top__xl">
-            <div class="container">
-                <div class="row sh-m-top__xl sh-m-bottom__xl">
-                    <div class="col-xs-12 col-md-3">
-                         <h2 class="sh-text__h3">Productos vistos recientemente</h2>
-
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                            doloremque laudantium.</p>
+        <div id="sh-brands" class="sh-m-top__xl">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-3">
+                        <p class="sh-text__h3 font-heading sh-divider__header">Productos vistos recientemente</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
+                    <div class="col-xs-12 col-lg-9">
+                        <div class="sh-grid sh-grid--scroll sh-scroll no-scrollbar">
+                            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+                                <div
+                                class="sh-card__head">
+                                    <img src="img/low/tool.png" alt="x">
+                                    <label class="sh-switch">
+                                        <input type="checkbox"> <span></span>
+
+                                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge sh-badge-red">Promoción</span>
+
+                            </div>
+                            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Apolo</strong>
+
+                                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p>
+                                <div class="sh-card__body__price"> <strong>0,35&nbsp;€</strong><span>/ud.</span>
+
+                                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                                </div>
+                            </div>
+                            <div class="sh-card__footer">
+                                <div class="sh-input-quantity">
+                                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
+                                </div>
+                                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
+                            </div>
+                        </div>
+                        <!-- end sh-card -->
                         <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                             <div
@@ -754,13 +768,17 @@
                                     <input type="checkbox"> <span></span>
 
                                 </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge sh-badge-green">Novedad</span>
+ <span class="sh-badge sh-badge">Top Ventas</span>
 
                         </div>
-                        <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
+                        <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Panter</strong>
 
-                            <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                            <p class="sh-text__h5 sh-card__body__text">Zapato Panter Apolo Napa S3 247</p>
+                            <div class="sh-card__body__price"> <strong>39,87&nbsp;€</strong><span>/ud.</span>
 
+                                <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                            </div>
                         </div>
                         <div class="sh-card__footer">
                             <div class="sh-input-quantity">
@@ -768,12 +786,10 @@
                                 <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                                 <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                             </div>
-                            <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                            <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
                         </div>
                     </div>
                     <!-- end sh-card -->
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
                     <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                         <div
@@ -783,13 +799,17 @@
                                 <input type="checkbox"> <span></span>
 
                             </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge @@label">Top Ventas</span>
+ <span class="sh-badge sh-badge-green">Novedad</span>
 
                     </div>
-                    <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
+                    <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">ATG</strong>
 
-                        <p class="sh-text__h5 sh-card__body__text">Barbuquejo</p> <strong class="sh-card__body__price">1,29&nbsp;€</strong><span>/ud.</span>
+                        <p class="sh-text__h5 sh-card__body__text">Guante Maxiflex Elite ATG 34-247</p>
+                        <div class="sh-card__body__price"> <strong>0,35&nbsp;€</strong><span>/ud.</span>
 
+                            <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                        </div>
                     </div>
                     <div class="sh-card__footer">
                         <div class="sh-input-quantity">
@@ -797,12 +817,10 @@
                             <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                             <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                         </div>
-                        <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                        <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
                     </div>
                 </div>
                 <!-- end sh-card -->
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
                 <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
 
                     <div
@@ -812,13 +830,17 @@
                             <input type="checkbox"> <span></span>
 
                         </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge OFF">@@product-label</span>
+ <span class="sh-badge sh-badge-green">Novedad</span>
 
                 </div>
-                <div class="sh-card__body"> <strong class="sh-card__body__brand">Malatesta</strong>
+                <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Faru</strong>
 
-                    <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                    <p class="sh-text__h5 sh-card__body__text">Barbuquejo</p>
+                    <div class="sh-card__body__price"> <strong>1,29&nbsp;€</strong><span>/ud.</span>
 
+                        <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                    </div>
                 </div>
                 <div class="sh-card__footer">
                     <div class="sh-input-quantity">
@@ -826,14 +848,15 @@
                         <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                         <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                     </div>
-                    <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                    <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
                 </div>
             </div>
             <!-- end sh-card -->
-            </div>
-            </div>
-            </div>
-        </section>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
         <div class="clearfix"></div>
         <footer id="sh-footer" class="sh-text__white">
             <div class="sh-footer__top">

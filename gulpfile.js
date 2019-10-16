@@ -46,7 +46,7 @@ gulp.task('browser-sync', function() {
 		liveReload: true,
 		watch: true,
 		browser: ["firefox, chrome"],
-		open: false
+		open: true
 		
 	});
 });

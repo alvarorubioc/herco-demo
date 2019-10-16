@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="sh-nav--basket" id="sh-basket">	<a href="./cart.html" title="Carro de la compra" id="open-basket">
-					<i class="icon icon-basket"></i><span class="sh-badge sh-badge-red">0</span>
+					<i class="icon icon-basket"></i><span class="sh-badge sh-badge-red">3</span>
 				</a>
 
             </div>
@@ -310,25 +310,8 @@
                             <li><a href="./brands.html">Marcas</a>
 
                             </li>
-                            <li><span>Catálogos</span>
+                            <li><a href="./catalogs.html">Catálogos</a>
 
-                                <ul>
-                                    <li><a href="#">Lidership</a>
-
-                                    </li>
-                                    <li><a href="#">Lidership</a>
-
-                                    </li>
-                                    <li><a href="#">History</a>
-
-                                    </li>
-                                    <li><a href="#">Locations</a>
-
-                                    </li>
-                                    <li><a href="#">Careers</a>
-
-                                    </li>
-                                </ul>
                             </li>
                             <li><span>Información corporativa</span>
 
@@ -538,7 +521,7 @@
                         <form class="sh-form-search" action="">
                             <input class="sh-input" type="text" placeholder="Refinar búsqueda..."
                             name="search">
-                            <button class="sh-btn" type="submit"></button>
+                            <button class="sh-btn__danger" type="submit"></button>
                         </form>
                     </div>
                     <div class="sh-select-container header-search__orderby">
@@ -550,11 +533,13 @@
                             <option>Novedades</option>
                         </select>
                     </div>
-                    <div class="sh-btn-group-icon header-search__listngrid">
+                    <div class="header-search__listngrid">
                         <button class="sh-btn__white sh-btn-icon__md grid-view active"> <i class="icon icon-layout"></i>
  <span>GRID</span>
 
                         </button>
+                    </div>
+                    <div class="header-search__listngrid">
                         <button class="sh-btn__white sh-btn-icon__md list-view"> <i class="icon icon-list"></i>
  <span>LISTA</span>
 
@@ -566,6 +551,11 @@
                     </button>
                 </header>
                 <div id="sh-breadcrumbs" class="sh-m-top__lg sh-m-bottom__md between-xs middle-xs dflex">
+                    <div> <strong><a href="./" title="Proteccion y vestuario">Suministros Herco</a></strong>
+ <span><i class="icon icon-right-open"></i>Buscando en</span>
+ <span><i class="icon icon-right-open"></i>Protección y Vestuario</span>
+
+                    </div>
                     <div class="end-sm"> <span>PRODUCTOS: 20/<strong>1500</strong></span>
 
                     </div>
@@ -576,7 +566,10 @@
                     </button>
                     <aside id="sh-sidebar__filter">
                         <div class="sh-sidebar__filterby sh-m-bottom__lg">
-                            <p class="sh-text__h6 uppercase">Filtrando por</p>
+                            <div class="sh-m-bottom sh-m-top dflex between-xs middle-xs"> <span class="sh-text__h6 uppercase">Filtrando por</span>
+
+                                <button class="sh-btn-outline__danger sh-btn__sm"><i class="icon icon-cancel-circled"></i> Borrar todo</button>
+                            </div>
                             <div class="reset-filter-btn">
                                 <button class="sh-btn-outline sh-btn__sm"><i class="icon icon-cancel-circled"></i> Affinity</button>
                                 <button class="sh-btn-outline sh-btn__sm"><i class="icon icon-cancel-circled"></i> 3M</button>
@@ -626,10 +619,48 @@
 
                                 </label>
                             </div>
-                            <button class="sh-btn-outline sh-btn__sm sh-m-top showmore">Mostrar más +</button>
+                            <div class="showmore-content">
+                                <div>
+                                    <label class="sh-check-group">Faru <span class="unds">(1.500)</span>
+
+                                        <input type="checkbox" checked="checked"> <span class="sh-checkmark"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">Personna <span class="unds">(1.500)</span>
+
+                                        <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">Pegaso <span class="unds">(1.500)</span>
+
+                                        <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">Sibol <span class="unds">(1.500)</span>
+
+                                        <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">Medid <span class="unds">(1.500)</span>
+
+                                        <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- end show more -->
+                            <button class="sh-btn-outline sh-btn__sm sh-m-top showmore">Mostrar más</button>
                         </div>
                         <div class="sh-sidebar-filter__category sh-m-bottom__lg">
-                            <p class="sh-text__h6 uppercase">Atributo link</p>
+                            <p class="sh-text__h6 uppercase">Subcategoría</p>
                             <ul>
                                 <li><a href="#">Herramientas manuales</a><span class="unds">(1.500)</span>
 
@@ -647,7 +678,6 @@
 
                                 </li>
                             </ul>
-                            <button class="sh-btn-outline sh-btn__sm sh-m-top showmore">Mostrar más +</button>
                         </div>
                         <div class="sh-sidebar-filter__size sh-m-bottom__lg">
                             <p class="sh-text__h6 uppercase">Tallas</p>
@@ -686,15 +716,133 @@
 
                                 </label>
                             </div>
-                            <button class="sh-btn-outline sh-btn__sm sh-m-top showmore">Mostrar más +</button>
+                            <div class="showmore-content">
+                                <div>
+                                    <label class="sh-check-group">32 <span class="unds">(1.500)</span>
+
+                                        <input type="checkbox" checked="checked"> <span class="sh-checkmark"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">34 <span class="unds">(1.500)</span>
+
+                                        <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">36 <span class="unds">(1.500)</span>
+
+                                        <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">38 <span class="unds">(1.500)</span>
+
+                                        <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">40<span class="unds">(1.500)</span>
+
+                                        <input type="checkbox"> <span class="sh-checkmark"></span>
+
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- end show more -->
+                            <button class="sh-btn-outline sh-btn__sm sh-m-top showmore">Mostrar más</button>
                         </div>
                         <div class="sh-sidebar-filter__colors sh-m-bottom__lg">
                             <p class="sh-text__h6 uppercase">Colores</p>
                             <div class="sh-m-bottom__md">
-                                <div class="sh-badge sh-badge-green">Verde</div>
-                                <div class="sh-badge sh-badge-red">Rojo</div>
-                                <div class="sh-badge">Azul oscuro</div>
-                                <div class="sh-badge sh-badge-blue">Azul</div>
+                                <div>
+                                    <label class="sh-check-group">
+                                        <input type="checkbox"> <span class="sh-checkmark negro"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">
+                                        <input type="checkbox"> <span class="sh-checkmark gris"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">
+                                        <input type="checkbox"> <span class="sh-checkmark rojo"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">
+                                        <input type="checkbox"> <span class="sh-checkmark marron"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">
+                                        <input type="checkbox"> <span class="sh-checkmark naranja"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">
+                                        <input type="checkbox"> <span class="sh-checkmark amarillo"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">
+                                        <input type="checkbox"> <span class="sh-checkmark verde"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">
+                                        <input type="checkbox"> <span class="sh-checkmark lima"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">
+                                        <input type="checkbox"> <span class="sh-checkmark azul"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">
+                                        <input type="checkbox"> <span class="sh-checkmark azuloscuro"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">
+                                        <input type="checkbox"> <span class="sh-checkmark rosa"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">
+                                        <input type="checkbox"> <span class="sh-checkmark morado"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">
+                                        <input type="checkbox"> <span class="sh-checkmark beige"></span>
+
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="sh-check-group">
+                                        <input type="checkbox"> <span class="sh-checkmark blanco"></span>
+
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </aside>
@@ -712,10 +860,14 @@
  <span class="sh-badge sh-badge-green">Novedad</span>
 
                             </div>
-                            <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
+                            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Apolo</strong>
 
-                                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p>
+                                <div class="sh-card__body__price"> <strong>0,35&nbsp;€</strong><span>/ud.</span>
 
+                                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                                </div>
                             </div>
                             <div class="sh-card__footer">
                                 <div class="sh-input-quantity">
@@ -723,7 +875,7 @@
                                     <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                                     <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                                 </div>
-                                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
                             </div>
                         </div>
                         <!-- end sh-card -->
@@ -739,10 +891,14 @@
  <span class="sh-badge @@label">TopVentas</span>
 
                         </div>
-                        <div class="sh-card__body"> <strong class="sh-card__body__brand">Panter</strong>
+                        <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Panter</strong>
 
-                            <p class="sh-text__h5 sh-card__body__text">Zapato Panter Apolo Napa S3 247</p> <strong class="sh-card__body__price">39,87&nbsp;€</strong><span>/ud.</span>
+                            <p class="sh-text__h5 sh-card__body__text">Zapato Panter Apolo Napa S3 247</p>
+                            <div class="sh-card__body__price"> <strong>39,87&nbsp;€</strong><span>/ud.</span>
 
+                                <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                            </div>
                         </div>
                         <div class="sh-card__footer">
                             <div class="sh-input-quantity">
@@ -750,7 +906,7 @@
                                 <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                                 <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                             </div>
-                            <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                            <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
                         </div>
                     </div>
                     <!-- end sh-card -->
@@ -766,10 +922,14 @@
  <span class="sh-badge OFF">@@product-label</span>
 
                     </div>
-                    <div class="sh-card__body"> <strong class="sh-card__body__brand">ATG</strong>
+                    <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">ATG</strong>
 
-                        <p class="sh-text__h5 sh-card__body__text">Guante Maxiflex Elite ATG 34-247</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                        <p class="sh-text__h5 sh-card__body__text">Guante Maxiflex Elite ATG 34-247</p>
+                        <div class="sh-card__body__price"> <strong>0,35&nbsp;€</strong><span>/ud.</span>
 
+                            <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                        </div>
                     </div>
                     <div class="sh-card__footer">
                         <div class="sh-input-quantity">
@@ -777,7 +937,7 @@
                             <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                             <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                         </div>
-                        <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                        <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
                     </div>
                 </div>
                 <!-- end sh-card -->
@@ -793,10 +953,14 @@
  <span class="sh-badge @@label">TopVentas</span>
 
                 </div>
-                <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
+                <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Faru</strong>
 
-                    <p class="sh-text__h5 sh-card__body__text">Barbuquejo</p> <strong class="sh-card__body__price">1,29&nbsp;€</strong><span>/ud.</span>
+                    <p class="sh-text__h5 sh-card__body__text">Barbuquejo</p>
+                    <div class="sh-card__body__price"> <strong>1,29&nbsp;€</strong><span>/ud.</span>
 
+                        <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                    </div>
                 </div>
                 <div class="sh-card__footer">
                     <div class="sh-input-quantity">
@@ -804,7 +968,7 @@
                         <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                         <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                     </div>
-                    <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                    <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
                 </div>
             </div>
             <!-- end sh-card -->
@@ -820,10 +984,14 @@
  <span class="sh-badge OFF">@@product-label</span>
 
             </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Malatesta</strong>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Malatesta</strong>
 
-                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p>
+                <div class="sh-card__body__price"> <strong>0,35&nbsp;€</strong><span>/ud.</span>
 
+                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                </div>
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
@@ -831,7 +999,7 @@
                     <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                     <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -847,10 +1015,14 @@
  <span class="sh-badge sh-badge-red">Oferta</span>
 
             </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Faru</strong>
 
-                <p class="sh-text__h5 sh-card__body__text">Gafa de protección Faru C-294 QX2000 INCOLO</p> <strong class="sh-card__body__price">12,4&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Gafa de protección Faru C-294 QX2000 INCOLO</p>
+                <div class="sh-card__body__price"> <strong>12,4&nbsp;€</strong><span>/ud.</span>
 
+                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                </div>
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
@@ -858,7 +1030,7 @@
                     <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                     <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -874,10 +1046,14 @@
  <span class="sh-badge sh-badge-green">Novedad</span>
 
             </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Loctite</strong>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Loctite</strong>
 
-                <p class="sh-text__h5 sh-card__body__text">Adhesivo de contacto</p> <strong class="sh-card__body__price">33,55&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Adhesivo de contacto</p>
+                <div class="sh-card__body__price"> <strong>33,55&nbsp;€</strong><span>/ud.</span>
 
+                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                </div>
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
@@ -885,7 +1061,7 @@
                     <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                     <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -901,10 +1077,14 @@
  <span class="sh-badge @@label">TopVentas</span>
 
             </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Apolo</strong>
 
-                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p>
+                <div class="sh-card__body__price"> <strong>0,35&nbsp;€</strong><span>/ud.</span>
 
+                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                </div>
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
@@ -912,7 +1092,7 @@
                     <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                     <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -928,10 +1108,14 @@
  <span class="sh-badge sh-badge-green">Novedad</span>
 
             </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Apolo</strong>
 
-                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p>
+                <div class="sh-card__body__price"> <strong>0,35&nbsp;€</strong><span>/ud.</span>
 
+                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                </div>
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
@@ -939,7 +1123,7 @@
                     <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                     <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -955,10 +1139,14 @@
  <span class="sh-badge @@label">TopVentas</span>
 
             </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Panter</strong>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Panter</strong>
 
-                <p class="sh-text__h5 sh-card__body__text">Zapato Panter Apolo Napa S3 247</p> <strong class="sh-card__body__price">39,87&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Zapato Panter Apolo Napa S3 247</p>
+                <div class="sh-card__body__price"> <strong>39,87&nbsp;€</strong><span>/ud.</span>
 
+                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                </div>
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
@@ -966,7 +1154,7 @@
                     <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                     <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -982,10 +1170,14 @@
  <span class="sh-badge OFF">@@product-label</span>
 
             </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">ATG</strong>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">ATG</strong>
 
-                <p class="sh-text__h5 sh-card__body__text">Guante Maxiflex Elite ATG 34-247</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Guante Maxiflex Elite ATG 34-247</p>
+                <div class="sh-card__body__price"> <strong>0,35&nbsp;€</strong><span>/ud.</span>
 
+                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                </div>
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
@@ -993,7 +1185,7 @@
                     <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                     <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -1009,10 +1201,14 @@
  <span class="sh-badge @@label">TopVentas</span>
 
             </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Faru</strong>
 
-                <p class="sh-text__h5 sh-card__body__text">Barbuquejo</p> <strong class="sh-card__body__price">1,29&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Barbuquejo</p>
+                <div class="sh-card__body__price"> <strong>1,29&nbsp;€</strong><span>/ud.</span>
 
+                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                </div>
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
@@ -1020,7 +1216,7 @@
                     <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                     <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -1036,10 +1232,14 @@
  <span class="sh-badge OFF">@@product-label</span>
 
             </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Malatesta</strong>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Malatesta</strong>
 
-                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p>
+                <div class="sh-card__body__price"> <strong>0,35&nbsp;€</strong><span>/ud.</span>
 
+                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                </div>
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
@@ -1047,7 +1247,7 @@
                     <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                     <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -1063,10 +1263,14 @@
  <span class="sh-badge sh-badge-red">Oferta</span>
 
             </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Faru</strong>
 
-                <p class="sh-text__h5 sh-card__body__text">Gafa de protección Faru C-294 QX2000 INCOLO</p> <strong class="sh-card__body__price">12,4&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Gafa de protección Faru C-294 QX2000 INCOLO</p>
+                <div class="sh-card__body__price"> <strong>12,4&nbsp;€</strong><span>/ud.</span>
 
+                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                </div>
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
@@ -1074,7 +1278,7 @@
                     <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                     <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -1090,10 +1294,14 @@
  <span class="sh-badge sh-badge-green">Novedad</span>
 
             </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Loctite</strong>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Loctite</strong>
 
-                <p class="sh-text__h5 sh-card__body__text">Adhesivo de contacto</p> <strong class="sh-card__body__price">33,55&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Adhesivo de contacto</p>
+                <div class="sh-card__body__price"> <strong>33,55&nbsp;€</strong><span>/ud.</span>
 
+                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                </div>
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
@@ -1101,7 +1309,7 @@
                     <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                     <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -1117,10 +1325,14 @@
  <span class="sh-badge @@label">TopVentas</span>
 
             </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Apolo</strong>
 
-                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p>
+                <div class="sh-card__body__price"> <strong>0,35&nbsp;€</strong><span>/ud.</span>
 
+                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                </div>
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
@@ -1128,7 +1340,7 @@
                     <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                     <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -1144,10 +1356,14 @@
  <span class="sh-badge sh-badge-red">Oferta</span>
 
             </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Faru</strong>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Faru</strong>
 
-                <p class="sh-text__h5 sh-card__body__text">Gafa de protección Faru C-294 QX2000 INCOLO</p> <strong class="sh-card__body__price">12,4&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Gafa de protección Faru C-294 QX2000 INCOLO</p>
+                <div class="sh-card__body__price"> <strong>12,4&nbsp;€</strong><span>/ud.</span>
 
+                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                </div>
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
@@ -1155,7 +1371,7 @@
                     <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                     <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -1171,10 +1387,14 @@
  <span class="sh-badge sh-badge-green">Novedad</span>
 
             </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Loctite</strong>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Loctite</strong>
 
-                <p class="sh-text__h5 sh-card__body__text">Adhesivo de contacto</p> <strong class="sh-card__body__price">33,55&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Adhesivo de contacto</p>
+                <div class="sh-card__body__price"> <strong>33,55&nbsp;€</strong><span>/ud.</span>
 
+                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                </div>
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
@@ -1182,7 +1402,7 @@
                     <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                     <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -1198,10 +1418,14 @@
  <span class="sh-badge @@label">TopVentas</span>
 
             </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Apolo</strong>
 
-                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p>
+                <div class="sh-card__body__price"> <strong>0,35&nbsp;€</strong><span>/ud.</span>
 
+                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                </div>
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
@@ -1209,7 +1433,7 @@
                     <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                     <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->
@@ -1225,10 +1449,14 @@
  <span class="sh-badge sh-badge-green">Novedad</span>
 
             </div>
-            <div class="sh-card__body"> <strong class="sh-card__body__brand">Apolo</strong>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Apolo</strong>
 
-                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p> <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p>
+                <div class="sh-card__body__price"> <strong>0,35&nbsp;€</strong><span>/ud.</span>
 
+                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                </div>
             </div>
             <div class="sh-card__footer">
                 <div class="sh-input-quantity">
@@ -1236,7 +1464,7 @@
                     <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
                     <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button"><i class="icon icon-basket"></i>Añadir</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
             </div>
             </div>
             <!-- end sh-card -->

@@ -19,7 +19,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
-    p { margin-top: 0;}
+    p {margin-top: 0;}
+    i {padding-right: .5em;}
+    img {align-self: center;}
 }
 
 .row-brands {

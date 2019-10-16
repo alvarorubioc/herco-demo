@@ -1,6 +1,6 @@
 #sh-products-subcategory #header-bar {
   display: grid;
-  grid-template-columns: auto 1fr auto auto auto;
+  grid-template-columns: auto 1fr auto auto auto auto;
   grid-gap: 1em;
 
   @include breakpoint (mobile) {
@@ -131,6 +131,9 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .showmore-content {
+    display: none;
+  }
   .reset-filter-btn {
     display: inline-flex;
     flex-wrap: wrap;
@@ -140,6 +143,55 @@
       margin: 0 1em 1em 0;
     }   
     
+  }
+
+  .sh-sidebar-filter__colors {
+
+    & > div {
+      display: flex;
+      flex-wrap: wrap;
+
+      & div {
+        width: 2em;
+        height: 2em;
+        margin: .25em;
+      }
+    }
+
+    .sh-checkmark {
+      height: 2em;
+      width: 2em;
+      border: 0;
+      background-color: none;
+
+      &::after {
+        left: 10px;
+        top: 4px;
+        width: .5em;
+        height: 1em;
+        border: solid $color-grey;
+        border-width: 0 2px 2px 0;
+      }
+
+      &.amarillo { background-color: yellow !important; }
+      &.azul { background-color: $color-blue !important; }
+      &.azuloscuro { background-color: $color-navy-blue !important; }
+      &.beige { background-color: beige !important; border: 2px solid $color-grey; }
+      &.blanco { background-color: white !important; border: 2px solid $color-grey; }
+      &.gris { background-color: gray !important; }
+      &.verde { background-color: green !important; }
+      &.lima { background-color: lime !important; }
+      &.rojo { background-color: red !important; }
+      &.rosa { background-color: pink !important; }
+      &.marron { background-color: brown !important; }
+      &.morado { background-color: purple !important; }
+      &.naranja { background-color: orange !important; }
+      &.negro { background-color: black !important; }
+    }
+
+    .sh-check-group input:checked + span {
+      border: 2px solid $color-grey;
+    }
   }
 }
 
@@ -181,10 +233,7 @@
 .sh-products__list {  
   opacity: 0.8;
   transition: opacity .25s ease-in-out;
-  display: grid;
-  grid-gap: 1em;
-  grid-template-columns: 1fr;
-
+  display: block;
   animation-duration: 0.3s;
   transition-timing-function: ease-in;
   animation-fill-mode: both;
@@ -196,10 +245,11 @@
 
 .sh-products__list .sh-card {
   display: grid;
-  grid-template-columns: 7rem 2fr auto;
+  grid-template-columns: 2fr auto;
   grid-column-gap: 1em;
+  margin-bottom: .5em;
   @include breakpoint (xsmobile) {
-    grid-template-columns: 7rem 1fr;
+    grid-template-columns: 2fr 1fr;
   }
 
   a.sh-card__link {
@@ -207,8 +257,23 @@
     height: 100%;
   }
 
-  .sh-card__switch__text, label.sh-switch {
+  .sh-card__switch__text, label.sh-switch, .sh-card__head {
     display: none;
+  }
+
+  .sh-card__body {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: space-between;
+
+    p.sh-card__body__text {
+        margin: 0;
+        padding: 0 1.5rem;
+    }
+    .sh-card__body__price {
+      text-align: right;
+    } 
   }
   
   .sh-card__footer {

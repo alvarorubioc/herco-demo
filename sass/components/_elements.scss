@@ -185,6 +185,18 @@
   & div {
     margin-left: 2em;
   }
+  /* for close button */
+  .sh-closebtn {
+    margin-left: 1em;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    transition: 0.2s;
+
+      &:hover {
+          transform: scale(2, 2);
+      }
+  }
 }
 
 /* set alert type */
@@ -222,18 +234,7 @@
   }
 }
 
-/* for close button */
-.sh-close-alert {
-  margin-left: 1em;
-  font-weight: bold;
-  float: right;
-  cursor: pointer;
-  transition: 0.2s;
 
-    &:hover {
-        transform: scale(2, 2);
-    }
-}
 
 /* set badges */
 .sh-badge{

@@ -122,8 +122,8 @@
                         </div>
                     </div>
 
-                    <div class="product-price-ud"><span>Precio ud.: </span><b>10&nbsp;€/ud.</b></div>
-                    <div class="product-price-tot"><span>Total: </span><b>20&nbsp;€</b></div>
+                    <div class="product-price-ud"><span>Precio ud. </span><b>10&nbsp;€/ud.</b></div>
+                    <div class="product-price-tot"><span>Total </span><b>20&nbsp;€</b></div>
 
                     <div class="product-delete">
                         <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i class="icon icon-trash"></i></button>
@@ -172,24 +172,25 @@
     </main>
 </div>
 
-<section id="sh-related-products" class="sh-bg__white sh-m-top__xl">
-    <div class="container">
-        <div class="row sh-m-top__xl sh-m-bottom__xl">
-            <div class="col-xs-12 col-md-3">
-                <h2 class="sh-text__h3">Productos vistos recientemente</h2>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+<div id="sh-brands" class="sh-m-top__xl">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-lg-3">
+                <p class="sh-text__h3 font-heading sh-divider__header">Productos vistos recientemente</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore
+                    magna aliqua.</p>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
-                <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
-                <partial src="card.html" label="" product-label="Top Ventas" product-brand="Faru" product-price="1,29" product-name="Barbuquejo"></partial>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 sh-m-top__md">
-                <partial src="card.html" label="OFF" product-label="" product-brand="Malatesta" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+
+            <div class="col-xs-12 col-lg-9">
+                <div class="sh-grid sh-grid--scroll sh-scroll no-scrollbar">
+                    <partial src="card.html" label="sh-badge-red" product-label="Promoción" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Panter" product-price="39,87" product-name="Zapato Panter Apolo Napa S3 247"></partial>
+                    <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="ATG" product-price="0,35" product-name="Guante Maxiflex Elite ATG 34-247"></partial>
+                    <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Faru" product-price="1,29" product-name="Barbuquejo"></partial>
+                </div>
             </div>
         </div>
     </div>
-</section>
-
+</div>
 <partial src="footer.html" title="Some title"></partial>

@@ -13,12 +13,23 @@ $('#close-aside-mobile').click(function (e) {
   }
 });
 
+//add to cart buttom 
 $('.add-to-cart-btn').click(function (){
-  $('.add-to-cart-btn .icon').addClass('icon-check').removeClass('icon-basket');
+  $(this).addClass('added');
   setTimeout(function() {
-    $('.add-to-cart-btn .icon').removeClass('icon-check').addClass('icon-basket');
+    $('.add-to-cart-btn').removeClass('added');
   }, 2000);
+});
 
+//showmore dropdown inside lateral .cd-filter 
+$('.showmore').on('click', function(){
+  $(this).toggleClass('closed').siblings('.showmore-content').slideToggle(300);
+  if ($(this).hasClass('closed')) {
+    $(this).text('Mostrar menos');
+  }
+  else if ($(this)) {
+    $(this).text('Mostrar más');
+  }
 });
 
 

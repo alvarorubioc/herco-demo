@@ -90,6 +90,9 @@ nav#sh-nav:not(.mm) {
         i.icon {
             padding: 0 .5em;
         }
+        img {
+            margin: 0 .5em;
+        }
     }
 
     @include breakpoint(mobile) {

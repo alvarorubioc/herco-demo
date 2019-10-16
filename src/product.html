@@ -1,22 +1,31 @@
 <partial src="header.html" bodyClass="product"></partial>
-<partial src="hero-page.html" title="Apolo taco nylon Avellanado Clavo NPC"></partial>
+<section id="sh-hero--page" class="sh-bg__navy-blue">
+    <div class="container-fluid">
+        <div class="row middle-xs sh-text__white">
+            <div class="col-xs-12 col-md-12">
+                <h1>Apolo taco nylon Avellanado Clavo NPC</h1>
+            </div>
+        </div>
+    </div>
+</section> <!-- end #sh-section-hero -->
 
 <div class="container-fluid">
-    <header id="header-bar" class="sh-m-bottom">
+    <div id="header-bar" class="sh-m-bottom">
         <div>
             <form class="sh-form-search" action="./search.html">
-                <input class="sh-input" type="text" placeholder="Buscar..." name="search">
-                <button class="sh-btn" type="submit"></button>
+                <input class="sh-input" type="text" placeholder="Buscar producto" name="search">
+                <button class="sh-btn__danger" type="submit"></button>
             </form>
         </div>
         <div id="sh-breadcrumbs" class="sh-m-top__lg between-xs middle-xs dflex">
             <div>
                 <strong><a href="" title="Suministros Herco">Suministros Herco</a></strong>
-                <span><i class="icon icon-right-open"></i><a href="#" title="Proteccion y vestuario">Protección y Vestuario</a></span>
+                <span><i class="icon icon-right-open"></i><a href="#" title="Proteccion y vestuario">Protección y
+                        Vestuario</a></span>
                 <span><i class="icon icon-right-open"></i>Gafas</span>
             </div>
         </div>
-    </header>
+    </div>
 </div>
 
 <main class="container-fluid" aria-label="Main content">
@@ -26,16 +35,11 @@
                 <span class="sh-badge">Top Ventas</span>
                 <img src="img/low/tool.png" alt="x">
             </div>
-            <div class="product-img-thumbs">
-                <div><img src="img/low/tool.png" alt="x"></div>
-                <div><img src="img/low/tool.png" alt="x"></div>
-                <div><img src="img/low/tool.png" alt="x"></div>
-                <div><img src="img/low/tool.png" alt="x"></div>
-            </div>
         </div>
         <div class="col-xs-12 col-md-6">
             <strong class="product-brand">Apolo/Celo</strong>
             <h2>Apolo taco nylon Avellanado Clavo NPC</h2>
+            <p>Ref. 910100MFRST</p>
             <div class="product-price sh-text__h3">
                 <del class="offer-price">0,55&nbsp;€<span>/ud.</span></del>
                 <strong class="normal-price">0,35&nbsp;€</strong><span>/ud.</span>
@@ -45,11 +49,11 @@
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. </p>
-            <hr>    
-            <div class="products-attributes">
+            <hr>
+            <div class="products-attributes sh-m-top__md">
                 <strong class="sh-caption">Tallas</strong>
                 <div class="tallas-attribute">
-                    <button class="sh-btn__white">XS</button> 
+                    <button class="sh-btn__white">XS</button>
                     <button class="sh-btn__white">S</button>
                     <button class="sh-btn__white">M</button>
                     <button class="sh-btn__white">L</button>
@@ -58,13 +62,13 @@
 
                 <strong class="sh-caption">Potencia</strong>
                 <div class="colores-attribute">
-                    <button class="sh-btn__white">400Hz</button> 
+                    <button class="sh-btn__white">400Hz</button>
                     <button class="sh-btn__white">600Hz</button>
                     <button class="sh-btn__white">700Hz</button>
                     <button class="sh-btn__white">800Hz</button>
                 </div>
-                
-            </div>    
+
+            </div>
             <div class="product-details sh-text__sm">
                 <span class="product-on-stock">En Stock</span>
                 <span class="product-delivery">Envío en 24h</span>
@@ -78,37 +82,42 @@
                     <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                         class="minus">–</button>
                 </div>
-                <button class="sh-btn sh-btn__full" type="button"><i class="icon icon-basket"></i> Añadir al carro</button>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir al carro</button>
             </div>
         </div>
     </div>
     <div class="clearfix"></div>
-    
+
     <div id="sh-product-tabs" class="sh-m-top__xxl row">
         <div class="sh-tabs">
             <input type="radio" id="tab1" name="tab" checked>
-                <label for="tab1"><i class="icon icon-info"></i> Ficha técnica</label>
+            <label for="tab1"><i class="icon icon-info"></i> Especificaciones</label>
             <input type="radio" id="tab2" name="tab">
-                <label for="tab2"><i class="icon icon-play"></i> Videos</label>
+            <label for="tab2"><i class="icon icon-play"></i> Videos</label>
             <input type="radio" id="tab3" name="tab">
-                <label for="tab3"><i class="icon icon-star"></i> Opiniones</label>
+            <label for="tab3"><i class="icon icon-newspaper"></i> Documentación técnica</label>
             <div class="line"></div>
-            
+
             <div class="sh-tabs-wrapper">
-                
+
                 <div class="sh-tab-content" id="c1">
-                    <partial src="/sections/product-table.html" title="Some title"></partial>
+                    <partial src="/sections/product-table.html"></partial>
                 </div>
-                
-                <div class="sh-tab-content" id="c2">
-                    <h3>Videos</h3>
-                    <p>The project started in 2018 when someone needed something.</p>
+
+                <div class="sh-tab-content sh-box sh-space__lg" id="c2">
+                    <div class="col-xs-12 embed-container">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/86_vnQc1oBE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-xs-12">
+                        <p><i class="icon icon-attention"></i> Este producto aún no tiene vídeo, consulta en nuestro canal de <a href="" rel="nofollow">Youtube</a> o en <a href="">HERCO TV.</a></p>
+                    </div>
                 </div>
-                
+
                 <div class="sh-tab-content" id="c3">
-                    <h3>Opiniones</h3>
-                    <p>Amazing product. I don't know how it works.</p>
-                    <i>- Anonymous</i>
+                    <div class="dflex tech-doc sh-box sh-space__lg">
+                        <div><i class="icon icon-newspaper"></i><a href="" title="">Nombre ficha producto</a></div>
+                        <i class="icon icon-newspaper"></i><a href="" title="">Nombre ficha producto</a>
+                    </div>
                 </div>
 
             </div> <!-- end .sh-tabs-wrapper-->
@@ -118,62 +127,78 @@
 
 <div class="clearfix"></div>
 
-<section id="sh-cross-selling">
+<div id="sh-cross-selling">
     <div class="container-fluid">
-        <div class="cross-selling-row">
-            <div>
-                <h2>Comprados conjuntamente</h2>
-                <div class="sh-divider__header"></div>
+        <div class="row">
+            <div class="col-xs-12 col-md-3">
+                <p class="sh-text__h3 font-heading sh-divider__header">Comprados conjuntamente</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
             </div>
+            <div class="col-xs-5 col-md-2">
+                <div class="sh-card">
+                    <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+                    <div class="sh-card__head">
+                        <img src="img/low/tool.png" alt="x">
+                    </div>
 
-            <div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-lg-3 sh-m-bottom">
-                        <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                    <div class="sh-card__body">
+                        <strong class="sh-card__body__brand">APOLO/CELO</strong>
+                        <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p>
+                        <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-lg-3 sh-m-bottom">
-                        <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                </div> <!-- end sh-card -->
+            </div>
+            <div class="row middle-xs center-xs">
+                <div><i class="icon icon-plus-circled"></i></div>
+            </div>
+            <div class="col-xs-5 col-md-2">
+                <div class="sh-card">
+                    <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+                    <div class="sh-card__head">
+                        <img src="img/low/tool.png" alt="x">
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-lg-3 sh-m-bottom">
-                        <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+
+                    <div class="sh-card__body">
+                        <strong class="sh-card__body__brand uppercase">Marca</strong>
+                        <p class="sh-text__h5 sh-card__body__text">Otro producto relacionado</p>
+                        <strong class="sh-card__body__price">35&nbsp;€</strong><span>/ud.</span>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-lg-3 sh-m-bottom">
-                        <div class="sh-box">
-                            <table class="order-resume">
-                                <tr>
-                                    <td>Total productos (3)</td>
-                                    <td>930,80&nbsp;€</td>
-                                </tr>
-                                <tr>
-                                    <td>Entrega</td>
-                                    <td>5,00&nbsp;€</td>
-                                </tr>
-                                <tr>
-                                    <td>IVA</td>
-                                    <td>195,46&nbsp;€</td>
-                                </tr>
-                                <tr>
-                                    <th>Total</th>
-                                    <th>1.131,26 €</th>
-                                </tr>
-                            </table>
-                            <div class="sh-m-top__md"><button class="sh-btn sh-btn__full" type="button">Añadir todos a la cesta</button></div>
-                        </div>
-                    </div>
+                </div> <!-- end sh-card --> 
+            </div>
+            <div class="col-xs-12 col-md-3 sh-m-bottom">
+                <div class="sh-box">
+                    <table class="order-resume">
+                        <tr>
+                            <td>Total productos (2)</td>
+                            <td>930,80&nbsp;€</td>
+                        </tr>
+                        <tr>
+                            <td>Entrega</td>
+                            <td>5,00&nbsp;€</td>
+                        </tr>
+                        <tr>
+                            <td>IVA</td>
+                            <td>195,46&nbsp;€</td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <th>1.131,26 €</th>
+                        </tr>
+                    </table>
+                    <div class="sh-m-top__md"><button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir a la cesta</button></div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 
-<section class="sh-m-top__xl sh-m-bottom__xl container-fluid">
+<div class="sh-m-top__xl sh-m-bottom__xl container-fluid">
     <div class="row">
         <div class="col-xs-12 col-lg-3">
-            <h2 class="sh-divider__header">Los clientes también compraron</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.</p>
+            <p class="sh-text__h3 font-heading sh-divider__header">Los clientes también compraron</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
         </div>
 
         <div class="col-xs-12 col-lg-9">
@@ -185,18 +210,19 @@
                 <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="3M" product-price="2,29" product-name="Lorem"></partial>
                 <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Faru" product-price="1,29" product-name="Guantes"></partial>
                 <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
-                <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="3M" product-price="2,29" product-name="Lorem"></partial>  
+                <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="3M" product-price="2,29" product-name="Lorem"></partial>
             </div>
         </div>
     </div>
-</section>
+</div>
 
-<section class="sh-m-top__xl sh-m-bottom__xl container-fluid">
+<div class="sh-m-top__xl sh-m-bottom__xl container-fluid">
     <div class="row">
         <div class="col-xs-12 col-lg-3">
-            <h2 class="sh-divider__header">Productos vistos recientemente</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.</p>
+            <p class="sh-text__h3 font-heading sh-divider__header">Productos vistos recientemente</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.</p>
         </div>
 
         <div class="col-xs-12 col-lg-9">
@@ -208,6 +234,6 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 
-<partial src="footer.html" title="Some title"></partial>
+<partial src="footer.html"></partial>

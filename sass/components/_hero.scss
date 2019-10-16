@@ -39,9 +39,15 @@ form.sh-form-search {
     }
 
     button {
+        padding-left: 3em;
+        padding-right: 3em;
+        border-radius: 0px 2px 2px 0px;
+
         @include breakpoint (xsmobile) {
             position: absolute;
             right: 1rem;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
         }
         
         &::before {
@@ -51,6 +57,10 @@ form.sh-form-search {
                     font-family: 'herco';
                 }
             }
+    }
+
+    input {
+        border-radius: 2px 0px 0px 2px;
     }
 }
 
