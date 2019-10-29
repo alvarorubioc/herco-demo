@@ -1,0 +1,15 @@
+.sidebar-blog {
+    border-left: 1px solid $color-grey-50;
+    margin-top: -5.5em;
+    padding-left: 2em;
+
+    @include breakpoint (mobile) {
+        margin-top: 2em;
+    }
+} 
+
+.social-share a {
+    text-decoration: none;
+    font-size: 1.5em;
+    padding-right: .5em;
+}
