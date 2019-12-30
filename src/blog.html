@@ -3,13 +3,7 @@
 
 <div class="container-fluid">
     <div id="header-bar" class="sh-m-bottom">
-        <div>
-            <form class="sh-form-search" action="./search.html">
-                <input class="sh-input" type="text" placeholder="Buscar publicación" name="search">
-                <button class="sh-btn__danger" type="submit"></button>
-            </form>
-        </div>
-        <div id="sh-breadcrumbs" class="sh-m-top__lg between-xs middle-xs dflex">
+        <div id="sh-breadcrumbs" class="sh-m-top__xl between-xs middle-xs dflex">
             <div>
                 <strong><a href="" title="Suministros Herco">Suministros Herco</a></strong>
                 <span><i class="icon icon-right-open"></i>Blog</span>
@@ -29,10 +23,18 @@
                 <partial src="card-blog.html"></partial>
             </div>
             <div class="row center-xs">
-                <div class="sh-m-top__lg col-xs-12 col-sm-6">
-                    <button class="sh-btn-outline sh-btn__full sh-btn__lg">Mostrar más</button>
+                <div class="sh-m-top__lg col-xs-12">
+                    <ul class="sh-pagination">
+                        <li><a href="#"><i class="icon icon-left-open"></i></a></li>
+                        <li><a href="/blog/page/1/" class="active">1</a></li>
+                        <li><a href="/blog/page/2/">2</a></li>
+                        <li><a href="/blog/page/3/">3</a></li>
+                        <li><a href="/blog/page/4/">4</a></li>
+                        <li><a href="/blog/page/5/">5</a></li>
+                        <li><a href="#"><i class="icon icon-right-open"></i></a></li>
+                    </ul>
                 </div>
-            </div> 
+            </div>
         </main>
 
         <aside class="sidebar-blog col-xs-12 col-md-3 col-md-offset-1">
