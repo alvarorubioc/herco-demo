@@ -188,12 +188,13 @@
   .byauthor {
     margin-top: 0;
   }
+
+  a {
+    text-decoration: none;
+  }
   
   p.sh-text__h4 {
       margin-top: 0;
       margin-bottom: 0;
-      a {
-        text-decoration: none;
-      }
   }
 }
