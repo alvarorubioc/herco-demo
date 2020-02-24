@@ -57,6 +57,13 @@ form.sh-form-search {
                     font-family: 'herco';
                 }
             }
+        &.borrar::before {
+            content: 'Borrar';
+                @include breakpoint (xsmobile) {
+                    content: '\e839';
+                    font-family: 'herco';
+                }
+            }
     }
 
     input {
