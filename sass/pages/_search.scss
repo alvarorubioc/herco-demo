@@ -63,8 +63,9 @@
       margin-right: auto;
     }
 }
-
-
+.search #sh-products-subcategory #header-bar {
+  grid-template-columns: auto 1fr auto auto auto auto;
+}
 
 #btn-filters {
   &.icon::before {

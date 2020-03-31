@@ -407,22 +407,39 @@ nav#sh-nav:not(.mm) {
     }
 }
 
-.sh-pagination {
-    
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+#sh-breadcrumbs {
+    text-transform: uppercase;
+    font-size: $text__md;
+    a {
+        color: $color-grey;
+        &:hover {color: $color-navy-blue;}
     }
+
+    .end-sm {
+        @include breakpoint (mobile) {
+            margin-top: 1em;
+        }
+    }
+}
+
+.sh-pagination {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
     li {
         display: inline-block;
-        margin-right: 10px;
+        margin-left: .5em;
+
+        &:first-child {
+            margin-left: 0;
+        }
     }
     
     a {
         display: block;
         padding: 1em 1.5em;
-        color: #fff;
+        color: #fff !important;
         background: $color-blue;
         text-decoration: none;
         border-radius: $border-radius;
@@ -435,6 +452,15 @@ nav#sh-nav:not(.mm) {
     a.active {
         background: $color-navy-blue;
         font-weight: bold;
+    }
+
+    &.mini {
+        margin-top: .5em;
+        a {
+            display: block;
+            padding: .25em .5em;
+            color: #fff;
+        }
     }
 }
 

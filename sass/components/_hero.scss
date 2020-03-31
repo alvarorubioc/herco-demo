@@ -82,12 +82,3 @@ form.sh-form-search {
     margin-top: -20px;
     form.sh-form-search {max-width: 40rem;}
 }
-
-#sh-breadcrumbs {
-    text-transform: uppercase;
-    font-size: $text__md;
-    a {
-        color: $color-grey;
-        &:hover {color: $color-navy-blue;}
-    }
-}

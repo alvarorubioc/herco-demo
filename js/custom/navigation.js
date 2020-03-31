@@ -16,9 +16,6 @@ $('#close-aside-mobile').click(function (e) {
 //add to cart buttom 
 $('.add-to-cart-btn').click(function (){
   $(this).addClass('added');
-  setTimeout(function() {
-    $('.add-to-cart-btn').removeClass('added');
-  }, 2000);
 });
 
 //showmore dropdown inside lateral .cd-filter 
@@ -41,7 +38,7 @@ wrapper = $('div.sh-products__grid');
 listButton.on('click', function () {
   gridButton.removeClass('active');
   listButton.addClass('active');
-  wrapper.removeClass('sh-products__grid').addClass('sh-products__list');
+  wrapper.removeClass('sh-products__grid').addClass('sh-products__list animation');
 
 });
 
@@ -89,16 +86,3 @@ $(document).ready(function () {
   });
   
 });
-
-
-// hide sh-nav on desktop & sh-nav-desktop on mobile and tablet
-$(document).ready(function () {
-  if ($(window).width() < 1025) {
-    $('#sh-nav-desktop').remove();
-  }
-  if ($(window).width() > 1025) {
-    $('#sh-nav').remove();
-  }
-});
-
-
