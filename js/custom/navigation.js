@@ -18,16 +18,23 @@ $('.add-to-cart-btn').click(function (){
   $(this).addClass('added');
 });
 
-//showmore dropdown inside lateral .cd-filter 
-$('.showmore').on('click', function(){
+//read more dropdown testimonial 
+$('.readmore').on('click', function(){
   $(this).toggleClass('closed').siblings('.showmore-content').slideToggle(300);
   if ($(this).hasClass('closed')) {
-    $(this).text('Mostrar menos');
+    $(this).text('Leer menos');
   }
   else if ($(this)) {
-    $(this).text('Mostrar más');
+    $(this).text('Leer más');
   }
 });
+
+//progress bar cart & checkout
+setTimeout(function(){
+  $('.checkout #step2').addClass('active');
+  $('.thanks #step3').addClass('active');
+}, 600);
+$('.thanks #step2').addClass('active');
 
 
 // List & Grid view list products

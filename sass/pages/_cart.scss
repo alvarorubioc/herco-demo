@@ -108,17 +108,48 @@
 .progress {
     width: 100%;
     position: relative;
+    > div {
+        position: absolute;
+        height: .5rem;
+    }
 }
-.progressbar {
-    background-color: $color-blue;
-    position: absolute;
-    height: .5rem;
-    width: 0%;
-    transition: width 0.6s ease;
-    &.empty {
-        opacity: 1;
+
+.progressbar-empty {
+    width: 100%;
+    background-color: white; 
+}
+
+.checkout{
+    .progressbar-active {
+        width: 50%;
+        background-color: $color-grass;
+        animation-name: progress-width-checkout;
+        animation-duration: .6s; 
+    }
+}
+
+@keyframes progress-width-checkout {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+.thanks .progressbar-active {
+    width: 100%;
+    background-color: $color-grass;
+    animation-name: progress-width-thanks;
+    animation-duration: .6s; 
+}
+
+@keyframes progress-width-thanks {
+    from {
+        width: 50%;
+    }
+    to {
         width: 100%;
-        background-color: white;
     }
 }
 
@@ -188,13 +219,12 @@
                 }
             }
         }
-
-        &.active {
-            .step {
-                background: $color-blue;
-                color: white;
-            }
-        }    
+        
+        .active span.step {
+            background: $color-grass;
+            color: white;
+        }
+          
     }
 }
 

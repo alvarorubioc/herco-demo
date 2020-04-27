@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     
-    <body class="homepage-login">
+    <body class="orders">
         <header id="sh-navigation">
             <div class="sh-top-nav container-fluid">	<a href="#menu" id="sh-nav-trigger"><i class="icon icon-menu"></i><span></span></a>
 
@@ -534,21 +534,16 @@
         <!-- end #sh-section-hero -->
         <div class="container-fluid">
             <div id="header-bar" class="sh-m-bottom">
-                <div class="row between-xs">
-                    <div class="col-xs-12 col-sm-8">
-                        <form class="sh-form-search" action="/">
-                            <input class="sh-input" type="text" placeholder="Buscar pedido" name="search">
-                            <button class="sh-btn__danger" type="submit"></button>
-                        </form>
-                    </div>
+                <div class="row end-xs">
                     <div class="col-xs-12 col-sm-4 dflex end-xs">
                         <button class="sh-btn__danger sh-btn-text-icon">Cerrar sesión<i class="icon icon-logout"></i>
+
                         </button>
                     </div>
                 </div>
-                <div id="sh-breadcrumbs" class="sh-m-top__lg between-xs middle-xs dflex">
+                <div id="sh-breadcrumbs" class="sh-m-top between-xs middle-xs dflex">
                     <div> <strong><a href="" title="Suministros Herco">Suministros Herco</a></strong>
- <span><i class="icon icon-right-open"></i>Mi cuenta</span>
+ <span><i class="icon icon-right-open"></i><a href="./my-account.html" title="Suministros Herco">Mi cuenta</a></span>
  <span><i class="icon icon-right-open"></i>Pedidos</span>
 
                     </div>
@@ -557,83 +552,21 @@
         </div>
         <main class="sh-m-bottom__xl sh-m-top__lg container-fluid" aria-label="Main content">
             <div class="row sh-m-top__lg">
-                <div class="col-xs-12 col-md-4">
-                    <div class="sh-box sh-card-blog__mini middle-xs">
-                        <div class="sh-text__hero sh-space__sm"> <i class="sh-color__red-cherry icon icon-clipboard"></i>
-
-                        </div>
-                        <div>
-                             <h4>Pedidos</h4>
-
-                            <p>Historial, <strong>facturación,</strong> seguimiento y repetir pedidos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="sh-box sh-card-blog__mini middle-xs">
-                        <div class="sh-text__hero sh-space__sm"> <i class="sh-color__red-cherry icon icon-address"></i>
-
-                        </div>
-                        <div>
-                             <h4>Direcciones</h4>
-
-                            <p>Direcciones de envío, añadir nuevas o editar las existentes.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="sh-box sh-card-blog__mini middle-xs">
-                        <div class="sh-text__hero sh-space__sm"> <i class="sh-color__red-cherry icon icon-credit-card"></i>
-
-                        </div>
-                        <div>
-                             <h4>Métodos de pago</h4>
-
-                            <p>Editar o agregar nuevos métodos de pago.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="sh-box sh-card-blog__mini middle-xs">
-                        <div class="sh-text__hero sh-space__sm"> <i class="sh-color__red-cherry icon icon-lock-open"></i>
-
-                        </div>
-                        <div>
-                             <h4>Seguridad</h4>
-
-                            <p>Preferencias de inicio de sesión, nombre y contraseña.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="sh-box sh-card-blog__mini middle-xs">
-                        <div class="sh-text__hero sh-space__sm"> <i class="sh-color__red-cherry icon icon-heart"></i>
-
-                        </div>
-                        <div>
-                             <h4>Cestas guardadas</h4>
-
-                            <p>Historial de las cestas guardadas, repetir pedido.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="sh-box sh-card-blog__mini middle-xs">
-                        <div class="sh-text__hero sh-space__sm"> <i class="sh-color__red-cherry icon icon-clipboard"></i>
-
-                        </div>
-                        <div>
-                             <h4>Ofertas</h4>
-
-                            <p>Lorem ipsum dolir sit aemet Farrokh Rastegar</p>
-                        </div>
-                    </div>
+                <div class="col-xs-12 col-sm-6">
+                    <form class="sh-form-search" action="/">
+                        <input class="sh-input" type="text" placeholder="Buscar pedido" name="search">
+                        <button class="sh-btn__danger" type="submit"></button>
+                    </form>
                 </div>
             </div>
+            <div class="row sh-m-top">
+                <div class="col-xs-12">
+                    <div class="sh-box">Aquí la tabla</div>
+                </div>
         </main>
         <div id="sh-brands" class="sh-m-top__xl">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row sh-m-bottom__xl">
                     <div class="col-xs-12 col-lg-3">
                         <p class="sh-text__h3 font-heading sh-divider__header">Productos recomendados</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -650,7 +583,7 @@
                                         <input type="checkbox"> <span></span>
 
                                     </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge sh-badge-red">Promoción</span>
+ <span class="sh-badge sh-badge">Top Ventas</span>
 
                             </div>
                             <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Apolo</strong>
@@ -712,7 +645,7 @@
                                 <input type="checkbox"> <span></span>
 
                             </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge sh-badge-green">Novedad</span>
+ <span class="sh-badge sh-badge">Top Ventas</span>
 
                     </div>
                     <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">ATG</strong>
@@ -743,7 +676,7 @@
                             <input type="checkbox"> <span></span>
 
                         </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
- <span class="sh-badge sh-badge-green">Novedad</span>
+ <span class="sh-badge sh-badge">Top Ventas</span>
 
                 </div>
                 <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Faru</strong>
@@ -765,6 +698,130 @@
                 </div>
             </div>
             <!-- end sh-card -->
+            <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+                <div
+                class="sh-card__head">
+                    <img src="img/low/tool.png" alt="x">
+                    <label class="sh-switch">
+                        <input type="checkbox"> <span></span>
+
+                    </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge sh-badge">Top Ventas</span>
+
+            </div>
+            <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">3M</strong>
+
+                <p class="sh-text__h5 sh-card__body__text">Lorem</p>
+                <div class="sh-card__body__price"> <strong>2,29&nbsp;€</strong><span>/ud.</span>
+
+                    <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+                </div>
+            </div>
+            <div class="sh-card__footer">
+                <div class="sh-input-quantity">
+                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                    <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
+                </div>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
+            </div>
+        </div>
+        <!-- end sh-card -->
+        <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+            <div
+            class="sh-card__head">
+                <img src="img/low/tool.png" alt="x">
+                <label class="sh-switch">
+                    <input type="checkbox"> <span></span>
+
+                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge sh-badge">Top Ventas</span>
+
+        </div>
+        <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Faru</strong>
+
+            <p class="sh-text__h5 sh-card__body__text">Guantes</p>
+            <div class="sh-card__body__price"> <strong>1,29&nbsp;€</strong><span>/ud.</span>
+
+                <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+            </div>
+        </div>
+        <div class="sh-card__footer">
+            <div class="sh-input-quantity">
+                <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
+            </div>
+            <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
+        </div>
+        </div>
+        <!-- end sh-card -->
+        <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+            <div
+            class="sh-card__head">
+                <img src="img/low/tool.png" alt="x">
+                <label class="sh-switch">
+                    <input type="checkbox"> <span></span>
+
+                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge sh-badge">Top Ventas</span>
+
+        </div>
+        <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">Apolo</strong>
+
+            <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p>
+            <div class="sh-card__body__price"> <strong>0,35&nbsp;€</strong><span>/ud.</span>
+
+                <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+            </div>
+        </div>
+        <div class="sh-card__footer">
+            <div class="sh-input-quantity">
+                <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
+            </div>
+            <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
+        </div>
+        </div>
+        <!-- end sh-card -->
+        <div class="sh-card"> <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+
+            <div
+            class="sh-card__head">
+                <img src="img/low/tool.png" alt="x">
+                <label class="sh-switch">
+                    <input type="checkbox"> <span></span>
+
+                </label> <span class="sh-card__switch__text sh-text__sm">Comparar</span>
+ <span class="sh-badge sh-badge">Top Ventas</span>
+
+        </div>
+        <div class="sh-card__body"> <strong class="sh-card__body__brand uppercase">3M</strong>
+
+            <p class="sh-text__h5 sh-card__body__text">Lorem</p>
+            <div class="sh-card__body__price"> <strong>2,29&nbsp;€</strong><span>/ud.</span>
+
+                <br> <small class="sh-m-top">Disponible en diferentes <strong>colores</strong></small>
+
+            </div>
+        </div>
+        <div class="sh-card__footer">
+            <div class="sh-input-quantity">
+                <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
+            </div>
+            <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
+        </div>
+        </div>
+        <!-- end sh-card -->
         </div>
         </div>
         </div>
@@ -777,12 +834,12 @@
                     <div class="row">
                         <div class="sh-footer__address col-xs-12 col-sm-6">
                             <p class="sh-text__h5">Estamos en:</p> <address>
-                        Ctra. Valencia Km 7.700<br>
+                        Ctra. Valencia Km 7.700<br><br>
                         50410 Cuarte de Huerva ZARAGOZA
                     </address>
 
                             <p>
-                                <div class="sh-link"><span class="link-ofuscado" data-url="https://www.google.es">Cómo llegar</span> 
+                                <div class="sh-link"><span class="link-ofuscado" onclick="location.href='https://www.google.es'">Cómo llegar</span> 
                                     <i
                                     class="icon icon-right-open"></i>
                                 </div>
@@ -793,7 +850,7 @@
                             <p>De lunes a viernes de 8:00 19:00 hrs.
                                 <p>
                                     <p>+34 976 503 927 | info@suministrosherco.com</p>
-                                    <div><span class="link-ofuscado" data-url="https://www.google.es">Contacta con nosotros</span> 
+                                    <div class="sh-link"><span class="link-ofuscado" onclick="location.href='https://www.google.es'">Contacta con nosotros</span> 
                                         <i
                                         class="icon icon-right-open"></i>
                                     </div>
@@ -806,19 +863,19 @@
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <p class="sh-text__h6">Productos mas buscados</p>
                         <ul>
-                            <li><a href="" title="">Categoría destacada 1</a>
+                            <li><a href="" title="">Vestuario laboral</a>
 
                             </li>
-                            <li><a href="" title="">Categoría destacada 2</a>
+                            <li><a href="" title="">Guantes de trabajo</a>
 
                             </li>
-                            <li><a href="" title="">Categoría destacada 3</a>
+                            <li><a href="" title="">Cepillos abrasivos</a>
 
                             </li>
-                            <li><a href="" title="">Categoría destacada 4</a>
+                            <li><a href="" title="">Masilla</a>
 
                             </li>
-                            <li><a href="" title="">Categoría destacada 5</a>
+                            <li><a href="" title="">Tornillos hexagonales</a>
 
                             </li>
                         </ul>
@@ -826,16 +883,17 @@
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <p class="sh-text__h6">Información de compra</p>
                         <ul>
-                            <li><a href="" title="Aviso legal" rel="nofollow">Aviso legal</a>
+                            <li><a href="./aviso-legal.html" title="Aviso legal" rel="nofollow">Aviso legal</a>
 
                             </li>
-                            <li><a href="" title="Envíos" rel="nofollow">Envíos</a>
+                            <li><a href="./entrega.html" title="Envíos" rel="nofollow">Entregas</a>
 
                             </li>
-                            <li><a href="" title="Condiciones de uso" rel="nofollow">Condiciones de uso</a>
+                            <li><a href="./terminos-y-condiciones-de-uso.html" title="Condiciones de uso"
+                                rel="nofollow">Condiciones de uso</a>
 
                             </li>
-                            <li><a href="" title="Política de privacidad" rel="nofollow">Política de privacidad</a>
+                            <li><a href="./politica-privacidad.html" title="Política de privacidad" rel="nofollow">Política de privacidad</a>
 
                             </li>
                         </ul>
@@ -843,7 +901,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <p class="sh-text__h6">Suministros Herco</p>
                         <ul>
-                            <li><a href="https://hercotv.suministrosherco.com/" title="HERCO TV">HERCO TV</a>
+                            <li><a href="https://hercotv.suministrosherco.com/" target="_blank" title="HERCO TV">HERCO TV</a>
 
                             </li>
                             <li><a href="./blog.html" title="Blog">Nuestro Blog</a>
@@ -880,7 +938,7 @@
             </div>
             <div class="sh-footer__sub container-fluid">
                 <div class="row middle-xs between-sm center-xs"> <a href="index.html"><img src="svg/SH-Logo-Red.svg" alt="Suministros HERCO" width="200"></a>
- <small>2019 Suministros Industriales Herco S.L.</small>
+ <small>2019 Suministros Industriales Herco S.A.</small>
 
                     <div
                     class="sh-footer__social"> <a href="https://www.facebook.com/suministrosherco/" rel="nofollow"><i class="icon icon-facebook"></i></a>

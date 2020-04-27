@@ -5,6 +5,14 @@
 .sh-space__xl {padding: calc(3 * #{$text-base-size});}
 .sh-space__xxl {padding: calc(4 * #{$text-base-size});}
 
+
+.sh-space__left__sm {padding-left: calc(0.5 * #{$text-base-size});}
+.sh-space__left {padding-left: calc(1 * #{$text-base-size});}
+.sh-space__left__md {padding-left: calc(1.5 * #{$text-base-size});}
+.sh-space__left__lg {padding-left: calc(2 * #{$text-base-size});}
+.sh-space__left__xl {padding-left: calc(3 * #{$text-base-size});}
+.sh-space__left__xxl {padding-left: calc(4 * #{$text-base-size});}
+
 .sh-no__margin {margin: 0;}
 ​
 .sh-m-bottom__sm { margin-bottom: calc(0.5 * #{$text-base-size});}

@@ -527,19 +527,19 @@
             <div class="row center-xs">
                 <div class="step-wizard col-xs-12 col-md-8 sh-m-top__md">
                     <div class="progress">
-                        <div class="progressbar empty"></div>
-                        <div id="prog" class="progressbar"></div>
+                        <div class="progressbar-empty"></div>
+                        <div class="progressbar-active"></div>
                     </div>
                     <ul>
-                        <li class="active">
-                            <div id="step1"> <span class="step"><i class="icon icon-basket"></i></span>
+                        <li>
+                            <div id="step1" class="active"> <span class="step"><i class="icon icon-basket"></i></span>
 
                                 <p class="title">1 <span>Carrito</span>
 
                                 </p>
                             </div>
                         </li>
-                        <li class="">
+                        <li>
                             <div id="step2"> <span class="step"><i class="icon icon-credit-card"></i></span>
 
                                 <p class="title">2 <span>Dirección y pago</span>
@@ -547,7 +547,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li class="">
+                        <li>
                             <div id="step3"> <span class="step"><i class="icon icon-thumbs-up"></i></span>
 
                                 <p class="title">3 <span>Confirmación</span>
@@ -563,7 +563,7 @@
         <section class="container-fluid">
             <main aria-label="Main content" role="main" class="row">
                 <div class="col-xs-12 col-md-8 sh-m-top__lg shopping-cart-container">
-                    <div class="sh-m-bottom"> <span class="sh-text__h6 uppercase">Dirección de entrega</span>
+                    <div class="sh-m-bottom"> <span class="sh-text__h6 uppercase">Dirección de facturación</span>
 
                     </div>
                     <div class="sh-box sh-m-bottom__lg">
@@ -653,8 +653,8 @@
 
                     </div>
                     <div class="sh-box sh-m-bottom__md">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-2 credit-card-boxes">
+                        <div class="row middle-xs">
+                            <div class="col-xs-12 col-sm-3 credit-card-boxes">
                                 <div class="credit-card-box active">
                                     <label class="sh-check-group">
                                         <img src="img/low/visa-card.svg" alt="Visa">
@@ -662,6 +662,8 @@
 
                                     </label>
                                 </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 credit-card-boxes">
                                 <div class="credit-card-box">
                                     <label class="sh-check-group">
                                         <img src="img/low/mastercard-card.svg" alt="Master Card">
@@ -669,6 +671,8 @@
 
                                     </label>
                                 </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 credit-card-boxes">
                                 <div class="credit-card-box">
                                     <label class="sh-check-group">
                                         <img src="img/low/paypal-card.svg" alt="Pay Pal">
@@ -676,6 +680,8 @@
 
                                     </label>
                                 </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 credit-card-boxes center-xs">
                                 <div class="credit-card-box">
                                     <label class="sh-check-group">
                                         <img src="img/low/applepay-card.svg" alt="Apple Pay">
@@ -683,38 +689,6 @@
 
                                     </label>
                                 </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-9 col-sm-offset-1">
-                                <form action="" method="">
-                                    <div class="row sh-m-top__md">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <label class="sh-label" for="country">Titular tarjeta</label>
-                                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom__lg sh-m-top__sm">
-                                                <input class="sh-input sh-input__error" id="country" type="text" name="country"> <i class="icon icon-attention sh-form-icon-secondary__error"></i>
- <span>Número incorrecto</span>
-
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <label class="sh-label" for="country">Número</label>
-                                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
-                                                <input class="sh-input" id="country" type="text" name="country" placeholder="&#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679;">
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <label class="sh-label" for="country">Fecha de expiración</label>
-                                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
-                                                <input class="sh-input" id="country" type="text" name="country" placeholder="MM/AA">
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-4">
-                                            <label class="sh-label" for="country">CVV</label>
-                                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
-                                                <input class="sh-input" id="country" type="text" name="country" placeholder="&#9679;&#9679;&#9679;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
                             </div>
                         </div>
                         <!-- end .row -->
@@ -815,12 +789,12 @@
                     <div class="row">
                         <div class="sh-footer__address col-xs-12 col-sm-6">
                             <p class="sh-text__h5">Estamos en:</p> <address>
-                        Ctra. Valencia Km 7.700<br>
+                        Ctra. Valencia Km 7.700<br><br>
                         50410 Cuarte de Huerva ZARAGOZA
                     </address>
 
                             <p>
-                                <div class="sh-link"><span class="link-ofuscado" data-url="https://www.google.es">Cómo llegar</span> 
+                                <div class="sh-link"><span class="link-ofuscado" onclick="location.href='https://www.google.es'">Cómo llegar</span> 
                                     <i
                                     class="icon icon-right-open"></i>
                                 </div>
@@ -831,7 +805,7 @@
                             <p>De lunes a viernes de 8:00 19:00 hrs.
                                 <p>
                                     <p>+34 976 503 927 | info@suministrosherco.com</p>
-                                    <div><span class="link-ofuscado" data-url="https://www.google.es">Contacta con nosotros</span> 
+                                    <div class="sh-link"><span class="link-ofuscado" onclick="location.href='https://www.google.es'">Contacta con nosotros</span> 
                                         <i
                                         class="icon icon-right-open"></i>
                                     </div>

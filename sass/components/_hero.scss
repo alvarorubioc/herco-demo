@@ -43,8 +43,8 @@ form.sh-form-search {
         padding-right: 3em;
         border-radius: 0px 2px 2px 0px;
 
-        @include breakpoint (xsmobile) {
-            position: absolute;
+        @include breakpoint (mobile) {
+            //position: absolute;
             right: 1rem;
             padding-left: 1.5em;
             padding-right: 1.5em;
@@ -52,14 +52,14 @@ form.sh-form-search {
         
         &::before {
             content: 'Buscar';
-                @include breakpoint (xsmobile) {
+                @include breakpoint (mobile) {
                     content: '\e800';
                     font-family: 'herco';
                 }
             }
         &.borrar::before {
             content: 'Borrar';
-                @include breakpoint (xsmobile) {
+                @include breakpoint (mobile) {
                     content: '\e839';
                     font-family: 'herco';
                 }

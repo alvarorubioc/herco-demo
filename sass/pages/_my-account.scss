@@ -1,0 +1,33 @@
+.my-account .sh-card-blog__mini  {
+  
+    @include breakpoint (mobile) {
+        display: flex;
+    }
+}
+
+.step-wizard-follow {
+    position: relative;
+
+    .progressbar {
+        background-color: #003e90;
+        height: .5em;
+        position: absolute;
+        width: 99%;
+        top: 10px;
+        left: 1px;
+        z-index: -1; 
+    }
+
+    .step {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border: 4px solid $color-blue;
+        border-radius: 50%;
+
+        &.active {
+            background-color: $color-blue; 
+        }
+    }
+}

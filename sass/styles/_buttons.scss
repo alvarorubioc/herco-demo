@@ -345,14 +345,17 @@ a.sh-btn-outline__allwhite, .sh-btn-outline__allwhite {
       text-transform: uppercase;
     }
   }
-}
 
-.sh-btn-text-icon {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: auto;
-  grid-gap: 1em;
-  align-items: center;
+  &_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    i {
+      padding-left: .5em;
+    }
+  }
 }
 
 /* set button group */

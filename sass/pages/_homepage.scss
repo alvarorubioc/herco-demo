@@ -238,28 +238,15 @@ section::after {
     }
 }
 
-.stars {
-    display: flex;
-    
-  }
-  
-  .star {
-    display: inline-block;
-    padding: 0 .25rem;
-    &::before {
-      content: '\e804';
-      font-family: 'herco';
-      color: $color-grey;
-    }
-  }
-  
-  @for $i from 1 through 5 {
-    .stars[data-stars='#{$i}'] {
-      .star:nth-child(-n + #{$i})::before {
-        color: $color-yellow;
+
+#sh-testimonials {
+    .readmore {
+        color: $color-blue;
       }
-    }
-  }
+      .showmore-content {
+        display: none;
+      }
+}
 
 .testimonial-author {
     display: flex;
@@ -270,10 +257,6 @@ section::after {
         height: 3rem;
         border: 1px solid $color-blue;
         margin-right: 2em;
-    }
-
-    strong {
-        color: $color-blue;
     }
 
     &>div {
