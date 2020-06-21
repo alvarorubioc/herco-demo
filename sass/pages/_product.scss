@@ -158,6 +158,10 @@
         text-overflow: ellipsis;
         overflow: hidden;
 
+        i.icon {
+            padding-right: .5em;
+        }
+
         &::after {
             content: "";
             height: 2px;
@@ -174,9 +178,7 @@
             }
         }
 
-        i.icon {
-            padding-right: .5em;
-        }
+        
 
     .line {
         position: absolute;

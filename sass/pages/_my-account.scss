@@ -50,3 +50,10 @@
         }
     }
 }
+
+.btn-edit-preferences {
+    display: flex;
+    button:first-child() {
+        margin-right: 1em;
+    }
+}

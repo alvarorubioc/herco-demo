@@ -1,0 +1,143 @@
+<partial src="header.html" bodyClass="new-address" robots="noindex"></partial>
+<partial src="hero-page.html" title="Nueva dirección"></partial>
+
+<div class="container-fluid">
+    <div id="header-bar" class="sh-m-bottom">
+        <div class="row end-xs">
+            <div class="col-xs-12 col-sm-4 dflex end-xs">
+                <button class="sh-btn__danger sh-btn-text-icon">Cerrar sesión<i class="icon icon-logout"></i>
+                </button>
+            </div>
+        </div>
+        <div id="sh-breadcrumbs" class="sh-m-top between-xs middle-xs dflex">
+            <div>
+                <strong><a href="" title="Suministros Herco">Suministros Herco</a></strong>
+                <span><i class="icon icon-right-open"></i><a href="./my-account.html" title="Mi cuenta">Mi cuenta</a></span>
+                <span><i class="icon icon-right-open"></i><a href="./preferencias.html" title="Preferencias">Preferencias</a></span>
+                <span><i class="icon icon-right-open"></i>Añadir dirección</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="sh-m-bottom__xl sh-m-top__lg container-fluid" aria-label="Main content">
+    <div class="row sh-m-top">   
+        <div class="col-xs-12">
+            <div class="sh-box sh-m-bottom__lg">
+                <form action="" method="">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <label class="sh-label" for="fname">Nombre</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
+                                <input class="sh-input" id="fname" type="text" name="firstname" required>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4">
+                            <label class="sh-label" for="surname">Apellidos</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom__lg sh-m-top__sm">
+                                <input class="sh-input sh-input__success" id="surname" type="text" name="surname"
+                                    required>
+                                <i class="icon icon-check sh-form-icon-secondary__success"></i>
+                                <span>Ejemplo correcto</span>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4">
+                            <label class="sh-label" for="phone">Teléfono</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom__lg sh-m-top__sm">
+                                <input class="sh-input sh-input__error" id="phone" type="tel" name="phone" required>
+                                <i class="icon icon-attention sh-form-icon-secondary__error"></i>
+                                <span>Ejemplo incorrecto</span>
+                            </div>
+                        </div>
+
+                    </div><!-- end .checkout-name -->
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <label class="sh-label" for="bname">Nombre empresa</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
+                                <input class="sh-input" id="bname" type="text" name="bname">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <label class="sh-label" for="cif">CIF/DNI</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom__lg sh-m-top__sm">
+                                <input class="sh-input" id="cif" type="text" name="cif" required>
+                            </div>
+                        </div>
+                    </div> <!-- end .checkout-business -->
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <label class="sh-label" for="address">Dirección</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
+                                <input class="sh-input" id="address" type="text" name="address" required>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <label class="sh-label" for="postalcode">Código postal</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom__lg sh-m-top__sm">
+                                <input class="sh-input" id="postalcode" type="text" name="postalcode" required>
+                            </div>
+                        </div>
+                    </div><!-- end .checkout-address -->
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <label class="sh-label" for="city">Población</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
+                                <input class="sh-input" id="city" type="text" name="city" required>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <label class="sh-label" for="region">Provincia</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
+                                <input class="sh-input" id="region" type="text" name="region" required>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <label class="sh-label" for="country">País</label>
+                            <div class="sh-form-group sh-form-contain-icon sh-m-bottom sh-m-top__sm">
+                                <input class="sh-input" id="country" type="text" name="country">
+                            </div>
+                        </div>
+                    </div> <!-- end .checkout-city -->
+
+                    <div class="row end-xs sh-m-top__md">
+                        <div class="col-xs-12">
+                            <input class="sh-btn" type="submit" value="Guardar">
+                        </div>
+                    </div> 
+                </form>
+            </div>    
+    </div>
+</main>
+       
+<div id="sh-brands" class="sh-m-top__xl">
+    <div class="container-fluid">
+        <div class="row sh-m-bottom__xl">
+            <div class="col-xs-12 col-lg-3">
+                <p class="sh-text__h3 font-heading sh-divider__header">Productos recomendados</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.</p>
+            </div>
+
+            <div class="col-xs-12 col-lg-9">
+                <div class="sh-grid sh-grid--scroll sh-scroll no-scrollbar">
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Panter" product-price="39,87" product-name="Zapato Panter Apolo Napa S3 247"></partial>
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="ATG" product-price="0,35" product-name="Guante Maxiflex Elite ATG 34-247"></partial>
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Faru" product-price="1,29" product-name="Barbuquejo"></partial>
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="3M" product-price="2,29" product-name="Lorem"></partial>
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Faru" product-price="1,29" product-name="Guantes"></partial>
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="3M" product-price="2,29" product-name="Lorem"></partial>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<partial src="footer.html" title="Some title"></partial>
