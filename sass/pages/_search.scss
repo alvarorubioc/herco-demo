@@ -65,6 +65,21 @@
 }
 .search #sh-products-subcategory #header-bar {
   grid-template-columns: auto 1fr auto auto auto auto;
+  @include breakpoint (mobile) {
+    grid-template-columns: auto 1fr auto;
+    .sh-form-search {
+      max-width: 10.5em;
+    }
+  }
+  @include breakpoint (xsmobile) {
+    .sh-form-search {
+      max-width: 8.5em;
+      button {
+        padding-left: .75em;
+        padding-right: .75em;
+      }
+    }
+  }
 }
 
 #btn-filters {

@@ -8,6 +8,19 @@
 .step-wizard-follow {
     position: relative;
 
+    .col-xs-12 {
+        @include breakpoint (mobile) {
+            display: grid;
+            grid-template-columns: 30px 1fr;
+            margin-bottom: 1.5em;
+
+            p.title {
+                margin-top: 0;
+                margin-left: 1.5em; 
+            }
+        }
+    }
+
     .progressbar {
         background-color: #003e90;
         height: .5em;
@@ -16,6 +29,12 @@
         top: 10px;
         left: 1px;
         z-index: -1; 
+
+        @include breakpoint (mobile) {
+            height: calc(99% - 88px);
+            width: .5em;
+            left: 11px;
+        }
     }
 
     .step {

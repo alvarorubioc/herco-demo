@@ -43,6 +43,16 @@ $module: '.mm';
 //  The page
 body#{$module}--open {
     overflow-y: hidden;
+    &::before {
+        content: '\e80f';
+        right: .5em;
+        top: .5em;
+        position: absolute;
+        font-family: 'herco';
+        z-index: 9999;
+        color: $color-red-cherry;
+        font-size: 2em;
+    }
 }
 
 //  The menu.
@@ -75,6 +85,17 @@ body#{$module}--open {
         transform: translateX(0);
     }
 }
+
+
+// Search form Navbar
+#sh-nav {
+    .sh-form-search {
+        @include breakpoint (xsmobile) {
+            max-width: 80%;
+        }
+    }
+}
+
 
 //  Navbar.
 #{$module} {
