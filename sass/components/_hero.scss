@@ -32,7 +32,7 @@
   
   }
 
-form.sh-form-search {
+.sh-form-search {
     display: flex;
     @include breakpoint (xsmobile) {
         max-width: 100%;

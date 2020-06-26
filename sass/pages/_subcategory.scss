@@ -47,7 +47,7 @@
   }
 }
 
-.is-open #close-aside-mobile {
+.mm--open #close-aside-mobile {
   @include breakpoint (mobile) {
     display: block;
     background-color:transparent;

@@ -43,15 +43,27 @@ $module: '.mm';
 //  The page
 body#{$module}--open {
     overflow-y: hidden;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    z-index: -9999;
+
     &::before {
         content: '\e80f';
         right: .5em;
-        top: .5em;
+        top: .3em;
         position: absolute;
         font-family: 'herco';
         z-index: 9999;
         color: $color-red-cherry;
-        font-size: 2em;
+        font-size: 3em;
+        width: 50px;
+        text-align: right;
+
+    }
+    #open-basket {
+        pointer-events: none;
+        
     }
 }
 
@@ -88,9 +100,9 @@ body#{$module}--open {
 
 
 // Search form Navbar
-#sh-nav {
-    .sh-form-search {
-        @include breakpoint (xsmobile) {
+@media only screen and (max-width: 320px) {
+	#sh-nav {
+        .sh-form-search {
             max-width: 80%;
         }
     }
