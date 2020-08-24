@@ -24,6 +24,10 @@ a.sh-btn, .sh-btn {
     }
 }
 
+.link-ofuscado:hover {
+  cursor: pointer;
+}
+
 /* for disabled button */
 a.sh-btn[disabled], .sh-btn[disabled] {
   background-color: $color-grey-50;

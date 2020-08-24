@@ -14,7 +14,8 @@ body {
     color: $color-grey;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5,
+.sh-text__h1, .sh-text__h2, .sh-text__h3, .sh-text__h4, .sh-text__h5 {
     color: $color-dark-navy-blue;
 }
 
@@ -56,6 +57,7 @@ h2, .sh-text__h2 {
 
 h3, .sh-text__h3 {
     font-size: $text__h3;
+    font-weight: bold;
      @include breakpoint(tablet) {
         font-size: $text__h4;
     }
