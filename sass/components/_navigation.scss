@@ -421,7 +421,25 @@ nav#sh-nav:not(.mm) {
 
     .end-sm {
         @include breakpoint (mobile) {
-            margin-top: 1em;
+            margin-top: 2em;
+        }
+    }
+
+    ol {
+        padding: 0px;
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+        list-style-image: none;
+        list-style-position: outside;
+        list-style-type: none!important;
+        display: flex;
+        
+        @include breakpoint (mobile) {
+            display: block;
+        }
+
+        li {
+            margin-bottom: .5em;
         }
     }
 }

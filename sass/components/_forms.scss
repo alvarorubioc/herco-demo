@@ -36,11 +36,14 @@ form {
 
 .sh-input-quantity {
   position: relative;
-  max-width: 5rem;
+  max-width: 6rem;
   min-width: 3rem;
   @include breakpoint (tablet) {
     max-width: 7rem;
     input { text-align: center; }
+  }
+  .sh-input {
+    padding: 0 .5em;
   }
 }
 
