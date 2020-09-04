@@ -18,14 +18,13 @@ nav#sh-nav:not(.mm) {
 .scrollUp {
     transform: translateY(-80px);
     z-index: 9999;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .scrollDown .sh-nav--secondary {
 
-    transition: all 0.5s;
-    span {
-        transition: all 0.5s;
+    transition: all 0.3s;
+    span > span {
         opacity: 0;
         font-size: 0;
     }

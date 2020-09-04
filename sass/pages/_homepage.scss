@@ -7,6 +7,7 @@ section::after {
 .promo-content {
     display: grid;
     grid-template-columns: 1fr 180px;
+    height: 180px;
     @include breakpoint (xsmobile) {
         grid-template-columns: 1fr 100px;
     }
@@ -14,14 +15,12 @@ section::after {
         grid-template-columns: 1fr 1fr;
     }
     
-    &>div {
-        display: grid;
-    }
+    
     h3 {
         margin-top: 0;
         font-size: 1.75rem;
     }
-    a {
+    span {
         align-self: end;
         transition: all .3s ease;
     }
@@ -31,7 +30,7 @@ section::after {
 }
 
 .promo-hover-content {
-    position: absolute;
+    display: none;
     color: white;
     visibility: hidden;
     top: 4em;
@@ -48,16 +47,16 @@ section::after {
         z-index:1;
         img.promo {
             visibility: hidden;
+            display: none;
         }
 
         .promo-content {
-            grid-template-columns: 2fr .5fr;
-            height: 180px;
+            grid-template-columns: 1fr;
+            
         }
         
         h3 {
-            font-size: 1.25rem;
-            transition: all .3s ease;
+            
             color: white;
             @include breakpoint (xsmobile) {
                 font-size: 1rem;
@@ -71,6 +70,8 @@ section::after {
 
         .promo-hover-content {
           visibility: visible;
+          display: block;
+          //position: absolute;
         }
     }
     &::after {

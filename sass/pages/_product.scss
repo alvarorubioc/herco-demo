@@ -127,20 +127,22 @@
 
     @for $i from 1 through 3 {
         &#tab#{$i}:checked {
-        ~ .line {
-            left: #{($i - 1) * 33.3%};
-        }
-        ~ .sh-tabs-wrapper #c#{$i} {
-            display: block;
-            opacity: 1;
-            //width: 100% / $numberOfTabs;
-            
-            height: auto;
-            width: 100%;
-        }
+            ~ .line {
+                left: #{($i - 1) * 33.3%};
+                
+                @include breakpoint (mobile) {
+                    display: none;
+                }
+            }
+            ~ .sh-tabs-wrapper #c#{$i} {
+                display: block;
+                opacity: 1;
+                height: auto;
+                width: 100%;
+            }
         }
     }
-    }
+}
     
     label.tab-label {
         display: inline-block;
@@ -150,6 +152,10 @@
         height: 36px;
         line-height: 36px;
         width: 33.3%;
+        @include breakpoint (mobile) {
+            width: 100%;
+            margin-bottom: 1em;
+        }
         text-align: center;
         position: relative;
         transition: all .2s ease;
@@ -175,16 +181,20 @@
         }
         &:hover::after {
             background: $color-grey;
+            @include breakpoint (mobile) {
+                background: $color-blue;
+            }
             }
         }
-
-        
 
     .line {
         position: absolute;
         height: 2px;
         background: $color-blue;
         width: 33.3%;
+        @include breakpoint (mobile) {
+            width: 100%;
+        }
         top: 34px;
         left: 0;
         transition: 0.25s ease;
