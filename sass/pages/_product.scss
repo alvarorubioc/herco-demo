@@ -13,12 +13,16 @@
     span {
          font-size: 80%;   
     }
-    .offer-price {
-        text-decoration: line-through;
-        color: #606060;
-        padding-right: .5em;
-    }
-    
+}
+
+.outlet .normal-price {
+    color: $color-red-cherry;
+}
+
+.offer-price {
+    text-decoration: line-through;
+    color: #606060;
+    padding-left: .5em;
 }
 
 .product-details {

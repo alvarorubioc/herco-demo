@@ -1,0 +1,26 @@
+<div class="sh-card sh-card--outlet">
+    <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+    <div class="sh-card__head">
+        <img src="img/low/tool.png" alt="x">
+      <span class="sh-badge @@label">@@product-label</span>
+    </div>
+
+    <div class="sh-card__body">
+      <small class="sh-card__body__brand uppercase">@@product-brand</small>
+      <p class="sh-text__h6 sh-card__body__text">@@product-name</p>
+      <div class="sh-card__body__price">
+        <strong>@@product-price&nbsp;€</strong><span class="offer-price">@@product-offer</span><br>
+        <small class="sh-m-top">Precio por 1 ud</small>
+      </div>
+    </div>
+    
+    <div class="sh-card__footer">
+        <div class="sh-input-quantity">
+          <input class="sh-input" min="1" name="quantity" value="1" type="number">
+          <button class="plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+          <button class="minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">–</button>
+        </div>
+        <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir</button>
+    </div>
+
+  </div> <!-- end sh-card -->

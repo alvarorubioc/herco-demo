@@ -71,9 +71,11 @@ form {
     &.minus {
       right: 0;
       bottom: 0;
+      top: 19px;
       font-weight: bold;
       @include breakpoint (tablet) {
         left: 0;
+        top: 0;
       }
     }  
 }
@@ -298,7 +300,6 @@ form {
 /*set select button*/
 .sh-select-container {
   position: relative;
-  float: left;
   min-width: 12em;
 }
 

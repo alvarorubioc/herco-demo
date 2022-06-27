@@ -1,21 +1,31 @@
 .homepage #sh-hero, .homepage-login #sh-hero {
     height: 66.6vh;
-    .row{
-        padding-top: 10%;
+    @include breakpoint (mobile) {
+        height: 100%;
     }
     h1 {
         margin-bottom: 1em;
     }
+
+    .sh-icon-w-text {
+        display: flex;
+
+        .icon {
+            padding-right: .5em;
+            width: 56px;
+        }
+    }
 }
 
-#sh-hero, #sh-quickorder{
+#sh-hero, #sh-quickorder {
     min-height: 20rem;
     position: relative;
     background-color: $color-gradient-blue;
     background-blend-mode: color;
     background-size: cover;
-    background-position: center; 
-    .row{
+    background-position: center;
+    
+    .hero {
         padding: 5em 0;
     }
   }
@@ -29,6 +39,10 @@
     bottom: 0;
     background-color: $color-blue;
     mix-blend-mode: multiply;
+
+    .outlet & {
+        background-color: $color-red-cherry;
+    }
   
   }
 
@@ -75,6 +89,10 @@
     min-height: 12rem;
     .row{
         padding: 3em 0;
+    }
+
+    .outlet & {
+        background-color: $color-red-cherry;
     }
 }
 

@@ -13,6 +13,7 @@ $module: '.mm';
     background: inherit;
 }
 
+
 //  Variables
 :root {
     /** Color for text in the menu. */
@@ -64,6 +65,10 @@ body#{$module}--open {
     #open-basket {
         pointer-events: none;
         
+    }
+
+    .sh-nav-products--categories__img {
+        display: none;
     }
 }
 

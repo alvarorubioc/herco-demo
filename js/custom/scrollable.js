@@ -21,13 +21,13 @@ document.addEventListener( 'DOMContentLoaded', fnScrollableLoad );
 
 function fnScrollableLoad(  ) {
 
-	var iGutter = 16;
+	var iGutter = 30;
 	// Gutter in pixels
 
 	if( document.body.offsetWidth > 1023 ) {
 	// Only desktop
 
-	//console.log( document.body.offsetWidth );
+	console.log( document.body.offsetWidth );
 
 		// 1. Find scrollables div's
 
@@ -133,7 +133,7 @@ function fnScrollableArrows( oScroll, oScrollableRight, oScrollableLeft, iGridWi
 			oScrollableLeft.style.opacity = "0";  
 		}
 
-	}, 300 );
+	}, 100 );
 }
 
 

@@ -271,8 +271,13 @@
     height: 2em;
     line-height: 2em;
     border-radius: 25px;
-    background-color: $color-blue;
-    color: white;
+    background-color: $color-grey-50;
+    color: $color-dark-navy-blue;
+    position: relative;
+
+    &:hover{
+      color: $color-grey-70;
+    }
 
     & img {
         float: left;
@@ -280,6 +285,27 @@
         height: 2em;
         width: 2em;
         border-radius: 999px;
+        object-fit: cover;
+        object-position: center;
+    }
+    & a {
+      color: $color-grey;
+      text-decoration: none;
+
+      &:hover{
+        color: $color-blue;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+      }
     }
 }
 
@@ -337,4 +363,8 @@
 			background:#06b9c0;
 		}
 	}
+}
+
+.dropdown-content {
+  display: none;
 }

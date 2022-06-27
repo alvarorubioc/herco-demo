@@ -24,3 +24,22 @@ function openLogin() {
 	document.getElementById("animation-log").classList.add("animationB");
 }
 
+function showTextInput() {
+	var icon = document.getElementById("eye");
+
+	if (icon.classList.contains('icon-eye')) {
+		icon.classList.remove('icon-eye');
+		icon.classList.add('icon-lock');
+	  } else {
+		icon.classList.add('icon-eye');
+	  }
+	
+	
+	var x = document.getElementById("password");
+	if (x.type === "password") {
+	  x.type = "text";
+	} else {
+	  x.type = "password";
+	}
+	
+  } 
