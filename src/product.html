@@ -11,13 +11,22 @@
 
 <main class="container-fluid" aria-label="Main content">
     <div class="row">
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12 col-md-5">
+            
             <div class="product-img">
                 <span class="sh-badge">Top Ventas</span>
-                <img src="img/low/tool.png" alt="x">
+                <a class="product-img-featured" href="img/low/tool.png"><img src="img/low/tool.png" alt="x"></a>
+                <!-- More images to lightbox -->
+                <a class="product-img-featured" href="img/low/homepage.jpg"><img src="img/low/homepage.jpg" alt="x"></a>
+                <a class="product-img-featured" href="img/low/img-catalogo.png"><img src="img/low/img-catalogo.png" alt="x"></a>
+                <a class="product-img-featured" href="img/low/adhesivos-category-bg.jpg"><img src="img/low/adhesivos-category-bg.jpg" alt="x"></a> 
             </div>
+
+            <!-- If are more images show thumbnails and lightbox gallery -->
+            <partial src="/gallery-lightbox.html"></partial>
+
         </div>
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12 col-md-6 col-md-offset-1">
             <strong class="product-brand">Apolo/Celo</strong>
             <h1 itemprop="name">Apolo taco nylon Avellanado Clavo NPC</h1>
             <div class="product-price">
