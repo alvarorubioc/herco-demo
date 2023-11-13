@@ -1,0 +1,38 @@
+// Helpers
+.sh-box {
+	border-radius: 2px;
+	background-color: white;
+	position: relative;
+	padding: 1em;
+	border: 1px solid rgba(196,196,196,0.70);
+	box-shadow: 0 2px 4px 0 rgba(48,49,51,0.10);
+	margin-bottom: 1em;
+	.sh-closebtn {
+		position: absolute;
+		right: .6em;
+		top: .5em;
+		color: $color-red-cherry;
+		.icon {font-size: 1.5rem;}
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.sh-inline-block { display: inline-block; }
+.sh-inline-grid { display: inline-grid; }
+
+.sh-divider__header {
+	background: #003e90;
+	background: -webkit-gradient(left top,right top,color-stop(0,#003e90),color-stop(50%,#003e90),color-stop(50%,#e20029),color-stop(100%,#e20029));
+	background: -webkit-gradient(linear,left top,right top,from(#003e90),color-stop(50%,#003e90),color-stop(50%,#e20029),to(#e20029));
+	background: linear-gradient(to right,#003e90 0,#003e90 50%,#e20029 50%,#e20029 100%) left bottom no-repeat;
+	background-size: auto;
+	margin: auto;
+	padding-bottom: .5em;
+	background-size: 100% 5px;
+}
+
+hr {
+	color: $color-grey-50;
+}

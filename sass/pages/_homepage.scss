@@ -1,0 +1,319 @@
+section::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.promo-content {
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    height: 180px;
+    @include breakpoint (xsmobile) {
+        grid-template-columns: 1fr 100px;
+    }
+    @include devicesize (only_tablet) {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    
+    h3 {
+        margin-top: 0;
+        font-size: 1.75rem;
+    }
+    span {
+        align-self: end;
+        transition: all .3s ease;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.promo-hover-content {
+    display: none;
+    color: white;
+    visibility: hidden;
+    top: 4em;
+    left: 1em;
+    right: 1em;
+    @include breakpoint (xsmobile) {
+        top: 3em;
+    }
+}
+
+#sh-promos .sh-box {
+    &:hover {
+        color: white;
+        z-index:1;
+        img.promo {
+            visibility: hidden;
+            display: none;
+        }
+
+        .promo-content {
+            grid-template-columns: 1fr;
+            
+        }
+        
+        h3 {
+            
+            color: white;
+            @include breakpoint (xsmobile) {
+                font-size: 1rem;
+            }
+            
+        }
+        a {
+            color: white;
+            z-index:2;
+        }
+
+        .promo-hover-content {
+          visibility: visible;
+          display: block;
+          //position: absolute;
+        }
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        top:0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: $color-navy-blue;
+        transform-origin:left;
+        transition:width 0.3s ease;
+        z-index:-1;
+        border-radius: $border-radius;
+      }
+      
+      &:hover::after {
+        width: 100%;
+      }
+}
+
+#sh-quickorder {
+
+    .row {
+        padding: 5em 0;
+    }
+
+    .icon {
+        margin-right: 1.5rem;
+        font-size: 2.5em;
+        margin-top: 1rem;
+    }
+
+    h2 { margin-top: 0; }
+
+    .quickorder-items > div {
+        display: flex;
+    }
+}
+
+.quickorder-form {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1.5fr .5fr 1fr;
+    @include breakpoint (tablet) {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    @include breakpoint (xsmobile) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        input[type=text] {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        } 
+    }      
+}
+
+#sh-quickorder-login {
+    margin-top: -2.5rem;
+}
+
+.order-resume {
+    width: 100%;
+    
+    tr {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1em;
+    }
+    tr:last-child{
+        padding-top: 1em;
+        border-top: 1px solid $color-grey-50;
+        font-size: 1.125em;
+    }
+}
+
+.order-resume-btn {
+    display: flex;
+    
+} 
+
+
+#sh-brands, #sh-community, #sh-text-subcategory, #sh-cross-selling {
+    background: white;
+    padding: 5em 0;
+    border-top: 1px solid $color-grey-50;
+    border-bottom: 1px solid $color-grey-50; 
+}
+
+#sh-features-categories .col-xs-12 {
+    margin-bottom: 1em;
+    .sh-overlay {
+        min-height: 240px;
+        max-height: 320px;
+        .sh-overlay-content {
+            padding: 1em 2em 2em 2em;
+            justify-content: start;
+        }  
+    }
+}
+
+.sh-overlay {
+    position: relative;
+    display: grid;
+    height: 100%;
+    color: white;
+    background-color: $color-dark-navy-blue;
+    border-radius: $border-radius;
+    transition: all .3s ease;
+
+    h3 {color: white;}
+    img {
+        object-fit: cover;
+        object-position: 50% 50%; /* default value: image is centered*/
+        width: 100%;
+        height: 100%;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        opacity: 0.4;
+    }
+
+    p {
+        visibility: hidden;
+        
+        
+    }
+    &:hover {
+        .sh-btn {
+            background: white;
+            color: $color-blue;
+        }
+        p {
+            visibility: visible;
+            transition: all .3s ease; 
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        top:0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: $color-navy-blue;
+        transform-origin:left;
+        transition:width 0.3s ease;
+        border-radius: $border-radius;
+      }
+      
+      &:hover::after {
+        width: 100%;
+      }
+
+    .sh-overlay-content {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        z-index: 3;
+        padding: 0em 1em 1em 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    a {
+        align-self: flex-start;
+        color: white;
+        text-decoration: none;
+        &:hover {color: $color-blue;}
+        
+        &::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+#sh-testimonials {
+    .readmore {
+        color: $color-blue;
+      }
+      .showmore-content {
+        display: none;
+      }
+}
+
+.testimonial-author {
+    display: flex;
+
+    img {
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        border: 1px solid $color-blue;
+        margin-right: 2em;
+    }
+
+    &>div {
+        display: grid;
+    }
+}
+
+.awards {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 2em;
+    margin-top: 4rem;
+    @include breakpoint (xsmobile) {
+        grid-auto-flow: row;
+        & > * {
+            justify-self: center;
+        }
+        
+    }
+    img {
+        mix-blend-mode: multiply;
+    }
+}
+
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%;
+  border: none;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

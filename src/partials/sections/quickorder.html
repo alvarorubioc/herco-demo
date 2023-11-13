@@ -1,0 +1,45 @@
+<section id="sh-quickorder" style="background-image: linear-gradient(#001442, #001442), url(img/low/bg-quickorder.jpeg);">
+  <div class="container-fluid">
+    <div class="row middle-xs sh-text__white">
+
+      <div class="col-xs-12 col-sm-6">
+        <span class="sh-text__h2">Pedido rápido</span>
+        <p class="sh-m-bottom__lg">¿Ya sabes lo que necesitas? Ahorra tiempo fácilmente con nuestro servicio de pedido rápido. Indica tus productos, la cantidad que necesitas de cada uno de ellos y los podrás tener en poco tiempo en tu negocio o domicilio.</p>
+
+        <div class="quickorder-form sh-m-bottom__md">
+          <input class="sh-input" type="text" placeholder="Producto o referencia" name="ref">
+          <div class="sh-input-quantity">
+            <input class="sh-input" min="1" name="quantity" value="1" type="number">
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">–</button>
+          </div>
+          <button type="submit" class="sh-btn__white">Añadir</button>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 quickorder-items">
+        <div class="sh-m-bottom__md">
+          <i class="icon icon-database"></i>
+          <div>
+            <span class="sh-text__h4">Stock permanente</span>
+            <p>Para que no te falte de nada</p>
+          </div>
+        </div>
+        <div class="sh-m-bottom__md">
+          <i class="icon icon-location"></i>
+          <div>
+            <span class="sh-text__h4">Envíos gratis</span>
+            <p>Para compras superiores a 50&nbsp;€</p>
+          </div>
+        </div>
+        <div class="sh-m-bottom__md">
+          <i class="icon icon-bookmarks"></i>
+          <div>
+            <span class="sh-text__h4">Empresa certificada</span>
+            <p>ISO 9001:2015</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

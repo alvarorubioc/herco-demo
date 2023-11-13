@@ -1,0 +1,256 @@
+.cart {
+    
+    #header-bar {
+    display: flex;
+    justify-content: space-between;
+
+        @include breakpoint (xsmobile) {
+            grid-template-columns: 1fr;
+        }
+
+        .quickorder-form {
+            @include breakpoint (xsmobile) {
+                display: none;
+            }
+        }
+
+        .sh-btn-group-icon {
+            justify-self: end;
+
+            & button:first-child {
+                margin-right: 1em;
+            }
+        }
+    }
+}
+
+.sticky-box {
+    position: sticky;
+    top: 2em;
+}
+
+
+.shopping-cart-item {
+    grid-auto-flow: column;
+    grid-template-columns: auto;
+    align-items: center;
+    margin-bottom: .5em;
+        @include breakpoint (mobile) {
+            grid-auto-flow: row;
+        }
+
+    .product-image {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 5rem;
+            padding-right: 1em;
+            @include breakpoint (mobile) {
+                width: 8rem;
+            }
+        }
+
+        > div {
+            padding-right: 1em;
+            @include devicesize (only_desktop) { width: 25rem; }
+            @include devicesize (only_laptop) { width: 16rem; }
+            @include devicesize (only_tablet) { width: 14rem; }
+            @include breakpoint (mobile) { width: 100%;}
+        } 
+        
+        p {
+            margin: 0 0 .25em 0;
+            font-weight: bold;
+        }
+    } 
+    
+    .product-quantity {
+        justify-self: end;
+        @include breakpoint (mobile) {
+            align-self: start;
+            justify-self: start;
+            flex-basis: 50%;
+            order: 1;
+        }    
+    }
+
+    .product-price-ud {
+        padding: 0 1em;
+        justify-self: end;
+        @include breakpoint (mobile) {
+            padding: 1em 0;
+            justify-self: start;
+        }
+    }
+
+    .product-price-tot {
+        padding-right: 1em;
+        justify-self: end;
+        @include breakpoint (mobile) {
+            padding: 0 0 1em 0;
+            justify-self: start;
+        }
+    }   
+
+    .product-delete {
+        padding-right: .5em;
+        justify-self: end;
+        @include breakpoint (mobile) {
+            position: absolute;
+            bottom: 1em;
+            right: .5em;
+            transform: scale(1.5);
+        }
+    }
+}
+
+.progress {
+    width: 100%;
+    position: relative;
+    > div {
+        position: absolute;
+        height: .5rem;
+    }
+}
+
+.progressbar-empty {
+    width: 100%;
+    background-color: white; 
+}
+
+.checkout{
+    .progressbar-active {
+        width: 50%;
+        background-color: $color-grass;
+        animation-name: progress-width-checkout;
+        animation-duration: .6s; 
+    }
+}
+
+@keyframes progress-width-checkout {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+.thanks .progressbar-active {
+    width: 100%;
+    background-color: $color-grass;
+    animation-name: progress-width-thanks;
+    animation-duration: .6s; 
+}
+
+@keyframes progress-width-thanks {
+    from {
+        width: 50%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.step-wizard {
+    position: relative; 
+
+    ul {
+        position: absolute;
+        width: 100%;
+        list-style-type: none;
+        padding: 0;
+        left: 0;
+        top: -28px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    li {
+        display: inline-block;
+        width: calc(33% - 1em);
+        position: relative;
+        
+        &:first-child{
+            text-align: left;
+            p {
+                margin-left: -1.25rem;
+                @include breakpoint (tablet) {
+                    margin-left: .75em;
+                }
+            }
+        }
+
+        &:last-child{
+            text-align: right;
+            p {
+                margin-right: -2.25rem;
+                @include breakpoint (tablet) {
+                    margin-right: .5em;
+                }
+            }
+        }
+
+        span.step {
+            color: $color-blue; 
+        }
+
+        .step {
+            display: inline-block;
+            line-height: 30px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #ffffff;
+            transition: background-color 0.6s ease, border-color 0.6s ease;
+            text-align: center; 
+        }
+
+        .title {
+            color: white;
+            transition: color 0.6s ease;
+            text-decoration: none;
+            line-height: 1;
+
+            span {
+                @include devicesize (only_xsmobile) {
+                    display: none;
+                }
+            }
+        }
+        
+        .active span.step {
+            background: $color-grass;
+            color: white;
+        }
+          
+    }
+}
+
+
+.credit-card-box {
+    border-radius: 2px;
+    border: 1px solid $color-grey-70;
+    display: flex;
+    padding: .5rem;
+    margin-bottom: .5em;
+
+    label {
+        padding-bottom: 0;
+    }
+
+    &.active {
+        border: 1px solid $color-blue;
+    }
+
+    .sh-radiomark {
+        top: 6px;
+    }
+
+}
+
+.thanks-icon{
+    font-size: $text__hero;
+    color: $color-grass;
+}

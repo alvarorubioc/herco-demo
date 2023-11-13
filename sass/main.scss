@@ -1,0 +1,43 @@
+body {
+    background-color: #f6f6f6;
+}
+
+@import 'normalize';
+
+// Core
+@import 'core/mixins';
+@import 'core/variables';
+@import 'core/helpers';
+
+// Styles
+@import 'styles/grid';
+@import 'styles/colors';
+@import 'styles/typography';
+@import 'styles/backgrounds';
+@import 'styles/spacing';
+@import 'styles/icons';
+@import 'styles/buttons';
+
+// Components
+@import 'components/navigation';
+@import 'components/mmenu-light';
+@import 'components/hero';
+@import 'components/forms';
+@import 'components/elements';
+@import 'components/card';
+@import 'components/footer';
+@import 'components/scrollable';
+@import 'components/lightbox';
+
+//Pages
+@import 'pages/homepage';
+@import 'pages/search';
+@import 'pages/subcategory';
+@import 'pages/category';
+@import 'pages/product';
+@import 'pages/compare';
+@import 'pages/login';
+@import 'pages/brands';
+@import 'pages/cart';
+@import 'pages/blog';
+@import 'pages/my-account';

@@ -1,0 +1,102 @@
+.homepage #sh-hero, .homepage-login #sh-hero {
+    height: 66.6vh;
+    @include breakpoint (mobile) {
+        height: 100%;
+    }
+    h1 {
+        margin-bottom: 1em;
+    }
+
+    .sh-icon-w-text {
+        display: flex;
+
+        .icon {
+            padding-right: .5em;
+            width: 56px;
+        }
+    }
+}
+
+#sh-hero, #sh-quickorder {
+    min-height: 20rem;
+    position: relative;
+    background-color: $color-gradient-blue;
+    background-blend-mode: color;
+    background-size: cover;
+    background-position: center;
+    
+    .hero {
+        padding: 5em 0;
+    }
+  }
+  
+  #sh-hero::before, #sh-quickorder::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: $color-blue;
+    mix-blend-mode: multiply;
+
+    .outlet & {
+        background-color: $color-red-cherry;
+    }
+  
+  }
+
+.sh-form-search {
+    display: flex;
+    @include breakpoint (xsmobile) {
+        max-width: 100%;
+    }
+
+    button {
+        padding-left: 3em;
+        padding-right: 3em;
+        border-radius: 0px 2px 2px 0px;
+
+        @include breakpoint (mobile) {
+            //position: absolute;
+            right: 1rem;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+        }
+        
+        &::before {
+            content: 'Buscar';
+                @include breakpoint (mobile) {
+                    content: '\e800';
+                    font-family: 'herco';
+                }
+            }
+        &.borrar::before {
+            content: 'Borrar';
+                @include breakpoint (mobile) {
+                    content: '\e839';
+                    font-family: 'herco';
+                }
+            }
+    }
+
+    input {
+        border-radius: 2px 0px 0px 2px;
+    }
+}
+
+#sh-hero--page {
+    min-height: 12rem;
+    .row{
+        padding: 3em 0;
+    }
+
+    .outlet & {
+        background-color: $color-red-cherry;
+    }
+}
+
+#header-bar {
+    margin-top: -20px;
+    form.sh-form-search {max-width: 40rem;}
+}

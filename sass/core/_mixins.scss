@@ -1,0 +1,73 @@
+@mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (max-width: 1440px) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (max-width: 1200px) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (max-width: 1024px) { @content ; }
+  }
+   @else if $point == mobile {
+     @media (max-width: 768px)  { @content ; }
+  }
+  @else if $point == xsmobile {
+     @media (max-width: 414px)  { @content ; }
+  }
+}
+
+@mixin devicesize($device) {
+  @if $device == only_desktop {
+    @media (min-width: 1600px) { @content ; }
+ }
+  @else if $device == only_laptop {
+    @media (min-width: 1280px) and (max-width: 1599px) { @content ; }
+ }
+   @else if $device == only_tablet {
+    @media (min-width: 1024px) and (max-width: 1279px) { @content ; }
+ }
+  @else if $device == only_mobile {
+    @media (min-width: 768px) and (max-width: 1023px)  { @content ; }
+ }
+ @else if $device == only_xsmobile {
+    @media (max-width: 414px)  { @content ; }
+ }
+}
+
+@mixin text-white {
+	color: white;
+	h1,h2,h3,h4,h5,h6{
+		color: white;
+	}
+}
+
+/* set general styles btn */
+@mixin btn {
+  position: relative;
+  border-radius: $border-radius;
+  transition: .2s;
+  text-decoration: none;
+  font-weight: bolder;
+  height: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  cursor: pointer;
+  border: 1px solid $color-blue;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+/* set general styles input */
+@mixin input {
+  display: inline;
+  width: 100%;
+  padding: 0 1em;
+  outline: none;
+  border-radius: $border-radius;
+  transition: 0.2s;
+}

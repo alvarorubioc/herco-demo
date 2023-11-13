@@ -1,0 +1,255 @@
+<partial src="header.html" bodyClass="cart" robots="all"></partial>
+<partial src="hero-cart.html"></partial>
+
+<div class="container-fluid">
+    <header id="header-bar">
+        <div class="quickorder-form sh-m-bottom__md">
+            <input class="sh-input" type="text" placeholder="Referencia" name="ref">
+            <div class="sh-input-quantity">
+                <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus">–</button>
+            </div>
+            <button type="submit" class="sh-btn sh-btn__full">Añadir</button>
+        </div>
+
+        <div class="dropdown sh-btn-group-icon">
+            <button class="sh-btn__white sh-btn-icon__md dropdown-btn">
+                <i class="icon icon-heart-empty"></i>
+                <span>Guardar</span>
+            </button>
+            <div class="sh-box dropdown-content" id="form-guardar-cesta">
+                <div>
+                    <label for="NombreCesta" class="sh-label">Nombre Cesta</label>
+                    <div class="sh-form-group sh-m-bottom__sm sh-m-top__sm">
+                        <input class="sh-input" id="NombreCesta"
+                            type="text" name="NombreCesta" maxlength="50" required="required" value="">
+                        <i id="icon_NombreCesta" class="icon icon-check sh-form-icon-secondary__success"
+                            style="visibility: hidden"></i>
+                        <span id="msg_NombreCesta" style="visibility: hidden"></span>
+                    </div>
+                </div>  
+
+                <div>
+                    <label class="sh-label">Borrar artículos de carrito después de guardar</label><br>
+                    <div class="sh-m-bottom__lg sh-m-top__sm sh-select-container">
+                        <select class="customCss sh-input sh-select__white" id="Borrar">
+                            <option value=" ">Elije una opción...</option>
+                            <option value="S">Si</option>
+                            <option value="N" selected="selected">No</option>
+                        </select>
+                    </div>
+                </div>         
+
+                <div>
+                    <label class="sh-label">Observaciones</label>
+                    <div class="sh-m-top__sm">
+                        <textarea class="sh-input" rows="3" id="ObsCesta" type="text" name="ObsCesta" maxlength="500" required="required"></textarea>
+                        <i id="icon_ObsCesta" class="icon icon-check sh-form-icon-secondary__success" style="visibility: hidden"></i>
+                        <span id="msg_ObsCesta" style="visibility: hidden"></span>
+                    </div>
+                </div>
+
+                <div class="order-resume-btn sh-m-top__md dflex around-xs middle-xs">
+                    <button class="sh-btn" type="button">Guardar cesta</button>
+                    <button class="sh-btn-outline__allwhite" id="closeSaveCart">Cerrar</button>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+</div>
+
+
+
+<div class="container-fluid">
+    <main aria-label="Main content" class="row">
+        <div class="col-xs-12 col-md-8 sh-m-top__lg shopping-cart-container">
+            <div class="shopping-cart-list">
+                <div class="sh-m-bottom"><span class="sh-text__h6 uppercase">Productos</span></div>
+                <div class="sh-card shopping-cart-item">
+                    <div class="product-image">
+                        <img src="img/low/tool.png" alt="x">
+                        <div>
+                            <p><a href="./product.html" class="sh-link" rel="">3M Adhesivo Bicomponente Scotch 490 Negro
+                                    50Ml</a></p>
+                            <p><small>REF: 7000006833</small></p>
+                            <span class="sh-badge">Talla: XL</span>
+                            <span class="sh-badge sh-badge-green">Color: verde</span>
+                        </div>
+                    </div>
+
+                    <div class="product-quantity">
+                        <div class="sh-input-quantity">
+                            <input class="sh-input" min="1" name="quantity" value="2" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus">+</button>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="minus">–</button>
+                        </div>
+                    </div>
+
+                    <div class="product-price-ud"><span>Precio ud.: </span><b>10&nbsp;€/ud.</b></div>
+                    <div class="product-price-tot"><span>Total: </span><b>20&nbsp;€</b></div>
+
+                    <div class="product-delete">
+                        <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i
+                                class="icon icon-trash"></i></button>
+                    </div>
+                </div>
+                <div class="sh-card shopping-cart-item">
+                    <div class="product-image">
+                        <img src="img/low/tool.png" alt="x">
+                        <div>
+                            <p><a href="./product.html" class="sh-link" rel="">Adhesivo Bicomponente Technobond 5090
+                                    10Gr</a></p>
+                            <p><small>REF: 7000006833</small></p>
+                            <span class="sh-badge">Potencia: 200Hz</span>
+                        </div>
+                    </div>
+
+                    <div class="product-quantity">
+                        <div class="sh-input-quantity">
+                            <input class="sh-input" min="1" name="quantity" value="2" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus">+</button>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="minus">–</button>
+                        </div>
+                    </div>
+
+                    <div class="product-price-ud"><span>Precio ud.: </span><b>10&nbsp;€/ud.</b></div>
+                    <div class="product-price-tot"><span>Total: </span><b>20&nbsp;€</b></div>
+
+                    <div class="product-delete">
+                        <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i
+                                class="icon icon-trash"></i></button>
+                    </div>
+                </div>
+                <div class="sh-card shopping-cart-item">
+                    <div class="product-image">
+                        <img src="img/low/tool.png" alt="x">
+                        <div>
+                            <p><a href="./product.html" class="sh-link" rel="">Apolo Taco Nylon Avellanado NPC</a></p>
+                            <p><small>REF: 7000006833</small></p>
+                            <span class="sh-badge">Capacidad: 2 L</span>
+                            <span class="sh-badge sh-badge-red">Color: rojo</span>
+                        </div>
+                    </div>
+
+                    <div class="product-quantity">
+                        <div class="sh-input-quantity">
+                            <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus">+</button>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="minus">–</button>
+                        </div>
+                    </div>
+
+                    <div class="product-price-ud"><span>Precio ud.: </span><b>10&nbsp;€/ud.</b></div>
+                    <div class="product-price-tot"><span>Total: </span><b>10&nbsp;€</b></div>
+
+                    <div class="product-delete">
+                        <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i
+                                class="icon icon-trash"></i></button>
+                    </div>
+                </div>
+                <div class="sh-card shopping-cart-item">
+                    <div class="product-image">
+                        <img src="img/low/tool.png" alt="x">
+                        <div>
+                            <p><a href="./product.html" class="sh-link" rel="">Barra Adhesiva Ceys 20 Gr</a></p>
+                            <p><small>REF: 7000006833</small></p>
+                        </div>
+                    </div>
+
+                    <div class="product-quantity">
+                        <div class="sh-input-quantity">
+                            <input class="sh-input" min="1" name="quantity" value="2" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus">+</button>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="minus">–</button>
+                        </div>
+                    </div>
+
+                    <div class="product-price-ud"><span>Precio ud. </span><b>10&nbsp;€/ud.</b></div>
+                    <div class="product-price-tot"><span>Total </span><b>20&nbsp;€</b></div>
+
+                    <div class="product-delete">
+                        <button class="sh-btn-outline sh-btn-icon__sm" type="button"><i
+                                class="icon icon-trash"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-4 sh-m-top__lg">
+            <div class="sticky-box">
+                <div class="sh-m-bottom"><span class="sh-text__h6 uppercase">Resumen del pedido</span></div>
+                <div class="sh-box">
+                    <table class="order-resume">
+                        <tr>
+                            <td>Total productos (4)</td>
+                            <td>930,80&nbsp;€</td>
+                        </tr>
+                        <tr>
+                            <td>Entrega</td>
+                            <td>5,00&nbsp;€</td>
+                        </tr>
+                        <tr>
+                            <td>IVA</td>
+                            <td>195,46&nbsp;€</td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <th>1.131,26&nbsp;€</th>
+                        </tr>
+                    </table>
+                    <div class="sh-alert sh-alert__sucess">
+                        <i class="icon icon-check"></i>
+                        <span class="sh-closebtn" onclick="this.parentElement.style.display='none';">×</span>
+                        <div>Añade 34&nbsp;€ a tu cesta para disfrutar de gastos de envío <strong>gratis.</strong></div>
+                    </div>
+                    <div class="order-resume-btn sh-m-top__md dflex around-xs middle-xs">
+                        <button class="sh-btn-outline__allwhite" onclick="history.back(-1)">Seguir comprando</button>
+                        <form action="./checkout.html">
+                            <button class="sh-btn" type="submit">Finalizar compra</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<div id="sh-brands" class="sh-m-top__xl">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-lg-3">
+                <p class="sh-text__h3 font-heading sh-divider__header">Productos vistos recientemente</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore
+                    magna aliqua.</p>
+            </div>
+
+            <div class="col-xs-12 col-lg-9">
+                <div class="sh-grid sh-grid--scroll sh-scroll no-scrollbar">
+                    <partial src="card.html" label="sh-badge-red" product-label="Promoción" product-brand="Apolo"
+                        product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Panter"
+                        product-price="39,87" product-name="Zapato Panter Apolo Napa S3 247"></partial>
+                    <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="ATG"
+                        product-price="0,35" product-name="Guante Maxiflex Elite ATG 34-247"></partial>
+                    <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Faru"
+                        product-price="1,29" product-name="Barbuquejo"></partial>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<partial src="footer.html" title="Some title"></partial>

@@ -1,0 +1,39 @@
+body.login, body.findorder, body.quickorder {
+    background: $color-navy-blue;
+}
+
+#signup-tab {
+    display: none;
+}
+
+.animationA {
+	animation: ina 300ms ease-in-out  forwards, outa 300ms ease-in-out 0.3s forwards;
+	transform-origin: top left;
+}
+
+.animationB {
+	animation: inb 300ms ease-in-out  forwards, outb 300ms ease-in-out 0.3s forwards;
+	transform-origin: top left;
+}
+
+@keyframes ina {
+	0% {opacity: 1; transform: translateX(0px)}
+	50% {opacity: 0;}
+	100% {opacity: 0; transform: translateX(-350px)}
+}
+
+@keyframes outa {
+	0% { opacity: 0; transform: translateX(200px)}
+	100% { opacity: 1; transform: translateX(0px)}
+} 
+
+@keyframes inb {
+	0% {opacity: 1; transform: translateX(0px)}
+	50% {opacity: 0;}
+	100% {opacity: 0; transform: translateX(350px)}
+}
+
+@keyframes outb {
+	0% { opacity: 0; transform: translateX(-200px)}
+	100% { opacity: 1; transform: translateX(0px)}
+} 

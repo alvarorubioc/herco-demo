@@ -1,0 +1,141 @@
+
+/* -------------------------------- 
+Product TABLE
+-------------------------------- */
+.sh-comparison-table__wrap {
+    margin-bottom: 4em;
+    border: 0;
+    
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    li {
+      padding: 0;
+      margin: 0;
+      border: 0;
+    }
+  
+    .sh-products-table {
+      position: relative;
+      overflow: hidden;
+      border: 2px solid $color-grey-50;
+      border-radius: $border-radius;
+    }
+  
+    .sh-products-table .features {
+      /* fixed left column - product properties list */
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 20%;
+      background-color: white;
+      opacity: .90;
+      border-right: 2px solid $color-grey-50;
+    }
+    
+  
+    .sh-products-wrapper {
+      overflow-x: auto;
+      /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    .sh-products-columns {
+      /* products list wrapper */
+      margin-left: 20%;
+      margin-top: 0;
+      margin-bottom: 0;
+      display: flex;
+    }
+  
+    .sh-products-columns::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+  
+    .sh-products-columns .product {
+      position: relative;
+      float: left;
+      width: 33%;
+      min-width: 210px;
+        @include breakpoint (mobile) {
+          min-width: 180px;
+        }
+      text-align: center;
+    }
+  
+    .features-list {
+      margin-top: 0;
+      margin-bottom: 0;
+  
+      .features-list__firts {
+        padding: 1em;
+        height: 210px;
+  
+        img {
+          @include breakpoint (mobile) {
+            max-width: 100%;
+          }
+          max-width: 177px;
+        }
+      }
+  
+      .features-list__end {
+        height: 89px;
+      }
+    }
+  
+    .features-list li {
+      padding: 1.5em .5em;
+      border-color: $color-grey-50;
+      border-style: solid;
+      border-top-width: 1px;
+      border-right-width: 1px;
+      background-color: white;
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      .sh-btn .icon {
+        padding-right: .5em;
+      }
+    }
+  
+    .features .features-list li,
+    .sh-products-table .features {
+      /* fixed left column - items */
+      font-weight: bold;
+      justify-content: start;
+    }
+  
+  
+    .features .features-list li {
+      /* truncate text with dots */
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  
+    .sh-products-table .top-info {
+      position: relative;
+      width: 100%;
+      height: 22.5vh;
+      padding: 1em;
+      transition: height 0.3s;
+      cursor: pointer;
+      background: #ffffff;
+    }
+  }
+  
+  .compare .sh-compare-btns {
+    display: flex;
+    justify-content: end;
+    form {
+      padding-left: 1em;
+    }
+  }

@@ -1,0 +1,56 @@
+.sh-list-categories {
+  ul.scroll {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  li.scroll-item {
+    height: 120px;
+    width: 200px;
+    margin-right: 1em;
+    border-radius: 2px;
+    display: grid;
+    background-size: cover;
+    flex: 0 0 auto;
+    padding-bottom: 0;
+  }
+
+  strong {
+    line-height: 1;
+    font-size: 1.25em;
+    padding-top: 1em;
+  }
+
+  a {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        text-decoration: underline;
+        color: white;
+      }
+  }
+
+  span {
+    color: white;
+  }
+  
+}
+
+.sh-chip-categories > div {
+  margin-right: .5rem;
+  margin-bottom: .75rem;
+}
+
+
+
+.cta-search-form {
+  margin-top: -32px;
+}
+
+

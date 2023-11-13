@@ -1,0 +1,145 @@
+/* --------------------------------
+Typography
+-------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap');
+
+
+/* Responsive typography */
+
+body {
+    font-family: $font-primary;
+    font-size: $text-base-size;
+    color: $color-grey;
+}
+
+h1, h2, h3, h4, h5, h6,
+.sh-text__h1, .sh-text__h2, .sh-text__h3, .sh-text__h4, .sh-text__h5 {
+    color: $color-dark-navy-blue;
+}
+
+h2, h3, h4, h5, h6 {
+    margin: 1rem 0;
+}
+
+h1, .sh-text__h1, h2, .sh-text__h2 {
+	font-family: $font-heading;
+	font-weight: bold;
+	line-height: $heading-line-height;
+}
+
+/* text size */
+.sh-text__hero {
+    font-size: $text__hero;
+    @include breakpoint(tablet) {
+        font-size: $text__h2;
+    }
+}
+
+h1, .sh-text__h1 {
+    font-size: $text__h1;
+    margin: .5rem 0;
+    @include breakpoint(tablet) {
+        font-size: $text__h2;
+    }
+    @include breakpoint(xsmobile) {
+        font-size: 2.2rem;
+    }
+}
+
+h2, .sh-text__h2 {
+    font-size: $text__h2;
+     @include breakpoint(tablet) {
+        font-size: $text__h3;
+    }
+}
+
+h3, .sh-text__h3 {
+    font-size: $text__h3;
+    font-weight: bold;
+     @include breakpoint(tablet) {
+        font-size: $text__h4;
+    }
+}
+
+h4, .sh-text__h4 {
+    font-size: $text__h4;
+    font-weight: 400;
+     @include breakpoint(tablet) {
+        font-size: $text__h5;
+    }
+}
+
+h5, .sh-text__h5 {
+    font-size: $text__h5;
+    font-weight: bold;
+    line-height: 1.2;
+     @include breakpoint(tablet) {
+        font-size: $text__h6;
+    }
+}
+
+h6, .sh-text__h6 {
+    font-size: $text__h6;
+    font-weight: bold;
+}
+
+small, .sh-text__sm {
+    font-size: 80%;
+}
+
+p {
+    line-height: $body-line-height;
+}
+
+a {
+    color: $color-blue;
+
+    &:hover {
+      color: $color-navy-blue;
+  }
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+ul {
+
+  li {
+    padding-bottom: 1em;
+  }
+}
+
+blockquote {
+    margin: 1.5em .25em;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.sh-caption {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.sh-text__white {
+	color: white;
+	h1,h2,h3,h4,h5,h6,a,.sh-text__h1, .sh-text__h2, .sh-text__h3, .sh-text__h4, .sh-text__h5{
+		color: white;
+    }
+    a:hover {color: $color-blue;}
+}
+​
+.sh-text__center { text-align: center; }
+.sh-text__left { text-align: left; }
+.sh-text__right { text-align: right; }
+
+.uppercase { text-transform: uppercase; }
+
+.font-heading {
+    font-family: $font-heading;
+    color: $color-dark-navy-blue;
+    font-weight: bold;
+    line-height: $heading-line-height;
+}

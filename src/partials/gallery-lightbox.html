@@ -1,0 +1,57 @@
+<div id="product-img-thumbs" >
+    <div id="slideLeft" class="arrow">
+        <i class="icon icon-left-open"></i>
+    </div>
+
+    <div id="slider-thumbs">
+        <img class="thumbnail active" onclick="currentSlide(1)" src="img/low/tool.png" width="160px" height="160px" alt="">
+        <img class="thumbnail" onclick="currentSlide(2)" src="img/low/homepage.jpg"  width="160px" height="160px" alt="">
+        <img class="thumbnail" onclick="currentSlide(3)" src="img/low/img-catalogo.png" width="160px" height="160px" alt="">
+        <img class="thumbnail" onclick="currentSlide(4)" src="img/low/adhesivos-category-bg.jpg" width="160px" height="160px" alt="x"></a>
+    </div>
+
+    <div id="slideRight" class="arrow">
+        <i class="icon icon-right-open"></i>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("product-img-featured");
+        let thumbnail = document.getElementsByClassName('thumbnail')
+        
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < thumbnail.length; i++) {
+            thumbnail[i].className = thumbnail[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        thumbnail[slideIndex-1].className += " active";
+    };
+
+    let buttonRight = document.getElementById('slideRight');
+    let buttonLeft = document.getElementById('slideLeft');
+
+    buttonLeft.addEventListener('click', function(){
+        document.getElementById('slider-thumbs').scrollLeft -= 124;
+    });
+
+    buttonRight.addEventListener('click', function(){
+        document.getElementById('slider-thumbs').scrollLeft += 124;
+        buttonLeft.style.opacity = "1";
+    });
+</script>
+

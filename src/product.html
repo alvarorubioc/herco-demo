@@ -1,0 +1,226 @@
+<partial src="header.html" bodyClass="product"></partial>
+<partial src="hero-page.html" title="Apolo taco nylon Avellanado Clavo NPC"></partial>
+
+<div class="container-fluid">
+    <div id="header-bar" class="sh-m-bottom__lg">
+        <div id="sh-breadcrumbs" class="sh-m-top__xl between-xs middle-xs dflex">
+            <partial src="/sections/breadcrumbs.html" category-page="Categoría"></partial>
+        </div>
+    </div>
+</div>
+
+<main class="container-fluid" aria-label="Main content">
+    <div class="row">
+        <div class="col-xs-12 col-md-5">
+            
+            <div class="product-img">
+                <span class="sh-badge">Top Ventas</span>
+                <a class="product-img-featured" href="img/low/tool.png"><img src="img/low/tool.png" alt="x"></a>
+                <!-- More images to lightbox -->
+                <a class="product-img-featured" href="img/low/homepage.jpg"><img src="img/low/homepage.jpg" alt="x"></a>
+                <a class="product-img-featured" href="img/low/img-catalogo.png"><img src="img/low/img-catalogo.png" alt="x"></a>
+                <a class="product-img-featured" href="img/low/adhesivos-category-bg.jpg"><img src="img/low/adhesivos-category-bg.jpg" alt="x"></a> 
+            </div>
+
+            <!-- If are more images show thumbnails and lightbox gallery -->
+            <partial src="/gallery-lightbox.html"></partial>
+
+        </div>
+        <div class="col-xs-12 col-md-6 col-md-offset-1">
+            <strong class="product-brand">Apolo/Celo</strong>
+            <h1 itemprop="name">Apolo taco nylon Avellanado Clavo NPC</h1>
+            <div class="product-price">
+                <strong class="normal-price sh-text__h3">0,35&nbsp;€</strong>
+                <del class="offer-price sh-text__h3">0,55&nbsp;€</del>
+                <p><strong>Precio por 1 ud.</strong></p>
+            </div>
+            <p class="sh-color__dark-navy-blue"><strong>Código: 10251000</strong></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. </p>
+            <hr>
+            <div class="products-attributes sh-m-top__md">
+                <strong class="sh-caption">Tallas</strong>
+                <div class="tallas-attribute">
+                    <button class="sh-btn__white">XS</button>
+                    <button class="sh-btn__white">S</button>
+                    <button class="sh-btn__white">M</button>
+                    <button class="sh-btn__white">L</button>
+                    <button class="sh-btn__white">XL</button>
+                </div>
+
+                <strong class="sh-caption">Potencia</strong>
+                <div class="colores-attribute">
+                    <button class="sh-btn__white">400Hz</button>
+                    <button class="sh-btn__white">600Hz</button>
+                    <button class="sh-btn__white">700Hz</button>
+                    <button class="sh-btn__white">800Hz</button>
+                </div>
+
+            </div>
+            <div class="product-details sh-text__sm">
+                <span class="product-on-stock">En Stock</span>
+                <span class="product-delivery">Envío en 24h</span>
+                <span>Consulte nuestras formas de financiación</span>
+            </div>
+            <div class="product-add-cart">
+                <div class="sh-input-quantity">
+                    <input class="sh-input" min="1" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        class="plus">+</button>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        class="minus">–</button>
+                </div>
+                <button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir al carro</button>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div id="sh-product-tabs" class="sh-m-top__xxl row">
+        <div class="sh-tabs">
+            <input class="tab-input" type="radio" id="tab1" name="tab" checked>
+            <label class="tab-label" for="tab1"><i class="icon icon-info"></i> Especificaciones</label>
+            <input class="tab-input" type="radio" id="tab2" name="tab">
+            <label class="tab-label" for="tab2"><i class="icon icon-play"></i> Videos</label>
+            <input class="tab-input" type="radio" id="tab3" name="tab">
+            <label class="tab-label" for="tab3"><i class="icon icon icon-newspaper"></i> Documentación técnica</label>
+            <div class="line"></div>
+
+            <div class="sh-tabs-wrapper">
+
+                <div class="sh-tab-content" id="c1">
+                    <partial src="/sections/product-table.html"></partial>
+                </div>
+
+                <div class="sh-tab-content sh-box sh-space__lg" id="c2">
+                    <div class="col-xs-12 embed-container">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/86_vnQc1oBE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-xs-12">
+                        <p><i class="icon icon-attention"></i> Este producto aún no tiene vídeo, consulta en nuestro canal de <a href="" rel="nofollow">Youtube</a> o en <a href="">HERCO TV.</a></p>
+                    </div>
+                </div>
+
+                <div class="sh-tab-content" id="c3">
+                    <div class="sh-box sh-space__lg"> Lorem ipsum</div>
+                </div>
+
+            </div> <!-- end .sh-tabs-wrapper-->
+        </div><!-- end .sh-tabs-->
+    </div>
+</main>
+
+<div class="clearfix"></div>
+
+<div id="sh-cross-selling">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-3">
+                <p class="sh-text__h3 font-heading sh-divider__header">Comprados conjuntamente</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+            <div class="col-xs-5 col-md-2">
+                <div class="sh-card">
+                    <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+                    <div class="sh-card__head">
+                        <img src="img/low/tool.png" alt="x">
+                    </div>
+
+                    <div class="sh-card__body">
+                        <strong class="sh-card__body__brand">APOLO/CELO</strong>
+                        <p class="sh-text__h5 sh-card__body__text">Apolo Taco Nylon Avellanado NPC</p>
+                        <strong class="sh-card__body__price">0,35&nbsp;€</strong><span>/ud.</span>
+                    </div>
+                </div> <!-- end sh-card -->
+            </div>
+            <div class="row middle-xs center-xs">
+                <div><i class="icon icon-plus-circled"></i></div>
+            </div>
+            <div class="col-xs-5 col-md-2">
+                <div class="sh-card">
+                    <a class="sh-card__link" href="./product.html" title="" rel=""></a>
+                    <div class="sh-card__head">
+                        <img src="img/low/tool.png" alt="x">
+                    </div>
+
+                    <div class="sh-card__body">
+                        <strong class="sh-card__body__brand uppercase">Marca</strong>
+                        <p class="sh-text__h5 sh-card__body__text">Otro producto relacionado</p>
+                        <strong class="sh-card__body__price">35&nbsp;€</strong><span>/ud.</span>
+                    </div>
+                </div> <!-- end sh-card --> 
+            </div>
+            <div class="col-xs-12 col-md-3 sh-m-bottom">
+                <div class="sh-box">
+                    <table class="order-resume">
+                        <tr>
+                            <td>Total productos (2)</td>
+                            <td>930,80&nbsp;€</td>
+                        </tr>
+                        <tr>
+                            <td>Entrega</td>
+                            <td>5,00&nbsp;€</td>
+                        </tr>
+                        <tr>
+                            <td>IVA</td>
+                            <td>195,46&nbsp;€</td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <th>1.131,26 €</th>
+                        </tr>
+                    </table>
+                    <div class="sh-m-top__md"><button class="sh-btn sh-btn__full add-to-cart-btn" type="button">Añadir a la cesta</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sh-m-top__xl sh-m-bottom__xl container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-lg-3">
+            <p class="sh-text__h3 font-heading sh-divider__header">Los clientes también compraron</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+
+        <div class="col-xs-12 col-lg-9">
+            <div class="sh-grid sh-grid--scroll sh-scroll no-scrollbar">
+                <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Panter" product-price="39,87" product-name="Zapato Panter Apolo Napa S3 247"></partial>
+                <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="ATG" product-price="0,35" product-name="Guante Maxiflex Elite ATG 34-247"></partial>
+                <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Faru" product-price="1,29" product-name="Barbuquejo"></partial>
+                <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="3M" product-price="2,29" product-name="Lorem"></partial>
+                <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Faru" product-price="1,29" product-name="Guantes"></partial>
+                <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="3M" product-price="2,29" product-name="Lorem"></partial>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sh-m-top__xl sh-m-bottom__xl container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-lg-3">
+            <p class="sh-text__h3 font-heading sh-divider__header">Productos vistos recientemente</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.</p>
+        </div>
+
+        <div class="col-xs-12 col-lg-9">
+            <div class="sh-grid sh-grid--scroll sh-scroll no-scrollbar">
+                <partial src="card.html" label="sh-badge-red" product-label="Promoción" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Panter" product-price="39,87" product-name="Zapato Panter Apolo Napa S3 247"></partial>
+                <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="ATG" product-price="0,35" product-name="Guante Maxiflex Elite ATG 34-247"></partial>
+                <partial src="card.html" label="sh-badge-green" product-label="Novedad" product-brand="Faru" product-price="1,29" product-name="Barbuquejo"></partial>
+            </div>
+        </div>
+    </div>
+</div>
+
+<partial src="footer.html"></partial>

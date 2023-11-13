@@ -1,0 +1,77 @@
+#sh-footer {
+    background-color: $color-dark-navy-blue;
+
+    a {text-decoration: none;}
+
+    ul {
+        list-style: none;
+        padding: 0;
+        li { margin: 0;}
+    }
+
+    .sh-text__h5 {
+        font-family: $font-heading;
+    }
+}
+
+.sh-footer__top {
+    padding: 2em 0;
+    background: rgba(0,62,144,1);
+    background: linear-gradient(to right, rgba(0,62,144,1) 0%, rgba(0,62,144,1) 45%, rgba(3,0,27,1) 45%, rgba(3,0,27,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003e90', endColorstr='#03001b', GradientType=1 );
+
+    address {
+        font-style: normal;
+    }
+
+    .sh-footer__address a {
+        font-weight: bold;
+        &:hover {
+            color: $color-dark-navy-blue;        
+        }
+    }
+
+    .sh-footer__at a {
+        font-weight: bold;
+        &:hover {
+            color: $color-blue;        
+        }
+    }
+
+    @include breakpoint(xsmobile) {
+        background: rgba(0,62,144,1);
+        background: linear-gradient(to bottom, rgba(0,62,144,1) 0%, rgba(0,62,144,1) 50%, rgba(3,0,27,1) 50%, rgba(3,0,27,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003e90', endColorstr='#03001b', GradientType=0 );
+
+        .sh-footer__at {
+            padding-top: 4em;
+        }
+    }
+}
+
+.sh-footer__info {
+    padding-top: 4em;
+    
+    a:hover {
+        color: $color-blue;
+    }
+}
+
+.sh-footer__sub {
+    padding-top: 2em;
+    padding-bottom: 1em;
+
+    small { text-align: center; }
+
+    @include breakpoint(laptop) {
+        small { padding: 2em 0; }
+    }
+
+    .sh-footer__social a {
+        padding: 0 .5em;
+        font-size: 1.5em;
+        &:hover { color: white; }
+    }    
+}
+
+

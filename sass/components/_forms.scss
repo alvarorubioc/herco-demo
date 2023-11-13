@@ -1,0 +1,355 @@
+input {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  height: 2.5rem;
+  position: relative;
+}
+/* form control */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+form {
+
+  & button.sh-btn {
+
+    border-radius: 0;
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }
+}
+
+/* input number quantity CUSTOM */
+.sh-input-quantity input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.sh-input-quantity input[type=number]::-webkit-inner-spin-button,
+.sh-input-quantity input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.sh-input-quantity {
+  position: relative;
+  max-width: 6rem;
+  min-width: 3rem;
+  @include breakpoint (tablet) {
+    max-width: 7rem;
+    input { text-align: center; }
+  }
+  .sh-input {
+    padding: 0 .5em;
+  }
+}
+
+.sh-input-quantity button {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid $color-grey-50;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  width: 2rem;
+  height: 1.28rem;
+    @include breakpoint (tablet) {
+      height: 2.5rem;
+    }
+
+    &.plus {
+      right: 0;
+      top: 0;
+      font-weight: bold;
+    }
+    
+    &.minus {
+      right: 0;
+      bottom: 0;
+      top: 19px;
+      font-weight: bold;
+      @include breakpoint (tablet) {
+        left: 0;
+        top: 0;
+      }
+    }  
+}
+
+
+
+/* group form control */
+.sh-form-group {
+  position: relative;
+}
+
+/* set styles for input */
+.sh-input, textarea {
+  @include input;
+  border: 1px solid $color-grey-70;
+  background: white;
+
+  &:hover:not(.sh-input__success):not(.sh-input__warning):not(.sh-input__error):not(.sh-input__disabled):not(:focus) {
+    border-color: $color-grey;
+  }
+
+  &:focus:not(.sh-input__success):not(.sh-input__warning):not(.sh-input__error) {
+    border-color: $color-blue;
+    box-shadow: 0 4px 6px rgba(0,108,188,.2);
+  }
+}
+
+.sh-input_ {
+  &_success {
+    border-color: $color-grass;
+
+    &:focus {
+      border-color: $color-grass;
+      box-shadow: 0 4px 6px  rgba(86, 158, 41, 0.2);
+    }
+  }
+
+  &_warning {
+    border-color: $color-yellow;
+
+    &:focus {
+      border-color: $color-yellow;
+      box-shadow: 0 4px 6px rgba(221, 211, 12, 0.2);
+    }
+  }
+
+  &_error {
+    border-color: $color-red-cherry;
+
+    &:focus {
+      border-color: $color-red-cherry;
+      box-shadow: 0 4px 6px rgba(226, 0, 41, 0.2);
+    }
+  }
+
+  &_disabled {
+    cursor: not-allowed;
+    background-color: $color-grey-50;
+  }
+}
+
+/* set icon for input */
+.sh-form-contain-icon {
+  display: flex;
+
+  & .sh-form-icon-secondary__right,
+  .sh-form-icon-secondary__left,
+  .sh-form-icon-secondary__success,
+  .sh-form-icon-secondary__warning,
+  .sh-form-icon-secondary__error {
+    position: absolute;
+    top: .75em;
+    z-index: 9;
+  }
+}
+
+.sh-form-icon-primary_ {
+  &_left {
+    display: block;
+    height: 2.5em;
+    width: 2.5em;
+    padding-top: 10px;
+    border: 1px solid $color-blue;
+    border-right: none;
+    border-radius: $border-radius;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: $color-blue;
+    color: white;
+
+    + input {
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+  }
+
+  &_right {
+    display: block;
+    height: 2.5em;
+    width: 2.5em;
+    padding-top: 10px;
+    border: 1px solid $color-blue;
+    border-right: none;
+    border-radius: $border-radius;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: $color-blue;
+    color: white;
+    order: 2;
+
+    + input {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      order:1;
+    }
+  }
+}
+
+.sh-form-icon-secondary_ {
+  &_right {
+    right: 1em;
+    color: $color-blue;
+
+    + input {
+      padding-right: 3em;
+    }
+
+    + span {
+      position: absolute;
+      font-size: .75em;
+      margin: 0;
+      bottom: -20px;
+    }
+  }
+
+  &_left {
+    left: 1em;
+    color: $color-blue;
+
+    + input {
+      padding-left: 3em;
+    }
+
+    + span {
+      position: absolute;
+      font-size: .75em;
+      margin: 0;
+      bottom: -20px;
+    }
+  }
+
+  &_success {
+    right: 1em;
+    color: $color-grass;
+
+    + span {
+      position: absolute;
+      font-size: .75em;
+      margin: 0;
+      bottom: -20px;
+      color: $color-grass;
+    }
+  }
+
+  &_warning {
+    right: 1em;
+    color: $color-yellow;
+
+    + span {
+      position: absolute;
+      font-size: .75em;
+      margin: 0;
+      bottom: -20px;
+      color: $color-yellow;
+    }
+
+   &:hover {
+     cursor: help;
+   }
+  }
+
+  &_error {
+    right: 1em;
+    color: $color-red-cherry;
+
+    + span {
+      position: absolute;
+      font-size: .75em;
+      margin: 0;
+      bottom: -20px;
+      color: $color-red-cherry;
+    }
+  }
+}
+
+.sh-form_ {
+  &_sm {
+    font-size: $text__sm;
+    height: 1.5rem;
+
+    input {
+      height: 100%;
+    }
+  }
+
+  &_lg {
+    i.icon {font-size: $text__h4;}
+    height: 4rem;
+
+    input {
+      height: 100%;
+    }
+  }
+
+  &_full {
+    width: 100%;
+  }
+}
+
+
+
+/*set select button*/
+.sh-select-container {
+  position: relative;
+  min-width: 12em;
+}
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+  display: none;
+}
+
+.sh-select-container:after {
+  content: '\e847';
+  font-family: 'herco';
+  color: $color-blue;
+  display: table-cell;
+  vertical-align: middle;
+  top: 12px;
+  right: 12px;
+  padding: 0 0 2px;
+  position: absolute;
+  pointer-events: none;
+
+  &:active {
+    transform: rotate(180deg);
+  }
+}
+
+.sh-select-container select {
+  appearance: none;
+  width: 100%;
+  max-width: 40em;
+  @include btn;
+  padding: 0 2em 0 1em !important;
+  background-image: none;
+  word-break: normal;
+
+  &:hover {
+    
+    transition: .2s;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  &.sh-select__white {
+    border-color: $color-grey-70;
+    background-color: white;
+    color: $color-blue;
+  }
+}
+
+.sh-label {
+  margin-bottom: .5em;
+}

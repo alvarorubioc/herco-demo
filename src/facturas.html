@@ -1,0 +1,80 @@
+<partial src="header.html" bodyClass="invoices" robots="noindex"></partial>
+<partial src="hero-page.html" title="Pedidos"></partial>
+
+<div class="container-fluid">
+    <div id="header-bar" class="sh-m-bottom">
+        <div class="row end-xs">
+            <div class="col-xs-12 col-sm-4 dflex end-xs">
+                <button class="sh-btn__danger sh-btn-text-icon">Cerrar sesión <i class="icon icon-logout"></i>
+                </button>
+            </div>
+        </div>
+        <partial src="/sections/breadcrumbs.html" category-page="Pedidos"></partial>
+    </div>
+</div>
+
+<main class="sh-m-bottom__xl sh-m-top__lg container-fluid" aria-label="Main content">
+    <div class="row sh-m-top__lg">
+        <div class="col-xs-12 col-sm-6">
+            <form class="sh-form-search" action="/">
+                <input class="sh-input" type="text" placeholder="Buscar pedido" name="search">
+                <button class="sh-btn__danger" type="submit"></button>
+            </form>
+        </div>
+    </div>
+            
+    <div class="step-wizard-follow sh-m-top__lg">
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <span class="step active"></span>
+                <p class="title">
+                    <strong>En proceso</strong><br>
+                    <span>Ya tenemos preparado su pedido.</span>
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-4 center-md">
+                <span class="step"></span>
+                <p class="title">
+                    <strong>Enviado 28/12/1980</strong><br>
+                    <span>Hemos enviado tu pedido, consulta con <a href="#">NACEX</a> junto con tu nº de expedición <strong>000-000-BBB</strong> para saber el estado de la entrega.</span>
+                </p>
+            </div>
+
+            <div class="col-xs-12 col-md-4 end-md">
+                <span class="step"></span>
+                <p class="title">
+                    <strong>Entregado</strong><br>
+                    <span>Ya hemos entregado su pedido.</span>
+                </p>
+            </div>
+        </div>
+        <div class="progressbar"></div>
+    </div>       
+</main>
+       
+<div id="sh-brands" class="sh-m-top__xl">
+    <div class="container-fluid">
+        <div class="row sh-m-bottom__xl">
+            <div class="col-xs-12 col-lg-3">
+                <p class="sh-text__h3 font-heading sh-divider__header">Productos recomendados</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.</p>
+            </div>
+
+            <div class="col-xs-12 col-lg-9">
+                <div class="sh-grid sh-grid--scroll sh-scroll no-scrollbar">
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Panter" product-price="39,87" product-name="Zapato Panter Apolo Napa S3 247"></partial>
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="ATG" product-price="0,35" product-name="Guante Maxiflex Elite ATG 34-247"></partial>
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Faru" product-price="1,29" product-name="Barbuquejo"></partial>
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="3M" product-price="2,29" product-name="Lorem"></partial>
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Faru" product-price="1,29" product-name="Guantes"></partial>
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="Apolo" product-price="0,35" product-name="Apolo Taco Nylon Avellanado NPC"></partial>
+                    <partial src="card.html" label="sh-badge" product-label="Top Ventas" product-brand="3M" product-price="2,29" product-name="Lorem"></partial>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<partial src="footer.html" title="Some title"></partial>
