@@ -356,7 +356,11 @@ nav#sh-nav:not(.mm) {
 
     li > ul {
         position: absolute;
+<<<<<<< HEAD
         width: 100%;
+=======
+        width: 33%;
+>>>>>>> 8c9dabd37b789f697cce1d9a5d114a9687e59c50
         height: 66.66vh;
         left: 33%;
         top: 0;
@@ -367,12 +371,17 @@ nav#sh-nav:not(.mm) {
         overflow-x: hidden;
         visibility: hidden;
         opacity: 0;
+<<<<<<< HEAD
+=======
+        background: #f6f6f6;
+>>>>>>> 8c9dabd37b789f697cce1d9a5d114a9687e59c50
         box-shadow: 0 2px 4px 0 rgba(48,49,51,.1);
 
         & > li {
             border-bottom: 1px solid rgba(196,196,196,.5);
             font-weight: normal;
             padding-bottom: 0;
+<<<<<<< HEAD
             width: 33%;
             background: #f6f6f6;
 
@@ -380,6 +389,8 @@ nav#sh-nav:not(.mm) {
                 visibility: visible;
                 opacity: 1; 
             }
+=======
+>>>>>>> 8c9dabd37b789f697cce1d9a5d114a9687e59c50
         }
 
     }
@@ -420,9 +431,13 @@ nav#sh-nav:not(.mm) {
         }
     }
 
+<<<<<<< HEAD
     &.megamenu-active li.hover > ul,
     &.megamenu-active li.hover > .sh-nav-products--categories__img,
     &.megamenu-active li > ul > li.hover > ul {
+=======
+    &.megamenu-active li.hover > ul, &.megamenu-active li.hover > .sh-nav-products--categories__img {
+>>>>>>> 8c9dabd37b789f697cce1d9a5d114a9687e59c50
         visibility: visible;
         opacity: 1; 
     }
